@@ -1,0 +1,73 @@
+html, body {
+    height: 100vh; /* Use viewport height for full page coverage */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrollbars if canvas slightly overflows during resize */
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 100vh; is now in the html, body rule */
+}
+
+#controls {
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#controls input[type="file"],
+#controls input[type="text"],
+#controls button,
+#controls select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#controls button {
+    cursor: pointer;
+    background-color: #e0e0e0;
+}
+
+#controls button:hover {
+    background-color: #d0d0d0;
+}
+
+#canvasContainer {
+    width: 100%;
+    flex-grow: 1;
+    display: flex; /* Keep flex for centering canvas if smaller than container */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensures Three.js canvas doesn't cause scrollbars */
+    min-height: 0; /* Important for flex children to shrink if needed, prevents overflow issues with flex-grow */
+}
+
+canvas {
+    display: block; /* Removes extra space below canvas */
+}
+
+#block-title-display {
+    background-color: #000000; /* Black background */
+    color: #FFFFFF;           /* White text */
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;               /* Make it full width */
+    box-sizing: border-box;    /* Include padding in width calculation */
+    font-size: 3em;          /* Larger font size */
+    letter-spacing: -0.05em;   /* Tighter letter spacing */
+    /* Add any other desired styles like font-size, margin, etc. */
+} 
