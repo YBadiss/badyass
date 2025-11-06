@@ -2,25 +2,29 @@
 defineProps({
   title: String,
   description: String,
+  picture: String,
   url: String,
-  tech: Array
+  tags: Array
 })
 </script>
 
 <template>
-  <article class="project-card">
-    <a :href="url" class="project-link" rel="noopener noreferrer">
-      <h3 class="title">{{ title }}</h3>
-      <p class="description">{{ description }}</p>
-      <div v-if="tech && tech.length" class="tech-tags">
-        <span v-for="tag in tech" :key="tag" class="tag">{{ tag }}</span>
+  <article class="publication-card">
+    <a :href="url" class="publication-link" target="_blank" rel="noopener noreferrer">
+      <div class="content">
+        <h3 class="title">{{ title }}</h3>
+        <p class="description">{{ description }}</p>
+        <div v-if="tags && tags.length" class="tech-tags">
+          <span v-for="tag in tags" :key="tag" class="tag">{{ tag }}</span>
+        </div>
       </div>
+      <img v-if="picture" :src="picture" :alt="title" class="picture" />
     </a>
   </article>
 </template>
 
 <style scoped>
-.project-card {
+.publication-card {
   background: var(--bg-secondary);
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -28,15 +32,22 @@ defineProps({
   transition: all 0.2s ease;
 }
 
-.project-card:hover {
+.publication-card:hover {
   border-color: var(--accent);
   box-shadow: 0 0 20px rgba(74, 158, 255, 0.1);
 }
 
-.project-link {
+.publication-link {
   text-decoration: none;
   color: inherit;
-  display: block;
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
 }
 
 .title {
@@ -47,7 +58,7 @@ defineProps({
   transition: color 0.2s ease;
 }
 
-.project-card:hover .title {
+.publication-card:hover .title {
   color: var(--accent);
 }
 
@@ -56,6 +67,15 @@ defineProps({
   color: var(--text-secondary);
   line-height: 1.6;
   margin: 0 0 1rem 0;
+}
+
+.picture {
+  max-width: 200px;
+  max-height: 100px;
+  min-width: 50px;
+  border-radius: 6px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .tech-tags {
@@ -74,8 +94,12 @@ defineProps({
 }
 
 @media (max-width: 640px) {
-  .project-card {
+  .publication-card {
     padding: 1.25rem;
+  }
+
+  .publication-link {
+    gap: 1rem;
   }
 
   .title {
@@ -84,6 +108,13 @@ defineProps({
 
   .description {
     font-size: 0.9375rem;
+  }
+
+  .picture {
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    border-radius: 4px;
   }
 }
 </style>

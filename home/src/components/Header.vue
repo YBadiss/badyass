@@ -2,7 +2,8 @@
 defineProps({
   name: String,
   tagline: String,
-  description: String
+  description: String,
+  picture: String
 })
 </script>
 
@@ -56,6 +57,11 @@ defineProps({
 
   .description {
     font-size: 1rem;
+  }
+
+  .picture {
+    max-width: 100%;
+    border-radius: 6px;
   }
 }
 </style>

@@ -2,15 +2,16 @@
 import { ref, onMounted } from 'vue'
 import Header from './components/Header.vue'
 import SocialLinks from './components/SocialLinks.vue'
-import ProjectList from './components/ProjectList.vue'
-import WritingList from './components/WritingList.vue'
+import PublicationList from './components/PublicationList.vue'
 
 const content = ref(null)
+const activeTab = ref(null)
 
 onMounted(async () => {
   try {
     const response = await fetch('/content.json')
     content.value = await response.json()
+    activeTab.value = content.value.publicationSections[0].title
   } catch (error) {
     console.error('Failed to load content:', error)
   }
@@ -24,10 +25,26 @@ onMounted(async () => {
         :name="content.personal.name"
         :tagline="content.personal.tagline"
         :description="content.personal.description"
+        :picture="content.personal.picture"
       />
       <SocialLinks :social="content.social" />
-      <ProjectList :projects="content.projects" />
-      <WritingList :writings="content.writings" />
+
+      <!-- Tabs -->
+      <nav class="tabs">
+        <button
+          class="tab"
+          :class="{ active: activeTab === publicationSection.title }"
+          @click="activeTab = publicationSection.title"
+          v-for="publicationSection in content.publicationSections"
+        >
+          {{ publicationSection.title }}
+        </button>
+      </nav>
+
+      <!-- Publication sections content -->
+      <PublicationList
+        :publications="content.publicationSections.find(publicationSection => publicationSection.title === activeTab).publications"
+      />
     </main>
     <div v-else class="loading">Loading...</div>
   </div>
@@ -47,8 +64,56 @@ main {
   max-width: 800px;
 }
 
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.tab {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 0.75rem 0;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.tab:hover {
+  color: var(--text-primary);
+}
+
+.tab.active {
+  color: var(--text-primary);
+}
+
+.tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--accent);
+}
+
 .loading {
   color: var(--text-secondary);
   text-align: center;
+}
+
+@media (max-width: 640px) {
+  .tabs {
+    gap: 2rem;
+  }
+
+  .tab {
+    font-size: 1.125rem;
+  }
 }
 </style>

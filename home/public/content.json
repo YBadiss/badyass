@@ -9,25 +9,75 @@
     "github": "https://github.com/YBadiss",
     "linkedin": "https://www.linkedin.com/in/yacine-badiss/"
   },
-  "projects": [
+  "publicationSections": [
     {
-      "title": "RecipIt",
-      "description": "Simple app to extract recipes from urls, in a format that is perfect for me, and hopefully for you too. Great if you're tired of ads and long youtube recipes.",
-      "url": "https://recipit.me",
-      "tech": ["React", "Node.js", "LLM"]
+      "title": "Projects",
+      "publications": [
+        {
+          "title": "RecipIt",
+          "description": "Simple app to extract recipes from urls, in a format that is perfect for me, and hopefully for you too. Great if you're tired of ads and long youtube recipes.",
+          "url": "https://recipit.me",
+          "tags": ["React", "Node.js", "LLM"]
+        },
+        {
+          "title": "Facet",
+          "description": "A 3D interactive image tiler vibe-coded for my nephew. Features a grid of blocks with varying heights, custom textures, and smooth camera interactions.",
+          "url": "/facet",
+          "tags": ["Three.js", "WebGL", "GSAP"]
+        }
+      ]
     },
     {
-      "title": "Facet",
-      "description": "A 3D interactive image tiler vibe-coded for my nephew. Features a grid of blocks with varying heights, custom textures, and smooth camera interactions.",
-      "url": "/facet",
-      "tech": ["Three.js", "WebGL", "GSAP"]
-    }
-  ],
-  "writings": [
+      "title": "Write Ups",
+      "publications": [
+        {
+          "title": "Clear-Sign Your Worries Away",
+          "description": "Quick explanation of the security measure known as 'clear-signing' for crypto-beginers.",
+          "url": "https://www.ledger.com/blog/clear-sign-your-worries-away",
+          "tags": ["Tech", "Crypto", "Security"]
+        },
+        {
+          "title": "The Antidote To On-Chain Poisoning",
+          "description": "Deep dive into on-chain poisoning, the risks to users, and the countermeasures brought by the Ledger team.",
+          "url": "https://www.ledger.com/blog/address-poisoning",
+          "tags": ["Tech", "Crypto", "Security"]
+        },
+        {
+          "title": "Ledger Recover Explained",
+          "description": "Series of blogposts explaining the private key backup and recovery solution built at Ledger for their B2C clients.",
+          "url": "https://www.ledger.com/blog/part-1-genesis-of-ledger-recover-self-custody-without-compromise",
+          "tags": ["Tech", "Crypto", "Security"]
+        },
+        {
+          "title": "Solving Advent of Code with AI",
+          "description": "Christmas, rock-paper-scissor, and my first foray into programming with LLMs when they were still a novel tech.",
+          "url": "https://medium.com/@yacine.badiss/solving-advent-of-code-with-ai-ef076d66ee5e",
+          "tags": ["Tech", "LLM", "Coding Challenge"]
+        },
+        {
+          "title": "Proving Community Notes Ownership",
+          "description": "When fighting online misinformation meets crypto addiction: a short explanation of TLS Notary and how it can be applied to online personas.",
+          "url": "https://medium.com/@yacine.badiss/proving-your-community-notes-identity-with-tlsnotary-d224ebe41048",
+          "tags": ["Twitter", "ZKP", "TLSN"]
+        }
+      ]
+    },
     {
-      "title": "Writing 1",
-      "description": "Description of writing 1",
-      "url": "https://example.com"
+      "title": "Poems",
+      "publications": [
+        {
+          "title": "En son sein",
+          "picture": "/poems/en-son-sein.webp",
+          "url": "https://medium.com/@yacine.badiss/en-son-sein-a83e42faae63",
+          "tags": ["French", "Love"]
+        },
+        {
+          "title": "On this earth",
+          "picture": "/poems/on-this-earth.webp",
+          "url": "https://medium.com/@yacine.badiss/nature-dc8ae878e6f2",
+          "tags": ["English", "Nature"]
+        }
+      ]
     }
   ]
 }
