@@ -22,5 +22,12 @@
       "url": "/facet",
       "tech": ["Three.js", "WebGL", "GSAP"]
     }
+  ],
+  "writings": [
+    {
+      "title": "Writing 1",
+      "description": "Description of writing 1",
+      "url": "https://example.com"
+    }
   ]
 }

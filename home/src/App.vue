@@ -3,6 +3,7 @@ import { ref, onMounted } from 'vue'
 import Header from './components/Header.vue'
 import SocialLinks from './components/SocialLinks.vue'
 import ProjectList from './components/ProjectList.vue'
+import WritingList from './components/WritingList.vue'
 
 const content = ref(null)
 
@@ -26,6 +27,7 @@ onMounted(async () => {
       />
       <SocialLinks :social="content.social" />
       <ProjectList :projects="content.projects" />
+      <WritingList :writings="content.writings" />
     </main>
     <div v-else class="loading">Loading...</div>
   </div>
