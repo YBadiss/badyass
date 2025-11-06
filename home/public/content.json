@@ -14,7 +14,7 @@
       "title": "RecipIt",
       "description": "Simple app to extract recipes from urls, in a format that is perfect for me, and hopefully for you too. Great if you're tired of ads and long youtube recipes.",
       "url": "https://recipit.me",
-      "tech": ["React", "Node.js", "Express", "Sqlite", "LLM"]
+      "tech": ["React", "Node.js", "LLM"]
     },
     {
       "title": "Facet",
