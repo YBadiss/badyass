@@ -1,0 +1,20 @@
+{
+  "personal": {
+    "name": "Yacine Badiss",
+    "tagline": "Happiness enthusiast | Writer | Builder",
+    "description": "Software is my tool, happiness is my goal.\nI write and build at a very inconsistent pace, inspired by friends and family.\nI love facemasks, football, singing, every kind of games, movies that leave a mark, and genuine people."
+  },
+  "social": {
+    "resume": "/resume.pdf",
+    "github": "https://github.com/YBadiss",
+    "linkedin": "https://www.linkedin.com/in/yacine-badiss/"
+  },
+  "projects": [
+    {
+      "title": "Facet",
+      "description": "A 3D interactive image tiler vibe-coded with Three.js for my nephew. Features a grid of blocks with varying heights, custom textures, and smooth camera interactions.",
+      "url": "/facet",
+      "tech": ["Three.js", "WebGL", "GSAP"]
+    }
+  ]
+}
