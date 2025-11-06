@@ -9,7 +9,7 @@ defineProps({
 
 <template>
   <article class="project-card">
-    <a :href="url" class="project-link" target="_blank" rel="noopener noreferrer">
+    <a :href="url" class="project-link" rel="noopener noreferrer">
       <h3 class="title">{{ title }}</h3>
       <p class="description">{{ description }}</p>
       <div v-if="tech && tech.length" class="tech-tags">
