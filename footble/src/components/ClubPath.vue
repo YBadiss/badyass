@@ -1,15 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 
-interface Logo {
-  name: string
-  src: string
-  alt: string
-}
-
 interface Props {
-  logoDatabase: Record<string, Logo>
-  pathSequence: string[]
+  pathSequence: string[] | null
 }
 
 const props = defineProps<Props>()
@@ -22,7 +15,7 @@ const PADDING = 50
 
 // Get logos from path sequence
 const pathLogos = computed(() => {
-  return props.pathSequence.map(key => props.logoDatabase[key])
+  return props.pathSequence?.map(key => `/${key}.png`)
 })
 
 // Calculate position for a logo in the grid
@@ -62,7 +55,7 @@ const getArrowPath = (fromIndex: number, toIndex: number) => {
 // Calculate SVG viewBox dimensions
 const svgWidth = computed(() => COLUMNS * (LOGO_SIZE + SPACING) - SPACING + 2 * PADDING)
 const svgHeight = computed(() => {
-  const numRows = Math.ceil(pathLogos.value.length / COLUMNS)
+  const numRows = Math.ceil(pathLogos.value?.length ?? 0 / COLUMNS)
   return numRows * (LOGO_SIZE + SPACING) - SPACING + 2 * PADDING
 })
 </script>
@@ -70,6 +63,7 @@ const svgHeight = computed(() => {
 <template>
   <div class="path-container">
     <svg
+      v-if="pathSequence && pathLogos && pathLogos.length > 0"
       :viewBox="`0 0 ${svgWidth} ${svgHeight}`"
       xmlns="http://www.w3.org/2000/svg"
       class="path-svg"
@@ -105,7 +99,7 @@ const svgHeight = computed(() => {
         <image
           v-for="(logo, index) in pathLogos"
           :key="`logo-${index}`"
-          :href="logo.src"
+          :href="logo"
           :x="getLogoPosition(index).x"
           :y="getLogoPosition(index).y"
           :width="LOGO_SIZE"
@@ -113,6 +107,8 @@ const svgHeight = computed(() => {
         />
       </g>
     </svg>
+
+    <div v-else class="loading">Loading...</div>
   </div>
 </template>
 

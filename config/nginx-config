@@ -10,6 +10,11 @@ server {
         try_files $uri $uri/ /facet/index.html;
     }
 
+    # Location block for /facet application
+    location /footble {
+        try_files $uri $uri/ /footble/index.html;
+    }
+
     # Location block for root (home page) - override root
     location / {
         root /var/www/badyass.xyz/home;
