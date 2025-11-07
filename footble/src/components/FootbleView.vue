@@ -8,12 +8,11 @@ const pathSequence = ref<string[] | null>(null)
 onMounted(async () => {
   try {
     const response = await fetch('/path.json')
-    pathSequence.value = await response.json() as string[]
+    pathSequence.value = (await response.json()) as string[]
   } catch (error) {
     console.error('Failed to load path sequence:', error)
   }
 })
-
 </script>
 
 <template>

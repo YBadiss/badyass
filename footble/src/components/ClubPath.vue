@@ -24,7 +24,7 @@ const getLogoPosition = (index: number) => {
   const col = index % COLUMNS
 
   // Snake pattern: reverse column order on odd rows
-  const actualCol = (row % 2 === 0) ? col : (COLUMNS - 1 - col)
+  const actualCol = row % 2 === 0 ? col : COLUMNS - 1 - col
 
   const x = actualCol * (LOGO_SIZE + SPACING) + PADDING
   const y = row * (LOGO_SIZE + SPACING) + PADDING
@@ -39,16 +39,36 @@ const getArrowPath = (fromIndex: number, toIndex: number) => {
 
   if (to.x > from.x) {
     // right arrow
-    return { x1: from.x + LOGO_SIZE, y1: from.y + LOGO_SIZE / 2, x2: to.x, y2: to.y + LOGO_SIZE / 2 }
+    return {
+      x1: from.x + LOGO_SIZE,
+      y1: from.y + LOGO_SIZE / 2,
+      x2: to.x,
+      y2: to.y + LOGO_SIZE / 2
+    }
   } else if (to.x < from.x) {
     // left arrow
-    return { x1: from.x, y1: from.y + LOGO_SIZE / 2, x2: to.x + LOGO_SIZE, y2: to.y + LOGO_SIZE / 2 }
+    return {
+      x1: from.x,
+      y1: from.y + LOGO_SIZE / 2,
+      x2: to.x + LOGO_SIZE,
+      y2: to.y + LOGO_SIZE / 2
+    }
   } else if (to.y > from.y) {
     // down arrow
-    return { x1: from.x + LOGO_SIZE / 2, y1: from.y + LOGO_SIZE, x2: to.x + LOGO_SIZE / 2, y2: to.y }
+    return {
+      x1: from.x + LOGO_SIZE / 2,
+      y1: from.y + LOGO_SIZE,
+      x2: to.x + LOGO_SIZE / 2,
+      y2: to.y
+    }
   } else {
     // up arrow
-    return { x1: from.x + LOGO_SIZE, y1: from.y + LOGO_SIZE / 2, x2: to.x, y2: to.y + LOGO_SIZE / 2 }
+    return {
+      x1: from.x + LOGO_SIZE,
+      y1: from.y + LOGO_SIZE / 2,
+      x2: to.x,
+      y2: to.y + LOGO_SIZE / 2
+    }
   }
 }
 
@@ -70,14 +90,7 @@ const svgHeight = computed(() => {
     >
       <!-- Define arrowhead marker -->
       <defs>
-        <marker
-          id="arrowhead"
-          markerWidth="10"
-          markerHeight="10"
-          refX="9"
-          refY="5"
-          orient="auto"
-        >
+        <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
           <polygon points="0 0, 10 5, 0 10" fill="#667eea" />
         </marker>
       </defs>
