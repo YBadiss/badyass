@@ -18,6 +18,7 @@ const props = defineProps<Props>()
 const COLUMNS = 3
 const LOGO_SIZE = 500
 const SPACING = LOGO_SIZE * 0.5
+const PADDING = 50
 
 // Get logos from path sequence
 const pathLogos = computed(() => {
@@ -32,8 +33,8 @@ const getLogoPosition = (index: number) => {
   // Snake pattern: reverse column order on odd rows
   const actualCol = (row % 2 === 0) ? col : (COLUMNS - 1 - col)
 
-  const x = actualCol * (LOGO_SIZE + SPACING)
-  const y = row * (LOGO_SIZE + SPACING)
+  const x = actualCol * (LOGO_SIZE + SPACING) + PADDING
+  const y = row * (LOGO_SIZE + SPACING) + PADDING
 
   return { x, y }
 }
@@ -59,10 +60,10 @@ const getArrowPath = (fromIndex: number, toIndex: number) => {
 }
 
 // Calculate SVG viewBox dimensions
-const svgWidth = computed(() => COLUMNS * (LOGO_SIZE + SPACING))
+const svgWidth = computed(() => COLUMNS * (LOGO_SIZE + SPACING) - SPACING + 2 * PADDING)
 const svgHeight = computed(() => {
   const numRows = Math.ceil(pathLogos.value.length / COLUMNS)
-  return numRows * (LOGO_SIZE + SPACING)
+  return numRows * (LOGO_SIZE + SPACING) - SPACING + 2 * PADDING
 })
 </script>
 
