@@ -32,10 +32,11 @@ onMounted(async () => {
       <!-- Tabs -->
       <nav class="tabs">
         <button
+          v-for="publicationSection in content.publicationSections"
+          :key="publicationSection.title"
           class="tab"
           :class="{ active: activeTab === publicationSection.title }"
           @click="activeTab = publicationSection.title"
-          v-for="publicationSection in content.publicationSections"
         >
           {{ publicationSection.title }}
         </button>
@@ -43,7 +44,11 @@ onMounted(async () => {
 
       <!-- Publication sections content -->
       <PublicationList
-        :publications="content.publicationSections.find(publicationSection => publicationSection.title === activeTab).publications"
+        :publications="
+          content.publicationSections.find(
+            publicationSection => publicationSection.title === activeTab
+          ).publications
+        "
       />
     </main>
     <div v-else class="loading">Loading...</div>
