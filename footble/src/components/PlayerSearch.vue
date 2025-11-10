@@ -36,7 +36,7 @@ const filteredPlayerNames = computed(() => {
   return []
 })
 
-const search = (event: any) => {
+const search = () => {
   return filteredPlayerNames
 }
 

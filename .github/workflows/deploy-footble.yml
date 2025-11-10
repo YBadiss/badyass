@@ -33,7 +33,7 @@ jobs:
           mkdir -p ~/.ssh
           ssh-keyscan -H 167.71.143.97 >> ~/.ssh/known_hosts
           
-      - name: Deploy Facet
+      - name: Deploy Footble
         run: |
           cd footble
           npm ci
