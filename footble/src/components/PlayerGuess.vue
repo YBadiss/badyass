@@ -53,33 +53,34 @@ const clubsWithMatchStatus = computed(() => {
 
 <template>
   <div class="guess-item" :class="{ correct: isCorrect }">
-    <a
-      :href="`https://www.transfermarkt.fr/${guess.slug}/profil/spieler/${guess.id}`"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="guess-name"
-    >
-      {{ guess.name }}
-    </a>
-    <div class="club-badges">
-      <div
-        v-for="{ club, matches } in clubsWithMatchStatus"
-        :key="club.id"
-        class="club-badge"
-        :class="{ matched: matches, unmatched: !matches }"
-      >
-        <img :src="club.logoUrl" :alt="club.id" class="club-logo" />
+    <div class="guess-content">
+      <div class="guess-header">
+        <a
+          :href="`https://www.transfermarkt.fr/${guess.slug}/profil/spieler/${guess.id}`"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="guess-name"
+        >
+          {{ guess.name }}
+        </a>
+        <div class="result-indicator">{{ scoreEmoji }}</div>
+      </div>
+      <div class="club-badges">
+        <div
+          v-for="{ club, matches } in clubsWithMatchStatus"
+          :key="club.id"
+          class="club-badge"
+          :class="{ matched: matches, unmatched: !matches }"
+        >
+          <img :src="club.logoUrl" :alt="club.id" class="club-logo" />
+        </div>
       </div>
     </div>
-    <div class="result-indicator">{{ scoreEmoji }}</div>
   </div>
 </template>
 
 <style scoped>
 .guess-item {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
   padding: 1rem;
   background: #1a1a1a;
   border: 2px solid #333;
@@ -92,12 +93,25 @@ const clubsWithMatchStatus = computed(() => {
   border-color: #4caf50;
 }
 
+.guess-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.guess-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
 .guess-name {
-  min-width: 150px;
   color: #ffffff;
   font-size: 1.125rem;
   text-decoration: underline;
   transition: color 0.2s ease;
+  flex: 1;
 }
 
 .guess-name:hover {
@@ -108,7 +122,6 @@ const clubsWithMatchStatus = computed(() => {
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
-  flex: 1;
   align-items: center;
 }
 
