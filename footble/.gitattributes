@@ -1,0 +1,2 @@
+footble/scripting/data/*.json filter=lfs diff=lfs merge=lfs -text
+scripting/data/*.json filter=lfs diff=lfs merge=lfs -text
