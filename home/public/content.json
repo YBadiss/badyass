@@ -17,7 +17,13 @@
           "title": "RecipIt",
           "description": "Simple app to extract recipes from urls, in a format that is perfect for me, and hopefully for you too. Great if you're tired of ads and long youtube recipes.",
           "url": "https://recipit.me",
-          "tags": ["React", "Node.js", "LLM"]
+          "tags": ["React/Node", "Cooking", "LLM"]
+        },
+        {
+          "title": "Footble",
+          "description": "A fun little game to guess the football player of the day based one their transfer history. Made with Vue.js and Tailwind CSS.",
+          "url": "https://badyass.xyz/footble",
+          "tags": ["Vue.js", "Football", "Daily Challenge"]
         },
         {
           "title": "Facet",
@@ -31,9 +37,21 @@
       "title": "Write Ups",
       "publications": [
         {
-          "title": "Clear-Sign Your Worries Away",
-          "description": "Quick explanation of the security measure known as 'clear-signing' for crypto-beginers.",
-          "url": "https://www.ledger.com/blog/clear-sign-your-worries-away",
+          "title": "Proving Community Notes Ownership",
+          "description": "When fighting online misinformation meets crypto addiction: a short explanation of TLS Notary and how it can be applied to online personas.",
+          "url": "https://medium.com/@yacine.badiss/proving-your-community-notes-identity-with-tlsnotary-d224ebe41048",
+          "tags": ["Twitter", "ZKP", "TLSN"]
+        },
+        {
+          "title": "Solving Advent of Code with AI",
+          "description": "Christmas, rock-paper-scissor, and my first foray into programming with LLMs when they were still a novel tech.",
+          "url": "https://medium.com/@yacine.badiss/solving-advent-of-code-with-ai-ef076d66ee5e",
+          "tags": ["Tech", "LLM", "Coding Challenge"]
+        },
+        {
+          "title": "Ledger Recover Explained",
+          "description": "Series of blogposts explaining the private key backup and recovery solution built at Ledger for their B2C clients.",
+          "url": "https://www.ledger.com/blog/part-1-genesis-of-ledger-recover-self-custody-without-compromise",
           "tags": ["Tech", "Crypto", "Security"]
         },
         {
@@ -43,22 +61,10 @@
           "tags": ["Tech", "Crypto", "Security"]
         },
         {
-          "title": "Ledger Recover Explained",
-          "description": "Series of blogposts explaining the private key backup and recovery solution built at Ledger for their B2C clients.",
-          "url": "https://www.ledger.com/blog/part-1-genesis-of-ledger-recover-self-custody-without-compromise",
+          "title": "Clear-Sign Your Worries Away",
+          "description": "Quick explanation of the security measure known as 'clear-signing' for crypto-beginers.",
+          "url": "https://www.ledger.com/blog/clear-sign-your-worries-away",
           "tags": ["Tech", "Crypto", "Security"]
-        },
-        {
-          "title": "Solving Advent of Code with AI",
-          "description": "Christmas, rock-paper-scissor, and my first foray into programming with LLMs when they were still a novel tech.",
-          "url": "https://medium.com/@yacine.badiss/solving-advent-of-code-with-ai-ef076d66ee5e",
-          "tags": ["Tech", "LLM", "Coding Challenge"]
-        },
-        {
-          "title": "Proving Community Notes Ownership",
-          "description": "When fighting online misinformation meets crypto addiction: a short explanation of TLS Notary and how it can be applied to online personas.",
-          "url": "https://medium.com/@yacine.badiss/proving-your-community-notes-identity-with-tlsnotary-d224ebe41048",
-          "tags": ["Twitter", "ZKP", "TLSN"]
         }
       ]
     },
