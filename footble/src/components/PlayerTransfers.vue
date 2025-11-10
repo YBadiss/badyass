@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
+import html2canvas from 'html2canvas'
 import Player from '../models/Player.ts'
 
 interface Props {
@@ -7,6 +8,90 @@ interface Props {
 }
 
 const props = defineProps<Props>()
+
+const pathContainerRef = ref<HTMLElement | null>(null)
+
+const loadImageAsDataURL = async (url: string): Promise<string> => {
+  return new Promise((resolve, reject) => {
+    const img = new Image()
+    img.crossOrigin = 'anonymous'
+    img.onload = () => {
+      const canvas = document.createElement('canvas')
+      canvas.width = img.width
+      canvas.height = img.height
+      const ctx = canvas.getContext('2d')
+      if (!ctx) {
+        reject(new Error('Failed to get canvas context'))
+        return
+      }
+      ctx.drawImage(img, 0, 0)
+      resolve(canvas.toDataURL('image/png'))
+    }
+    img.onerror = () => reject(new Error('Failed to load image'))
+    img.src = url
+  })
+}
+
+const copyPathAsImage = async () => {
+  if (!pathContainerRef.value) return
+
+  try {
+    // Find all image elements and convert to data URLs
+    const svgElement = pathContainerRef.value.querySelector('svg')
+    if (!svgElement) {
+      throw new Error('SVG not found')
+    }
+
+    const imageElements = svgElement.querySelectorAll('image')
+    const originalHrefs: string[] = []
+
+    // Pre-load all images as data URLs to avoid CORS issues
+    for (let i = 0; i < imageElements.length; i++) {
+      const imgEl = imageElements[i]
+      const href = imgEl.getAttribute('href') || ''
+      originalHrefs.push(href)
+
+      try {
+        // Try to load as data URL, fallback to original if it fails
+        const dataURL = await loadImageAsDataURL(href)
+        imgEl.setAttribute('href', dataURL)
+      } catch (err) {
+        console.warn('Failed to load image as data URL:', href, err)
+        // Keep original href
+      }
+    }
+
+    // Now capture with html2canvas
+    const canvas = await html2canvas(pathContainerRef.value, {
+      backgroundColor: '#000000',
+      scale: 2
+    })
+
+    // Restore original hrefs
+    imageElements.forEach((imgEl, i) => {
+      imgEl.setAttribute('href', originalHrefs[i])
+    })
+
+    // Convert canvas to blob
+    canvas.toBlob(async (blob) => {
+      if (!blob) {
+        return
+      }
+
+      try {
+        await navigator.clipboard.write([
+          new ClipboardItem({
+            'image/png': blob
+          })
+        ])
+      } catch (err) {
+        console.error('Failed to copy:', err)
+      }
+    }, 'image/png')
+  } catch (error) {
+    console.error('Failed to capture image:', error)
+  }
+}
 
 // Simple configuration
 const COLUMNS = 3
@@ -84,12 +169,12 @@ const svgHeight = computed(() => {
 
 <template>
   <div class="path-container">
-    <svg
-      v-if="clubLogos && clubLogos.length > 0"
-      :viewBox="`0 0 ${svgWidth} ${svgHeight}`"
-      xmlns="http://www.w3.org/2000/svg"
-      class="path-svg"
-    >
+    <div v-if="clubLogos && clubLogos.length > 0" ref="pathContainerRef" class="svg-wrapper">
+      <svg
+        :viewBox="`0 0 ${svgWidth} ${svgHeight}`"
+        xmlns="http://www.w3.org/2000/svg"
+        class="path-svg"
+      >
       <!-- White background -->
       <rect :width="svgWidth" :height="svgHeight" fill="#ffffff" rx="8" />
 
@@ -125,6 +210,15 @@ const svgHeight = computed(() => {
         />
       </g>
     </svg>
+    </div>
+
+    <button
+      v-if="clubLogos && clubLogos.length > 0"
+      @click="copyPathAsImage"
+      class="copy-image-button"
+    >
+      Copy To Clipboard
+    </button>
 
     <div v-else class="loading">Loading...</div>
   </div>
@@ -136,11 +230,39 @@ const svgHeight = computed(() => {
   max-width: 600px;
   padding: 1rem;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.svg-wrapper {
+  width: 100%;
 }
 
 .path-svg {
   width: 100%;
   height: auto;
   border-radius: 8px;
+}
+
+.copy-image-button {
+  padding: 0.5rem 1rem;
+  background: #667eea;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  align-self: center;
+}
+
+.copy-image-button:hover {
+  background: #764ba2;
+}
+
+.copy-image-button:active {
+  transform: scale(0.98);
 }
 </style>
