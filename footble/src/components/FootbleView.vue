@@ -82,7 +82,7 @@ const handlePlayerSelected = (selectedPlayer: Player) => {
 onMounted(async () => {
   try {
     // Read all players from the public data
-    const allPlayersResponse = await fetch('./public/players.json')
+    const allPlayersResponse = await fetch('./players.json')
     allPlayers.value = (await allPlayersResponse.json()).map(
       (player: any) =>
         new Player(
@@ -94,7 +94,7 @@ onMounted(async () => {
         )
     )
     // Read top players from the public data
-    const topPlayersResponse = await fetch('./public/top_players.json')
+    const topPlayersResponse = await fetch('./top_players.json')
     topPlayers.value = (await topPlayersResponse.json()).map(
       (player: any) =>
         new Player(
