@@ -56,6 +56,7 @@ onMounted(async () => {
       :max-guesses="gameState.maxGuesses"
       :is-game-won="gameState.isGameWon"
       :is-game-over="gameState.isGameOver"
+      :main-url="MAIN_URL"
     />
   </div>
 </template>

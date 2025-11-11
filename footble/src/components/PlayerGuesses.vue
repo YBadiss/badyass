@@ -9,6 +9,7 @@ interface Props {
   maxGuesses: number
   isGameWon: boolean
   isGameOver: boolean
+  mainUrl: string
 }
 
 const props = defineProps<Props>()
@@ -23,7 +24,7 @@ const shareText = computed(() => {
     return targetClubIds.map(clubId => (guessClubIds.includes(clubId) ? '🟢' : '🔴')).join('')
   })
 
-  return `#FOOTBLE | ${props.guesses.length}/${props.maxGuesses}\n\n${rows.join('\n')}\n\nhttps://badyass.xyz/footble`
+  return `#FOOTBLE | ${props.guesses.length}/${props.maxGuesses}\n\n${rows.join('\n')}\n\n${props.mainUrl}`
 })
 
 const copyButtonText = ref('Share')
