@@ -8,6 +8,7 @@ interface Props {
   targetPlayer: Player | null
   maxGuesses: number
   isGameWon: boolean
+  isGameOver: boolean
 }
 
 const props = defineProps<Props>()
@@ -15,22 +16,14 @@ const props = defineProps<Props>()
 const shareText = computed(() => {
   if (!props.targetPlayer || props.guesses.length === 0) return ''
 
-  const targetClubIds = [...new Set(props.targetPlayer.clubs.map((club) => club.id))]
+  const targetClubIds = [...new Set(props.targetPlayer.clubs.map(club => club.id))]
 
-  const rows = props.guesses.map((guess) => {
-    const guessClubIds = [...new Set(guess.clubs.map((club) => club.id))]
-    return targetClubIds.map((clubId) => (guessClubIds.includes(clubId) ? '🟢' : '🔴')).join('')
+  const rows = props.guesses.map(guess => {
+    const guessClubIds = [...new Set(guess.clubs.map(club => club.id))]
+    return targetClubIds.map(clubId => (guessClubIds.includes(clubId) ? '🟢' : '🔴')).join('')
   })
 
   return `#FOOTBLE | ${props.guesses.length}/${props.maxGuesses}\n\n${rows.join('\n')}\n\nhttps://badyass.xyz/footble`
-})
-
-const isGameOver = computed(() => {
-  return props.guesses.length >= props.maxGuesses
-})
-
-const isGameLost = computed(() => {
-  return !props.isGameWon && props.guesses.length >= props.maxGuesses
 })
 
 const copyButtonText = ref('Share')
@@ -66,17 +59,17 @@ const copyToClipboard = async () => {
         :guess="guess"
         :target-player="targetPlayer"
       />
-      <div v-if="isGameLost && targetPlayer" class="answer-divider">
+      <div v-if="isGameOver && !isGameWon && targetPlayer" class="answer-divider">
         <span>The answer was:</span>
       </div>
       <PlayerGuess
-        v-if="isGameLost && targetPlayer"
+        v-if="isGameOver && !isGameWon && targetPlayer"
         :guess="targetPlayer"
         :target-player="targetPlayer"
         class="answer-guess"
       />
     </div>
-    <button v-if="isGameWon || isGameOver" @click="copyToClipboard" class="share-button">
+    <button v-if="isGameWon || isGameOver" class="share-button" @click="copyToClipboard">
       {{ copyButtonText }}
     </button>
   </div>

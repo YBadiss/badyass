@@ -9,14 +9,14 @@ interface Props {
 
 const props = defineProps<Props>()
 
-const targetClubIds = computed(() => {  
-  return [...new Set(props.targetPlayer?.clubs.map((club) => club.id) ?? [])]
+const targetClubIds = computed(() => {
+  return [...new Set(props.targetPlayer?.clubs.map(club => club.id) ?? [])]
 })
 const guessClubIds = computed(() => {
-  return [...new Set(props.guess.clubs.map((club) => club.id))]
+  return [...new Set(props.guess.clubs.map(club => club.id))]
 })
 const clubMatchScore = computed(() => {
-  return guessClubIds.value.filter((clubId) => targetClubIds.value.includes(clubId)).length
+  return guessClubIds.value.filter(clubId => targetClubIds.value.includes(clubId)).length
 })
 const isCorrect = computed(() => {
   return props.guess.id === props.targetPlayer?.id
@@ -33,22 +33,22 @@ const scoreEmoji = computed(() => {
   return '🟢' // Green circle
 })
 
-const clubsWithMatchStatus = computed(() => {
+const clubsWithMatchStatus = (guess: Player) => {
   if (!props.targetPlayer) return []
 
   const uniqueClubs = new Map()
 
-  props.targetPlayer.clubs.forEach((club) => {
+  guess.clubs.forEach(club => {
     if (!uniqueClubs.has(club.id)) {
       uniqueClubs.set(club.id, {
         club,
-        matches: guessClubIds.value.includes(club.id)
+        matches: targetClubIds.value.includes(club.id)
       })
     }
   })
 
   return Array.from(uniqueClubs.values())
-})
+}
 </script>
 
 <template>
@@ -67,7 +67,7 @@ const clubsWithMatchStatus = computed(() => {
       </div>
       <div class="club-badges">
         <div
-          v-for="{ club, matches } in clubsWithMatchStatus"
+          v-for="{ club, matches } in clubsWithMatchStatus(guess)"
           :key="club.id"
           class="club-badge"
           :class="{ matched: matches, unmatched: !matches }"

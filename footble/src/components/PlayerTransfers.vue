@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
-import html2canvas from 'html2canvas'
 import Player from '../models/Player.ts'
+import { copySvgAsImage } from '../svg-utils.ts'
 
 interface Props {
   player: Player | null
@@ -10,88 +10,6 @@ interface Props {
 const props = defineProps<Props>()
 
 const pathContainerRef = ref<HTMLElement | null>(null)
-
-const loadImageAsDataURL = async (url: string): Promise<string> => {
-  return new Promise((resolve, reject) => {
-    const img = new Image()
-    img.crossOrigin = 'anonymous'
-    img.onload = () => {
-      const canvas = document.createElement('canvas')
-      canvas.width = img.width
-      canvas.height = img.height
-      const ctx = canvas.getContext('2d')
-      if (!ctx) {
-        reject(new Error('Failed to get canvas context'))
-        return
-      }
-      ctx.drawImage(img, 0, 0)
-      resolve(canvas.toDataURL('image/png'))
-    }
-    img.onerror = () => reject(new Error('Failed to load image'))
-    img.src = url
-  })
-}
-
-const copyPathAsImage = async () => {
-  if (!pathContainerRef.value) return
-
-  try {
-    // Find all image elements and convert to data URLs
-    const svgElement = pathContainerRef.value.querySelector('svg')
-    if (!svgElement) {
-      throw new Error('SVG not found')
-    }
-
-    const imageElements = svgElement.querySelectorAll('image')
-    const originalHrefs: string[] = []
-
-    // Pre-load all images as data URLs to avoid CORS issues
-    for (let i = 0; i < imageElements.length; i++) {
-      const imgEl = imageElements[i]
-      const href = imgEl.getAttribute('href') || ''
-      originalHrefs.push(href)
-
-      try {
-        // Try to load as data URL, fallback to original if it fails
-        const dataURL = await loadImageAsDataURL(href)
-        imgEl.setAttribute('href', dataURL)
-      } catch (err) {
-        console.warn('Failed to load image as data URL:', href, err)
-        // Keep original href
-      }
-    }
-
-    // Now capture with html2canvas
-    const canvas = await html2canvas(pathContainerRef.value, {
-      backgroundColor: '#000000',
-      scale: 2
-    })
-
-    // Restore original hrefs
-    imageElements.forEach((imgEl, i) => {
-      imgEl.setAttribute('href', originalHrefs[i])
-    })
-
-    // Convert canvas to blob
-    canvas.toBlob(async (blob) => {
-      if (!blob) {
-        return
-      }
-
-      try {
-        await navigator.clipboard.write([
-          new ClipboardItem({
-            'image/png': blob
-          })
-        ])
-      } catch (err) {
-        console.error('Failed to copy:', err)
-      }
-    }, 'image/png')
-  } catch (error) {
-    console.error('Failed to capture image:', error)
-  }
-}
 
 // Simple configuration
 const COLUMNS = 3
@@ -175,47 +93,47 @@ const svgHeight = computed(() => {
         xmlns="http://www.w3.org/2000/svg"
         class="path-svg"
       >
-      <!-- White background -->
-      <rect :width="svgWidth" :height="svgHeight" fill="#ffffff" rx="8" />
+        <!-- White background -->
+        <rect :width="svgWidth" :height="svgHeight" fill="#ffffff" rx="8" />
 
-      <!-- Define arrowhead marker -->
-      <defs>
-        <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
-          <polygon points="0 0, 10 5, 0 10" fill="#667eea" />
-        </marker>
-      </defs>
+        <!-- Define arrowhead marker -->
+        <defs>
+          <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+            <polygon points="0 0, 10 5, 0 10" fill="#667eea" />
+          </marker>
+        </defs>
 
-      <!-- Draw arrows -->
-      <g class="arrows">
-        <line
-          v-for="index in clubLogos.length - 1"
-          :key="`arrow-${index}`"
-          v-bind="getArrowPath(index - 1, index)"
-          stroke="#667eea"
-          stroke-width="3"
-          marker-end="url(#arrowhead)"
-        />
-      </g>
+        <!-- Draw arrows -->
+        <g class="arrows">
+          <line
+            v-for="index in clubLogos.length - 1"
+            :key="`arrow-${index}`"
+            v-bind="getArrowPath(index - 1, index)"
+            stroke="#667eea"
+            stroke-width="3"
+            marker-end="url(#arrowhead)"
+          />
+        </g>
 
-      <!-- Draw logos -->
-      <g class="logos">
-        <image
-          v-for="(logo, index) in clubLogos"
-          :key="`logo-${index}`"
-          :href="logo"
-          :x="getLogoPosition(index).x"
-          :y="getLogoPosition(index).y"
-          :width="LOGO_SIZE"
-          :height="LOGO_SIZE"
-        />
-      </g>
-    </svg>
+        <!-- Draw logos -->
+        <g class="logos">
+          <image
+            v-for="(logo, index) in clubLogos"
+            :key="`logo-${index}`"
+            :href="logo"
+            :x="getLogoPosition(index).x"
+            :y="getLogoPosition(index).y"
+            :width="LOGO_SIZE"
+            :height="LOGO_SIZE"
+          />
+        </g>
+      </svg>
     </div>
 
     <button
       v-if="clubLogos && clubLogos.length > 0"
-      @click="copyPathAsImage"
       class="copy-image-button"
+      @click="() => copySvgAsImage(pathContainerRef)"
     >
       Copy To Clipboard
     </button>

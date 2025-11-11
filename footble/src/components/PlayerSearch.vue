@@ -6,7 +6,7 @@ import Player from '../models/Player.ts'
 interface Props {
   allPlayers: Array<Player> | null
   guessedPlayers?: Array<Player>
-  disabled?: boolean
+  isGameOver?: boolean
 }
 
 const props = defineProps<Props>()
@@ -19,12 +19,12 @@ const value = ref('')
 const availablePlayers = computed(() => {
   if (!props.allPlayers) return null
 
-  const guessedIds = new Set(props.guessedPlayers?.map((p) => p.id) || [])
-  return props.allPlayers.filter((player) => !guessedIds.has(player.id))
+  const guessedIds = new Set(props.guessedPlayers?.map(p => p.id) || [])
+  return props.allPlayers.filter(player => !guessedIds.has(player.id))
 })
 
 const playerNames = computed(() => {
-  return availablePlayers.value?.map((player) => player.name).sort()
+  return availablePlayers.value?.map(player => player.name).sort()
 })
 
 const filteredPlayerNames = computed(() => {
@@ -42,7 +42,7 @@ const search = () => {
 
 const handleSelect = () => {
   // Find the selected player by name
-  const selectedPlayer = availablePlayers.value?.find((player) => player.name === value.value)
+  const selectedPlayer = availablePlayers.value?.find(player => player.name === value.value)
   if (selectedPlayer) {
     emit('playerSelected', selectedPlayer)
     // Clear the input after selection
@@ -54,13 +54,13 @@ const handleSelect = () => {
 <template>
   <div class="search-container">
     <AutoComplete
+      v-if="!isGameOver"
       v-model="value"
       :suggestions="filteredPlayerNames"
-      :disabled="disabled"
+      :placeholder="'Search for a player...'"
+      class="search-input"
       @complete="search"
       @item-select="handleSelect"
-      :placeholder="disabled ? 'Game Over!' : 'Search for a player...'"
-      class="search-input"
     />
   </div>
 </template>

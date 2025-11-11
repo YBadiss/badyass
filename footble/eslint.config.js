@@ -15,7 +15,10 @@ export default tseslint.config(
         console: 'readonly',
         fetch: 'readonly',
         window: 'readonly',
-        document: 'readonly'
+        document: 'readonly',
+        setTimeout: 'readonly',
+        navigator: 'readonly',
+        HTMLElement: 'readonly'
       },
       parserOptions: {
         parser: tseslint.parser,
