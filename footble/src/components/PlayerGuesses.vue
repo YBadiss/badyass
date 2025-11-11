@@ -28,20 +28,19 @@ const shareText = computed(() => {
 })
 
 const copyButtonText = ref('Share')
+const isCopied = ref(false)
 
 const copyToClipboard = async () => {
   try {
     await navigator.clipboard.writeText(shareText.value)
     copyButtonText.value = 'Copied!'
+    isCopied.value = true
     setTimeout(() => {
       copyButtonText.value = 'Share'
+      isCopied.value = false
     }, 2000)
   } catch (err) {
     console.error('Failed to copy:', err)
-    copyButtonText.value = 'Failed'
-    setTimeout(() => {
-      copyButtonText.value = 'Share'
-    }, 2000)
   }
 }
 </script>
@@ -53,7 +52,7 @@ const copyToClipboard = async () => {
         <div class="game-status" :class="{ win: isGameWon, lose: !isGameWon }">
           {{ isGameWon ? 'You Won! 🎉' : 'Game Over!' }}
         </div>
-        <button class="share-button" @click="copyToClipboard">
+        <button class="share-button" :class="{ copied: isCopied }" @click="copyToClipboard">
           {{ copyButtonText }}
         </button>
       </div>
@@ -146,12 +145,17 @@ const copyToClipboard = async () => {
   line-height: inherit;
 }
 
-.share-button:hover {
+.share-button:hover:not(.copied) {
   background: #764ba2;
 }
 
-.share-button:active {
+.share-button:active:not(.copied) {
   transform: scale(0.98);
+}
+
+.share-button.copied {
+  background: #764ba2;
+  cursor: default;
 }
 
 .guesses-list {

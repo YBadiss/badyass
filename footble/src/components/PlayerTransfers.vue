@@ -11,21 +11,17 @@ interface Props {
 const props = defineProps<Props>()
 
 const pathContainerRef = ref<HTMLElement | null>(null)
-const copyButtonText = ref('Copy')
+const isCopied = ref(false)
 
 const handleCopy = async () => {
   try {
     await copySvgAsImage(pathContainerRef.value)
-    copyButtonText.value = 'Copied!'
+    isCopied.value = true
     setTimeout(() => {
-      copyButtonText.value = 'Copy'
+      isCopied.value = false
     }, 2000)
   } catch (err) {
     console.error('Failed to copy:', err)
-    copyButtonText.value = 'Failed'
-    setTimeout(() => {
-      copyButtonText.value = 'Copy'
-    }, 2000)
   }
 }
 
@@ -127,7 +123,37 @@ const getWatermarkPositions = () => {
 <template>
   <div class="path-container">
     <div v-if="clubLogos && clubLogos.length > 0" class="svg-container">
-      <button class="copy-button" @click="handleCopy">{{ copyButtonText }}</button>
+      <button class="copy-button" :class="{ copied: isCopied }" @click="handleCopy">
+        <svg
+          v-if="!isCopied"
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+          <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+        </svg>
+        <svg
+          v-else
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </button>
       <div ref="pathContainerRef" class="svg-wrapper">
         <svg
           :viewBox="`0 0 ${svgWidth} ${svgHeight}`"
@@ -221,26 +247,38 @@ const getWatermarkPositions = () => {
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
-  padding: 0.5rem 0.75rem;
+  padding: 0.5rem;
   background: #667eea;
   color: #ffffff;
   border: none;
   border-radius: 6px;
-  font-size: 0.875rem;
-  font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
   z-index: 10;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
 }
 
-.copy-button:hover {
+.copy-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.copy-button:hover:not(.copied) {
   background: #764ba2;
-  transform: scale(1.05);
 }
 
-.copy-button:active {
+.copy-button:active:not(.copied) {
   transform: scale(0.95);
+}
+
+.copy-button.copied {
+  background: #764ba2;
+  cursor: default;
 }
 
 .svg-wrapper {
