@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import AppHeader from './components/AppHeader.vue'
 import FootbleView from './components/FootbleView.vue'
-import { copySvgAsImage } from './svg-utils.ts'
+import CustomChallenge from './components/CustomChallenge.vue'
 
 const pathContainerRef = ref<HTMLElement | null>(null)
 const footbleViewRef = ref<InstanceType<typeof FootbleView> | null>(null)
@@ -11,22 +11,9 @@ const showTutorial = () => {
   footbleViewRef.value?.tutorialPopupRef?.showTutorial()
 }
 
-const shareButtonText = ref('Share Transfer List')
-const copyToClipboard = async () => {
-  try {
-    await copySvgAsImage(pathContainerRef.value)
-    shareButtonText.value = 'Copied!'
-    setTimeout(() => {
-      shareButtonText.value = 'Share Transfer List'
-    }, 2000)
-  } catch (err) {
-    console.error('Failed to copy:', err)
-    shareButtonText.value = 'Failed'
-    setTimeout(() => {
-      shareButtonText.value = 'Share Transfer List'
-    }, 2000)
-  }
-}
+const allPlayers = computed(() => {
+  return footbleViewRef.value?.getAllPlayers() || null
+})
 
 defineExpose({ pathContainerRef })
 </script>
@@ -35,23 +22,11 @@ defineExpose({ pathContainerRef })
   <div id="app">
     <AppHeader>
       <div class="menu-section">
-        <button
-          class="menu-action-button"
-          @click="
-            async () => {
-              if (pathContainerRef) {
-                await copyToClipboard()
-              }
-            }
-          "
-        >
-          <h3>{{ shareButtonText }}</h3>
-          <p class="menu-description">Copy and share with your friends!</p>
-        </button>
         <button class="menu-action-button" @click="showTutorial">
           <h3>How to Play</h3>
           <p class="menu-description">View the tutorial again</p>
         </button>
+        <CustomChallenge :all-players="allPlayers" />
       </div>
     </AppHeader>
     <FootbleView ref="footbleViewRef" @path-container-ready="pathContainerRef = $event" />

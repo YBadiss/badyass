@@ -46,7 +46,10 @@ onMounted(async () => {
   await gameState.init(playerId || undefined)
 })
 
-defineExpose({ tutorialPopupRef })
+defineExpose({
+  tutorialPopupRef,
+  getAllPlayers: () => gameState.allPlayers
+})
 </script>
 
 <template>
