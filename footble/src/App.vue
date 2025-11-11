@@ -11,6 +11,23 @@ const showTutorial = () => {
   footbleViewRef.value?.tutorialPopupRef?.showTutorial()
 }
 
+const shareButtonText = ref('Share Transfer List')
+const copyToClipboard = async () => {
+  try {
+    await copySvgAsImage(pathContainerRef.value)
+    shareButtonText.value = 'Copied!'
+    setTimeout(() => {
+      shareButtonText.value = 'Share Transfer List'
+    }, 2000)
+  } catch (err) {
+    console.error('Failed to copy:', err)
+    shareButtonText.value = 'Failed'
+    setTimeout(() => {
+      shareButtonText.value = 'Share Transfer List'
+    }, 2000)
+  }
+}
+
 defineExpose({ pathContainerRef })
 </script>
 
@@ -21,14 +38,14 @@ defineExpose({ pathContainerRef })
         <button
           class="menu-action-button"
           @click="
-            () => {
+            async () => {
               if (pathContainerRef) {
-                copySvgAsImage(pathContainerRef)
+                await copyToClipboard()
               }
             }
           "
         >
-          <h3>Share Transfer List</h3>
+          <h3>{{ shareButtonText }}</h3>
           <p class="menu-description">Copy and share with your friends!</p>
         </button>
         <button class="menu-action-button" @click="showTutorial">

@@ -41,7 +41,7 @@ defineExpose({ showTutorial })
       <div class="tutorial-popup" @click.stop>
         <div class="tutorial-header">
           <h2>How to Play</h2>
-          <button @click="closeTutorial" class="close-button">&times;</button>
+          <button class="close-button" @click="closeTutorial">&times;</button>
         </div>
 
         <div class="tutorial-content">
@@ -67,7 +67,7 @@ defineExpose({ showTutorial })
         </div>
 
         <div class="tutorial-footer">
-          <button @click="closeTutorial" class="start-button">Got it, let's play!</button>
+          <button class="start-button" @click="closeTutorial">Got it, let's play!</button>
         </div>
       </div>
     </div>

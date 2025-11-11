@@ -44,8 +44,6 @@ onMounted(async () => {
   const playerId = urlParams.get('player')
 
   await gameState.init(playerId || undefined)
-
-  console.log(gameState.player)
 })
 
 defineExpose({ tutorialPopupRef })
@@ -78,6 +76,7 @@ defineExpose({ tutorialPopupRef })
   border-radius: 12px;
   padding: 0.2rem;
   margin: 0 auto;
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
 }
 </style>
