@@ -10,9 +10,9 @@ server {
         try_files $uri $uri/ /facet/index.html;
     }
 
-    # Location block for /facet application
+    # Redirect /footble to footble.net
     location /footble {
-        try_files $uri $uri/ /footble/index.html;
+        return 301 https://footble.net/;
     }
 
     # Location block for root (home page) - override root
