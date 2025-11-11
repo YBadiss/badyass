@@ -56,7 +56,7 @@ export default class GameState {
   }
 
   private loadGuessesFromStorage(): void {
-    const guesses = this.storage.retrieve(this.storageKey)
+    const guesses = this.storage.retrieve(`${this.storageKey}/guesses`)
     const guessIds: string[] = guesses ? JSON.parse(guesses) : []
 
     this.guessedPlayers = guessIds
@@ -66,7 +66,7 @@ export default class GameState {
 
   private saveGuessesToStorage(): void {
     const guessIds = this.guessedPlayers.map((p: Player) => p.id)
-    this.storage.store(this.storageKey, JSON.stringify(guessIds))
+    this.storage.store(`${this.storageKey}/guesses`, JSON.stringify(guessIds))
   }
 }
 

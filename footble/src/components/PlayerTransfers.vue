@@ -1,15 +1,17 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import Player from '../models/Player.ts'
-import { copySvgAsImage } from '../svg-utils.ts'
 
 interface Props {
   player: Player | null
+  mainUrl: string
 }
 
 const props = defineProps<Props>()
 
 const pathContainerRef = ref<HTMLElement | null>(null)
+
+defineExpose({ pathContainerRef })
 
 // Simple configuration
 const COLUMNS = 3
@@ -83,6 +85,25 @@ const svgHeight = computed(() => {
   const height = numRows * (LOGO_SIZE + SPACING) - SPACING + 2 * PADDING
   return height
 })
+
+// Calculate watermark positions between rows
+const getWatermarkPositions = () => {
+  if (!clubLogos.value || clubLogos.value.length <= COLUMNS) return []
+
+  const numRows = Math.ceil(clubLogos.value.length / COLUMNS)
+  const positions = []
+
+  // Add watermark between each row (not after the last row)
+  for (let row = 0; row < numRows - 1; row++) {
+    const y = PADDING + (row + 1) * (LOGO_SIZE + SPACING) - SPACING / 2
+    positions.push({
+      x: svgWidth.value / 2,
+      y: y
+    })
+  }
+
+  return positions.slice(Math.floor(positions.length / 2), Math.floor(positions.length / 2) + 1)
+}
 </script>
 
 <template>
@@ -115,6 +136,24 @@ const svgHeight = computed(() => {
           />
         </g>
 
+        <!-- Draw watermarks between rows -->
+        <g class="watermarks">
+          <text
+            v-for="(position, index) in getWatermarkPositions()"
+            :key="`watermark-${index}`"
+            :x="position.x"
+            :y="position.y"
+            text-anchor="middle"
+            dominant-baseline="middle"
+            fill="#999999"
+            opacity="0.4"
+            font-size="24"
+            font-family="Arial, sans-serif"
+          >
+            {{ mainUrl }}
+          </text>
+        </g>
+
         <!-- Draw logos -->
         <g class="logos">
           <image
@@ -129,14 +168,6 @@ const svgHeight = computed(() => {
         </g>
       </svg>
     </div>
-
-    <button
-      v-if="clubLogos && clubLogos.length > 0"
-      class="copy-image-button"
-      @click="() => copySvgAsImage(pathContainerRef)"
-    >
-      Copy To Clipboard
-    </button>
 
     <div v-else class="loading">Loading...</div>
   </div>

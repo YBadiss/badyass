@@ -1,11 +1,34 @@
 <script setup lang="ts">
+import { ref } from 'vue'
+import AppHeader from './components/AppHeader.vue'
 import FootbleView from './components/FootbleView.vue'
+import { copySvgAsImage } from './svg-utils.ts'
+
+const pathContainerRef = ref<HTMLElement | null>(null)
+
+defineExpose({ pathContainerRef })
 </script>
 
 <template>
   <div id="app">
-    <h1>Footble</h1>
-    <FootbleView />
+    <AppHeader>
+      <div class="menu-section">
+        <button
+          @click="
+            () => {
+              if (pathContainerRef) {
+                copySvgAsImage(pathContainerRef)
+              }
+            }
+          "
+          class="menu-action-button"
+        >
+          <h3>Share Transfer List</h3>
+          <p class="menu-description">Copy and share with your friends!</p>
+        </button>
+      </div>
+    </AppHeader>
+    <FootbleView ref="footbleView" @path-container-ready="pathContainerRef = $event" />
   </div>
 </template>
 
@@ -32,14 +55,55 @@ body {
   padding: 2rem;
 }
 
-h1 {
-  font-size: 3rem;
-  margin-bottom: 3rem;
-  font-weight: 700;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-align: center;
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.menu-section h3 {
+  font-size: 1.25rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+.menu-description {
+  color: #999;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.menu-action-button {
+  padding: 0.75rem 1.5rem;
+  background: #667eea;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+  text-align: left;
+  width: 100%;
+}
+
+.menu-action-button h3 {
+  color: #ffffff;
+}
+
+.menu-action-button .menu-description {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.menu-action-button:hover {
+  background: #764ba2;
+}
+
+.menu-action-button:active {
+  transform: scale(0.98);
 }
 </style>
