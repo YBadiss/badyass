@@ -43,21 +43,29 @@ onMounted(async () => {
 
 <template>
   <PlayerTransfers ref="playerTransfersRef" :player="gameState.player" :main-url="MAIN_URL" />
-  <PlayerSearch
-    :all-players="gameState.allPlayers"
-    :guessed-players="gameState.guessedPlayers"
-    :is-game-over="gameState.isGameOver"
-    @player-selected="(player: Player) => gameState.addGuess(player)"
-  />
-  <PlayerGuesses
-    :guesses="gameState.guessedPlayers"
-    :target-player="gameState.player"
-    :max-guesses="gameState.maxGuesses"
-    :is-game-won="gameState.isGameWon"
-    :is-game-over="gameState.isGameOver"
-  />
+  <div class="game-section">
+    <PlayerSearch
+      :all-players="gameState.allPlayers"
+      :guessed-players="gameState.guessedPlayers"
+      :is-game-over="gameState.isGameOver"
+      @player-selected="(player: Player) => gameState.addGuess(player)"
+    />
+    <PlayerGuesses
+      :guesses="gameState.guessedPlayers"
+      :target-player="gameState.player"
+      :max-guesses="gameState.maxGuesses"
+      :is-game-won="gameState.isGameWon"
+      :is-game-over="gameState.isGameOver"
+    />
+  </div>
 </template>
 
 <style scoped>
-/* Styles are now in child components */
+.game-section {
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 0.2rem;
+  margin: 0 auto;
+  width: 600px;
+}
 </style>

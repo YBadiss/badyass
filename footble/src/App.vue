@@ -14,6 +14,7 @@ defineExpose({ pathContainerRef })
     <AppHeader>
       <div class="menu-section">
         <button
+          class="menu-action-button"
           @click="
             () => {
               if (pathContainerRef) {
@@ -21,7 +22,6 @@ defineExpose({ pathContainerRef })
               }
             }
           "
-          class="menu-action-button"
         >
           <h3>Share Transfer List</h3>
           <p class="menu-description">Copy and share with your friends!</p>
@@ -52,7 +52,8 @@ body {
   flex-direction: column;
   align-items: stretch;
   justify-content: flex-start;
-  padding: 2rem;
+  padding: 1rem;
+  gap: 0.5rem;
 }
 
 .menu-section {

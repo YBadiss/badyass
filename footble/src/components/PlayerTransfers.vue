@@ -177,11 +177,11 @@ const getWatermarkPositions = () => {
 .path-container {
   width: 100%;
   max-width: 600px;
-  padding: 1rem;
+  padding: 0;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .svg-wrapper {
@@ -192,26 +192,5 @@ const getWatermarkPositions = () => {
   width: 100%;
   height: auto;
   border-radius: 8px;
-}
-
-.copy-image-button {
-  padding: 0.5rem 1rem;
-  background: #667eea;
-  color: #ffffff;
-  border: none;
-  border-radius: 8px;
-  font-size: 0.875rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  align-self: center;
-}
-
-.copy-image-button:hover {
-  background: #764ba2;
-}
-
-.copy-image-button:active {
-  transform: scale(0.98);
 }
 </style>

@@ -4,6 +4,8 @@ import Player from '../models/Player.ts'
 
 interface Props {
   guess: Player
+  index: number | null
+  maxGuesses: number
   targetPlayer: Player | null
 }
 
@@ -55,6 +57,7 @@ const clubsWithMatchStatus = (guess: Player) => {
   <div class="guess-item" :class="{ correct: isCorrect }">
     <div class="guess-content">
       <div class="guess-header">
+        {{ index !== null ? `${index + 1}/${maxGuesses}` : '' }}
         <a
           :href="`https://www.transfermarkt.fr/${guess.slug}/profil/spieler/${guess.id}`"
           target="_blank"

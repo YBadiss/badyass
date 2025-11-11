@@ -47,31 +47,37 @@ const copyToClipboard = async () => {
 
 <template>
   <div v-if="guesses.length > 0" class="guesses-container">
-    <div class="header-section">
-      <h2>Your Guesses ({{ guesses.length }}/{{ maxGuesses }})</h2>
-      <div v-if="isGameWon" class="game-status win">You Won! 🎉</div>
-      <div v-else-if="guesses.length >= maxGuesses" class="game-status lose">Game Over!</div>
-    </div>
-    <div class="guesses-list">
-      <PlayerGuess
-        v-for="guess in guesses"
-        :key="guess.id"
-        :guess="guess"
-        :target-player="targetPlayer"
-      />
-      <div v-if="isGameOver && !isGameWon && targetPlayer" class="answer-divider">
+    <div v-if="isGameOver" class="header-section">
+      <div class="status-share-row">
+        <div class="game-status" :class="{ win: isGameWon, lose: !isGameWon }">
+          {{ isGameWon ? 'You Won! 🎉' : 'Game Over!' }}
+        </div>
+        <button class="share-button" @click="copyToClipboard">
+          {{ copyButtonText }}
+        </button>
+      </div>
+      <div v-if="!isGameWon && targetPlayer" class="answer-divider">
         <span>The answer was:</span>
       </div>
       <PlayerGuess
-        v-if="isGameOver && !isGameWon && targetPlayer"
+        v-if="!isGameWon && targetPlayer"
+        :index="null"
         :guess="targetPlayer"
+        :max-guesses="maxGuesses"
         :target-player="targetPlayer"
         class="answer-guess"
       />
     </div>
-    <button v-if="isGameWon || isGameOver" class="share-button" @click="copyToClipboard">
-      {{ copyButtonText }}
-    </button>
+    <div class="guesses-list">
+      <PlayerGuess
+        v-for="(guess, index) in guesses"
+        :key="`guess-${index}`"
+        :index="index"
+        :max-guesses="maxGuesses"
+        :guess="guess"
+        :target-player="targetPlayer"
+      />
+    </div>
   </div>
 </template>
 
@@ -79,8 +85,8 @@ const copyToClipboard = async () => {
 .guesses-container {
   width: 100%;
   max-width: 600px;
-  margin: 2rem auto;
-  padding: 1rem;
+  margin: 1rem auto 0;
+  padding: 0;
 }
 
 .header-section {
@@ -91,18 +97,24 @@ const copyToClipboard = async () => {
   margin-bottom: 1rem;
 }
 
-h2 {
-  color: #ffffff;
-  font-size: 1.5rem;
-  margin: 0;
-  text-align: center;
+.status-share-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
 }
 
 .game-status {
   padding: 0.5rem 1rem;
   border-radius: 8px;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 600;
+  min-width: 150px;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .game-status.win {
@@ -113,6 +125,32 @@ h2 {
 .game-status.lose {
   background: #ef4444;
   color: #ffffff;
+}
+
+.share-button {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  min-width: 150px;
+  text-align: center;
+  background: #667eea;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: inherit;
+}
+
+.share-button:hover {
+  background: #764ba2;
+}
+
+.share-button:active {
+  transform: scale(0.98);
 }
 
 .guesses-list {
@@ -132,7 +170,7 @@ h2 {
 }
 
 .answer-divider span {
-  background: #000000;
+  background: #1a1a1a;
   padding: 0 1rem;
   position: relative;
   z-index: 1;
@@ -150,26 +188,5 @@ h2 {
 
 .answer-guess {
   border: 2px solid #667eea;
-}
-
-.share-button {
-  width: 100%;
-  padding: 0.75rem 1rem;
-  background: #667eea;
-  color: #ffffff;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.share-button:hover {
-  background: #764ba2;
-}
-
-.share-button:active {
-  transform: scale(0.98);
 }
 </style>

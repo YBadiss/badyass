@@ -52,9 +52,8 @@ const handleSelect = () => {
 </script>
 
 <template>
-  <div class="search-container">
+  <div v-if="!isGameOver" class="search-container">
     <AutoComplete
-      v-if="!isGameOver"
       v-model="value"
       :suggestions="filteredPlayerNames"
       :placeholder="'Search for a player...'"
@@ -69,7 +68,7 @@ const handleSelect = () => {
 .search-container {
   width: 100%;
   max-width: 600px;
-  padding: 2rem;
+  padding: 0;
   margin: 0 auto;
   display: flex;
   justify-content: center;

@@ -17,7 +17,7 @@ defineExpose({ isMenuOpen, closeMenu })
 <template>
   <header class="app-header">
     <h1>Footble</h1>
-    <button @click="toggleMenu" class="menu-button" aria-label="Menu">
+    <button class="menu-button" aria-label="Menu" @click="toggleMenu">
       <div class="hamburger">
         <span></span>
         <span></span>
@@ -31,7 +31,7 @@ defineExpose({ isMenuOpen, closeMenu })
         <div class="menu-popup" @click.stop>
           <div class="menu-header">
             <h2>Menu</h2>
-            <button @click="closeMenu" class="close-button">&times;</button>
+            <button class="close-button" @click="closeMenu">&times;</button>
           </div>
           <div class="menu-content">
             <slot></slot>
@@ -48,16 +48,13 @@ defineExpose({ isMenuOpen, closeMenu })
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 3rem;
+  margin-bottom: 0.5rem;
 }
 
 h1 {
   font-size: 3rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #667eea;
 }
 
 .menu-button {
