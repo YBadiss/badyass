@@ -13,7 +13,7 @@ const emit = defineEmits<{
 }>()
 
 const MAX_GUESSES = 6
-const STORAGE_KEY = 'footble'
+const STORAGE_KEY = 'footble-v1'
 const MAIN_URL = 'https://footble.net'
 
 const storage = new Storage(STORAGE_KEY)
