@@ -1,0 +1,35 @@
+server {
+    server_name footble.net www.footble.net;
+
+    # Set default root for the server
+    root /var/www/badyass.xyz/footble;
+    index index.html;
+
+    # Location block for root (home page) - override root
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+
+    # Logging
+    access_log /var/log/nginx/footble.net.access.log;
+    error_log /var/log/nginx/footble.net.error.log;
+
+
+    listen 443 ssl; # managed by Certbot
+    ssl_certificate /etc/letsencrypt/live/footble.net/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/footble.net/privkey.pem; # managed by Certbot
+    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+
+}
+
+server {
+    if ($host = footble.net) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
+    server_name footble.net www.footble.net;
+    listen 80;
+    return 404; # managed by Certbot
+}

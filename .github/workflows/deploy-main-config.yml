@@ -1,4 +1,4 @@
-name: Deploy Config
+name: Deploy Main Config
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
 
 jobs:
   deploy:
-    name: Deploy Config
+    name: Deploy Main Config
     runs-on: ubuntu-latest
 
     steps:
