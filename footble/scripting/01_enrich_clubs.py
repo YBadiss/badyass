@@ -67,7 +67,7 @@ def enrich_clubs_with_parent_club():
 
     enriched_clubs = []
     for club in tqdm(original_clubs, desc="Enriching clubs with parent club"):
-        enriched_club = {**club, "parent_club_id": parent_club_map[club["club_id"]]}
+        enriched_club = {**club, "parent_club_id": parent_club_map.get(club["club_id"], club["club_id"])}
         enriched_clubs.append(enriched_club)
 
     with open("./data/clubs.json", "w") as file:

@@ -56,7 +56,7 @@ const handleSelect = () => {
     <AutoComplete
       v-model="value"
       :suggestions="filteredPlayerNames"
-      :placeholder="'Search for a player...'"
+      :placeholder="'Guess the player...'"
       class="search-input"
       @complete="search"
       @item-select="handleSelect"
@@ -68,7 +68,7 @@ const handleSelect = () => {
 .search-container {
   width: 100%;
   max-width: 600px;
-  padding: 0;
+  padding: 1rem;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -78,6 +78,7 @@ const handleSelect = () => {
   width: 100%;
 }
 
+/* Input field styling */
 :deep(.p-autocomplete) {
   width: 100%;
 }
@@ -88,16 +89,9 @@ const handleSelect = () => {
   font-size: 1.125rem;
   border: 2px solid #667eea;
   border-radius: 8px;
-  background: #ffffff;
-  color: #000000;
+  background: #ffffff !important;
+  color: #000000 !important;
   transition: all 0.3s ease;
-}
-
-:deep(.p-autocomplete-input:disabled) {
-  background: #f0f0f0;
-  border-color: #999;
-  cursor: not-allowed;
-  opacity: 0.7;
 }
 
 :deep(.p-autocomplete-input:focus) {
@@ -109,82 +103,74 @@ const handleSelect = () => {
 :deep(.p-autocomplete-input::placeholder) {
   color: #999;
 }
+</style>
 
-/* Dropdown panel */
-:deep(.p-autocomplete-panel) {
-  background: #ffffff;
-  border: 2px solid #667eea;
-  border-radius: 8px;
-  margin-top: 0.5rem;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
-  max-height: 300px;
-  overflow-y: auto;
-  z-index: 1000;
+<style>
+/* Global styles for dropdown - must be unscoped to work with portal */
+.p-autocomplete-panel {
+  background: #ffffff !important;
+  border: 2px solid #667eea !important;
+  border-radius: 8px !important;
+  margin-top: 0.5rem !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5) !important;
 }
 
-:deep(.p-autocomplete-overlay) {
-  background: #ffffff;
-  border: 2px solid #667eea;
-  border-radius: 8px;
-  margin-top: 0.5rem;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
+.p-autocomplete-list {
+  padding: 0.5rem !important;
+  background: #ffffff !important;
+  color: #000000 !important;
 }
 
-/* List container */
-:deep(.p-autocomplete-list) {
-  padding: 0.5rem;
-  list-style: none;
-  margin: 0;
+.p-autocomplete-item {
+  padding: 0.75rem 1rem !important;
+  color: #000000 !important;
+  background: #ffffff !important;
+  cursor: pointer !important;
+  border-radius: 4px !important;
+  transition: background 0.2s ease !important;
+  font-size: 1rem !important;
+  margin: 0.25rem 0 !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    sans-serif !important;
 }
 
-/* Individual items */
-:deep(.p-autocomplete-item) {
-  padding: 0.75rem 1rem;
-  color: #000000;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: background 0.2s ease;
-  margin: 0.25rem 0;
+.p-autocomplete-item * {
+  color: #000000 !important;
 }
 
-:deep(.p-autocomplete-item:hover) {
-  background: #e8ecff;
+.p-autocomplete-item:hover {
+  background: #e8ecff !important;
+  color: #000000 !important;
 }
 
-:deep(.p-autocomplete-item.p-focus) {
-  background: #d4dcff;
-  outline: none;
+.p-autocomplete-item:hover * {
+  color: #000000 !important;
 }
 
-:deep(.p-autocomplete-item.p-highlight) {
-  background: #667eea;
-  color: #ffffff;
+.p-autocomplete-item.p-focus {
+  background: #d4dcff !important;
+  color: #000000 !important;
+  outline: none !important;
 }
 
-/* Empty message */
-:deep(.p-autocomplete-empty-message) {
-  padding: 1rem;
-  color: #666;
-  text-align: center;
-  font-style: italic;
+.p-autocomplete-item.p-focus * {
+  color: #000000 !important;
 }
 
-/* Scrollbar styling for dropdown */
-:deep(.p-autocomplete-panel::-webkit-scrollbar) {
-  width: 8px;
+.p-autocomplete-item.p-highlight {
+  background: #667eea !important;
+  color: #ffffff !important;
 }
 
-:deep(.p-autocomplete-panel::-webkit-scrollbar-track) {
-  background: #f0f0f0;
-  border-radius: 4px;
+.p-autocomplete-item.p-highlight * {
+  color: #ffffff !important;
 }
 
-:deep(.p-autocomplete-panel::-webkit-scrollbar-thumb) {
-  background: #667eea;
-  border-radius: 4px;
-}
-
-:deep(.p-autocomplete-panel::-webkit-scrollbar-thumb:hover) {
-  background: #764ba2;
+.p-autocomplete-empty-message {
+  padding: 1rem !important;
+  color: #666 !important;
+  background: #ffffff !important;
+  text-align: center !important;
+  font-style: italic !important;
 }
 </style>
