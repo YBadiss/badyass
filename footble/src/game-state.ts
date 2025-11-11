@@ -9,6 +9,7 @@ export default class GameState {
   public guessedPlayers: Player[]
   public storage: Storage
   public maxGuesses: number
+  public customPlayerId: string | null
 
   constructor(storage: Storage, maxGuesses: number) {
     this.allPlayers = []
@@ -17,12 +18,23 @@ export default class GameState {
     this.guessedPlayers = []
     this.storage = storage
     this.maxGuesses = maxGuesses
+    this.customPlayerId = null
   }
 
-  async init() {
+  async init(playerId?: string) {
     this.allPlayers = await fetchPlayers('./players.json')
     this.topPlayers = await fetchPlayers('./top_players.json')
-    this.player = this.topPlayers[this.dayIndex % this.topPlayers.length]
+
+    if (playerId) {
+      // Load specific player by ID
+      this.customPlayerId = playerId
+      const foundPlayer = this.allPlayers.find(p => p.id === playerId)
+      this.player = foundPlayer || this.topPlayers[this.dayIndex % this.topPlayers.length]
+    } else {
+      // Load daily player
+      this.player = this.topPlayers[this.dayIndex % this.topPlayers.length]
+    }
+
     this.loadGuessesFromStorage()
   }
 
@@ -52,6 +64,9 @@ export default class GameState {
   }
 
   private get storageKey(): string {
+    if (this.customPlayerId) {
+      return `custom-${this.customPlayerId}`
+    }
     return this.dayIndex.toString()
   }
 
@@ -76,6 +91,12 @@ interface PlayerData {
   name: string
   image: string
   club_ids: string[]
+  citizenship: string[]
+  position: {
+    short_name: string | null
+    group: string | null
+  }
+  date_of_birth: string
 }
 
 const fetchPlayers = async (filepath: string): Promise<Player[]> => {
@@ -87,7 +108,10 @@ const fetchPlayers = async (filepath: string): Promise<Player[]> => {
         player.slug,
         cleanPlayerName(player.name),
         player.image,
-        player.club_ids.map((clubId: string) => new Club(clubId))
+        player.club_ids.map((clubId: string) => new Club(clubId)),
+        player.citizenship || [],
+        player.position || { short_name: null, group: null },
+        player.date_of_birth || ''
       )
   )
 }

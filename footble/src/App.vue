@@ -5,6 +5,11 @@ import FootbleView from './components/FootbleView.vue'
 import { copySvgAsImage } from './svg-utils.ts'
 
 const pathContainerRef = ref<HTMLElement | null>(null)
+const footbleViewRef = ref<InstanceType<typeof FootbleView> | null>(null)
+
+const showTutorial = () => {
+  footbleViewRef.value?.tutorialPopupRef?.showTutorial()
+}
 
 defineExpose({ pathContainerRef })
 </script>
@@ -26,9 +31,13 @@ defineExpose({ pathContainerRef })
           <h3>Share Transfer List</h3>
           <p class="menu-description">Copy and share with your friends!</p>
         </button>
+        <button class="menu-action-button" @click="showTutorial">
+          <h3>How to Play</h3>
+          <p class="menu-description">View the tutorial again</p>
+        </button>
       </div>
     </AppHeader>
-    <FootbleView ref="footbleView" @path-container-ready="pathContainerRef = $event" />
+    <FootbleView ref="footbleViewRef" @path-container-ready="pathContainerRef = $event" />
   </div>
 </template>
 

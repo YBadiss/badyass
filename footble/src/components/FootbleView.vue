@@ -3,6 +3,7 @@ import { watch, onMounted, reactive, ref } from 'vue'
 import PlayerTransfers from './PlayerTransfers.vue'
 import PlayerSearch from './PlayerSearch.vue'
 import PlayerGuesses from './PlayerGuesses.vue'
+import TutorialPopup from './TutorialPopup.vue'
 import Storage from '../storage.ts'
 import GameState from '../game-state.ts'
 import Player from '../models/Player.ts'
@@ -18,6 +19,7 @@ const MAIN_URL = 'https://footble.net'
 const storage = new Storage(STORAGE_KEY)
 const gameState = reactive(new GameState(storage, MAX_GUESSES))
 const playerTransfersRef = ref<InstanceType<typeof PlayerTransfers> | null>(null)
+const tutorialPopupRef = ref<InstanceType<typeof TutorialPopup> | null>(null)
 
 // Watch guessedPlayers and save to localStorage whenever it changes
 watch(
@@ -37,11 +39,20 @@ watch(
 )
 
 onMounted(async () => {
-  await gameState.init()
+  // Check for player ID in URL query parameters
+  const urlParams = new URLSearchParams(window.location.search)
+  const playerId = urlParams.get('player')
+
+  await gameState.init(playerId || undefined)
+
+  console.log(gameState.player)
 })
+
+defineExpose({ tutorialPopupRef })
 </script>
 
 <template>
+  <TutorialPopup ref="tutorialPopupRef" :storage="storage" />
   <PlayerTransfers ref="playerTransfersRef" :player="gameState.player" :main-url="MAIN_URL" />
   <div class="game-section">
     <PlayerSearch

@@ -130,8 +130,8 @@ const handleSelect = () => {
   transition: background 0.2s ease !important;
   font-size: 1rem !important;
   margin: 0.25rem 0 !important;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-    sans-serif !important;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif !important;
 }
 
 .p-autocomplete-item * {

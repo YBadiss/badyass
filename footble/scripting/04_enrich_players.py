@@ -95,6 +95,7 @@ def enrich_players_with_transfers_info():
         enriched_players.append(
             {
                 **player,
+                "player_name": player["player_name"].split("(")[0].strip(),
                 "top_league_transfers": top_league_transfers,
                 "top_ranked_transfers": top_ranked_transfers,
                 "total_transfers": total_transfers,

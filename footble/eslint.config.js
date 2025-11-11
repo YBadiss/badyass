@@ -18,7 +18,8 @@ export default tseslint.config(
         document: 'readonly',
         setTimeout: 'readonly',
         navigator: 'readonly',
-        HTMLElement: 'readonly'
+        HTMLElement: 'readonly',
+        URLSearchParams: 'readonly'
       },
       parserOptions: {
         parser: tseslint.parser,
