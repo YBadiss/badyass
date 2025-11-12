@@ -1,5 +1,6 @@
 #!/usr/bin/env -S uv --quiet run --script
 import json
+import csv
 from tqdm import tqdm
 from datetime import datetime
 from collections import defaultdict
@@ -103,7 +104,7 @@ def enrich_players_with_transfers_info():
                 "top_ranked_transfer_rate": top_ranked_transfer_rate,
                 "max_value_at_transfer": max_value_at_transfer,
                 "career_start_date": career_start_date,
-                "club_ids": club_ids,
+                "club_ids": club_ids
             }
         )
 
@@ -111,5 +112,73 @@ def enrich_players_with_transfers_info():
         json.dump(enriched_players, file, indent=4)
 
 
+def enrich_players_citizenships():
+    REGION_MAP = {
+        "Bonaire": "Netherlands",
+        "Puerto Rico": "United States",
+        "Guam": "United States",
+        "Saint-Martin": "France",
+        "Cookinseln": "New Zealand",
+        "French Guiana": "France",
+        "American Virgin Islands": "United States",
+        "England": "United Kingdom",
+        "Scotland": "United Kingdom",
+        "Wales": "United Kingdom",
+        "Northern Ireland": "United Kingdom",
+        "Greenland": "Denmark",
+        "Faroe Islands": "Denmark",
+        "Tahiti": "France",
+        "Chinese Taipei": "Taiwan",
+        "Aruba": "Netherlands",
+        "Hongkong": "China",
+        "Guernsey": "United Kingdom",
+        "Jersey": "United Kingdom",
+        "Isle of Man": "United Kingdom",
+        "Sint Maarten": "Netherlands",
+        "Réunion": "France",
+        "British Virgin Islands": "United Kingdom",
+        "Martinique": "France",
+        "Macao": "China",
+        "Guadeloupe": "France",
+        "Mayotte": "France",
+        "Falkland Islands": "United Kingdom",
+        "Montserrat": "United Kingdom",
+        "Turks- and Caicosinseln": "United Kingdom",
+        "Neukaledonien": "France",
+        "Curacao": "Netherlands",
+        "Bermuda": "United Kingdom",
+        "Gibraltar": "United Kingdom",
+        "Bosnia-Herzegovina": "Bosnia and Herzegovina"
+    }
+    def clean_country(country: str) -> str:
+        if country in REGION_MAP:
+            return REGION_MAP[country]
+        return country.replace("St.", "Saint").replace("&", "and")
+
+    country_codes = {}
+    with open("./data/country_codes.csv", "r") as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            country_codes[row["country"]] = row["alpha2"]
+
+    with open("./data/players.json", "r") as file:
+        original_players = json.load(file)
+
+    for player in original_players:
+        clean_countries = {
+            clean_country(citizenship["country"])
+            for citizenship in player["citizenship"]
+            if citizenship["country"] and citizenship["country"] != "N/A"
+        }
+        player["citizenship"] = [
+            {"country": country, "alpha2": country_codes.get(country)}
+            for country in clean_countries
+        ]
+
+    with open("./data/players.json", "w") as file:
+        json.dump(original_players, file, indent=4)
+
+
 if __name__ == "__main__":
     enrich_players_with_transfers_info()
+    enrich_players_citizenships()

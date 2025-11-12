@@ -15,6 +15,7 @@ const emit = defineEmits<{
 const MAX_GUESSES = 6
 const STORAGE_KEY = 'footble-v1'
 const MAIN_URL = 'https://footble.net'
+const STARTING_DAY = 9445
 
 const storage = new Storage(STORAGE_KEY)
 const gameState = reactive(new GameState(storage, MAX_GUESSES))
@@ -69,6 +70,7 @@ defineExpose({
       :is-game-won="gameState.isGameWon"
       :is-game-over="gameState.isGameOver"
       :main-url="MAIN_URL"
+      :game-number="gameState.dayNumber - STARTING_DAY + 1"
     />
   </div>
 </template>

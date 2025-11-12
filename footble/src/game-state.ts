@@ -29,10 +29,10 @@ export default class GameState {
       // Load specific player by ID
       this.customPlayerId = playerId
       const foundPlayer = this.allPlayers.find(p => p.id === playerId)
-      this.player = foundPlayer || this.topPlayers[this.dayIndex % this.topPlayers.length]
+      this.player = foundPlayer || this.topPlayers[this.dayNumber % this.topPlayers.length]
     } else {
       // Load daily player
-      this.player = this.topPlayers[this.dayIndex % this.topPlayers.length]
+      this.player = this.topPlayers[this.dayNumber % this.topPlayers.length]
     }
 
     this.loadGuessesFromStorage()
@@ -57,7 +57,7 @@ export default class GameState {
     this.saveGuessesToStorage()
   }
 
-  private get dayIndex(): number {
+  public get dayNumber(): number {
     return Math.floor(
       (new Date().getTime() - new Date('2000-01-01').getTime()) / (1000 * 60 * 60 * 24)
     )
@@ -67,7 +67,7 @@ export default class GameState {
     if (this.customPlayerId) {
       return `custom-${this.customPlayerId}`
     }
-    return this.dayIndex.toString()
+    return this.dayNumber.toString()
   }
 
   private loadGuessesFromStorage(): void {
@@ -91,7 +91,10 @@ interface PlayerData {
   name: string
   image: string
   club_ids: string[]
-  citizenship: string[]
+  citizenship: {
+    country: string
+    alpha2: string
+  }[]
   position: {
     short_name: string | null
     group: string | null
@@ -101,19 +104,18 @@ interface PlayerData {
 
 const fetchPlayers = async (filepath: string): Promise<Player[]> => {
   const playersResponse = await fetch(filepath)
-  return (await playersResponse.json()).map(
-    (player: PlayerData) =>
-      new Player(
-        player.id,
-        player.slug,
-        cleanPlayerName(player.name),
-        player.image,
-        player.club_ids.map((clubId: string) => new Club(clubId)),
-        player.citizenship || [],
-        player.position || { short_name: null, group: null },
-        player.date_of_birth || ''
-      )
-  )
+  return (await playersResponse.json()).map((player: PlayerData) => {
+    return new Player(
+      player.id,
+      player.slug,
+      cleanPlayerName(player.name),
+      player.image,
+      player.club_ids.map((clubId: string) => new Club(clubId)),
+      player.citizenship,
+      player.position || { short_name: null, group: null },
+      player.date_of_birth || ''
+    )
+  })
 }
 
 const cleanPlayerName = (name: string): string => {

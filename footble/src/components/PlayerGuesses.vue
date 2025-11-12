@@ -10,6 +10,7 @@ interface Props {
   isGameWon: boolean
   isGameOver: boolean
   mainUrl: string
+  gameNumber: number
 }
 
 const props = defineProps<Props>()
@@ -17,14 +18,20 @@ const props = defineProps<Props>()
 const shareText = computed(() => {
   if (!props.targetPlayer || props.guesses.length === 0) return ''
 
-  const targetClubIds = [...new Set(props.targetPlayer.clubs.map(club => club.id))]
-
-  const rows = props.guesses.map(guess => {
-    const guessClubIds = [...new Set(guess.clubs.map(club => club.id))]
-    return targetClubIds.map(clubId => (guessClubIds.includes(clubId) ? '🟢' : '🔴')).join('')
+  const guessResults: ('🟢' | '🟡' | '🟠' | '🔴' | '➖')[] = props.guesses.map(guess => {
+    const similarityColor = guess.getSimilarityColor(
+      guess.getOverallSimilarity(props.targetPlayer!)
+    )
+    if (similarityColor === 'green') return '🟢'
+    else if (similarityColor === 'yellow') return '🟡'
+    else if (similarityColor === 'orange') return '🟠'
+    else return '🔴'
   })
+  for (let i = 0; i < props.maxGuesses - props.guesses.length; i++) {
+    guessResults.push('➖')
+  }
 
-  return `#FOOTBLE | ${props.guesses.length}/${props.maxGuesses}\n\n${rows.join('\n')}\n\n${props.mainUrl}`
+  return `#FOOTBLE #${props.gameNumber} | ${props.guesses.length}/${props.maxGuesses}\n\n${guessResults.join('')}\n\n${props.mainUrl}`
 })
 
 const copyButtonText = ref('Share')

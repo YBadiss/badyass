@@ -6,7 +6,10 @@ export default class Player {
   name: string
   image: string | null
   clubs: Array<Club>
-  citizenship: Array<string>
+  citizenship: Array<{
+    country: string
+    alpha2: string
+  }>
   position: {
     short_name: string | null
     group: string | null
@@ -19,7 +22,10 @@ export default class Player {
     name: string,
     image: string | null,
     clubs: Array<Club>,
-    citizenship: Array<string>,
+    citizenship: Array<{
+      country: string
+      alpha2: string
+    }>,
     position: {
       short_name: string | null
       group: string | null
@@ -55,10 +61,10 @@ export default class Player {
     // Manually compare to avoid Vue proxy issues with .includes()
     let matches = 0
     for (let i = 0; i < this.citizenship.length; i++) {
-      const thisCitizenship = String(this.citizenship[i])
+      const thisAlpha2 = this.citizenship[i].alpha2
       for (let j = 0; j < other.citizenship.length; j++) {
-        const otherCitizenship = String(other.citizenship[j])
-        if (thisCitizenship === otherCitizenship) {
+        const otherAlpha2 = other.citizenship[j].alpha2
+        if (thisAlpha2 === otherAlpha2) {
           matches++
           break
         }
@@ -80,5 +86,40 @@ export default class Player {
 
   getAgeSimilarity(other: Player): number {
     return Math.max(0, 1 - Math.abs(this.age - other.age) / 4)
+  }
+
+  getClubSimilarity(other: Player): number {
+    if (this.clubs.length === 0) return 0
+
+    // Manually compare to avoid Vue proxy issues with .includes()
+    let matches = 0
+    for (let i = 0; i < this.clubs.length; i++) {
+      const thisClub = this.clubs[i]
+      for (let j = 0; j < other.clubs.length; j++) {
+        const otherClub = other.clubs[j]
+        if (thisClub.id === otherClub.id) {
+          matches++
+          break
+        }
+      }
+    }
+
+    return matches / this.clubs.length
+  }
+
+  getOverallSimilarity(other: Player): number {
+    const totalSimilarity =
+      this.getClubSimilarity(other) +
+      this.getPositionSimilarity(other) +
+      this.getCitizenshipSimilarity(other) +
+      this.getAgeSimilarity(other)
+    return totalSimilarity / 4
+  }
+
+  getSimilarityColor(similarity: number): string {
+    if (similarity >= 1) return 'green'
+    if (similarity > 0.4) return 'yellow'
+    if (similarity > 0.15) return 'orange'
+    return 'red'
   }
 }

@@ -11,92 +11,71 @@ interface Props {
 
 const props = defineProps<Props>()
 
-const targetClubIds = computed(() => {
-  return [...new Set(props.targetPlayer?.clubs.map(club => club.id) ?? [])]
-})
-const guessClubIds = computed(() => {
-  return [...new Set(props.guess.clubs.map(club => club.id))]
-})
-const clubMatchScore = computed(() => {
-  return guessClubIds.value.filter(clubId => targetClubIds.value.includes(clubId)).length
-})
-const isCorrect = computed(() => {
-  return props.guess.id === props.targetPlayer?.id
-})
+// const scoreEmoji = computed(() => {
+//   if (!props.targetPlayer || props.targetPlayer.clubs.length === 0) return '➖'
 
-const scoreEmoji = computed(() => {
-  if (!props.targetPlayer || props.targetPlayer.clubs.length === 0) return '🔵'
+//   const similarity = overallSimilarity.value
+//   const similarityColor = getSimilarityColor(similarity)
 
-  const similarity =
-    clubMatchScore.value / targetClubIds.value.length +
-    positionSimilarity.value +
-    citizenshipSimilarity.value +
-    ageSimilarity.value
-  const percentage = (similarity / 4) * 100
-
-  if (percentage < 10) return '🔴' // Red circle
-  if (percentage < 40) return '🟠' // Orange circle
-  if (percentage < 100) return '🟡' // Yellow circle
-  return '🟢' // Green circle
-})
-
-const clubsWithMatchStatus = (guess: Player) => {
-  if (!props.targetPlayer) return []
-
-  const uniqueClubs = new Map()
-
-  guess.clubs.forEach(club => {
-    if (!uniqueClubs.has(club.id)) {
-      uniqueClubs.set(club.id, {
-        club,
-        matches: targetClubIds.value.includes(club.id)
-      })
-    }
-  })
-
-  return Array.from(uniqueClubs.values())
-}
+//   if (similarityColor === 'green') return '🟢'
+//   if (similarityColor === 'yellow') return '🟡'
+//   if (similarityColor === 'orange') return '🟠'
+//   if (similarityColor === 'red') return '🔴'
+// })
 
 // Similarity scores for characteristics
 const positionSimilarity = computed(() => {
   if (!props.targetPlayer) return 0
-  return props.guess.getPositionSimilarity(props.targetPlayer)
+  return props.targetPlayer.getPositionSimilarity(props.guess)
 })
 
 const citizenshipSimilarity = computed(() => {
   if (!props.targetPlayer) return 0
-  return props.guess.getCitizenshipSimilarity(props.targetPlayer)
+  return props.targetPlayer.getCitizenshipSimilarity(props.guess)
 })
 
 const ageSimilarity = computed(() => {
   if (!props.targetPlayer) return 0
-  return props.guess.getAgeSimilarity(props.targetPlayer)
+  return props.targetPlayer.getAgeSimilarity(props.guess)
 })
 
-// Color coding based on similarity
-const getSimilarityColor = (similarity: number): string => {
-  if (similarity === 1) return 'green'
-  if (similarity > 0.5) return 'yellow'
-  if (similarity > 0.3) return 'orange'
-  return 'red'
-}
+const clubSimilarity = computed(() => {
+  if (!props.targetPlayer) return 0
+  return props.targetPlayer.getClubSimilarity(props.guess)
+})
+
+const overallSimilarity = computed(() => {
+  if (!props.targetPlayer) return 0
+  return props.targetPlayer.getOverallSimilarity(props.guess)
+})
 
 // Display values
 const positionDisplay = computed(() => {
   return props.guess.position.short_name || props.guess.position.group || 'Unknown'
 })
 
-const citizenshipDisplay = computed(() => {
-  return props.guess.citizenship.join(', ') || 'Unknown'
+// Get target player citizenship alpha2 codes
+const targetCitizenships = computed(() => {
+  if (!props.targetPlayer) return []
+  return props.targetPlayer.citizenship.map(c => String(c.alpha2).toLowerCase())
 })
 
+// Check if a specific citizenship matches
+const isCitizenshipMatch = (alpha2: string): boolean => {
+  return targetCitizenships.value.includes(String(alpha2).toLowerCase())
+}
+
 const ageDisplay = computed(() => {
-  return props.guess.age.toString()
+  return `${props.guess.age.toString()} years old`
+})
+
+const clubDisplay = computed(() => {
+  return `${clubSimilarity.value * props.targetPlayer!.clubs.length}/${props.targetPlayer!.clubs.length} Clubs`
 })
 </script>
 
 <template>
-  <div class="guess-item" :class="{ correct: isCorrect }">
+  <div class="guess-item" :class="props.guess.getSimilarityColor(overallSimilarity)">
     <div class="guess-content">
       <div class="guess-header">
         {{ index !== null ? `${index + 1}/${maxGuesses}` : '' }}
@@ -108,30 +87,35 @@ const ageDisplay = computed(() => {
         >
           {{ guess.name }}
         </a>
-        <div class="result-indicator">{{ scoreEmoji }}</div>
-      </div>
-      <div class="club-badges">
-        <div
-          v-for="{ club, matches } in clubsWithMatchStatus(guess)"
-          :key="club.id"
-          class="club-badge"
-          :class="{ matched: matches, unmatched: !matches }"
-        >
-          <img :src="club.logoUrl" :alt="club.id" class="club-logo" />
-        </div>
       </div>
       <div class="characteristics">
-        <div class="characteristic" :class="getSimilarityColor(positionSimilarity)">
-          <span class="characteristic-label">Position:</span>
+        <div class="characteristic" :class="props.guess.getSimilarityColor(positionSimilarity)">
+          <!-- <span class="characteristic-label">Position:</span> -->
           <span class="characteristic-value">{{ positionDisplay }}</span>
         </div>
-        <div class="characteristic" :class="getSimilarityColor(citizenshipSimilarity)">
-          <span class="characteristic-label">Citizenship:</span>
-          <span class="characteristic-value">{{ citizenshipDisplay }}</span>
+        <div
+          class="citizenship-flags"
+          :class="props.guess.getSimilarityColor(citizenshipSimilarity)"
+        >
+          <div
+            v-for="citizenship in guess.citizenship"
+            :key="citizenship.alpha2"
+            class="flag-circle"
+            :class="{ match: isCitizenshipMatch(citizenship.alpha2) }"
+          >
+            <span
+              :class="`fi fi-${citizenship.alpha2.toLowerCase()}`"
+              :title="citizenship.country"
+            ></span>
+          </div>
         </div>
-        <div class="characteristic" :class="getSimilarityColor(ageSimilarity)">
-          <span class="characteristic-label">Age:</span>
+        <div class="characteristic" :class="props.guess.getSimilarityColor(ageSimilarity)">
+          <!-- <span class="characteristic-label">Age:</span> -->
           <span class="characteristic-value">{{ ageDisplay }}</span>
+        </div>
+        <div class="characteristic" :class="props.guess.getSimilarityColor(clubSimilarity)">
+          <!-- <span class="characteristic-label">Club:</span> -->
+          <span class="characteristic-value">{{ clubDisplay }}</span>
         </div>
       </div>
     </div>
@@ -147,9 +131,24 @@ const ageDisplay = computed(() => {
   transition: all 0.3s ease;
 }
 
-.guess-item.correct {
+.guess-item.green {
   background: #2d5016;
   border-color: #4caf50;
+}
+
+.guess-item.yellow {
+  background: rgba(255, 235, 59, 0.2);
+  border-color: #ffe70d;
+}
+
+.guess-item.orange {
+  background: rgba(255, 152, 0, 0.2);
+  border-color: #ff9800;
+}
+
+.guess-item.red {
+  background: rgba(239, 68, 68, 0.2);
+  border-color: #ef4444;
 }
 
 .guess-content {
@@ -175,41 +174,6 @@ const ageDisplay = computed(() => {
 
 .guess-name:hover {
   color: #667eea;
-}
-
-.club-badges {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.club-badge {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  padding: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s ease;
-}
-
-.club-badge.matched {
-  background: #4caf50;
-  border: 2px solid #4caf50;
-}
-
-.club-badge.unmatched {
-  background: #ef4444;
-  border: 2px solid #ef4444;
-}
-
-.club-logo {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  border-radius: 50%;
 }
 
 .result-indicator {
@@ -253,7 +217,7 @@ const ageDisplay = computed(() => {
 
 .characteristic.yellow {
   background: rgba(255, 235, 59, 0.2);
-  border-color: #ffeb3b;
+  border-color: #ffe70d;
 }
 
 .characteristic.orange {
@@ -264,5 +228,60 @@ const ageDisplay = computed(() => {
 .characteristic.red {
   background: rgba(239, 68, 68, 0.2);
   border-color: #ef4444;
+}
+
+.citizenship-flags {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  padding: 0.2rem 0.4rem;
+  border-radius: 6px;
+  border: 2px solid;
+}
+
+.citizenship-flags.green {
+  background: rgba(76, 175, 80, 0.2);
+  border-color: #4caf50;
+}
+
+.citizenship-flags.yellow {
+  background: rgba(255, 235, 59, 0.2);
+  border-color: #ffe70d;
+}
+
+.citizenship-flags.orange {
+  background: rgba(255, 152, 0, 0.2);
+  border-color: #ff9800;
+}
+
+.citizenship-flags.red {
+  background: rgba(239, 68, 68, 0.2);
+  border-color: #ef4444;
+}
+
+.flag-circle {
+  padding: 0.15rem 0.25rem;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid;
+  overflow: hidden;
+  position: relative;
+}
+
+.flag-circle.match {
+  border-color: #4caf50;
+  background: rgba(76, 175, 80, 0.2);
+}
+
+.flag-circle:not(.match) {
+  border-color: #ef4444;
+  background: rgba(239, 68, 68, 0.2);
+}
+
+.flag-circle .fi {
+  font-size: 1rem;
+  line-height: 1;
 }
 </style>
