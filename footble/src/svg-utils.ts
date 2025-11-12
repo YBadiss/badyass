@@ -10,52 +10,61 @@ export const copySvgAsImage = async (svgContainer: HTMLElement | null) => {
     throw new Error('SVG not found')
   }
 
-  const imageElements = svgElement.querySelectorAll('image')
-  const originalHrefs: string[] = []
+  // Safari requires clipboard write to be initiated BEFORE async operations
+  // Use a promise factory to keep the user gesture active
+  try {
+    await navigator.clipboard.write([
+      new ClipboardItem({
+        'image/png': (async () => {
+          const imageElements = svgElement.querySelectorAll('image')
+          const originalHrefs: string[] = []
 
-  // Pre-load all images as data URLs to avoid CORS issues
-  for (let i = 0; i < imageElements.length; i++) {
-    const imgEl = imageElements[i]
-    const href = imgEl.getAttribute('href') || ''
-    originalHrefs.push(href)
+          // Pre-load all images as data URLs to avoid CORS issues
+          for (let i = 0; i < imageElements.length; i++) {
+            const imgEl = imageElements[i]
+            const href = imgEl.getAttribute('href') || ''
+            originalHrefs.push(href)
 
-    try {
-      // Try to load as data URL, fallback to original if it fails
-      const dataURL = await loadImageAsDataURL(href)
-      imgEl.setAttribute('href', dataURL)
-    } catch (err) {
-      console.warn('Failed to load image as data URL:', href, err)
-      // Keep original href
-    }
+            try {
+              // Try to load as data URL, fallback to original if it fails
+              const dataURL = await loadImageAsDataURL(href)
+              imgEl.setAttribute('href', dataURL)
+            } catch (err) {
+              console.warn('Failed to load image as data URL:', href, err)
+              // Keep original href
+            }
+          }
+
+          // Now capture with html2canvas
+          const canvas = await html2canvas(svgContainer, {
+            backgroundColor: '#000000',
+            scale: 2
+          })
+
+          // Restore original hrefs
+          imageElements.forEach((imgEl, i) => {
+            imgEl.setAttribute('href', originalHrefs[i])
+          })
+
+          // Convert canvas to blob
+          const blob = await new Promise<Blob>((resolve, reject) => {
+            canvas.toBlob(blob => {
+              if (blob) {
+                resolve(blob)
+              } else {
+                reject(new Error('Failed to convert canvas to blob'))
+              }
+            }, 'image/png')
+          })
+
+          return blob
+        })()
+      })
+    ])
+  } catch (err) {
+    console.error('Failed to copy:', err)
+    throw err
   }
-
-  // Now capture with html2canvas
-  const canvas = await html2canvas(svgContainer, {
-    backgroundColor: '#000000',
-    scale: 2
-  })
-
-  // Restore original hrefs
-  imageElements.forEach((imgEl, i) => {
-    imgEl.setAttribute('href', originalHrefs[i])
-  })
-
-  // Convert canvas to blob
-  canvas.toBlob(async blob => {
-    if (!blob) {
-      return
-    }
-
-    try {
-      await navigator.clipboard.write([
-        new ClipboardItem({
-          'image/png': blob
-        })
-      ])
-    } catch (err) {
-      console.error('Failed to copy:', err)
-    }
-  }, 'image/png')
 }
 
 const loadImageAsDataURL = async (url: string): Promise<string> => {
