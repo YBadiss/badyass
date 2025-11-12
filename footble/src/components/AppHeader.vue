@@ -16,7 +16,11 @@ defineExpose({ isMenuOpen, closeMenu })
 
 <template>
   <header class="app-header">
-    <h1>Footble</h1>
+    <h1 class="logo-title">
+      <span>F</span>
+      <img src="/footble-icon.png" alt="o" class="logo-icon" />
+      <span>otble</span>
+    </h1>
     <button class="menu-button" aria-label="Menu" @click="toggleMenu">
       <div class="hamburger">
         <span></span>
@@ -55,6 +59,19 @@ h1 {
   font-size: 3rem;
   font-weight: 700;
   color: #667eea;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.logo-icon {
+  height: 1.9rem;
+  width: auto;
+  margin: 0.6rem -0.1rem 0;
+  display: inline-block;
 }
 
 .menu-button {
