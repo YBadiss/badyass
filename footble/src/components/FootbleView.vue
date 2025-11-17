@@ -12,6 +12,29 @@ const props = defineProps<{
   gameState: GameState
   mainUrl: string
 }>()
+
+const shareText = () => {
+  const guessResults: ('🟢' | '🟡' | '🟠' | '🔴' | '➖')[] = props.gameState.guessedPlayers.map(
+    guess => {
+      const similarityColor = guess.getSimilarityColor(
+        guess.getOverallSimilarity(props.gameState.player!)
+      )
+      if (similarityColor === 'green') return '🟢'
+      else if (similarityColor === 'yellow') return '🟡'
+      else if (similarityColor === 'orange') return '🟠'
+      else return '🔴'
+    }
+  )
+  for (let i = 0; i < props.gameState.maxGuesses - props.gameState.guessedPlayers.length; i++) {
+    guessResults.push('➖')
+  }
+
+  return `#FOOTBLE #${props.gameState.gameNumber} | ${props.gameState.guessedPlayers.length}/${props.gameState.maxGuesses}\n\n${guessResults.join('')}\n\n${props.mainUrl}${window.location.search}`
+}
+
+const copyShareTextToClipboard = async () => {
+  await navigator.clipboard.writeText(shareText())
+}
 </script>
 
 <template>
@@ -33,8 +56,7 @@ const props = defineProps<{
       :max-guesses="props.gameState.maxGuesses"
       :is-game-won="props.gameState.isGameWon"
       :is-game-over="props.gameState.isGameOver"
-      :main-url="props.mainUrl"
-      :game-number="props.gameState.gameNumber"
+      @share-clicked="copyShareTextToClipboard"
     />
   </div>
 </template>

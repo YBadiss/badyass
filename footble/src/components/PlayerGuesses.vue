@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { ref } from 'vue'
 import PlayerGuess from './PlayerGuess.vue'
 import Player from '../models/Player.ts'
 
@@ -9,46 +9,25 @@ interface Props {
   maxGuesses: number
   isGameWon: boolean
   isGameOver: boolean
-  mainUrl: string
-  gameNumber: number
 }
 
-const props = defineProps<Props>()
+defineProps<Props>()
 
-const shareText = computed(() => {
-  if (!props.targetPlayer || props.guesses.length === 0) return ''
-
-  const guessResults: ('🟢' | '🟡' | '🟠' | '🔴' | '➖')[] = props.guesses.map(guess => {
-    const similarityColor = guess.getSimilarityColor(
-      guess.getOverallSimilarity(props.targetPlayer!)
-    )
-    if (similarityColor === 'green') return '🟢'
-    else if (similarityColor === 'yellow') return '🟡'
-    else if (similarityColor === 'orange') return '🟠'
-    else return '🔴'
-  })
-  for (let i = 0; i < props.maxGuesses - props.guesses.length; i++) {
-    guessResults.push('➖')
-  }
-
-  return `#FOOTBLE #${props.gameNumber} | ${props.guesses.length}/${props.maxGuesses}\n\n${guessResults.join('')}\n\n${props.mainUrl}`
-})
+const emit = defineEmits<{
+  shareClicked: []
+}>()
 
 const copyButtonText = ref('Share')
 const isCopied = ref(false)
 
-const copyToClipboard = async () => {
-  try {
-    await navigator.clipboard.writeText(shareText.value)
-    copyButtonText.value = 'Copied!'
-    isCopied.value = true
-    setTimeout(() => {
-      copyButtonText.value = 'Share'
-      isCopied.value = false
-    }, 2000)
-  } catch (err) {
-    console.error('Failed to copy:', err)
-  }
+const shareClicked = () => {
+  emit('shareClicked')
+  copyButtonText.value = 'Copied!'
+  isCopied.value = true
+  setTimeout(() => {
+    copyButtonText.value = 'Share'
+    isCopied.value = false
+  }, 2000)
 }
 </script>
 
@@ -59,7 +38,7 @@ const copyToClipboard = async () => {
         <div class="game-status" :class="{ win: isGameWon, lose: !isGameWon }">
           {{ isGameWon ? 'You Won! 🎉' : 'Game Over!' }}
         </div>
-        <button class="share-button" :class="{ copied: isCopied }" @click="copyToClipboard">
+        <button class="share-button" :class="{ copied: isCopied }" @click="shareClicked">
           {{ copyButtonText }}
         </button>
       </div>
@@ -152,12 +131,12 @@ const copyToClipboard = async () => {
   line-height: inherit;
 }
 
-.share-button:hover:not(.copied) {
-  background: #764ba2;
-}
-
 .share-button:active:not(.copied) {
   transform: scale(0.98);
+}
+
+.share-button:hover:not(.copied) {
+  background: #764ba2;
 }
 
 .share-button.copied {

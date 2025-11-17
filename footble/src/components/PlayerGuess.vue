@@ -11,18 +11,6 @@ interface Props {
 
 const props = defineProps<Props>()
 
-// const scoreEmoji = computed(() => {
-//   if (!props.targetPlayer || props.targetPlayer.clubs.length === 0) return '➖'
-
-//   const similarity = overallSimilarity.value
-//   const similarityColor = getSimilarityColor(similarity)
-
-//   if (similarityColor === 'green') return '🟢'
-//   if (similarityColor === 'yellow') return '🟡'
-//   if (similarityColor === 'orange') return '🟠'
-//   if (similarityColor === 'red') return '🔴'
-// })
-
 // Similarity scores for characteristics
 const positionSimilarity = computed(() => {
   if (!props.targetPlayer) return 0
