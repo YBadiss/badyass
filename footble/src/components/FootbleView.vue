@@ -4,18 +4,10 @@ import PlayerTransfers from './PlayerTransfers.vue'
 import PlayerSearch from './PlayerSearch.vue'
 import PlayerGuesses from './PlayerGuesses.vue'
 import TutorialPopup from './TutorialPopup.vue'
+import { MAX_GUESSES, STORAGE_KEY, MAIN_URL, STARTING_DAY } from '../constants.ts'
 import Storage from '../storage.ts'
 import GameState from '../game-state.ts'
 import Player from '../models/Player.ts'
-
-const emit = defineEmits<{
-  pathContainerReady: [element: HTMLElement]
-}>()
-
-const MAX_GUESSES = 6
-const STORAGE_KEY = 'footble-v1'
-const MAIN_URL = 'https://footble.net'
-const STARTING_DAY = 9445
 
 const storage = new Storage(STORAGE_KEY)
 const gameState = reactive(new GameState(storage, MAX_GUESSES))
@@ -27,16 +19,6 @@ watch(
   () => gameState.guessedPlayers,
   () => gameState.saveToStorage(),
   { deep: true }
-)
-
-// Watch for pathContainerRef from PlayerTransfers and emit it up
-watch(
-  () => playerTransfersRef.value?.pathContainerRef,
-  pathContainer => {
-    if (pathContainer) {
-      emit('pathContainerReady', pathContainer)
-    }
-  }
 )
 
 onMounted(async () => {

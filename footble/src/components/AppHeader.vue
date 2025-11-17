@@ -1,9 +1,12 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, defineProps, defineExpose, defineEmits } from 'vue'
+import Menu from './Menu.vue'
 import type Club from '../models/Club'
 
-defineProps<{
+const props = defineProps<{
   club?: Club | null
+  clubMapping: Record<string, string> | null
+  playerMapping: Record<string, string> | null
 }>()
 
 const isMenuOpen = ref(false)
@@ -16,7 +19,15 @@ const closeMenu = () => {
   isMenuOpen.value = false
 }
 
-defineExpose({ isMenuOpen, closeMenu })
+const emit = defineEmits<{
+  showTutorial: []
+}>()
+
+const showTutorial = () => {
+  emit('showTutorial')
+}
+
+defineExpose({ isMenuOpen, closeMenu, showTutorial })
 </script>
 
 <template>
@@ -37,17 +48,14 @@ defineExpose({ isMenuOpen, closeMenu })
 
     <!-- Menu Popup -->
     <Transition name="fade">
-      <div v-if="isMenuOpen" class="menu-overlay" @click="closeMenu">
-        <div class="menu-popup" @click.stop>
-          <div class="menu-header">
-            <h2>Menu</h2>
-            <button class="close-button" @click="closeMenu">&times;</button>
-          </div>
-          <div class="menu-content">
-            <slot></slot>
-          </div>
-        </div>
-      </div>
+      <Menu
+        v-if="isMenuOpen"
+        :club-mapping="props.clubMapping"
+        :player-mapping="props.playerMapping"
+        @close="closeMenu"
+        @show-tutorial="showTutorial"
+      >
+      </Menu>
     </Transition>
   </header>
 </template>
@@ -115,69 +123,6 @@ h1 {
 
 .menu-button:hover .hamburger span {
   background: #764ba2;
-}
-
-/* Menu Popup */
-.menu-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-  padding: 1rem;
-}
-
-.menu-popup {
-  background: #1a1a1a;
-  border: 2px solid #667eea;
-  border-radius: 12px;
-  max-width: 400px;
-  width: 100%;
-  max-height: 80vh;
-  overflow-y: auto;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
-}
-
-.menu-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem;
-  border-bottom: 2px solid #333;
-}
-
-.menu-header h2 {
-  font-size: 1.5rem;
-  color: #ffffff;
-  margin: 0;
-}
-
-.close-button {
-  background: none;
-  border: none;
-  color: #ffffff;
-  font-size: 2rem;
-  cursor: pointer;
-  padding: 0;
-  width: 32px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: color 0.2s ease;
-}
-
-.close-button:hover {
-  color: #667eea;
-}
-
-.menu-content {
-  padding: 1.5rem;
 }
 
 /* Transitions */
