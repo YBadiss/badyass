@@ -1,5 +1,10 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import type Club from '../models/Club'
+
+defineProps<{
+  club?: Club | null
+}>()
 
 const isMenuOpen = ref(false)
 
@@ -17,6 +22,7 @@ defineExpose({ isMenuOpen, closeMenu })
 <template>
   <header class="app-header">
     <h1 class="logo-title">
+      <img v-if="club" :src="club.logoUrl" :alt="club.name" class="club-logo" />
       <span>F</span>
       <img src="/footble-icon.png" alt="o" class="logo-icon" />
       <span>otble</span>
@@ -72,6 +78,14 @@ h1 {
   width: auto;
   margin: 0.6rem -0.1rem 0;
   display: inline-block;
+}
+
+.club-logo {
+  height: 4rem;
+  width: auto;
+  margin-right: 0.5rem;
+  display: inline-block;
+  border-radius: 4px;
 }
 
 .menu-button {

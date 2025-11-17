@@ -19,12 +19,16 @@ const allClubs = computed(() => {
   return footbleViewRef.value?.getAllClubs() || null
 })
 
+const customClub = computed(() => {
+  return footbleViewRef.value?.getCustomClub() || null
+})
+
 defineExpose({ pathContainerRef })
 </script>
 
 <template>
   <div id="app">
-    <AppHeader>
+    <AppHeader :club="customClub">
       <div class="menu-section">
         <button class="menu-action-button" @click="showTutorial">
           <h3>How to Play</h3>

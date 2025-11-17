@@ -56,7 +56,8 @@ onMounted(async () => {
 defineExpose({
   tutorialPopupRef,
   getAllPlayers: () => gameState.allPlayers,
-  getAllClubs: () => gameState.clubs
+  getAllClubs: () => gameState.clubs,
+  getCustomClub: () => gameState.customClub
 })
 </script>
 
