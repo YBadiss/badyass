@@ -2,6 +2,7 @@ import Club from './Club.ts'
 import Player from './Player.ts'
 import Storage from './Storage.ts'
 import { rand } from '../random.ts'
+import { STARTING_DAY } from '../constants.ts'
 
 export default class GameState {
   public topPlayers: Player[]
@@ -87,6 +88,10 @@ export default class GameState {
     return Math.floor(
       (new Date().getTime() - new Date('2000-01-01').getTime()) / (1000 * 60 * 60 * 24)
     )
+  }
+
+  public get gameNumber(): number {
+    return this.dayNumber - STARTING_DAY + 1
   }
 
   private get randomNumber(): number {

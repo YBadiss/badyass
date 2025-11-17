@@ -1,29 +1,45 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref, computed, reactive, watch, onMounted } from 'vue'
 import AppHeader from './components/AppHeader.vue'
+import TutorialPopup from './components/TutorialPopup.vue'
 import FootbleView from './components/FootbleView.vue'
+import Storage from './models/Storage.ts'
+import GameState from './models/GameState.ts'
+import { MAX_GUESSES, STORAGE_KEY, MAIN_URL } from './constants.ts'
 
-const footbleViewRef = ref<InstanceType<typeof FootbleView> | null>(null)
+const storage = new Storage(STORAGE_KEY)
+const gameState = reactive(new GameState(storage, MAX_GUESSES))
+
+// Watch guessedPlayers and save to localStorage whenever it changes
+watch(
+  () => gameState.guessedPlayers,
+  () => gameState.saveToStorage(),
+  { deep: true }
+)
+
+onMounted(async () => {
+  try {
+    // Check for player ID in URL query parameters
+    const urlParams = new URLSearchParams(window.location.search)
+    const playerId = urlParams.get('player')
+    const clubId = urlParams.get('club')
+
+    await gameState.init(playerId || undefined, clubId || undefined)
+  } catch (error) {
+    console.error('Failed to mount FootbleView:', error)
+    // Could show an error message to the user here
+  }
+})
+
+const tutorialPopupRef = ref<InstanceType<typeof TutorialPopup> | null>(null)
 
 const showTutorial = () => {
-  footbleViewRef.value?.tutorialPopupRef?.showTutorial()
+  tutorialPopupRef.value?.showTutorial()
 }
-
-const allPlayers = computed(() => {
-  return footbleViewRef.value?.getAllPlayers() || null
-})
-
-const allClubs = computed(() => {
-  return footbleViewRef.value?.getAllClubs() || null
-})
-
-const customClub = computed(() => {
-  return footbleViewRef.value?.getCustomClub() || null
-})
 
 const clubMapping = computed(() => {
   return (
-    allClubs.value?.reduce(
+    gameState.clubs.reduce(
       (acc, club) => {
         acc[club.name] = club.id
         return acc
@@ -35,7 +51,7 @@ const clubMapping = computed(() => {
 
 const playerMapping = computed(() => {
   return (
-    allPlayers.value?.reduce(
+    gameState.allPlayers.reduce(
       (acc, player) => {
         acc[player.name] = player.id
         return acc
@@ -49,13 +65,14 @@ const playerMapping = computed(() => {
 <template>
   <div id="app">
     <AppHeader
-      :club="customClub"
+      :club="gameState.customClub"
       :club-mapping="clubMapping"
       :player-mapping="playerMapping"
       @show-tutorial="showTutorial"
     >
     </AppHeader>
-    <FootbleView ref="footbleViewRef" />
+    <TutorialPopup ref="tutorialPopupRef" :storage="storage" />
+    <FootbleView :game-state="gameState as GameState" :main-url="MAIN_URL" />
   </div>
 </template>
 
