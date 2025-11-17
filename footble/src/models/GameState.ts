@@ -1,7 +1,7 @@
-import Club from './models/Club.ts'
-import Player from './models/Player.ts'
-import Storage from './storage.ts'
-import { rand } from './random.ts'
+import Club from './Club.ts'
+import Player from './Player.ts'
+import Storage from './Storage.ts'
+import { rand } from '../random.ts'
 
 export default class GameState {
   public topPlayers: Player[]

@@ -5,8 +5,8 @@ import PlayerSearch from './PlayerSearch.vue'
 import PlayerGuesses from './PlayerGuesses.vue'
 import TutorialPopup from './TutorialPopup.vue'
 import { MAX_GUESSES, STORAGE_KEY, MAIN_URL, STARTING_DAY } from '../constants.ts'
-import Storage from '../storage.ts'
-import GameState from '../game-state.ts'
+import Storage from '../models/Storage.ts'
+import GameState from '../models/GameState.ts'
 import Player from '../models/Player.ts'
 
 const storage = new Storage(STORAGE_KEY)

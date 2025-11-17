@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
-import Storage from '../storage.ts'
+import Storage from '../models/Storage.ts'
 
 interface Props {
   storage: Storage
