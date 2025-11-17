@@ -1,11 +1,9 @@
-import Club from './Club.ts'
-
 export default class Player {
   id: string
   slug: string
   name: string
   image: string | null
-  clubs: Array<Club>
+  clubIds: string[]
   citizenship: Array<{
     country: string
     alpha2: string
@@ -21,7 +19,7 @@ export default class Player {
     slug: string,
     name: string,
     image: string | null,
-    clubs: Array<Club>,
+    clubIds: string[],
     citizenship: Array<{
       country: string
       alpha2: string
@@ -36,7 +34,7 @@ export default class Player {
     this.slug = slug
     this.name = name
     this.image = image
-    this.clubs = clubs
+    this.clubIds = clubIds
     this.citizenship = citizenship
     this.position = position
     this.date_of_birth = date_of_birth
@@ -89,22 +87,22 @@ export default class Player {
   }
 
   getClubSimilarity(other: Player): number {
-    if (this.clubs.length === 0) return 0
+    if (this.clubIds.length === 0) return 0
 
     // Manually compare to avoid Vue proxy issues with .includes()
     let matches = 0
-    for (let i = 0; i < this.clubs.length; i++) {
-      const thisClub = this.clubs[i]
-      for (let j = 0; j < other.clubs.length; j++) {
-        const otherClub = other.clubs[j]
-        if (thisClub.id === otherClub.id) {
+    for (let i = 0; i < this.clubIds.length; i++) {
+      const thisClubId = this.clubIds[i]
+      for (let j = 0; j < other.clubIds.length; j++) {
+        const otherClubId = other.clubIds[j]
+        if (thisClubId === otherClubId) {
           matches++
           break
         }
       }
     }
 
-    return matches / this.clubs.length
+    return matches / this.clubIds.length
   }
 
   getOverallSimilarity(other: Player): number {

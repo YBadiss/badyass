@@ -15,6 +15,10 @@ const allPlayers = computed(() => {
   return footbleViewRef.value?.getAllPlayers() || null
 })
 
+const allClubs = computed(() => {
+  return footbleViewRef.value?.getAllClubs() || null
+})
+
 defineExpose({ pathContainerRef })
 </script>
 
@@ -26,7 +30,36 @@ defineExpose({ pathContainerRef })
           <h3>How to Play</h3>
           <p class="menu-description">View the tutorial again</p>
         </button>
-        <CustomChallenge :all-players="allPlayers" />
+        <CustomChallenge
+          :mapping="
+            allClubs?.reduce(
+              (acc, club) => {
+                acc[club.name] = club.id
+                return acc
+              },
+              {} as Record<string, string>
+            ) || null
+          "
+          :url-param="'club'"
+          title="Club Challenge"
+          description="Club fan? Focus on your players!"
+          placeholder="Search for a club..."
+        />
+        <CustomChallenge
+          :mapping="
+            allPlayers?.reduce(
+              (acc, player) => {
+                acc[player.name] = player.id
+                return acc
+              },
+              {} as Record<string, string>
+            ) || null
+          "
+          :url-param="'player'"
+          title="Player Challenge"
+          description="Challenge your friends with any player!"
+          placeholder="Search for a player..."
+        />
       </div>
     </AppHeader>
     <FootbleView ref="footbleViewRef" @path-container-ready="pathContainerRef = $event" />

@@ -70,7 +70,7 @@ const ageDisplay = computed(() => {
 })
 
 const clubDisplay = computed(() => {
-  return `${clubSimilarity.value * props.targetPlayer!.clubs.length}/${props.targetPlayer!.clubs.length} Clubs`
+  return `${clubSimilarity.value * props.targetPlayer!.clubIds.length}/${props.targetPlayer!.clubIds.length} Clubs`
 })
 </script>
 

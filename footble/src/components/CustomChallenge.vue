@@ -1,68 +1,72 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import AutoComplete from 'primevue/autocomplete'
-import Player from '../models/Player.ts'
 
 interface Props {
-  allPlayers: Array<Player> | null
+  mapping: Record<string, string> | null
+  urlParam: string
+  title: string
+  description: string
+  placeholder: string
 }
 
 const props = defineProps<Props>()
 
-const value = ref('')
-const selectedPlayer = ref<Player | null>(null)
+const enteredValue = ref('')
+const selectedValue = ref<string | null>(null)
 
-const playerNames = computed(() => {
-  return props.allPlayers?.map(player => player.name).sort()
+const values = computed(() => {
+  return Object.keys(props.mapping || {})
 })
 
-const filteredPlayerNames = computed(() => {
-  if (playerNames.value && value.value.length > 0) {
-    return playerNames.value
-      .filter(name => name.toLowerCase().includes(value.value.toLowerCase()))
+const filteredValues = computed(() => {
+  if (values.value && enteredValue.value.length > 0) {
+    return values.value
+      .filter(v => v.toLowerCase().includes(enteredValue.value.toLowerCase()))
       .slice(0, 10)
   }
   return []
 })
 
 const search = () => {
-  return filteredPlayerNames
+  return filteredValues
 }
 
 const handleSelect = () => {
-  const player = props.allPlayers?.find(p => p.name === value.value)
-  if (player) {
-    selectedPlayer.value = player
+  const newValue = values.value?.find(v => v === enteredValue.value)
+  if (newValue) {
+    selectedValue.value = newValue
   }
 }
 
 const openChallenge = () => {
-  if (selectedPlayer.value) {
-    const url = `${window.location.origin}${window.location.pathname}?player=${selectedPlayer.value.id}`
+  const key = props.mapping && selectedValue.value ? props.mapping[selectedValue.value] : null
+  if (key) {
+    const url = `${window.location.origin}${window.location.pathname}?${props.urlParam}=${key}`
     window.open(url, '_blank')
     // Reset selection
-    value.value = ''
-    selectedPlayer.value = null
+    enteredValue.value = ''
+    selectedValue.value = null
   }
 }
 </script>
 
 <template>
   <div class="custom-challenge">
-    <h3>Create Custom Challenge</h3>
-    <p class="menu-description">Challenge your friends with any player</p>
+    <h3>{{ title }}</h3>
+    <p class="menu-description">{{ description }}</p>
 
     <div class="challenge-content">
       <AutoComplete
-        v-model="value"
-        :suggestions="filteredPlayerNames"
-        placeholder="Search for a player..."
+        v-model="enteredValue"
+        :suggestions="filteredValues"
+        :placeholder="placeholder"
         class="challenge-search"
         @complete="search"
         @item-select="handleSelect"
       />
 
-      <button class="challenge-button" :disabled="!selectedPlayer" @click="openChallenge">
+      <button class="challenge-button" :disabled="!selectedValue" @click="openChallenge">
         Open Challenge
       </button>
     </div>

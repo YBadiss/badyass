@@ -1,41 +1,67 @@
 import Club from './models/Club.ts'
 import Player from './models/Player.ts'
 import Storage from './storage.ts'
+import { rand } from './random.ts'
 
 export default class GameState {
-  public allPlayers: Player[]
   public topPlayers: Player[]
+  public allPlayers: Player[]
+  public clubs: Club[]
   public player: Player | null
   public guessedPlayers: Player[]
   public storage: Storage
   public maxGuesses: number
-  public customPlayerId: string | null
+  public customClub: Club | null
 
   constructor(storage: Storage, maxGuesses: number) {
-    this.allPlayers = []
     this.topPlayers = []
+    this.allPlayers = []
+    this.clubs = []
     this.player = null
     this.guessedPlayers = []
+    this.allPlayers = []
     this.storage = storage
     this.maxGuesses = maxGuesses
-    this.customPlayerId = null
+    this.customClub = null
   }
 
-  async init(playerId?: string) {
-    this.allPlayers = await fetchPlayers('./players.json')
-    this.topPlayers = await fetchPlayers('./top_players.json')
+  async init(playerId?: string, clubId?: string) {
+    try {
+      this.allPlayers = await fetchPlayers('./players.json')
+      this.topPlayers = await fetchPlayers('./top_players.json')
+      this.clubs = await fetchClubs('./clubs.json')
 
-    if (playerId) {
-      // Load specific player by ID
-      this.customPlayerId = playerId
-      const foundPlayer = this.allPlayers.find(p => p.id === playerId)
-      this.player = foundPlayer || this.topPlayers[this.dayNumber % this.topPlayers.length]
-    } else {
-      // Load daily player
-      this.player = this.topPlayers[this.dayNumber % this.topPlayers.length]
+      if (playerId) {
+        // Load specific player by ID
+        this.player = this.allPlayers.find(p => p.id === playerId) || null
+        if (!this.player) {
+          console.warn(`Player with ID ${playerId} not found`)
+        }
+      } else if (clubId) {
+        this.customClub = this.clubs.find(c => c.id === clubId) || null
+        if (this.customClub) {
+          console.log(this.customClub)
+          const playerId =
+            this.customClub.playerIds[
+              Math.floor(this.randomNumber * this.customClub.playerIds.length)
+            ]
+          this.player = this.allPlayers.find(p => p.id === playerId) || null
+          if (!this.player) {
+            console.warn(`Player with ID ${playerId} not found`)
+          }
+        }
+      } else {
+        // By default, load daily player
+        this.player = this.topPlayers[Math.floor(this.randomNumber * this.topPlayers.length)]
+      }
+
+      console.log(this.player)
+
+      this.loadGuessesFromStorage()
+    } catch (error) {
+      console.error('Failed to initialize game state:', error)
+      throw error
     }
-
-    this.loadGuessesFromStorage()
   }
 
   public addGuess(player: Player): void {
@@ -63,11 +89,16 @@ export default class GameState {
     )
   }
 
+  private get randomNumber(): number {
+    return rand(this.dayNumber)
+  }
+
   private get storageKey(): string {
-    if (this.customPlayerId) {
-      return `custom-${this.customPlayerId}`
+    if (this.player) {
+      return `player-${this.player.id}`
+    } else {
+      return ''
     }
-    return this.dayNumber.toString()
   }
 
   private loadGuessesFromStorage(): void {
@@ -103,19 +134,50 @@ interface PlayerData {
 }
 
 const fetchPlayers = async (filepath: string): Promise<Player[]> => {
-  const playersResponse = await fetch(filepath)
-  return (await playersResponse.json()).map((player: PlayerData) => {
-    return new Player(
-      player.id,
-      player.slug,
-      cleanPlayerName(player.name),
-      player.image,
-      player.club_ids.map((clubId: string) => new Club(clubId)),
-      player.citizenship,
-      player.position || { short_name: null, group: null },
-      player.date_of_birth || ''
-    )
-  })
+  try {
+    const playersResponse = await fetch(filepath)
+    if (!playersResponse.ok) {
+      throw new Error(
+        `Failed to fetch players: ${playersResponse.status} ${playersResponse.statusText}`
+      )
+    }
+    const data = await playersResponse.json()
+    return data.map((player: PlayerData) => {
+      return new Player(
+        player.id,
+        player.slug,
+        cleanPlayerName(player.name),
+        player.image,
+        player.club_ids,
+        player.citizenship,
+        player.position || { short_name: null, group: null },
+        player.date_of_birth || ''
+      )
+    })
+  } catch (error) {
+    console.error(`Error fetching players from ${filepath}:`, error)
+    throw error
+  }
+}
+
+interface ClubData {
+  id: string
+  name: string
+  players: string[]
+}
+
+const fetchClubs = async (filepath: string): Promise<Club[]> => {
+  try {
+    const clubResponse = await fetch(filepath)
+    if (!clubResponse.ok) {
+      throw new Error(`Failed to fetch clubs: ${clubResponse.status} ${clubResponse.statusText}`)
+    }
+    const data = await clubResponse.json()
+    return data.map((club: ClubData) => new Club(club.id, club.name, club.players))
+  } catch (error) {
+    console.error(`Error fetching clubs from ${filepath}:`, error)
+    throw error
+  }
 }
 
 const cleanPlayerName = (name: string): string => {

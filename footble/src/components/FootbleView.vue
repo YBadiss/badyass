@@ -40,16 +40,23 @@ watch(
 )
 
 onMounted(async () => {
-  // Check for player ID in URL query parameters
-  const urlParams = new URLSearchParams(window.location.search)
-  const playerId = urlParams.get('player')
+  try {
+    // Check for player ID in URL query parameters
+    const urlParams = new URLSearchParams(window.location.search)
+    const playerId = urlParams.get('player')
+    const clubId = urlParams.get('club')
 
-  await gameState.init(playerId || undefined)
+    await gameState.init(playerId || undefined, clubId || undefined)
+  } catch (error) {
+    console.error('Failed to mount FootbleView:', error)
+    // Could show an error message to the user here
+  }
 })
 
 defineExpose({
   tutorialPopupRef,
-  getAllPlayers: () => gameState.allPlayers
+  getAllPlayers: () => gameState.allPlayers,
+  getAllClubs: () => gameState.clubs
 })
 </script>
 

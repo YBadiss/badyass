@@ -48,6 +48,7 @@ def enrich_clubs_with_performance():
         enriched_clubs.append(
             {
                 **club,
+                "club_name": club["club_name"].split("(")[0].strip(),
                 "top_league_count": top_league_count,
                 "top_ranked_count": top_ranked_count,
                 "top_ranked_rate": top_ranked_rate,

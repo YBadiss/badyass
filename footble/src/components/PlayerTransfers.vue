@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import Player from '../models/Player.ts'
+import { getClubLogoUrl } from '../models/Club.ts'
 import { copySvgAsImage } from '../svg-utils.ts'
 
 interface Props {
@@ -35,7 +36,7 @@ const PADDING = LOGO_SIZE / 6
 
 // Get logos from player clubs
 const clubLogos = computed(() => {
-  return props.player?.clubs?.map(club => club.logoUrl)
+  return props.player?.clubIds?.map(clubId => getClubLogoUrl(clubId))
 })
 
 // Calculate position for a logo in the grid

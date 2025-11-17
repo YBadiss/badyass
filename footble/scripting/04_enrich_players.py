@@ -15,6 +15,7 @@ def enrich_players_with_transfers_info():
         lambda: {
             "top_league_transfers": 0,
             "top_ranked_transfers": 0,
+            "number_of_different_top_clubs": 0,
             "total_transfers": 0,
             "max_value_at_transfer": 0,
             "career_start_date": None,
@@ -23,6 +24,7 @@ def enrich_players_with_transfers_info():
     )
     for player_id in tqdm(reduced_transfers, desc="Computing transfers info"):
         transfers = reduced_transfers[player_id]
+        different_top_clubs = set()
         for transfer in transfers:
             transfers_info[transfer["player_id"]]["transfer_list"].append(transfer)
             if transfer["is_existing_clubs"] is True:
@@ -31,6 +33,8 @@ def enrich_players_with_transfers_info():
                 transfers_info[transfer["player_id"]]["top_league_transfers"] += 1
             if transfer["is_top_ranked_transfer"] is True:
                 transfers_info[transfer["player_id"]]["top_ranked_transfers"] += 1
+                if transfer["to_team_id"] not in different_top_clubs:
+                    transfers_info[transfer["player_id"]]["number_of_different_top_clubs"] += 1
             transfers_info[transfer["player_id"]]["max_value_at_transfer"] = max(
                 transfers_info[transfer["player_id"]]["max_value_at_transfer"],
                 float(transfer["value_at_transfer"]),
@@ -48,6 +52,8 @@ def enrich_players_with_transfers_info():
                 transfers_info[transfer["player_id"]]["career_start_date"] = (
                     transfer_date
                 )
+            different_top_clubs.add(transfer["to_team_id"])
+
 
     # read the players csv and add the transfers info to the players. need to read manually because the file is too big to fit in memory
     with open("./data/players.json", "r") as file:
@@ -60,6 +66,9 @@ def enrich_players_with_transfers_info():
         ]
         top_ranked_transfers = transfers_info[player["player_id"]][
             "top_ranked_transfers"
+        ]
+        number_of_different_top_clubs = transfers_info[player["player_id"]][
+            "number_of_different_top_clubs"
         ]
         total_transfers = transfers_info[player["player_id"]]["total_transfers"]
         top_league_transfer_rate = (
@@ -102,6 +111,7 @@ def enrich_players_with_transfers_info():
                 "total_transfers": total_transfers,
                 "top_league_transfer_rate": top_league_transfer_rate,
                 "top_ranked_transfer_rate": top_ranked_transfer_rate,
+                "number_of_different_top_clubs": number_of_different_top_clubs,
                 "max_value_at_transfer": max_value_at_transfer,
                 "career_start_date": career_start_date,
                 "club_ids": club_ids
