@@ -1,17 +1,40 @@
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, computed, onMounted } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 import Header from './components/Header.vue'
 import SocialLinks from './components/SocialLinks.vue'
 import PublicationList from './components/PublicationList.vue'
 
+const route = useRoute()
+const router = useRouter()
 const content = ref(null)
-const activeTab = ref(null)
+
+// Map route names to tab titles
+const routeToTab = {
+  'projects': 'Projects',
+  'write-ups': 'Write Ups',
+  'poems': 'Poems'
+}
+
+const tabToRoute = {
+  'Projects': 'projects',
+  'Write Ups': 'write-ups',
+  'Poems': 'poems'
+}
+
+const activeTab = computed(() => routeToTab[route.name] || 'Projects')
+
+const navigateToTab = (title) => {
+  const routeName = tabToRoute[title]
+  if (routeName) {
+    router.push({ name: routeName })
+  }
+}
 
 onMounted(async () => {
   try {
     const response = await fetch('/content.json')
     content.value = await response.json()
-    activeTab.value = content.value.publicationSections[0].title
   } catch (error) {
     console.error('Failed to load content:', error)
   }
@@ -36,7 +59,7 @@ onMounted(async () => {
           :key="publicationSection.title"
           class="tab"
           :class="{ active: activeTab === publicationSection.title }"
-          @click="activeTab = publicationSection.title"
+          @click="navigateToTab(publicationSection.title)"
         >
           {{ publicationSection.title }}
         </button>
@@ -47,7 +70,7 @@ onMounted(async () => {
         :publications="
           content.publicationSections.find(
             publicationSection => publicationSection.title === activeTab
-          ).publications
+          )?.publications || []
         "
       />
     </main>
