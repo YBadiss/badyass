@@ -559,8 +559,18 @@ const formatDate = dateStr => {
     grid-template-columns: 1fr;
   }
 
-  .article-content :deep(.column-right .column-image) {
-    order: -1;
+  .article-content :deep(.column-image) {
+    order: 1;
+  }
+
+  .article-content :deep(.column-text) {
+    order: 0;
+  }
+
+  .article-content :deep(.column-image img) {
+    position: static;
+    width: 100%;
+    height: auto;
   }
 }
 
