@@ -30,7 +30,7 @@ const formatDate = dateStr => {
 <template>
   <article class="publication-card">
     <a
-      :href="isExternal ? url : `/write-ups/${slug}`"
+      :href="isExternal ? url : slug"
       class="publication-link"
       :target="isExternal ? '_blank' : undefined"
       :rel="isExternal ? 'noopener noreferrer' : undefined"

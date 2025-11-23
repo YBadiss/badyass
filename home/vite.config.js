@@ -26,7 +26,7 @@ function writeUpsIndexPlugin() {
       const metaPath = path.join(writeUpsDir, slug, 'meta.json')
       if (fs.existsSync(metaPath)) {
         const meta = JSON.parse(fs.readFileSync(metaPath, 'utf-8'))
-        writeUpsSection.publications.push({ slug, ...meta })
+        writeUpsSection.publications.push({ slug: `/write-ups/${slug}`, ...meta })
       }
     }
 

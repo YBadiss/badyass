@@ -36,7 +36,7 @@
         {
           "title": "Facet",
           "description": "A 3D interactive image tiler vibe-coded for my nephew. Features a grid of blocks with varying heights, custom textures, and smooth camera interactions.",
-          "url": "/facet",
+          "slug": "/facet",
           "tags": [
             "Three.js",
             "WebGL",
@@ -49,7 +49,7 @@
       "title": "Write Ups",
       "publications": [
         {
-          "slug": "proving-community-notes-ownership",
+          "slug": "/write-ups/proving-community-notes-ownership",
           "title": "Proving Community Notes Ownership",
           "description": "When fighting online misinformation meets crypto addiction: a short explanation of TLS Notary and how it can be applied to online personas.",
           "date": "2024-02-25",
@@ -60,7 +60,7 @@
           ]
         },
         {
-          "slug": "ledger-recover-explained",
+          "slug": "/write-ups/ledger-recover-explained",
           "title": "Ledger Recover Explained",
           "description": "Series of blogposts explaining the private key backup and recovery solution built at Ledger for their B2C clients.",
           "date": "2023-07-25",
@@ -72,7 +72,7 @@
           ]
         },
         {
-          "slug": "antidote-to-onchain-poisoning",
+          "slug": "/write-ups/antidote-to-onchain-poisoning",
           "title": "The Antidote To On-Chain Poisoning",
           "description": "Deep dive into on-chain poisoning, the risks to users, and the countermeasures brought by the Ledger team.",
           "date": "2023-04-13",
@@ -84,7 +84,7 @@
           ]
         },
         {
-          "slug": "solving-advent-of-code-with-ai",
+          "slug": "/write-ups/solving-advent-of-code-with-ai",
           "title": "Solving Advent of Code with AI",
           "description": "Christmas, rock-paper-scissor, and my first foray into programming with LLMs when they were still a novel tech.",
           "date": "2022-12-02",
@@ -95,7 +95,7 @@
           ]
         },
         {
-          "slug": "clear-sign-your-worries-away",
+          "slug": "/write-ups/clear-sign-your-worries-away",
           "title": "Clear-Sign Your Worries Away",
           "description": "Quick explanation of the security measure known as 'clear-signing' for crypto-beginers.",
           "date": "2022-06-28",
