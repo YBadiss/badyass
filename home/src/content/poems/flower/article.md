@@ -14,4 +14,4 @@
 
 ---
 
-*Illustration by the fabulous [Farha Farooque ❤](https://www.instagram.com/farhafarooque/)*
+*Illustration by the fabulous [Farha Farooque ❤](https://www.farhafarooque.com/)*
