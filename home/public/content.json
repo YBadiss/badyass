@@ -89,6 +89,17 @@
           ]
         },
         {
+          "slug": "/write-ups/advent-of-ai-code-day-3",
+          "title": "Advent of AI Code: Day 3",
+          "description": "Early exploration of AI coding in the context of Advent of Code.",
+          "date": "2022-12-03",
+          "tags": [
+            "LLM",
+            "Coding Challenge",
+            "Christmas"
+          ]
+        },
+        {
           "slug": "/write-ups/solving-advent-of-code-with-ai",
           "title": "Solving Advent of Code with AI",
           "description": "Christmas, rock-paper-scissor, and my first foray into programming with LLMs when they were still a novel tech.",
