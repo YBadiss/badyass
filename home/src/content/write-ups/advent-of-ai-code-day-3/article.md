@@ -4,11 +4,11 @@ For the record, calling this “Round of 16” when the next stages are called q
 
 So, World Cup. Footies are happy. But more importantly, it’s ❄️ [Day 3 of Advent of Code](https://adventofcode.com/2022/day/3) ❄️ !
 
-[Yesterday I got started on it](https://medium.com/@yacine.badiss/solving-advent-of-code-with-ai-ef076d66ee5e) and decided to use [ChatGPT](https://chat.openai.com/chat) — the not-so-new talk of the AI town — to solve all these Christmas coding challenges without writing a single line of code myself. It is once again time to be as lazy as we can!
+[Yesterday I got started on it](/write-ups/solving-advent-of-code-with-ai) and decided to use [ChatGPT](https://chat.openai.com/chat) — the not-so-new talk of the AI town — to solve all these Christmas coding challenges without writing a single line of code myself. It is once again time to be as lazy as we can!
 
 ## Learning from the past
 
-In [my write up on Day 2](https://medium.com/@yacine.badiss/solving-advent-of-code-with-ai-ef076d66ee5e) I realised too late that I had worked too hard to make the perfect prompt, when I should really let ChatGPT do all the work for me.
+In [my write up on Day 2](/write-ups/solving-advent-of-code-with-ai) I realised too late that I had worked too hard to make the perfect prompt, when I should really let ChatGPT do all the work for me.
 
 So for today, here is our revised battle plan:
 

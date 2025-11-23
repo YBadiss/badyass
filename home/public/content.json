@@ -132,14 +132,14 @@
           "title": "En Son Sein",
           "date": "2024-03-15",
           "tags": [],
-          "picture": "./poems/en-son-sein/images/en-son-sein.webp"
+          "picture": "/content/poems/en-son-sein/images/en-son-sein.webp"
         },
         {
           "slug": "/poems/on-this-earth",
           "title": "On This Earth",
           "date": "2024-03-10",
           "tags": [],
-          "picture": "./poems/on-this-earth/images/on-this-earth.webp"
+          "picture": "/content/poems/on-this-earth/images/on-this-earth.webp"
         }
       ]
     }

@@ -295,4 +295,4 @@ Although it took me longer to solve this problem with ChatGPT than if I were to 
 
 For future prompts, I will probably adopt the last strategy I tried: Copy paste the statement and improve the result from there.
 
-If like me you’re excited to see how it unfolds, [check out part 2!](/blog/advent-of-ai-code)
+If like me you’re excited to see how it unfolds, [check out part 2!](/write-ups/advent-of-ai-code-day-3)
