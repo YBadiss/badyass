@@ -1,16 +1,25 @@
 <script setup>
-defineProps({
+import { computed } from 'vue';
+
+const props = defineProps({
   title: String,
+  date: String,
   description: String,
   picture: String,
   url: String,
+  slug: String,
   tags: Array
+})
+
+
+const href = computed(() => {
+  return props.slug ? `/write-ups/${props.slug}` : props.url;
 })
 </script>
 
 <template>
   <article class="publication-card">
-    <a :href="url" class="publication-link" target="_blank" rel="noopener noreferrer">
+    <a :href="href" class="publication-link">
       <div class="content">
         <h3 class="title">{{ title }}</h3>
         <p class="description">{{ description }}</p>

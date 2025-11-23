@@ -13,9 +13,11 @@ defineProps({
         v-for="publication in publications"
         :key="publication.title"
         :title="publication.title"
+        :date="publication.date"
         :description="publication.description"
         :picture="publication.picture"
         :url="publication.url"
+        :slug="publication.slug"
         :tags="publication.tags"
       />
     </div>
