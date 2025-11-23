@@ -10,10 +10,10 @@ server {
         return 301 https://footble.net/;
     }
 
-    # Location block for /<any-slug> application
-    location ~ ^/projects/(?<project>[^/]+) {
-        alias /var/www/badyass.xyz/$project;
-        try_files $uri $uri/ /$project/index.html;
+    # Location block for /projects/facet - serve facet app
+    location ^~ /projects/facet {
+        alias /var/www/badyass.xyz/facet;
+        try_files $uri $uri/ /projects/facet/index.html;
     }
 
     # Location block for root (home page) - override root
