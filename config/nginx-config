@@ -18,7 +18,7 @@ server {
     # Location block for root (home page) - override root
     location / {
         root /var/www/badyass.xyz/home;
-        try_files $uri $uri/ /index.html;
+        try_files $uri /index.html;
     }
 
     # Logging
