@@ -5,31 +5,36 @@ import path from 'path'
 
 // Plugin to generate articles index from folder structure
 function writeUpsIndexPlugin() {
-  const articlesDir = path.resolve(__dirname, 'public/write-ups')
+  const writeUpsDir = path.resolve(__dirname, 'public/write-ups')
 
   const generateIndex = () => {
-    if (!fs.existsSync(articlesDir)) {
+    if (!fs.existsSync(writeUpsDir)) {
       return
     }
 
-    const articles = []
-    const folders = fs.readdirSync(articlesDir, { withFileTypes: true })
+    // Read the content and empty the write up publications
+    const contentPath = path.resolve(__dirname, 'public/content.json')
+    const content = JSON.parse(fs.readFileSync(contentPath, 'utf-8'))
+    const writeUpsSection = content.publicationSections.find((section) => section.title === 'Write Ups')
+    writeUpsSection.publications = []
+
+    // Find all the publications
+    const folders = fs.readdirSync(writeUpsDir, { withFileTypes: true })
       .filter(dirent => dirent.isDirectory())
       .map(dirent => dirent.name)
-
     for (const slug of folders) {
-      const metaPath = path.join(articlesDir, slug, 'meta.json')
+      const metaPath = path.join(writeUpsDir, slug, 'meta.json')
       if (fs.existsSync(metaPath)) {
         const meta = JSON.parse(fs.readFileSync(metaPath, 'utf-8'))
-        articles.push({ slug, ...meta })
+        writeUpsSection.publications.push({ slug, ...meta })
       }
     }
 
     // Sort by date descending
-    articles.sort((a, b) => new Date(b.date) - new Date(a.date))
-
-    const indexPath = path.join(articlesDir, 'index.json')
-    fs.writeFileSync(indexPath, JSON.stringify({ articles }, null, 2))
+    writeUpsSection.publications.sort((a, b) => new Date(b.date) - new Date(a.date))
+    
+    // Write the modified content back
+    fs.writeFileSync(contentPath, JSON.stringify(content, null, 2))
   }
 
   return {

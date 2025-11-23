@@ -65,7 +65,7 @@ const handleContentClick = event => {
     const element = document.getElementById(id)
     if (element) {
       // Update URL without triggering navigation
-      history.pushState(null, '', href)
+      window.history.pushState(null, '', href)
       element.scrollIntoView({ behavior: 'smooth', block: 'start' })
     }
   }
@@ -116,10 +116,10 @@ const renderedContent = computed(() => {
   const renderer = new marked.Renderer()
 
   renderer.image = ({ href, title, text }) => {
-    // Transform relative paths like ./images/... to /blog/articles/{slug}/images/...
+    // Transform relative paths like ./images/... to /write-ups/{slug}/images/...
     let src = href
     if (href.startsWith('./')) {
-      src = `/blog/articles/${currentSlug.value}/${href.slice(2)}`
+      src = `/write-ups/${currentSlug.value}/${href.slice(2)}`
     }
 
     const caption = title ? `<span class="caption">${title}</span>` : ''
@@ -158,7 +158,7 @@ watch(renderedContent, async () => {
 
   // Scroll to anchor if present in URL (with delay to override browser default)
   if (window.location.hash) {
-    setTimeout(() => {
+    window.setTimeout(() => {
       const id = window.location.hash.slice(1)
       const element = document.getElementById(id)
       if (element) {
@@ -213,7 +213,7 @@ onMounted(async () => {
 
     <article v-else-if="article" class="article">
       <header class="article-header">
-        <router-link to="/write-ups" class="back-link">Back to home</router-link>
+        <router-link to="/write-ups" class="back-link">Back</router-link>
         <h1 class="article-title">{{ article.title }}</h1>
         <div class="article-meta">
           <span class="article-date">{{ formatDate(article.date) }}</span>
@@ -223,12 +223,12 @@ onMounted(async () => {
         </div>
       </header>
 
-      <div class="article-content" v-html="renderedContent" @click="handleContentClick"></div>
+      <div class="article-content" @click="handleContentClick" v-html="renderedContent"></div>
     </article>
 
     <!-- Lightbox modal -->
     <div v-if="lightboxImage" class="lightbox" @click="closeLightbox">
-      <img :src="lightboxImage" class="lightbox-image" @click.stop>
+      <img :src="lightboxImage" class="lightbox-image" @click.stop />
       <button class="lightbox-close" @click="closeLightbox">&times;</button>
     </div>
   </div>

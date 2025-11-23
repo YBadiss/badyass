@@ -4,7 +4,7 @@ import ArticleView from './components/ArticleView.vue'
 const routes = [
   { path: '/', redirect: '/projects' },
   { path: '/projects', name: 'projects' },
-  { path: '/write-ups', name: 'write-ups' },,
+  { path: '/write-ups', name: 'write-ups' },
   {
     path: '/write-ups/:slug',
     name: 'write-up',

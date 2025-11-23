@@ -11,20 +11,25 @@ const content = ref(null)
 
 // Map route names to tab titles
 const routeToTab = {
-  'projects': 'Projects',
+  projects: 'Projects',
   'write-ups': 'Write Ups',
-  'poems': 'Poems'
+  poems: 'Poems'
 }
 
 const tabToRoute = {
-  'Projects': 'projects',
+  Projects: 'projects',
   'Write Ups': 'write-ups',
-  'Poems': 'poems'
+  Poems: 'poems'
 }
 
 const activeTab = computed(() => routeToTab[route.name] || 'Projects')
 
-const navigateToTab = (title) => {
+// Check if current route has a component (like ArticleView)
+const hasRouteComponent = computed(() => {
+  return route.matched.some(record => record.components?.default)
+})
+
+const navigateToTab = title => {
   const routeName = tabToRoute[title]
   if (routeName) {
     router.push({ name: routeName })
@@ -43,7 +48,11 @@ onMounted(async () => {
 
 <template>
   <div class="app-container">
-    <main v-if="content">
+    <!-- Route with component (e.g., ArticleView) -->
+    <router-view v-if="hasRouteComponent" />
+
+    <!-- Main content for tab routes -->
+    <main v-else-if="content">
       <Header
         :name="content.personal.name"
         :tagline="content.personal.tagline"

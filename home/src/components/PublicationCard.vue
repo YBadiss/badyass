@@ -1,5 +1,5 @@
 <script setup>
-import { computed } from 'vue';
+import { computed } from 'vue'
 
 const props = defineProps({
   title: String,
@@ -11,17 +11,36 @@ const props = defineProps({
   tags: Array
 })
 
-
-const href = computed(() => {
-  return props.slug ? `/write-ups/${props.slug}` : props.url;
+// Check if URL is external (starts with http)
+const isExternal = computed(() => {
+  return props.url && props.url.startsWith('http')
 })
+
+const formatDate = dateStr => {
+  if (!dateStr) return ''
+  const date = new Date(dateStr)
+  return date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric'
+  })
+}
 </script>
 
 <template>
   <article class="publication-card">
-    <a :href="href" class="publication-link">
+    <a
+      :href="isExternal ? url : `/write-ups/${slug}`"
+      class="publication-link"
+      :target="isExternal ? '_blank' : undefined"
+      :rel="isExternal ? 'noopener noreferrer' : undefined"
+    >
       <div class="content">
-        <h3 class="title">{{ title }}</h3>
+        <h3 class="title">
+          {{ title }}
+          <span v-if="isExternal" class="external-icon" aria-label="Opens in new tab">&#8599;</span>
+        </h3>
+        <span v-if="date" class="date">{{ formatDate(date) }}</span>
         <p class="description">{{ description }}</p>
         <div v-if="tags && tags.length" class="tech-tags">
           <span v-for="tag in tags" :key="tag" class="tag">{{ tag }}</span>
@@ -69,6 +88,20 @@ const href = computed(() => {
 
 .publication-card:hover .title {
   color: var(--accent);
+}
+
+.external-icon {
+  font-size: 0.875em;
+  opacity: 0.6;
+  margin-left: 0.25rem;
+}
+
+.date {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  opacity: 0.8;
 }
 
 .description {
