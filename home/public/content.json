@@ -128,22 +128,11 @@
       "title": "Poems",
       "publications": [
         {
-          "title": "En son sein",
-          "picture": "/poems/en-son-sein.webp",
-          "url": "https://medium.com/@yacine.badiss/en-son-sein-a83e42faae63",
-          "tags": [
-            "French",
-            "Love"
-          ]
-        },
-        {
-          "title": "On this earth",
-          "picture": "/poems/on-this-earth.webp",
-          "url": "https://medium.com/@yacine.badiss/nature-dc8ae878e6f2",
-          "tags": [
-            "English",
-            "Nature"
-          ]
+          "slug": "/poems/en-son-sein",
+          "title": "En Son Sein",
+          "date": "2024-03-15",
+          "tags": [],
+          "picture": "./poems/en-son-sein/images/en-son-sein.webp"
         }
       ]
     }

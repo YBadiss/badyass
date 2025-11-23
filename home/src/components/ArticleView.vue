@@ -44,6 +44,7 @@ const content = ref('')
 const loading = ref(true)
 const lightboxImage = ref(null)
 const currentSlug = ref('')
+const basePath = ref('')
 
 // Handle clicks in article content
 const handleContentClick = event => {
@@ -110,19 +111,34 @@ const slugify = text => {
 }
 
 const renderedContent = computed(() => {
-  if (!content.value || !currentSlug.value) return ''
+  if (!content.value || !currentSlug.value || !basePath.value) return ''
 
   // Create renderer with current slug for image paths and heading anchors
   const renderer = new marked.Renderer()
 
   renderer.image = ({ href, title, text }) => {
-    // Transform relative paths like ./images/... to /write-ups/{slug}/images/...
-    let src = href
-    if (href.startsWith('./')) {
-      src = `/write-ups/${currentSlug.value}/${href.slice(2)}`
+    // Parse query params for column layout
+    let columnPosition = ''
+    let cleanHref = href
+    if (href.includes('?')) {
+      const [path, query] = href.split('?')
+      cleanHref = path
+      const params = new URLSearchParams(query)
+      columnPosition = params.get('column') || ''
+    }
+
+    // Transform relative paths like ./images/... to /{basePath}/{slug}/images/...
+    let src = cleanHref
+    if (cleanHref.startsWith('./')) {
+      src = `/${basePath.value}/${currentSlug.value}/${cleanHref.slice(2)}`
     }
 
     const caption = title ? `<span class="caption">${title}</span>` : ''
+
+    // Mark column images with data attribute
+    if (columnPosition) {
+      return `<img src="${src}" alt="${text}" data-column="${columnPosition}">${caption}`
+    }
     return `<img src="${src}" alt="${text}">${caption}`
   }
 
@@ -139,8 +155,68 @@ const renderedContent = computed(() => {
 watch(renderedContent, async () => {
   await nextTick()
 
+  const articleContent = document.querySelector('.article-content')
+  if (!articleContent) return
+
+  // Process column layout images
+  const columnImages = articleContent.querySelectorAll('img[data-column]')
+  columnImages.forEach(img => {
+    const position = img.getAttribute('data-column')
+    const container = document.createElement('div')
+    container.className = `column-layout column-${position}`
+
+    // Create text column
+    const textColumn = document.createElement('div')
+    textColumn.className = 'column-text'
+
+    // Create image column
+    const imageColumn = document.createElement('div')
+    imageColumn.className = 'column-image'
+
+    // Find the caption if it exists (next sibling span.caption)
+    const caption = img.nextElementSibling?.classList.contains('caption')
+      ? img.nextElementSibling
+      : null
+
+    // Insert container before the image
+    img.parentNode.insertBefore(container, img)
+
+    // Move image and caption to image column
+    imageColumn.appendChild(img)
+    if (caption) {
+      imageColumn.appendChild(caption)
+    }
+
+    // Collect all siblings until <hr> or end
+    let sibling = container.parentNode.nextSibling
+    while (sibling) {
+      const nextSibling = sibling.nextSibling
+      if (sibling.nodeName === 'HR') {
+        sibling.remove() // Remove the HR
+        break
+      }
+      textColumn.appendChild(sibling)
+      sibling = nextSibling
+    }
+
+    // Assemble the container
+    if (position === 'right') {
+      container.appendChild(textColumn)
+      container.appendChild(imageColumn)
+    } else {
+      container.appendChild(imageColumn)
+      container.appendChild(textColumn)
+    }
+
+    // Set container height based on text column after render
+    requestAnimationFrame(() => {
+      const textHeight = textColumn.offsetHeight
+      container.style.height = `${textHeight}px`
+    })
+  })
+
   // Check images for zoom capability
-  const images = document.querySelectorAll('.article-content img')
+  const images = articleContent.querySelectorAll('img')
   images.forEach(img => {
     const checkSize = () => {
       if (img.naturalWidth <= img.clientWidth && img.naturalHeight <= img.clientHeight) {
@@ -182,9 +258,13 @@ onMounted(async () => {
   const slug = route.params.slug
   currentSlug.value = slug
 
+  // Determine base path from route (e.g., 'write-ups' or 'poems')
+  const pathSegments = route.path.split('/')
+  basePath.value = pathSegments[1] // First segment after leading slash
+
   try {
     // Load article metadata from meta.json
-    const metaResponse = await fetch(`/write-ups/${slug}/meta.json`)
+    const metaResponse = await fetch(`/${basePath.value}/${slug}/meta.json`)
     if (!metaResponse.ok) {
       router.replace('/')
       return
@@ -192,15 +272,15 @@ onMounted(async () => {
     article.value = await metaResponse.json()
 
     // Load article markdown content
-    const contentResponse = await fetch(`/write-ups/${slug}/article.md`)
+    const contentResponse = await fetch(`/${basePath.value}/${slug}/article.md`)
     if (!contentResponse.ok) {
-      router.replace('/write-ups')
+      router.replace(`/${basePath.value}`)
       return
     }
     content.value = await contentResponse.text()
   } catch (err) {
     console.error('Failed to load article:', err)
-    router.replace('/write-ups')
+    router.replace(`/${basePath.value}`)
   } finally {
     loading.value = false
   }
@@ -213,7 +293,7 @@ onMounted(async () => {
 
     <article v-else-if="article" class="article">
       <header class="article-header">
-        <router-link to="/write-ups" class="back-link">Back</router-link>
+        <router-link :to="`/${basePath}`" class="back-link">Back</router-link>
         <h1 class="article-title">{{ article.title }}</h1>
         <div class="article-meta">
           <span class="article-date">{{ formatDate(article.date) }}</span>
@@ -238,6 +318,7 @@ onMounted(async () => {
 .article-view {
   width: 100%;
   max-width: 800px;
+  align-self: flex-start;
 }
 
 .loading,
@@ -445,6 +526,61 @@ onMounted(async () => {
   border: none;
   border-top: 1px solid var(--border);
   margin: 2rem 0;
+}
+
+/* Two-column layout for images */
+.article-content :deep(.column-layout) {
+  display: flex;
+  gap: 2rem;
+  margin: 1.5rem 0;
+  overflow: hidden;
+}
+
+.article-content :deep(.column-text) {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.article-content :deep(.column-text p) {
+  margin-bottom: 0.75rem;
+}
+
+.article-content :deep(.column-text p:last-child) {
+  margin-bottom: 0;
+}
+
+.article-content :deep(.column-image) {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 0; /* Allow flex item to shrink below content size */
+  overflow: hidden;
+}
+
+.article-content :deep(.column-image img) {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  margin: 0;
+}
+
+.article-content :deep(.column-image .caption) {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+@media (max-width: 640px) {
+  .article-content :deep(.column-layout) {
+    flex-direction: column;
+  }
+
+  .article-content :deep(.column-right) {
+    flex-direction: column-reverse;
+  }
 }
 
 .article-content :deep(strong) {

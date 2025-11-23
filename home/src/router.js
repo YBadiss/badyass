@@ -10,7 +10,12 @@ const routes = [
     name: 'write-up',
     component: ArticleView
   },
-  { path: '/poems', name: 'poems' }
+  { path: '/poems', name: 'poems' },
+  {
+    path: '/poems/:slug',
+    name: 'poem',
+    component: ArticleView
+  }
 ]
 
 const router = createRouter({

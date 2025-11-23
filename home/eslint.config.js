@@ -15,7 +15,9 @@ export default tseslint.config(
         console: 'readonly',
         fetch: 'readonly',
         window: 'readonly',
-        document: 'readonly'
+        document: 'readonly',
+        URLSearchParams: 'readonly',
+        requestAnimationFrame: 'readonly'
       },
       parserOptions: {
         parser: tseslint.parser,

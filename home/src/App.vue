@@ -91,7 +91,7 @@ onMounted(async () => {
 .app-container {
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding: 2rem 1rem;
 }

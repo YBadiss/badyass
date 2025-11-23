@@ -61,7 +61,12 @@ function indexPlugin(sectionSlug, sectionTitle) {
 }
 
 export default defineConfig({
-  plugins: [vue(), indexPlugin('write-ups', 'Write Ups'), indexPlugin('projects', 'Projects')],
+  plugins: [
+    vue(),
+    indexPlugin('projects', 'Projects'),
+    indexPlugin('write-ups', 'Write Ups'),
+    indexPlugin('poems', 'Poems')
+  ],
   base: '/',
   build: {
     outDir: 'dist',
