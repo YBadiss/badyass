@@ -14,19 +14,11 @@
       "title": "Projects",
       "publications": [
         {
-          "title": "RecipIt",
-          "description": "Simple app to extract recipes from urls, in a format that is perfect for me, and hopefully for you too. Great if you're tired of ads and long youtube recipes.",
-          "url": "https://recipit.me",
-          "tags": [
-            "React/Node",
-            "Cooking",
-            "LLM"
-          ]
-        },
-        {
+          "slug": "/projects/footble",
           "title": "Footble",
-          "description": "A fun little game to guess the football player of the day based one their transfer history. Made with Vue.js and Tailwind CSS.",
+          "description": "A fun little game to guess the football player of the day based one their transfer history.",
           "url": "https://footble.net",
+          "date": "2025-10-30",
           "tags": [
             "Vue.js",
             "Football",
@@ -34,9 +26,22 @@
           ]
         },
         {
+          "slug": "/projects/recip-it",
+          "title": "RecipIt",
+          "description": "Simple app to extract recipes from urls, in a format that is perfect for me, and hopefully for you too. Great if you're tired of ads and long youtube recipes.",
+          "url": "https://recipit.me",
+          "date": "2025-04-15",
+          "tags": [
+            "React/Node",
+            "Cooking",
+            "LLM"
+          ]
+        },
+        {
+          "slug": "/projects/facet",
           "title": "Facet",
           "description": "A 3D interactive image tiler vibe-coded for my nephew. Features a grid of blocks with varying heights, custom textures, and smooth camera interactions.",
-          "slug": "/facet",
+          "date": "2025-04-13",
           "tags": [
             "Three.js",
             "WebGL",

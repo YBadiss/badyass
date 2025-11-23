@@ -4,8 +4,8 @@ import fs from 'fs'
 import path from 'path'
 
 // Plugin to generate articles index from folder structure
-function writeUpsIndexPlugin() {
-  const writeUpsDir = path.resolve(__dirname, 'public/write-ups')
+function indexPlugin(sectionSlug, sectionTitle) {
+  const writeUpsDir = path.resolve(__dirname, `public/${sectionSlug}`)
 
   const generateIndex = () => {
     if (!fs.existsSync(writeUpsDir)) {
@@ -15,7 +15,7 @@ function writeUpsIndexPlugin() {
     // Read the content and empty the write up publications
     const contentPath = path.resolve(__dirname, 'public/content.json')
     const content = JSON.parse(fs.readFileSync(contentPath, 'utf-8'))
-    const writeUpsSection = content.publicationSections.find((section) => section.title === 'Write Ups')
+    const writeUpsSection = content.publicationSections.find((section) => section.title === sectionTitle)
     writeUpsSection.publications = []
 
     // Find all the publications
@@ -26,7 +26,7 @@ function writeUpsIndexPlugin() {
       const metaPath = path.join(writeUpsDir, slug, 'meta.json')
       if (fs.existsSync(metaPath)) {
         const meta = JSON.parse(fs.readFileSync(metaPath, 'utf-8'))
-        writeUpsSection.publications.push({ slug: `/write-ups/${slug}`, ...meta })
+        writeUpsSection.publications.push({ slug: `/${sectionSlug}/${slug}`, ...meta })
       }
     }
 
@@ -38,19 +38,19 @@ function writeUpsIndexPlugin() {
   }
 
   return {
-    name: 'articles-index',
+    name: `${sectionSlug}-index`,
     buildStart() {
       generateIndex()
     },
     configureServer(server) {
       // Regenerate on changes during dev
       server.watcher.on('change', (file) => {
-        if (file.includes('/write-ups/') && file.endsWith('meta.json')) {
+        if (file.includes(`/${sectionSlug}/`) && file.endsWith('meta.json')) {
           generateIndex()
         }
       })
       server.watcher.on('add', (file) => {
-        if (file.includes('write-ups/') && file.endsWith('meta.json')) {
+        if (file.includes(`/${sectionSlug}/`) && file.endsWith('meta.json')) {
           generateIndex()
         }
       })
@@ -61,7 +61,7 @@ function writeUpsIndexPlugin() {
 }
 
 export default defineConfig({
-  plugins: [vue(), writeUpsIndexPlugin()],
+  plugins: [vue(), indexPlugin('write-ups', 'Write Ups'), indexPlugin('projects', 'Projects')],
   base: '/',
   build: {
     outDir: 'dist',
