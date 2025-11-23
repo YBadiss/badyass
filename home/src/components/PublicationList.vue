@@ -1,14 +1,28 @@
 <script setup>
+import { computed } from 'vue'
 import PublicationCard from './PublicationCard.vue'
 
-defineProps({
-  publications: Array
+const props = defineProps({
+  publications: Array,
+  columns: {
+    type: Number,
+    default: 2
+  }
+})
+
+const gridStyle = computed(() => {
+  if (props.columns === 1) {
+    return { gridTemplateColumns: '1fr' }
+  }
+  return {
+    gridTemplateColumns: `repeat(${props.columns}, 1fr)`
+  }
 })
 </script>
 
 <template>
   <section class="publications-section">
-    <div class="publications-grid">
+    <div class="publications-grid" :style="gridStyle">
       <PublicationCard
         v-for="publication in publications"
         :key="publication.title"
@@ -35,14 +49,9 @@ defineProps({
   grid-template-columns: 1fr;
 }
 
-@media (min-width: 768px) {
-  .publications-grid {
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  }
-}
-
 @media (max-width: 640px) {
   .publications-grid {
+    grid-template-columns: 1fr !important;
     gap: 1rem;
   }
 }

@@ -56,7 +56,7 @@ const formatDate = dateStr => {
   background: var(--bg-secondary);
   border: 1px solid var(--border);
   border-radius: 8px;
-  padding: 1.5rem;
+  padding: 0.7rem;
   transition: all 0.2s ease;
 }
 

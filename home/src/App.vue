@@ -81,6 +81,11 @@ onMounted(async () => {
             publicationSection => publicationSection.title === activeTab
           )?.publications || []
         "
+        :columns="
+          content.publicationSections.find(
+            publicationSection => publicationSection.title === activeTab
+          )?.columns
+        "
       />
     </main>
     <div v-else class="loading">Loading...</div>
