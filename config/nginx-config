@@ -5,14 +5,15 @@ server {
     root /var/www/badyass.xyz;
     index index.html;
 
-    # Location block for /facet application
-    location /facet {
-        try_files $uri $uri/ /facet/index.html;
-    }
-
     # Redirect /footble to footble.net
     location /footble {
         return 301 https://footble.net/;
+    }
+
+    # Location block for /<any-slug> application
+    location ~ ^/projects/(?<project>[^/]+) {
+        alias /var/www/badyass.xyz/$project;
+        try_files $uri $uri/ /$project/index.html;
     }
 
     # Location block for root (home page) - override root
