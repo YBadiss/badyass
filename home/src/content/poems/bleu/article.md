@@ -1,3 +1,5 @@
+![Blue winter sky](./images/bleu.jpeg?column=left)
+
 **S**oleil glacial d'une saison flétrie,
 **A**urore timide qui annonce la nuit,
 **U**ne touche de bleu dans un lit de nuages,
