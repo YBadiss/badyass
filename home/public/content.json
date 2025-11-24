@@ -129,6 +129,43 @@
       "columns": 3,
       "publications": [
         {
+          "slug": "/poems/bleu",
+          "title": "Bleu",
+          "date": "2025-11-24",
+          "tags": []
+        },
+        {
+          "slug": "/poems/souvenirs",
+          "title": "Souvenirs",
+          "date": "2025-09-17",
+          "tags": []
+        },
+        {
+          "slug": "/poems/au-soleil",
+          "title": "Au Soleil",
+          "date": "2025-08-25",
+          "tags": [],
+          "picture": "/content/poems/au-soleil/images/au-soleil.jpg"
+        },
+        {
+          "slug": "/poems/etre",
+          "title": "Être",
+          "date": "2025-06-10",
+          "tags": []
+        },
+        {
+          "slug": "/poems/a-ma-femme",
+          "title": "À Ma Femme",
+          "date": "2024-09-22",
+          "tags": []
+        },
+        {
+          "slug": "/poems/sur-reve",
+          "title": "Sur Rêve",
+          "date": "2024-06-08",
+          "tags": []
+        },
+        {
           "slug": "/poems/en-son-sein",
           "title": "En Son Sein",
           "date": "2024-03-15",
@@ -146,6 +183,12 @@
           "slug": "/poems/warm-nights",
           "title": "Warm Nights",
           "date": "2022-07-25",
+          "tags": []
+        },
+        {
+          "slug": "/poems/le-chemin",
+          "title": "Fallait il qu'on aime le chemin",
+          "date": "2022-07-20",
           "tags": []
         },
         {
@@ -191,6 +234,36 @@
           "slug": "/poems/walk-on",
           "title": "Walk On",
           "date": "2022-04-17",
+          "tags": []
+        },
+        {
+          "slug": "/poems/insouciance",
+          "title": "Insouciance",
+          "date": "2021-12-24",
+          "tags": []
+        },
+        {
+          "slug": "/poems/adam",
+          "title": "Adam",
+          "date": "2020-10-13",
+          "tags": []
+        },
+        {
+          "slug": "/poems/hayat",
+          "title": "Hayat",
+          "date": "2020-10-11",
+          "tags": []
+        },
+        {
+          "slug": "/poems/je-serai-la",
+          "title": "Je Serai Là",
+          "date": "2020-10-11",
+          "tags": []
+        },
+        {
+          "slug": "/poems/paris-haiku",
+          "title": "Paris Haïku",
+          "date": "2020-10-11",
           "tags": []
         }
       ]
