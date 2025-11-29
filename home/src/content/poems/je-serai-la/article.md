@@ -1,19 +1,14 @@
-**C**'est le premier homme, il est né cette nuit
-**V**enu dans ce monde encore un peu étourdi
-**A**près un long trajet depuis le paradis
+**Q**uand la semaine a fait des siennes
+**E**t que nos nuits en ont pati
+**Q**ue les rayons brillent avec peine
+**S**ur nous glissent, sans empathie
 
-**I**l se voit entouré de sourires et de pleurs,
-**D**e visages nouveaux qui le serrent dans leurs cœurs
-**S**a famille émue qui respire le bonheur
+**N**os paupières en deviennent lourdes
+**P**lus lourdes qu'une nuit d'été
+**L**e réveil sonne, les oreilles sourdes
+**N**e quitte pas ton monde enchanté
 
-**L**es yeux grand ouvert pour s'abreuver de la vie
-**I**l se débat, cri, impatient de ce qui suit
-**D**es merveilles qui l'entourent il est déjà épris
-
-**I**l voudrait vous le dire mais ne sait pas comment
-**À** tout ce qu'il aspire d'un désir ardent
-**P**artager avec vous tous ses rêves d'enfant
-
-**I**l sera pianiste, astronaute, pompier
-**I**l sera libre sur la terre partout d'aller
-**M**ais il sera avant tout heureux et aimé
+**C**es matins où tu ne crois plus, ne veux plus, n'en peux plus,
+**V**iendra toujours une caresse, parfois timide, parfois enjouée,
+**P**our te rappeler que notre vie peut être un rêve éveillé,
+**U**ne douce promenade côte à côte à jamais.
