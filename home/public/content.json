@@ -14,6 +14,18 @@
       "title": "Projects",
       "publications": [
         {
+          "slug": "/projects/aoc-2025",
+          "title": "Advent of Code 2025",
+          "description": "Just having fun during holiday season and solving AoC with a hot cholocate in hand 🎄",
+          "url": "https://github.com/YBadiss/aoc-2025?tab=readme-ov-file#aoc-2025",
+          "date": "2025-12-12",
+          "tags": [
+            "Python",
+            "Chill",
+            "Merry Christmas"
+          ]
+        },
+        {
           "slug": "/projects/footble",
           "title": "Footble",
           "description": "A fun little game to guess the football player of the day based one their transfer history.",
@@ -182,6 +194,12 @@
           "picture": "/content/poems/on-this-earth/images/on-this-earth.webp"
         },
         {
+          "slug": "/poems/glory-in-white",
+          "title": "Glory In White",
+          "date": "2022-10-01",
+          "tags": []
+        },
+        {
           "slug": "/poems/warm-nights",
           "title": "Warm Nights",
           "date": "2022-07-25",
@@ -191,6 +209,12 @@
           "slug": "/poems/le-chemin",
           "title": "Fallait il qu'on aime le chemin",
           "date": "2022-07-20",
+          "tags": []
+        },
+        {
+          "slug": "/poems/skye",
+          "title": "Skye",
+          "date": "2022-06-09",
           "tags": []
         },
         {
