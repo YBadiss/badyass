@@ -14,6 +14,18 @@
       "title": "Projects",
       "publications": [
         {
+          "slug": "/projects/metro-boulot-photos",
+          "title": "Metro, Boulot, Photos!",
+          "description": "Recording photos of all Parisian metro stations using open data, for fun 📸",
+          "url": "https://metro-boulot.photos",
+          "date": "2025-12-30",
+          "tags": [
+            "Metro",
+            "Community",
+            "Data"
+          ]
+        },
+        {
           "slug": "/projects/aoc-2025",
           "title": "Advent of Code 2025",
           "description": "Just having fun during holiday season and solving AoC with a hot cholocate in hand 🎄",
