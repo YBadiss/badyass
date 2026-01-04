@@ -166,8 +166,8 @@ onMounted(async () => {
   try {
     // Load both classes and locations data in parallel
     const [classesResponse, locationsResponse] = await Promise.all([
-      fetch('/classes.json'),
-      fetch('/locations.json')
+      fetch(`${document.baseURI}classes.json`),
+      fetch(`${document.baseURI}locations.json`)
     ])
 
     if (!classesResponse.ok) {
