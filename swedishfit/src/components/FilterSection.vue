@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { ref } from 'vue'
+
 type DayOfWeek = 0 | 1 | 2 | 3 | 4 | 5 | 6
 
 interface DayTimeRange {
@@ -10,16 +12,20 @@ interface DayTimeRange {
 interface Props {
   days: Map<DayOfWeek, DayTimeRange>
   status: string[]
+  activities: string[]
+  availableActivities: string[]
 }
 
 interface Emits {
   (e: 'update:days', value: Map<DayOfWeek, DayTimeRange>): void
   (e: 'update:status', value: string[]): void
+  (e: 'update:activities', value: string[]): void
 }
 
 const props = defineProps<Props>()
 const emit = defineEmits<Emits>()
 
+const isExpanded = ref(false)
 const dayNames = ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi']
 
 const updateDayEnabled = (day: DayOfWeek, enabled: boolean) => {
@@ -66,104 +72,177 @@ const updateStatus = (event: Event & { target: HTMLInputElement }) => {
 
   emit('update:status', currentStatus)
 }
+
+const updateActivities = (event: Event & { target: HTMLInputElement }) => {
+  const target = event.target
+  const currentActivities = [...props.activities]
+
+  if (target.checked) {
+    if (!currentActivities.includes(target.value)) {
+      currentActivities.push(target.value)
+    }
+  } else {
+    const index = currentActivities.indexOf(target.value)
+    if (index > -1) {
+      currentActivities.splice(index, 1)
+    }
+  }
+
+  emit('update:activities', currentActivities)
+}
 </script>
 
 <template>
-  <div class="filters">
-    <div class="filter-group days-filter">
-      <label>Jours & Horaires:</label>
-      <div class="day-filters">
-        <div v-for="day in [0, 1, 2, 3, 4, 5, 6]" :key="day" class="day-row">
-          <label class="day-checkbox-label">
-            <input
-              :checked="days.get(day as DayOfWeek)?.enabled"
-              type="checkbox"
-              class="checkbox-input"
-              @change="
-                e => updateDayEnabled(day as DayOfWeek, (e.target as HTMLInputElement).checked)
-              "
-            />
-            <span class="day-name">{{ dayNames[day] }}</span>
-          </label>
-          <div class="time-inputs">
-            <input
-              :value="days.get(day as DayOfWeek)?.startTime"
-              :disabled="!days.get(day as DayOfWeek)?.enabled"
-              type="time"
-              class="time-input"
-              @input="
-                e => updateDayStartTime(day as DayOfWeek, (e.target as HTMLInputElement).value)
-              "
-            />
-            <span class="time-separator">-</span>
-            <input
-              :value="days.get(day as DayOfWeek)?.endTime"
-              :disabled="!days.get(day as DayOfWeek)?.enabled"
-              type="time"
-              class="time-input"
-              @input="e => updateDayEndTime(day as DayOfWeek, (e.target as HTMLInputElement).value)"
-            />
+  <div class="filter-container">
+    <button class="filter-toggle" @click="isExpanded = !isExpanded">
+      <span>Filtres</span>
+      <span class="toggle-icon">{{ isExpanded ? '▼' : '▶' }}</span>
+    </button>
+
+    <div v-if="isExpanded" class="filters">
+      <div class="filter-group days-filter">
+        <label>Jours & Horaires:</label>
+        <div class="day-filters">
+          <div v-for="day in [0, 1, 2, 3, 4, 5, 6]" :key="day" class="day-row">
+            <label class="day-checkbox-label">
+              <input
+                :checked="days.get(day as DayOfWeek)?.enabled"
+                type="checkbox"
+                class="checkbox-input"
+                @change="
+                  e => updateDayEnabled(day as DayOfWeek, (e.target as HTMLInputElement).checked)
+                "
+              />
+              <span class="day-name">{{ dayNames[day] }}</span>
+            </label>
+            <div class="time-inputs">
+              <input
+                :value="days.get(day as DayOfWeek)?.startTime"
+                :disabled="!days.get(day as DayOfWeek)?.enabled"
+                type="time"
+                class="time-input"
+                @input="
+                  e => updateDayStartTime(day as DayOfWeek, (e.target as HTMLInputElement).value)
+                "
+              />
+              <span class="time-separator">-</span>
+              <input
+                :value="days.get(day as DayOfWeek)?.endTime"
+                :disabled="!days.get(day as DayOfWeek)?.enabled"
+                type="time"
+                class="time-input"
+                @input="
+                  e => updateDayEndTime(day as DayOfWeek, (e.target as HTMLInputElement).value)
+                "
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="filter-group status-filter">
-      <label>Statut:</label>
-      <div class="status-checkboxes">
-        <label class="checkbox-label">
-          <input
-            :checked="status.includes('AVAILABLE')"
-            type="checkbox"
-            value="AVAILABLE"
-            class="checkbox-input"
-            @change="updateStatus"
-          />
-          <span>Disponible</span>
-        </label>
-        <label class="checkbox-label">
-          <input
-            :checked="status.includes('FULL')"
-            type="checkbox"
-            value="FULL"
-            class="checkbox-input"
-            @change="updateStatus"
-          />
-          <span>Complet</span>
-        </label>
-        <label class="checkbox-label">
-          <input
-            :checked="status.includes('PASSED')"
-            type="checkbox"
-            value="PASSED"
-            class="checkbox-input"
-            @change="updateStatus"
-          />
-          <span>Passé</span>
-        </label>
-        <label class="checkbox-label">
-          <input
-            :checked="status.includes('CANCELLED')"
-            type="checkbox"
-            value="CANCELLED"
-            class="checkbox-input"
-            @change="updateStatus"
-          />
-          <span>Annulé</span>
-        </label>
+      <div class="filter-group status-filter">
+        <label>Statut:</label>
+        <div class="status-checkboxes">
+          <label class="checkbox-label">
+            <input
+              :checked="status.includes('AVAILABLE')"
+              type="checkbox"
+              value="AVAILABLE"
+              class="checkbox-input"
+              @change="updateStatus"
+            />
+            <span>Disponible</span>
+          </label>
+          <label class="checkbox-label">
+            <input
+              :checked="status.includes('FULL')"
+              type="checkbox"
+              value="FULL"
+              class="checkbox-input"
+              @change="updateStatus"
+            />
+            <span>Complet</span>
+          </label>
+          <label class="checkbox-label">
+            <input
+              :checked="status.includes('PASSED')"
+              type="checkbox"
+              value="PASSED"
+              class="checkbox-input"
+              @change="updateStatus"
+            />
+            <span>Passé</span>
+          </label>
+          <label class="checkbox-label">
+            <input
+              :checked="status.includes('CANCELLED')"
+              type="checkbox"
+              value="CANCELLED"
+              class="checkbox-input"
+              @change="updateStatus"
+            />
+            <span>Annulé</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="filter-group activities-filter">
+        <label>Activités:</label>
+        <div class="activities-checkboxes">
+          <label v-for="activity in availableActivities" :key="activity" class="checkbox-label">
+            <input
+              :checked="activities.includes(activity)"
+              type="checkbox"
+              :value="activity"
+              class="checkbox-input"
+              @change="updateActivities"
+            />
+            <span>{{ activity }}</span>
+          </label>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
+.filter-container {
+  margin-bottom: var(--spacing-lg);
+}
+
+.filter-toggle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md);
+  background-color: var(--color-bg-light);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-size: var(--font-base);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  transition: background-color var(--transition-fast);
+}
+
+.filter-toggle:hover {
+  background-color: #f0f0f0;
+}
+
+.toggle-icon {
+  font-size: var(--font-sm);
+  color: var(--color-text-muted);
+}
+
 .filters {
   display: flex;
   gap: var(--spacing-lg);
   padding: var(--spacing-lg);
   background-color: var(--color-bg-light);
-  border-radius: var(--radius-md);
-  margin-bottom: var(--spacing-lg);
+  border: 1px solid var(--color-border);
+  border-top: none;
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
   flex-wrap: wrap;
   align-items: flex-start;
 }
@@ -248,6 +327,17 @@ const updateStatus = (event: Event & { target: HTMLInputElement }) => {
 }
 
 .status-checkboxes {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.activities-filter {
+  flex: 1;
+  min-width: 250px;
+}
+
+.activities-checkboxes {
   display: flex;
   gap: var(--spacing-md);
   flex-wrap: wrap;

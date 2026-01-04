@@ -20,6 +20,7 @@ export default tseslint.config(
         navigator: 'readonly',
         HTMLElement: 'readonly',
         HTMLInputElement: 'readonly',
+        HTMLDivElement: 'readonly',
         Event: 'readonly',
         URLSearchParams: 'readonly',
         process: 'readonly'

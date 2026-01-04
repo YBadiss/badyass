@@ -14,13 +14,16 @@
     "format:check": "prettier --check \"**/*.{vue,js,ts,css,json}\""
   },
   "dependencies": {
+    "@types/leaflet": "^1.9.21",
+    "leaflet": "^1.9.4",
+    "proj4": "^2.20.2",
     "vue": "^3.5.13"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
+    "@types/node": "^22.10.5",
     "@typescript-eslint/eslint-plugin": "^8.46.3",
     "@typescript-eslint/parser": "^8.46.3",
-    "@types/node": "^22.10.5",
     "@vitejs/plugin-vue": "^6.0.1",
     "cheerio": "^1.0.0",
     "eslint": "^9.39.1",

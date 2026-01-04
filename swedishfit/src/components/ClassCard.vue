@@ -12,6 +12,7 @@ type GymClass = {
   activity: Activity
   teacher: string
   status: string
+  link: string
 }
 
 type GPSCoordinates = {
@@ -69,52 +70,62 @@ const formattedTime = computed(() => {
 </script>
 
 <template>
-  <div class="class-card">
-    <div class="class-header">
-      <img
-        v-if="gymClass.activity.icon"
-        :src="gymClass.activity.icon"
-        :alt="gymClass.activity.name"
-        class="activity-icon"
-      />
-      <div class="class-info">
-        <h3>{{ gymClass.activity.name }}</h3>
-        <a
-          v-if="googleMapsUrl"
-          :href="googleMapsUrl"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="location-link"
-        >
-          <span class="location">{{ gymClass.location }}</span>
-          <svg class="map-icon" viewBox="0 0 24 24">
-            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-            <circle cx="12" cy="10" r="3"></circle>
-          </svg>
-        </a>
-        <p v-else class="location">{{ gymClass.location }}</p>
+  <a :href="gymClass.link" target="_blank" rel="noopener noreferrer" class="class-card-link">
+    <div class="class-card">
+      <div class="class-header">
+        <img
+          v-if="gymClass.activity.icon"
+          :src="gymClass.activity.icon"
+          :alt="gymClass.activity.name"
+          class="activity-icon"
+        />
+        <div class="class-info">
+          <h3>{{ gymClass.activity.name }}</h3>
+          <a
+            v-if="googleMapsUrl"
+            :href="googleMapsUrl"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="location-link"
+            @click.stop
+          >
+            <span class="location">{{ gymClass.location }}</span>
+            <svg class="map-icon" viewBox="0 0 24 24">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </a>
+          <p v-else class="location">{{ gymClass.location }}</p>
+        </div>
+        <span :class="['status', gymClass.status.toLowerCase()]">
+          {{ gymClass.status }}
+        </span>
       </div>
-      <span :class="['status', gymClass.status.toLowerCase()]">
-        {{ gymClass.status }}
-      </span>
+      <div class="class-details">
+        <div class="detail"><strong>Animation:</strong> {{ gymClass.teacher }}</div>
+        <div class="detail"><strong>Horaire:</strong> {{ formattedTime }}</div>
+      </div>
     </div>
-    <div class="class-details">
-      <div class="detail"><strong>Animation:</strong> {{ gymClass.teacher }}</div>
-      <div class="detail"><strong>Horaire:</strong> {{ formattedTime }}</div>
-    </div>
-  </div>
+  </a>
 </template>
 
 <style scoped>
+.class-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 .class-card {
   padding: var(--spacing-md);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   background-color: var(--color-bg-white);
   transition: box-shadow var(--transition-fast);
+  cursor: pointer;
 }
 
-.class-card:hover {
+.class-card-link:hover .class-card {
   box-shadow: var(--shadow-card);
 }
 
@@ -135,6 +146,7 @@ const formattedTime = computed(() => {
 }
 
 .class-info h3 {
+  color: var(--color-primary);
   margin: 0;
   font-size: var(--font-lg);
 }

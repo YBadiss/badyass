@@ -2,6 +2,7 @@
 import { ref, onMounted, computed } from 'vue'
 import FilterSection from './components/FilterSection.vue'
 import ClassList from './components/ClassList.vue'
+import MapView from './components/MapView.vue'
 
 type Activity = {
   name: string
@@ -14,6 +15,7 @@ type GymClass = {
   activity: Activity
   teacher: string
   status: string // CANCELLED, PASSED, FULL, AVAILABLE
+  link: string
 }
 
 interface CrawledClasses {
@@ -54,16 +56,20 @@ interface DayTimeRange {
 // Filter state
 const filterDays = ref<Map<DayOfWeek, DayTimeRange>>(
   new Map([
-    [0, { enabled: true, startTime: '08:00', endTime: '20:00' }], // Sunday
-    [1, { enabled: true, startTime: '08:00', endTime: '20:00' }], // Monday
-    [2, { enabled: true, startTime: '08:00', endTime: '20:00' }], // Tuesday
-    [3, { enabled: true, startTime: '08:00', endTime: '20:00' }], // Wednesday
-    [4, { enabled: true, startTime: '08:00', endTime: '20:00' }], // Thursday
-    [5, { enabled: true, startTime: '08:00', endTime: '20:00' }], // Friday
-    [6, { enabled: true, startTime: '08:00', endTime: '20:00' }] // Saturday
+    [0, { enabled: true, startTime: '08:00', endTime: '23:00' }], // Sunday
+    [1, { enabled: true, startTime: '08:00', endTime: '23:00' }], // Monday
+    [2, { enabled: true, startTime: '08:00', endTime: '23:00' }], // Tuesday
+    [3, { enabled: true, startTime: '08:00', endTime: '23:00' }], // Wednesday
+    [4, { enabled: true, startTime: '08:00', endTime: '23:00' }], // Thursday
+    [5, { enabled: true, startTime: '08:00', endTime: '23:00' }], // Friday
+    [6, { enabled: true, startTime: '08:00', endTime: '23:00' }] // Saturday
   ])
 )
 const filterStatus = ref<string[]>(['AVAILABLE'])
+const filterActivities = ref<string[]>([])
+
+// View mode: 'list' or 'map'
+const viewMode = ref<'list' | 'map'>('map')
 
 // Create a map of location names to Location objects for quick lookup
 const locationMap = computed(() => {
@@ -74,6 +80,18 @@ const locationMap = computed(() => {
     })
   }
   return map
+})
+
+// Extract unique activity names from the classes data
+const availableActivities = computed(() => {
+  if (!classesData.value) return []
+
+  const activitySet = new Set<string>()
+  classesData.value.classes.forEach(gymClass => {
+    activitySet.add(gymClass.activity.name)
+  })
+
+  return Array.from(activitySet).sort()
 })
 
 // Filtered classes based on filter criteria
@@ -99,6 +117,11 @@ const filteredClasses = computed(() => {
     // Filter by status
     if (filterStatus.value.length > 0) {
       if (!filterStatus.value.includes(gymClass.status)) return false
+    }
+
+    // Filter by activity
+    if (filterActivities.value.length > 0) {
+      if (!filterActivities.value.includes(gymClass.activity.name)) return false
     }
 
     return true
@@ -158,9 +181,32 @@ onMounted(async () => {
         </div>
 
         <div v-else>
-          <FilterSection v-model:days="filterDays" v-model:status="filterStatus" />
+          <FilterSection
+            v-model:days="filterDays"
+            v-model:status="filterStatus"
+            v-model:activities="filterActivities"
+            :available-activities="availableActivities"
+          />
 
-          <ClassList :classes="filteredClasses" :location-map="locationMap" />
+          <div class="view-tabs">
+            <button :class="['tab', { active: viewMode === 'map' }]" @click="viewMode = 'map'">
+              Carte
+            </button>
+            <button :class="['tab', { active: viewMode === 'list' }]" @click="viewMode = 'list'">
+              Liste
+            </button>
+          </div>
+
+          <ClassList
+            v-if="viewMode === 'list'"
+            :classes="filteredClasses"
+            :location-map="locationMap"
+          />
+          <MapView
+            v-else-if="viewMode === 'map'"
+            :classes="filteredClasses"
+            :location-map="locationMap"
+          />
         </div>
       </div>
     </main>
@@ -212,5 +258,34 @@ code {
   color: var(--color-text-muted);
   font-size: var(--font-base);
   margin-bottom: var(--spacing-md);
+}
+
+.view-tabs {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+  border-bottom: 2px solid var(--color-border);
+}
+
+.tab {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  cursor: pointer;
+  font-size: var(--font-base);
+  color: var(--color-text-secondary);
+  transition: all var(--transition-fast);
+}
+
+.tab:hover {
+  color: var(--color-text-primary);
+}
+
+.tab.active {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+  font-weight: 600;
 }
 </style>
