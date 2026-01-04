@@ -14,6 +14,17 @@
       "title": "Projects",
       "publications": [
         {
+          "slug": "/projects/swedishfind",
+          "title": "SwedishFind",
+          "description": "Find Swedish Fit classes easily on a map with advanced filters.",
+          "date": "2026-01-04",
+          "tags": [
+            "Gym",
+            "Map",
+            "Data"
+          ]
+        },
+        {
           "slug": "/projects/metro-boulot-photos",
           "title": "Metro, Boulot, Photos!",
           "description": "Recording photos of all Parisian metro stations using open data, for fun 📸",
