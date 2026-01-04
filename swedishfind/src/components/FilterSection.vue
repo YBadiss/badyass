@@ -105,7 +105,7 @@ const updateActivities = (event: Event) => {
       <div class="filter-group days-filter">
         <label>Jours & Horaires:</label>
         <div class="day-filters">
-          <div v-for="day in [0, 1, 2, 3, 4, 5, 6]" :key="day" class="day-row">
+          <div v-for="day in [1, 2, 3, 4, 5, 6, 0]" :key="day" class="day-row">
             <label class="day-checkbox-label">
               <input
                 :checked="days.get(day as DayOfWeek)?.enabled"
