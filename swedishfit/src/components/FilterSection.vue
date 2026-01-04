@@ -1,25 +1,52 @@
 <script setup lang="ts">
+type DayOfWeek = 0 | 1 | 2 | 3 | 4 | 5 | 6
+
+interface DayTimeRange {
+  enabled: boolean
+  startTime: string
+  endTime: string
+}
+
 interface Props {
-  after: string
-  before: string
+  days: Map<DayOfWeek, DayTimeRange>
   status: string[]
 }
 
 interface Emits {
-  (e: 'update:after', value: string): void
-  (e: 'update:before', value: string): void
+  (e: 'update:days', value: Map<DayOfWeek, DayTimeRange>): void
   (e: 'update:status', value: string[]): void
 }
 
 const props = defineProps<Props>()
 const emit = defineEmits<Emits>()
 
-const updateAfter = (event: Event & { target: HTMLInputElement }) => {
-  emit('update:after', event.target.value)
+const dayNames = ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi']
+
+const updateDayEnabled = (day: DayOfWeek, enabled: boolean) => {
+  const newDays = new Map(props.days)
+  const dayRange = newDays.get(day)
+  if (dayRange) {
+    newDays.set(day, { ...dayRange, enabled })
+  }
+  emit('update:days', newDays)
 }
 
-const updateBefore = (event: Event & { target: HTMLInputElement }) => {
-  emit('update:before', event.target.value)
+const updateDayStartTime = (day: DayOfWeek, startTime: string) => {
+  const newDays = new Map(props.days)
+  const dayRange = newDays.get(day)
+  if (dayRange) {
+    newDays.set(day, { ...dayRange, startTime })
+  }
+  emit('update:days', newDays)
+}
+
+const updateDayEndTime = (day: DayOfWeek, endTime: string) => {
+  const newDays = new Map(props.days)
+  const dayRange = newDays.get(day)
+  if (dayRange) {
+    newDays.set(day, { ...dayRange, endTime })
+  }
+  emit('update:days', newDays)
 }
 
 const updateStatus = (event: Event & { target: HTMLInputElement }) => {
@@ -43,30 +70,46 @@ const updateStatus = (event: Event & { target: HTMLInputElement }) => {
 
 <template>
   <div class="filters">
-    <div class="filter-group">
-      <label for="filter-after">After:</label>
-      <input
-        id="filter-after"
-        :value="after"
-        type="datetime-local"
-        class="filter-input"
-        @input="updateAfter"
-      />
-    </div>
-
-    <div class="filter-group">
-      <label for="filter-before">Before:</label>
-      <input
-        id="filter-before"
-        :value="before"
-        type="datetime-local"
-        class="filter-input"
-        @input="updateBefore"
-      />
+    <div class="filter-group days-filter">
+      <label>Jours & Horaires:</label>
+      <div class="day-filters">
+        <div v-for="day in [0, 1, 2, 3, 4, 5, 6]" :key="day" class="day-row">
+          <label class="day-checkbox-label">
+            <input
+              :checked="days.get(day as DayOfWeek)?.enabled"
+              type="checkbox"
+              class="checkbox-input"
+              @change="
+                e => updateDayEnabled(day as DayOfWeek, (e.target as HTMLInputElement).checked)
+              "
+            />
+            <span class="day-name">{{ dayNames[day] }}</span>
+          </label>
+          <div class="time-inputs">
+            <input
+              :value="days.get(day as DayOfWeek)?.startTime"
+              :disabled="!days.get(day as DayOfWeek)?.enabled"
+              type="time"
+              class="time-input"
+              @input="
+                e => updateDayStartTime(day as DayOfWeek, (e.target as HTMLInputElement).value)
+              "
+            />
+            <span class="time-separator">-</span>
+            <input
+              :value="days.get(day as DayOfWeek)?.endTime"
+              :disabled="!days.get(day as DayOfWeek)?.enabled"
+              type="time"
+              class="time-input"
+              @input="e => updateDayEndTime(day as DayOfWeek, (e.target as HTMLInputElement).value)"
+            />
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="filter-group status-filter">
-      <label>Status:</label>
+      <label>Statut:</label>
       <div class="status-checkboxes">
         <label class="checkbox-label">
           <input
@@ -76,7 +119,7 @@ const updateStatus = (event: Event & { target: HTMLInputElement }) => {
             class="checkbox-input"
             @change="updateStatus"
           />
-          <span>Available</span>
+          <span>Disponible</span>
         </label>
         <label class="checkbox-label">
           <input
@@ -86,7 +129,7 @@ const updateStatus = (event: Event & { target: HTMLInputElement }) => {
             class="checkbox-input"
             @change="updateStatus"
           />
-          <span>Full</span>
+          <span>Complet</span>
         </label>
         <label class="checkbox-label">
           <input
@@ -96,7 +139,7 @@ const updateStatus = (event: Event & { target: HTMLInputElement }) => {
             class="checkbox-input"
             @change="updateStatus"
           />
-          <span>Passed</span>
+          <span>Passé</span>
         </label>
         <label class="checkbox-label">
           <input
@@ -106,7 +149,7 @@ const updateStatus = (event: Event & { target: HTMLInputElement }) => {
             class="checkbox-input"
             @change="updateStatus"
           />
-          <span>Cancelled</span>
+          <span>Annulé</span>
         </label>
       </div>
     </div>
@@ -131,14 +174,50 @@ const updateStatus = (event: Event & { target: HTMLInputElement }) => {
   gap: var(--spacing-sm);
 }
 
-.filter-group label {
+.filter-group > label {
   font-size: var(--font-sm);
   font-weight: 600;
   color: var(--color-text-primary);
 }
 
-.filter-input {
-  padding: var(--spacing-sm);
+.days-filter {
+  flex: 1;
+  min-width: 300px;
+}
+
+.day-filters {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.day-row {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.day-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  cursor: pointer;
+  min-width: 100px;
+}
+
+.day-name {
+  font-size: var(--font-sm);
+  color: var(--color-text-secondary);
+}
+
+.time-inputs {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.time-input {
+  padding: var(--spacing-xs) var(--spacing-sm);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
   font-size: var(--font-sm);
@@ -147,19 +226,20 @@ const updateStatus = (event: Event & { target: HTMLInputElement }) => {
   transition: border-color var(--transition-fast);
 }
 
-.filter-input:focus {
+.time-input:disabled {
+  background-color: var(--color-bg-light);
+  color: var(--color-text-muted);
+  cursor: not-allowed;
+}
+
+.time-input:focus:not(:disabled) {
   outline: none;
   border-color: var(--color-primary);
 }
 
-/* Style the datetime picker icon/button */
-.filter-input::-webkit-calendar-picker-indicator {
-  cursor: pointer;
-  filter: invert(0.5);
-}
-
-.filter-input::-webkit-calendar-picker-indicator:hover {
-  filter: invert(0.3);
+.time-separator {
+  color: var(--color-text-muted);
+  font-size: var(--font-sm);
 }
 
 .status-filter {

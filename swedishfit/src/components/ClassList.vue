@@ -35,7 +35,7 @@ defineProps<Props>()
 
 <template>
   <div>
-    <p class="results-count">{{ classes.length }} classes found</p>
+    <p class="results-count">{{ classes.length }} cours trouvés</p>
 
     <div class="classes">
       <ClassCard

@@ -39,6 +39,33 @@ const googleMapsUrl = computed(() => {
   }
   return null
 })
+
+const formattedTime = computed(() => {
+  const date = new Date(props.gymClass.timestamp)
+  const dayNames = ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi']
+  const monthNames = [
+    'Janvier',
+    'Février',
+    'Mars',
+    'Avril',
+    'Mai',
+    'Juin',
+    'Juillet',
+    'Août',
+    'Septembre',
+    'Octobre',
+    'Novembre',
+    'Décembre'
+  ]
+
+  const dayName = dayNames[date.getDay()]
+  const day = date.getDate()
+  const month = monthNames[date.getMonth()]
+  const hours = String(date.getHours()).padStart(2, '0')
+  const minutes = String(date.getMinutes()).padStart(2, '0')
+
+  return `${dayName} ${day} ${month}, ${hours}h${minutes}`
+})
 </script>
 
 <template>
@@ -72,17 +99,15 @@ const googleMapsUrl = computed(() => {
       </span>
     </div>
     <div class="class-details">
-      <div class="detail"><strong>Teacher:</strong> {{ gymClass.teacher }}</div>
-      <div class="detail">
-        <strong>Time:</strong> {{ new Date(gymClass.timestamp).toLocaleString() }}
-      </div>
+      <div class="detail"><strong>Animation:</strong> {{ gymClass.teacher }}</div>
+      <div class="detail"><strong>Horaire:</strong> {{ formattedTime }}</div>
     </div>
   </div>
 </template>
 
 <style scoped>
 .class-card {
-  padding: var(--spacing-lg);
+  padding: var(--spacing-md);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   background-color: var(--color-bg-white);

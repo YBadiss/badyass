@@ -42,26 +42,28 @@ const locationsData = ref<CrawledLocations | null>(null)
 const loading = ref(true)
 const error = ref<string | null>(null)
 
-// Filter state
-const filterAfter = ref<string>('')
-const filterBefore = ref<string>('')
-const filterStatus = ref<string[]>(['AVAILABLE'])
+// Day of week type
+type DayOfWeek = 0 | 1 | 2 | 3 | 4 | 5 | 6 // 0 = Sunday, 6 = Saturday
 
-// Initialize filter defaults
-const initializeFilters = () => {
-  // Default "after" to 1 hour ago
-  const oneHourAgo = new Date()
-  oneHourAgo.setHours(oneHourAgo.getHours() - 1)
-  filterAfter.value = oneHourAgo.toISOString().slice(0, 16)
-
-  // Default "before" to next week
-  const nextWeek = new Date()
-  nextWeek.setDate(nextWeek.getDate() + 7)
-  filterBefore.value = nextWeek.toISOString().slice(0, 16)
+interface DayTimeRange {
+  enabled: boolean
+  startTime: string // HH:mm format
+  endTime: string // HH:mm format
 }
 
-// Initialize filters on load
-initializeFilters()
+// Filter state
+const filterDays = ref<Map<DayOfWeek, DayTimeRange>>(
+  new Map([
+    [0, { enabled: true, startTime: '08:00', endTime: '20:00' }], // Sunday
+    [1, { enabled: true, startTime: '08:00', endTime: '20:00' }], // Monday
+    [2, { enabled: true, startTime: '08:00', endTime: '20:00' }], // Tuesday
+    [3, { enabled: true, startTime: '08:00', endTime: '20:00' }], // Wednesday
+    [4, { enabled: true, startTime: '08:00', endTime: '20:00' }], // Thursday
+    [5, { enabled: true, startTime: '08:00', endTime: '20:00' }], // Friday
+    [6, { enabled: true, startTime: '08:00', endTime: '20:00' }] // Saturday
+  ])
+)
+const filterStatus = ref<string[]>(['AVAILABLE'])
 
 // Create a map of location names to Location objects for quick lookup
 const locationMap = computed(() => {
@@ -80,17 +82,18 @@ const filteredClasses = computed(() => {
 
   return classesData.value.classes.filter(gymClass => {
     const classDate = new Date(gymClass.timestamp)
+    const dayOfWeek = classDate.getDay() as DayOfWeek
+    const classTime = `${String(classDate.getHours()).padStart(2, '0')}:${String(classDate.getMinutes()).padStart(2, '0')}`
 
-    // Filter by "after" time
-    if (filterAfter.value) {
-      const afterDate = new Date(filterAfter.value)
-      if (classDate < afterDate) return false
+    // Filter by day and time range
+    const dayFilter = filterDays.value.get(dayOfWeek)
+    if (!dayFilter || !dayFilter.enabled) {
+      return false
     }
 
-    // Filter by "before" time
-    if (filterBefore.value) {
-      const beforeDate = new Date(filterBefore.value)
-      if (classDate > beforeDate) return false
+    // Check if class time is within the allowed time range for this day
+    if (classTime < dayFilter.startTime || classTime > dayFilter.endTime) {
+      return false
     }
 
     // Filter by status
@@ -138,28 +141,24 @@ onMounted(async () => {
     </header>
 
     <main>
-      <div v-if="loading" class="loading">Loading data...</div>
+      <div v-if="loading" class="loading">Chargement des données...</div>
 
       <div v-else-if="error" class="error">
-        Error: {{ error }}
-        <p class="hint">Run <code>npm run crawl</code> to generate data</p>
+        Erreur: {{ error }}
+        <p class="hint">Exécutez <code>npm run crawl</code> pour générer les données</p>
       </div>
 
       <div v-else-if="classesData">
         <p class="timestamp">
-          Last updated: {{ new Date(classesData.timestamp).toLocaleString() }}
+          Dernière mise à jour: {{ new Date(classesData.timestamp).toLocaleString('fr-FR') }}
         </p>
 
         <div v-if="classesData.classes.length === 0" class="empty">
-          No classes found. Run <code>npm run crawl</code> to fetch data.
+          Aucun cours trouvé. Exécutez <code>npm run crawl</code> pour récupérer les données.
         </div>
 
         <div v-else>
-          <FilterSection
-            v-model:after="filterAfter"
-            v-model:before="filterBefore"
-            v-model:status="filterStatus"
-          />
+          <FilterSection v-model:days="filterDays" v-model:status="filterStatus" />
 
           <ClassList :classes="filteredClasses" :location-map="locationMap" />
         </div>
