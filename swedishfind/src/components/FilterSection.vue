@@ -57,8 +57,8 @@ const updateDayEndTime = (day: DayOfWeek, endTime: string) => {
   emit('update:days', newDays)
 }
 
-const updateStatus = (event: Event & { target: HTMLInputElement }) => {
-  const target = event.target
+const updateStatus = (event: Event) => {
+  const target = event.target as HTMLInputElement
   const currentStatus = [...props.status]
 
   if (target.checked) {
@@ -75,8 +75,8 @@ const updateStatus = (event: Event & { target: HTMLInputElement }) => {
   emit('update:status', currentStatus)
 }
 
-const updateActivities = (event: Event & { target: HTMLInputElement }) => {
-  const target = event.target
+const updateActivities = (event: Event) => {
+  const target = event.target as HTMLInputElement
   const currentActivities = [...props.activities]
 
   if (target.checked) {
