@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-04T20:56:40.635Z",
+  "timestamp": "2026-01-04T21:33:41.141Z",
   "classes": [
     {
       "timestamp": "2026-01-04T09:00:00.000Z",
@@ -811,8 +811,8 @@
         "name": "Core",
         "icon": "https://design.swedishfit.com/ae9c6474c3d9faf93d7365e6c20ab2b6af153446/user/classlevel/icon_95_core.svg"
       },
-      "teacher": "Animateur Swedish Fit",
-      "status": "FULL",
+      "teacher": "Jérôme B",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/737393"
     },
     {
@@ -900,7 +900,7 @@
         "icon": "https://design.swedishfit.com/ae9c6474c3d9faf93d7365e6c20ab2b6af153446/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Evelina",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/732037"
     },
     {
@@ -922,7 +922,7 @@
         "icon": "https://design.swedishfit.com/ae9c6474c3d9faf93d7365e6c20ab2b6af153446/user/classlevel/icon_40_intensif.svg"
       },
       "teacher": "François-Xavier WM",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/736876"
     },
     {
@@ -1097,7 +1097,7 @@
         "name": "Standard",
         "icon": "https://design.swedishfit.com/ae9c6474c3d9faf93d7365e6c20ab2b6af153446/user/classlevel/icon_30_standard.svg"
       },
-      "teacher": "Animateur Swedish Fit",
+      "teacher": "Jérôme B",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/737429"
     },
@@ -1538,7 +1538,7 @@
         "icon": "https://design.swedishfit.com/ae9c6474c3d9faf93d7365e6c20ab2b6af153446/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Rose Ch",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/706451"
     },
     {
