@@ -1,0 +1,693 @@
+{
+  "timestamp": "2026-01-04T15:23:34.133Z",
+  "locations": [
+    {
+      "name": "Paris  9 Bergère",
+      "address": "5 rue Bergère, 75009 Paris",
+      "gpsCoordinates": {
+        "lat": 48.872071,
+        "lon": 2.347287
+      }
+    },
+    {
+      "name": "Paris  5 Crous",
+      "address": "31, avenue Georges Bernanos, 75005 Paris",
+      "gpsCoordinates": {
+        "lat": 48.8404804,
+        "lon": 2.3377227
+      }
+    },
+    {
+      "name": "Paris  7 Saint-Jean",
+      "address": "11 rue Pierre Villey, 75007 Paris",
+      "gpsCoordinates": {
+        "lat": 48.859371,
+        "lon": 2.304966
+      }
+    },
+    {
+      "name": "Paris  6 Stanislas",
+      "address": "Collège Stanislas - 6 rue du Montparnasse, 75006 Paris",
+      "gpsCoordinates": {
+        "lat": 48.845092,
+        "lon": 2.328038
+      }
+    },
+    {
+      "name": "Vincennes Alemana",
+      "address": "35 rue Jean Moulin, 94300 Vincennes",
+      "gpsCoordinates": {
+        "lat": 48.8459087,
+        "lon": 2.4301775000000134
+      }
+    },
+    {
+      "name": "Paris 15 Beaugrenelle-C3B",
+      "address": "C3B 52 rue Emeriau, 75015 Paris",
+      "gpsCoordinates": {
+        "lat": 48.8486223,
+        "lon": 2.285227299999974
+      }
+    },
+    {
+      "name": "Strasbourg Neudorf",
+      "address": "23 rue Lazaret, 67100 Strasbourg",
+      "gpsCoordinates": {
+        "lat": 48.5630086,
+        "lon": 7.7597667
+      }
+    },
+    {
+      "name": "Boulogne Carnot",
+      "address": "57 rue Carnot, 92100 Boulogne Billancourt",
+      "gpsCoordinates": {
+        "lat": 48.8339079,
+        "lon": 2.2382804
+      }
+    },
+    {
+      "name": "Strasbourg Lucie Berger",
+      "address": "10 rue Saint Marc, 67000 Strasbourg",
+      "gpsCoordinates": {
+        "lat": 48.5783606,
+        "lon": 7.742617500000051
+      }
+    },
+    {
+      "name": "Paris 11 AEPP",
+      "address": "4 rue Titon, 75011 Paris",
+      "gpsCoordinates": {
+        "lat": 48.8508072,
+        "lon": 2.3866611
+      }
+    },
+    {
+      "name": "Nantes Lycée St Stanislas",
+      "address": "15 rue Adolphe Moitié, 44000 NANTES",
+      "gpsCoordinates": {
+        "lat": 0,
+        "lon": 0
+      }
+    },
+    {
+      "name": "Nantes Ecole Sainte-Madeleine",
+      "address": "26 Bd Babin Chevaye, 44200 NANTES",
+      "gpsCoordinates": {
+        "lat": 0,
+        "lon": 0
+      }
+    },
+    {
+      "name": "Paris 10 Chaudron",
+      "address": "22 Rue Chaudron, 75010 PARIS",
+      "gpsCoordinates": {
+        "lat": 48.8836389,
+        "lon": 2.3647676
+      }
+    },
+    {
+      "name": "Strasbourg Saint-Joseph",
+      "address": "53 rue Saint Urbain, 67100 Strasbourg",
+      "gpsCoordinates": {
+        "lat": 48.5703,
+        "lon": 7.76477
+      }
+    },
+    {
+      "name": "Strasbourg Les Bains Municipaux",
+      "address": "10 Bd de la Victoire, 67000 Strasbourg",
+      "gpsCoordinates": {
+        "lat": 48.5833726,
+        "lon": 7.7596492
+      }
+    },
+    {
+      "name": "Paris  3 Carreau du Temple",
+      "address": "2 rue Perrée, 75003 Paris",
+      "gpsCoordinates": {
+        "lat": 48.8641016,
+        "lon": 2.362607799999978
+      }
+    },
+    {
+      "name": "Asnières Bruyères",
+      "address": "30 avenue de la Lauzière, 92600 Asnières sur Seine",
+      "gpsCoordinates": {
+        "lat": 48.90829,
+        "lon": 2.276152
+      }
+    },
+    {
+      "name": "Toulouse Espace Allegria",
+      "address": "110 rue Achille Viadieu, 31400 Toulouse",
+      "gpsCoordinates": {
+        "lat": 43.589673,
+        "lon": 1.444855
+      }
+    },
+    {
+      "name": "Paris 14 Cité Universitaire - Espace Sud",
+      "address": "17 Boulevard Jourdan, 75014 Paris",
+      "gpsCoordinates": {
+        "lat": 48.81719,
+        "lon": 2.33963
+      }
+    },
+    {
+      "name": "Paris 18 Championnet",
+      "address": "2 impasse Massonet, 75018 PARIS",
+      "gpsCoordinates": {
+        "lat": 48.895474,
+        "lon": 2.351679
+      }
+    },
+    {
+      "name": "Paris 17 INSPE Batignolles",
+      "address": "56 boulevard des batignolles, 75017 Paris",
+      "gpsCoordinates": {
+        "lat": 48.8825699,
+        "lon": 2.321732200000042
+      }
+    },
+    {
+      "name": "Paris  7 Sainte-Jeanne-Elisabeth",
+      "address": "19 rue du Général Bertrand, 75007 Paris",
+      "gpsCoordinates": {
+        "lat": 48.8473929,
+        "lon": 2.313734199999999
+      }
+    },
+    {
+      "name": "Montreuil Robespierre",
+      "address": "32 rue Robespierre, 93100 Montreuil",
+      "gpsCoordinates": {
+        "lat": 48.8542853,
+        "lon": 2.4232257999999547
+      }
+    },
+    {
+      "name": "Paris 12 Arago",
+      "address": "9 rue Picpus, 75012 Paris",
+      "gpsCoordinates": {
+        "lat": 48.8475444,
+        "lon": 2.393475800000033
+      }
+    },
+    {
+      "name": "Toulouse Gymnase Barada",
+      "address": "1  rue Malbec, 31000 Toulouse",
+      "gpsCoordinates": {
+        "lat": 43.6023609,
+        "lon": 1.4394118999999819
+      }
+    },
+    {
+      "name": "Paris 17 Champerret",
+      "address": "11, rue Jacques Ibert, 75017 Paris",
+      "gpsCoordinates": {
+        "lat": 48.88894879999999,
+        "lon": 2.2908128999999917
+      }
+    },
+    {
+      "name": "Paris 18 Saint-Louis",
+      "address": "Impasse de la Grosse Bouteille, 75018 Paris",
+      "gpsCoordinates": {
+        "lat": 48.8948887,
+        "lon": 2.3396238999999923
+      }
+    },
+    {
+      "name": "Paris 19 L'Initiative",
+      "address": "20 rue Bouret, 75019 Paris",
+      "gpsCoordinates": {
+        "lat": 48.88138740000001,
+        "lon": 2.3747865000000274
+      }
+    },
+    {
+      "name": "La Garenne Colombes ESG",
+      "address": "23-25, rue d'Estienne d'Orves, 92250 La Garenne Colombes",
+      "gpsCoordinates": {
+        "lat": 48.90924520000001,
+        "lon": 2.248133100000018
+      }
+    },
+    {
+      "name": "Paris 13 Gymnase Rodin",
+      "address": "39 Rue des Cordelières, 75013 Paris",
+      "gpsCoordinates": {
+        "lat": 48.8332097,
+        "lon": 2.3483625000000075
+      }
+    },
+    {
+      "name": "Paris 14 La Bruyère",
+      "address": "66 rue de L'Abbé Carton, 75014 Paris",
+      "gpsCoordinates": {
+        "lat": 48.82849040000001,
+        "lon": 2.3183486000000357
+      }
+    },
+    {
+      "name": "Paris 14 Sainte Catherine Labouré",
+      "address": "29 rue Gassendi, 75014 Paris",
+      "gpsCoordinates": {
+        "lat": 48.833924,
+        "lon": 2.32623250000006
+      }
+    },
+    {
+      "name": "Toulouse Gymnase Sainte-Famille",
+      "address": "10 Rue de l'Abbé Sicard, 31200 Toulouse",
+      "gpsCoordinates": {
+        "lat": 43.617622,
+        "lon": 1.4353711999999632
+      }
+    },
+    {
+      "name": "Lyon 6 Vauban",
+      "address": "60 rue Vauban, 69006 Lyon",
+      "gpsCoordinates": {
+        "lat": 45.764884,
+        "lon": 4.847078600000032
+      }
+    },
+    {
+      "name": "Lyon 4 Saint-Denis",
+      "address": "9 rue Hénon, 69004 Lyon",
+      "gpsCoordinates": {
+        "lat": 45.7793615,
+        "lon": 4.831250100000034
+      }
+    },
+    {
+      "name": "Paris  6 Sainte-Geneviève",
+      "address": "64 Rue d'Assas, 75006 Paris",
+      "gpsCoordinates": {
+        "lat": 48.8458549,
+        "lon": 2.3312475999999833
+      }
+    },
+    {
+      "name": "Strasbourg Saint-Urbain",
+      "address": "59, Avenue Jean Jaures, 67100 Strasbourg",
+      "gpsCoordinates": {
+        "lat": 48.56806,
+        "lon": 7.7690258
+      }
+    },
+    {
+      "name": "Lyon 2 Sainte Hélène",
+      "address": "5 rue Sainte Hélène, 69002 Lyon",
+      "gpsCoordinates": {
+        "lat": 45.7554196,
+        "lon": 4.828326699999934
+      }
+    },
+    {
+      "name": "Strasbourg Kléber",
+      "address": "25 Place de Bordeaux, 67000 Strasbourg",
+      "gpsCoordinates": {
+        "lat": 48.594205,
+        "lon": 7.757065000000011
+      }
+    },
+    {
+      "name": "Lyon 7 Saint-Louis",
+      "address": "82 rue du Rachais, 69007 Lyon",
+      "gpsCoordinates": {
+        "lat": 45.7483529,
+        "lon": 4.849054600000045
+      }
+    },
+    {
+      "name": "Bordeaux Notre Dame",
+      "address": "3, rue Villeneuve, 33000 Bordeaux",
+      "gpsCoordinates": {
+        "lat": 0,
+        "lon": 0
+      }
+    },
+    {
+      "name": "Bordeaux Fight n Fit",
+      "address": "92 Cours le Rouzic, 33100 Bordeaux",
+      "gpsCoordinates": {
+        "lat": 0,
+        "lon": 0
+      }
+    },
+    {
+      "name": "Lyon 3 SEPR",
+      "address": "46 Rue Professeur Rochaix, 69003 Lyon",
+      "gpsCoordinates": {
+        "lat": 45.7456171,
+        "lon": 4.876932
+      }
+    },
+    {
+      "name": "Paris  8 Fénelon Sainte Marie",
+      "address": "47 rue de Naples, 75008 Paris",
+      "gpsCoordinates": {
+        "lat": 48.87905019999999,
+        "lon": 2.3165057
+      }
+    },
+    {
+      "name": "Lyon 6 Fénelon",
+      "address": "3 rue Paul Michel Perret, 69006 Lyon",
+      "gpsCoordinates": {
+        "lat": 45.77244289999999,
+        "lon": 4.8508775
+      }
+    },
+    {
+      "name": "Courbevoie Montalembert",
+      "address": "238 Boulevard Saint-Denis, 92400 Courbevoie",
+      "gpsCoordinates": {
+        "lat": 48.90309500000001,
+        "lon": 2.2761103
+      }
+    },
+    {
+      "name": "Paris  3 Turgot",
+      "address": "69 Rue de Turbigo, 75003 Paris",
+      "gpsCoordinates": {
+        "lat": 48.86628685758602,
+        "lon": 2.3588465681276802
+      }
+    },
+    {
+      "name": "Paris 14 Cité Universitaire - Arts et Métiers",
+      "address": "Gymnase des Arts et Métiers, \n27, Boulevard Jourdan, 75014 Paris",
+      "gpsCoordinates": {
+        "lat": 48.8181936440081,
+        "lon": 2.3343996283253103
+      }
+    },
+    {
+      "name": "Paris 13 Gobelins",
+      "address": "9, rue Croulebarbe, 75013 Paris",
+      "gpsCoordinates": {
+        "lat": 48.8340952,
+        "lon": 2.3523378
+      }
+    },
+    {
+      "name": "Neuilly Saint Dominique",
+      "address": "Institution Saint Dominique, \n23 quater Bd d'Argenson, 92200 Neuilly-sur-Seine",
+      "gpsCoordinates": {
+        "lat": 48.88640849999999,
+        "lon": 2.2672706
+      }
+    },
+    {
+      "name": "Bordeaux Mama Shelter",
+      "address": "19 Rue Poquelin Molière, 33000 Bordeaux",
+      "gpsCoordinates": {
+        "lat": 0,
+        "lon": 0
+      }
+    },
+    {
+      "name": "Paris 11 Charles Péguy",
+      "address": "80 avenue Parmentier, 75011 Paris",
+      "gpsCoordinates": {
+        "lat": 48.8643639,
+        "lon": 2.3754904
+      }
+    },
+    {
+      "name": "Paris 15 Corbon",
+      "address": "5 rue Corbon, 75015 Paris",
+      "gpsCoordinates": {
+        "lat": 48.8363636,
+        "lon": 2.3032156
+      }
+    },
+    {
+      "name": "Paris 13 Foyer Tolbiac",
+      "address": "234, Rue de Tolbiac, 75013 Paris",
+      "gpsCoordinates": {
+        "lat": 48.8264102,
+        "lon": 2.3431034
+      }
+    },
+    {
+      "name": "Paris 20 Prairies",
+      "address": "128 rue de Bagnolet, 75020 Paris",
+      "gpsCoordinates": {
+        "lat": 48.8607223,
+        "lon": 2.4049327
+      }
+    },
+    {
+      "name": "Paris  8 Racine",
+      "address": "38 rue de Naples, 75008 Paris",
+      "gpsCoordinates": {
+        "lat": 48.879362,
+        "lon": 2.3159495
+      }
+    },
+    {
+      "name": "Paris 10 Gustave Ferrié",
+      "address": "7 Rue des Écluses Saint-Martin, 75010 Paris",
+      "gpsCoordinates": {
+        "lat": 48.8765253,
+        "lon": 2.3673444
+      }
+    },
+    {
+      "name": "Nantes Joliverie Sud",
+      "address": "38 rue du Président Aristide Briand, 44230 Saint-Sébastien-sur-Loire",
+      "gpsCoordinates": {
+        "lat": 0,
+        "lon": 0
+      }
+    },
+    {
+      "name": "Paris  5 Saint Victor",
+      "address": "35 rue Jussieu, 75005 Paris",
+      "gpsCoordinates": {
+        "lat": 48.8469907,
+        "lon": 2.3535833
+      }
+    },
+    {
+      "name": "Bordeaux Saint-Genès",
+      "address": "144 rue Saint-Genès, 33000 Bordeaux",
+      "gpsCoordinates": {
+        "lat": 0,
+        "lon": 0
+      }
+    },
+    {
+      "name": "Paris 15 UFR STAPS",
+      "address": "1 Rue Lacretelle, 75015 PARIS",
+      "gpsCoordinates": {
+        "lat": 48.8339702,
+        "lon": 2.2914473
+      }
+    },
+    {
+      "name": "Paris 13 Notre Dame de la Gare",
+      "address": "20 Rue de Domrémy, 75013 PARIS",
+      "gpsCoordinates": {
+        "lat": 48.8301175,
+        "lon": 2.3722958
+      }
+    },
+    {
+      "name": "Paris 14 Moulin Vert",
+      "address": "16 rue du Moulin Vert, 75014 Paris",
+      "gpsCoordinates": {
+        "lat": 48.829546,
+        "lon": 2.32447
+      }
+    },
+    {
+      "name": "Paris 10 IRTS",
+      "address": "145 avenue Parmentier, 75010 Paris",
+      "gpsCoordinates": {
+        "lat": 48.870772,
+        "lon": 2.3702332
+      }
+    },
+    {
+      "name": "Paris 16 Lübeck",
+      "address": "4 rue de l'Amiral d'Estaing, 75116 Paris",
+      "gpsCoordinates": {
+        "lat": 48.866774,
+        "lon": 2.293477
+      }
+    },
+    {
+      "name": "Paris 13 Collège St Vincent de Paul 49",
+      "address": "49 Rue Bobillot, 75013 PARIS",
+      "gpsCoordinates": {
+        "lat": 48.8282368,
+        "lon": 2.3529906
+      }
+    },
+    {
+      "name": "Paris 13 Ecole St Vincent de Paul 109",
+      "address": "109 Rue Bobillot, 75013 PARIS",
+      "gpsCoordinates": {
+        "lat": 48.8236364,
+        "lon": 2.3483394
+      }
+    },
+    {
+      "name": "Paris 20 La Providence Don Bosco",
+      "address": "9 passage de la Providence, 75020 PARIS",
+      "gpsCoordinates": {
+        "lat": 48.8540552,
+        "lon": 2.4037741
+      }
+    },
+    {
+      "name": "Paris 12 Saint Michel de Picpus",
+      "address": "45 Boulevard de Picpus, 75012 PARIS",
+      "gpsCoordinates": {
+        "lat": 48.8440685,
+        "lon": 2.401603300000001
+      }
+    },
+    {
+      "name": "Marseille 1 Cours Julien",
+      "address": "13 Rue des trois Mages, 13001 Marseille",
+      "gpsCoordinates": {
+        "lat": 43.2948448,
+        "lon": 5.3845282
+      }
+    },
+    {
+      "name": "Vincennes Saint Louis",
+      "address": "34 Rue Céline Robert, 94300 VINCENNES",
+      "gpsCoordinates": {
+        "lat": 48.8479807,
+        "lon": 2.4199796
+      }
+    },
+    {
+      "name": "Marseille 4 Les Chartreux",
+      "address": "Collège Saint Bruno La Salle, \n8 A, place Edmond Audran, 13004 Marseille",
+      "gpsCoordinates": {
+        "lat": 43.3093263,
+        "lon": 5.401981399999999
+      }
+    },
+    {
+      "name": "Pantin Saint Joseph La Salle",
+      "address": "12 Avenue du 8 Mai 1945, 93500 PANTIN",
+      "gpsCoordinates": {
+        "lat": 48.89148240000001,
+        "lon": 2.4138229
+      }
+    },
+    {
+      "name": "Strasbourg Congrégration Neudorf",
+      "address": "20 Rue de la Charité, 67100 STRASBOURG",
+      "gpsCoordinates": {
+        "lat": 48.5615058,
+        "lon": 7.758432500000001
+      }
+    },
+    {
+      "name": "Montrouge Jeanne d'Arc",
+      "address": "5 Avenue Emile Boutroux, 92120 Montrouge",
+      "gpsCoordinates": {
+        "lat": 48.8190539,
+        "lon": 2.3189754
+      }
+    },
+    {
+      "name": "Paris  6 Ecole Alsacienne",
+      "address": "109 Rue Notre-Dame-des-Champs, 75006 PARIS",
+      "gpsCoordinates": {
+        "lat": 48.8410443,
+        "lon": 2.3336187
+      }
+    },
+    {
+      "name": "Nantes CREPS PDL",
+      "address": "5 Avenue de la Babinière, 44240 La Chapelle sur Erdre",
+      "gpsCoordinates": {
+        "lat": 0,
+        "lon": 0
+      }
+    },
+    {
+      "name": "Montreuil Doriant",
+      "address": "10, Rue du Colonel Raynal, 93100 MONTREUIL",
+      "gpsCoordinates": {
+        "lat": 48.856283,
+        "lon": 2.434723
+      }
+    },
+    {
+      "name": "Nice Parc de la Colline du Château",
+      "address": "Parc de la Colline du Château , \nMontée Monfort, 06300 NICE",
+      "gpsCoordinates": {
+        "lat": 43.6959352,
+        "lon": 7.279660100000001
+      }
+    },
+    {
+      "name": "Nice Port Lympia",
+      "address": "1 Quai des Deux Emmanuels, 06300 NICE",
+      "gpsCoordinates": {
+        "lat": 43.6981958,
+        "lon": 7.286602800000001
+      }
+    },
+    {
+      "name": "Marseille 6 Ecole Cours Bastide",
+      "address": "50 Rue Lodi, 13006 MARSEILLE",
+      "gpsCoordinates": {
+        "lat": 43.28959870000001,
+        "lon": 5.3867696
+      }
+    },
+    {
+      "name": "Marseille 8 Ecole Jeanne D'Arc",
+      "address": "12 Boulevard Lord Duveen, 13008 MARSEILLE",
+      "gpsCoordinates": {
+        "lat": 43.276092,
+        "lon": 5.38764
+      }
+    },
+    {
+      "name": "Paris 15 Lourmel",
+      "address": "110 Rue de Lourmel, 75015 PARIS",
+      "gpsCoordinates": {
+        "lat": 48.8429434,
+        "lon": 2.2860866
+      }
+    },
+    {
+      "name": "Nice Sasserno",
+      "address": "Ruelle des Prés, 06000 NICE",
+      "gpsCoordinates": {
+        "lat": 43.702049,
+        "lon": 7.270579
+      }
+    },
+    {
+      "name": "Malakoff Vanves Notre Dame de France",
+      "address": "5 avenue Arblade, 92240 MALAKOFF",
+      "gpsCoordinates": {
+        "lat": 48.8187165,
+        "lon": 2.2935012
+      }
+    },
+    {
+      "name": "Lyon 7 La Commune",
+      "address": "3 Rue Pré-Gaudry, 69007 Lyon",
+      "gpsCoordinates": {
+        "lat": 45.7423226,
+        "lon": 4.833995
+      }
+    }
+  ]
+}

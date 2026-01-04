@@ -1,0 +1,36 @@
+{
+  "name": "swedishfit",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "crawlClasses": "tsx crawler/classes.ts",
+    "crawlLocations": "tsx crawler/locations.ts",
+    "lint": "eslint src/ crawler/ --ext .vue,.js,.ts",
+    "lint:fix": "eslint src/ crawler/ --ext .vue,.js,.ts --fix",
+    "format": "prettier --write \"**/*.{vue,js,ts,css,json}\"",
+    "format:check": "prettier --check \"**/*.{vue,js,ts,css,json}\""
+  },
+  "dependencies": {
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@typescript-eslint/eslint-plugin": "^8.46.3",
+    "@typescript-eslint/parser": "^8.46.3",
+    "@types/node": "^22.10.5",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "cheerio": "^1.0.0",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-vue": "^10.5.1",
+    "prettier": "^3.6.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.46.3",
+    "vite": "^7.0.5",
+    "vue-tsc": "^2.1.0"
+  }
+}
