@@ -11,7 +11,8 @@
     "lint": "eslint src/ crawler/ --ext .vue,.js,.ts",
     "lint:fix": "eslint src/ crawler/ --ext .vue,.js,.ts --fix",
     "format": "prettier --write \"**/*.{vue,js,ts,css,json}\"",
-    "format:check": "prettier --check \"**/*.{vue,js,ts,css,json}\""
+    "format:check": "prettier --check \"**/*.{vue,js,ts,css,json}\"",
+    "deploy": "bash deploy.sh"
   },
   "dependencies": {
     "@types/leaflet": "^1.9.21",
