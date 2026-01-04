@@ -2,6 +2,9 @@
 import { ref, onMounted, watch, computed } from 'vue'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
+import iconRetinaUrl from 'leaflet/dist/images/marker-icon-2x.png';
+import iconUrl from 'leaflet/dist/images/marker-icon.png';
+import shadowUrl from 'leaflet/dist/images/marker-shadow.png';
 
 type Activity = {
   name: string
@@ -54,6 +57,15 @@ const groupedByLocation = computed(() => {
 
 const initMap = () => {
   if (!mapContainer.value) return
+
+  // Fix default icon paths for bundlers (Vite/Webpack/etc.)
+  delete (L.Icon.Default.prototype as any)._getIconUrl;
+
+  L.Icon.Default.mergeOptions({
+    iconRetinaUrl,
+    iconUrl,
+    shadowUrl,
+  });
 
   // Create map centered on Paris
   map = L.map(mapContainer.value).setView([48.8566, 2.3522], 12)
