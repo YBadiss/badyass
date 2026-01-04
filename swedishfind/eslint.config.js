@@ -23,7 +23,8 @@ export default tseslint.config(
         HTMLDivElement: 'readonly',
         Event: 'readonly',
         URLSearchParams: 'readonly',
-        process: 'readonly'
+        process: 'readonly',
+        localStorage: 'readonly'
       },
       parserOptions: {
         parser: tseslint.parser,

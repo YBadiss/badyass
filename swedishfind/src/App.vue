@@ -71,6 +71,37 @@ const filterActivities = ref<string[]>([])
 // View mode: 'list' or 'map'
 const viewMode = ref<'list' | 'map'>('map')
 
+// Save filters to localStorage
+const saveFilters = () => {
+  const filtersToSave = {
+    days: Array.from(filterDays.value.entries()),
+    status: filterStatus.value,
+    activities: filterActivities.value
+  }
+  localStorage.setItem('swedishfind-filters', JSON.stringify(filtersToSave))
+}
+
+// Restore filters from localStorage
+const restoreFilters = () => {
+  const saved = localStorage.getItem('swedishfind-filters')
+  if (saved) {
+    try {
+      const parsed = JSON.parse(saved)
+      if (parsed.days) {
+        filterDays.value = new Map(parsed.days)
+      }
+      if (parsed.status) {
+        filterStatus.value = parsed.status
+      }
+      if (parsed.activities) {
+        filterActivities.value = parsed.activities
+      }
+    } catch (e) {
+      console.error('Failed to restore filters:', e)
+    }
+  }
+}
+
 // Create a map of location names to Location objects for quick lookup
 const locationMap = computed(() => {
   const map = new Map<string, Location>()
@@ -129,6 +160,9 @@ const filteredClasses = computed(() => {
 })
 
 onMounted(async () => {
+  // Restore saved filters first
+  restoreFilters()
+
   try {
     // Load both classes and locations data in parallel
     const [classesResponse, locationsResponse] = await Promise.all([
@@ -160,7 +194,7 @@ onMounted(async () => {
 <template>
   <div class="container">
     <header>
-      <h1>Swedish Fit</h1>
+      <h1>Swedish Find</h1>
     </header>
 
     <main>
@@ -186,6 +220,8 @@ onMounted(async () => {
             v-model:status="filterStatus"
             v-model:activities="filterActivities"
             :available-activities="availableActivities"
+            @save="saveFilters"
+            @restore="restoreFilters"
           />
 
           <div class="view-tabs">

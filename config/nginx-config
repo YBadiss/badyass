@@ -16,6 +16,12 @@ server {
         try_files $uri $uri/ /projects/facet/index.html;
     }
 
+    # Location block for /projects/swedishfind - serve swedishfind app
+    location ^~ /projects/swedishfind {
+        alias /var/www/badyass.xyz/swedishfind;
+        try_files $uri $uri/ /projects/swedishfind/index.html;
+    }
+
     # Location block for root (home page) - override root
     location / {
         root /var/www/badyass.xyz/home;

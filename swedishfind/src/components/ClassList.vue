@@ -120,6 +120,7 @@ const toggleLocation = (locationName: string) => {
 }
 
 .location-header:hover {
+  color: var(--color-text-primary);
   background-color: var(--color-bg-light);
 }
 

@@ -20,6 +20,8 @@ interface Emits {
   (e: 'update:days', value: Map<DayOfWeek, DayTimeRange>): void
   (e: 'update:status', value: string[]): void
   (e: 'update:activities', value: string[]): void
+  (e: 'save'): void
+  (e: 'restore'): void
 }
 
 const props = defineProps<Props>()
@@ -201,6 +203,11 @@ const updateActivities = (event: Event & { target: HTMLInputElement }) => {
           </label>
         </div>
       </div>
+
+      <div class="filter-actions">
+        <button class="action-button" @click="emit('save')">Sauvegarder</button>
+        <button class="action-button" @click="emit('restore')">Restaurer</button>
+      </div>
     </div>
   </div>
 </template>
@@ -228,6 +235,31 @@ const updateActivities = (event: Event & { target: HTMLInputElement }) => {
 
 .filter-toggle:hover {
   background-color: #f0f0f0;
+}
+
+.filter-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+  justify-content: flex-end;
+  padding-top: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+  border-top: 1px solid var(--color-border);
+}
+
+.action-button {
+  padding: var(--spacing-sm) var(--spacing-md);
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-size: var(--font-sm);
+  font-weight: 600;
+  transition: background-color var(--transition-fast);
+}
+
+.action-button:hover {
+  background-color: var(--color-primary-hover);
 }
 
 .toggle-icon {
