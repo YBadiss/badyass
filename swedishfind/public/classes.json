@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-05T19:34:21.504Z",
+  "timestamp": "2026-01-05T19:56:18.153Z",
   "classes": [
     {
       "timestamp": "2026-01-05T08:30:00.000Z",
@@ -713,7 +713,7 @@
         "icon": "https://design.swedishfit.com/ae9c6474c3d9faf93d7365e6c20ab2b6af153446/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Marine L",
-      "status": "AVAILABLE",
+      "status": "PASSED",
       "link": "https://www.swedishfit.fr/cours/detail/724837"
     },
     {
@@ -757,7 +757,7 @@
         "icon": "https://design.swedishfit.com/ae9c6474c3d9faf93d7365e6c20ab2b6af153446/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Malika B",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/724975"
     },
     {
@@ -867,7 +867,7 @@
         "icon": "https://design.swedishfit.com/ae9c6474c3d9faf93d7365e6c20ab2b6af153446/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Kima",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/707315"
     },
     {
@@ -1516,7 +1516,7 @@
         "icon": "https://design.swedishfit.com/ae9c6474c3d9faf93d7365e6c20ab2b6af153446/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Thomas V",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/733650"
     },
     {
@@ -2539,7 +2539,7 @@
         "icon": "https://design.swedishfit.com/ae9c6474c3d9faf93d7365e6c20ab2b6af153446/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Vincent B",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/732310"
     },
     {
@@ -2781,7 +2781,7 @@
         "icon": "https://design.swedishfit.com/ae9c6474c3d9faf93d7365e6c20ab2b6af153446/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Vanessa A",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/737323"
     },
     {
