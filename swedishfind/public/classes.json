@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-06T07:42:22.411Z",
+  "timestamp": "2026-01-06T07:57:10.644Z",
   "classes": [
     {
       "timestamp": "2026-01-06T06:45:00.000Z",
@@ -218,7 +218,7 @@
         "icon": "https://design.swedishfit.com/ae9c6474c3d9faf93d7365e6c20ab2b6af153446/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Erwan",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/734230"
     },
     {
@@ -306,7 +306,7 @@
         "icon": "https://design.swedishfit.com/ae9c6474c3d9faf93d7365e6c20ab2b6af153446/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Louison B",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/709307"
     },
     {
@@ -1813,7 +1813,7 @@
         "icon": "https://design.swedishfit.com/ae9c6474c3d9faf93d7365e6c20ab2b6af153446/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Vincent B",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/732265"
     },
     {
