@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-06T14:44:19.347Z",
+  "timestamp": "2026-01-06T15:00:04.351Z",
   "classes": [
     {
       "timestamp": "2026-01-06T06:45:00.000Z",
@@ -977,7 +977,7 @@
         "icon": "https://design.swedishfit.com/ae9c6474c3d9faf93d7365e6c20ab2b6af153446/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Katia",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/739343"
     },
     {
@@ -3154,7 +3154,7 @@
         "name": "Intensif",
         "icon": "https://design.swedishfit.com/ae9c6474c3d9faf93d7365e6c20ab2b6af153446/user/classlevel/icon_40_intensif.svg"
       },
-      "teacher": "Magali H",
+      "teacher": "Chiara",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/710440"
     },
