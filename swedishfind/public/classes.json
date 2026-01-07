@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-07T15:04:12.616Z",
+  "timestamp": "2026-01-07T15:44:38.841Z",
   "classes": [
     {
       "timestamp": "2026-01-07T06:45:00.000Z",
@@ -228,7 +228,7 @@
         "name": "Standard",
         "icon": "https://design.swedishfit.com/ae9c6474c3d9faf93d7365e6c20ab2b6af153446/user/classlevel/icon_30_standard.svg"
       },
-      "teacher": "Animateur Swedish Fit",
+      "teacher": "Margault C",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/717281"
     },
@@ -547,7 +547,7 @@
         "name": "Pilates",
         "icon": "https://design.swedishfit.com/ae9c6474c3d9faf93d7365e6c20ab2b6af153446/user/classlevel/icon_80_pilates.svg"
       },
-      "teacher": "Animateur Swedish Fit",
+      "teacher": "Margault C",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/706195"
     },
@@ -1153,7 +1153,7 @@
         "icon": "https://design.swedishfit.com/ae9c6474c3d9faf93d7365e6c20ab2b6af153446/user/classlevel/icon_47_circuit.svg"
       },
       "teacher": "TiTOu",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/723884"
     },
     {
@@ -1318,7 +1318,7 @@
         "icon": "https://design.swedishfit.com/ae9c6474c3d9faf93d7365e6c20ab2b6af153446/user/classlevel/icon_77_yinyoga.svg"
       },
       "teacher": "Floriane",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/727766"
     },
     {
@@ -1372,7 +1372,7 @@
         "name": "Standard",
         "icon": "https://design.swedishfit.com/ae9c6474c3d9faf93d7365e6c20ab2b6af153446/user/classlevel/icon_30_standard.svg"
       },
-      "teacher": "Clara D",
+      "teacher": "Animateur Swedish Fit",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/740221"
     },
