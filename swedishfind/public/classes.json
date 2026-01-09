@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-09T09:45:28.199Z",
+  "timestamp": "2026-01-09T09:59:41.418Z",
   "classes": [
     {
       "timestamp": "2026-01-09T09:00:00.000Z",
@@ -119,7 +119,7 @@
         "icon": "https://design.swedishfit.com/ae9c6474c3d9faf93d7365e6c20ab2b6af153446/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Vincent B",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/732265"
     },
     {
@@ -218,7 +218,7 @@
         "icon": "https://design.swedishfit.com/ae9c6474c3d9faf93d7365e6c20ab2b6af153446/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Mohamed",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/736794"
     },
     {
@@ -515,7 +515,7 @@
         "icon": "https://design.swedishfit.com/ae9c6474c3d9faf93d7365e6c20ab2b6af153446/user/classlevel/icon_48_cardiomax.svg"
       },
       "teacher": "Camille A",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/735683"
     },
     {
@@ -1240,7 +1240,7 @@
         "name": "Standard",
         "icon": "https://design.swedishfit.com/ae9c6474c3d9faf93d7365e6c20ab2b6af153446/user/classlevel/icon_30_standard.svg"
       },
-      "teacher": "Malika BCharlotte H",
+      "teacher": "Malika B",
       "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/724654"
     },
@@ -3111,7 +3111,7 @@
         "icon": "https://design.swedishfit.com/ae9c6474c3d9faf93d7365e6c20ab2b6af153446/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Alexandre C",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/725704"
     },
     {
@@ -3156,7 +3156,7 @@
       },
       "teacher": "Anaïs Döu",
       "status": "AVAILABLE",
-      "link": "https://www.swedishfit.fr/cours/detail/725839"
+      "link": "https://www.swedishfit.fr/cours/detail/741957"
     },
     {
       "timestamp": "2026-01-15T10:00:00.000Z",
