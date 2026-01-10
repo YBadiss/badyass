@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite-ssg build",
     "preview": "vite preview",
-    "deploy": "bash deploy.sh",
+    "deploy": "bash deploy.sh && bash cleanup_deploys.sh",
     "lint": "eslint . --ext .vue,.js,.ts",
     "lint:fix": "eslint . --ext .vue,.js,.ts --fix",
     "format": "prettier --write \"src/**/*.{vue,js,ts,css}\"",
