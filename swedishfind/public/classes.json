@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-11T07:01:44.489Z",
+  "timestamp": "2026-01-11T07:36:11.233Z",
   "classes": [
     {
       "timestamp": "2026-01-11T09:00:00.000Z",
@@ -240,7 +240,7 @@
         "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Elvire D",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/726648"
     },
     {
@@ -273,7 +273,7 @@
         "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Sarah AB",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/716116"
     },
     {
@@ -350,7 +350,7 @@
         "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Laurent",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/741241"
     },
     {
@@ -416,7 +416,7 @@
         "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Thomas V",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/724424"
     },
     {
@@ -427,7 +427,7 @@
         "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Ambre D",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/706910"
     },
     {
@@ -2946,7 +2946,7 @@
         "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Delphine DES",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/726244"
     },
     {
