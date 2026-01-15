@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-15T09:14:58.823Z",
+  "timestamp": "2026-01-15T09:45:17.876Z",
   "classes": [
     {
       "timestamp": "2026-01-15T06:45:00.000Z",
@@ -1637,7 +1637,7 @@
         "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Malika BCharlotte H",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/724655"
     },
     {
@@ -2385,7 +2385,7 @@
         "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Jérémie",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/725207"
     },
     {
@@ -2815,7 +2815,7 @@
       },
       "teacher": "Alice R",
       "status": "AVAILABLE",
-      "link": "https://www.swedishfit.fr/cours/detail/725345"
+      "link": "https://www.swedishfit.fr/cours/detail/742129"
     },
     {
       "timestamp": "2026-01-21T09:00:00.000Z",
@@ -2827,17 +2827,6 @@
       "teacher": "Katia",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/725390"
-    },
-    {
-      "timestamp": "2026-01-21T09:00:00.000Z",
-      "location": "Paris 10 Chaudron",
-      "activity": {
-        "name": "Yoga",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_75_yoga.svg"
-      },
-      "teacher": "Marine L",
-      "status": "AVAILABLE",
-      "link": "https://www.swedishfit.fr/cours/detail/735292"
     },
     {
       "timestamp": "2026-01-21T10:00:00.000Z",
@@ -2876,10 +2865,10 @@
       "timestamp": "2026-01-21T11:00:00.000Z",
       "location": "Paris 10 Chaudron",
       "activity": {
-        "name": "Core",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_95_core.svg"
+        "name": "Pilates Fusion®",
+        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_82_pilatesfusion.svg"
       },
-      "teacher": "Animateur Swedish Fit",
+      "teacher": "Emmanuel R",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/737682"
     },
@@ -2936,7 +2925,7 @@
       },
       "teacher": "Amélie QU",
       "status": "AVAILABLE",
-      "link": "https://www.swedishfit.fr/cours/detail/733608"
+      "link": "https://www.swedishfit.fr/cours/detail/742154"
     },
     {
       "timestamp": "2026-01-21T17:00:00.000Z",
@@ -3055,9 +3044,9 @@
         "name": "Core",
         "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_95_core.svg"
       },
-      "teacher": "Amélie QU",
+      "teacher": "Aurélie Rose",
       "status": "AVAILABLE",
-      "link": "https://www.swedishfit.fr/cours/detail/705281"
+      "link": "https://www.swedishfit.fr/cours/detail/742105"
     },
     {
       "timestamp": "2026-01-21T17:45:00.000Z",
