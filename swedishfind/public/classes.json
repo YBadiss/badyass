@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-20T05:00:04.351Z",
+  "timestamp": "2026-01-20T05:48:11.801Z",
   "classes": [
     {
       "timestamp": "2026-01-20T06:45:00.000Z",
@@ -163,7 +163,7 @@
         "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Jérémie",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/725207"
     },
     {
@@ -273,7 +273,7 @@
         "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_45_cardioflex.svg"
       },
       "teacher": "Magali H",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/735200"
     },
     {
@@ -625,7 +625,7 @@
         "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Katia",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/725435"
     },
     {
@@ -1384,7 +1384,7 @@
         "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Léonore C",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/728474"
     },
     {
