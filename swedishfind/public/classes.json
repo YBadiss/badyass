@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-01-23T14:14:46.823Z",
+  "timestamp": "2026-01-23T14:47:48.841Z",
   "classes": [
     {
       "timestamp": "2026-01-23T09:00:00.000Z",
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Modéré",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_50_modere.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_50_modere.svg"
       },
       "teacher": "Steph B.",
       "status": "PASSED",
@@ -17,7 +17,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Nadine P",
       "status": "PASSED",
@@ -28,7 +28,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Cardio Pump",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_46_cardiopump.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "David S",
       "status": "PASSED",
@@ -39,7 +39,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Nadine P",
       "status": "PASSED",
@@ -50,7 +50,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Pilates Fusion®",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_82_pilatesfusion.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_82_pilatesfusion.svg"
       },
       "teacher": "Emmanuel R",
       "status": "PASSED",
@@ -61,7 +61,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Circuit",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_47_circuit.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_47_circuit.svg"
       },
       "teacher": "TiTOu",
       "status": "PASSED",
@@ -72,7 +72,7 @@
       "location": "Paris 17 Champerret",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Steph R",
       "status": "PASSED",
@@ -83,7 +83,7 @@
       "location": "Paris 15 Beaugrenelle-C3B",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Cécile BO",
       "status": "PASSED",
@@ -94,7 +94,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Yoga",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_75_yoga.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Delphine DES",
       "status": "PASSED",
@@ -105,7 +105,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Core",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_95_core.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Anaïs Döu",
       "status": "PASSED",
@@ -116,7 +116,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Vincent B",
       "status": "AVAILABLE",
@@ -127,7 +127,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Core",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_95_core.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Vincent B",
       "status": "AVAILABLE",
@@ -138,7 +138,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Intensif",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_40_intensif.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_40_intensif.svg"
       },
       "teacher": "Carla PL",
       "status": "AVAILABLE",
@@ -149,7 +149,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Romain B",
       "status": "AVAILABLE",
@@ -160,7 +160,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Soft",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_20_soft.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_20_soft.svg"
       },
       "teacher": "Françoise B",
       "status": "AVAILABLE",
@@ -171,7 +171,7 @@
       "location": "Paris 17 INSPE Batignolles",
       "activity": {
         "name": "Intensif",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_40_intensif.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_40_intensif.svg"
       },
       "teacher": "Céline M",
       "status": "AVAILABLE",
@@ -182,7 +182,7 @@
       "location": "Paris 11 Charles Péguy",
       "activity": {
         "name": "Core",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_95_core.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Miriam",
       "status": "FULL",
@@ -193,7 +193,7 @@
       "location": "Paris  6 Sainte-Geneviève",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Natacha A",
       "status": "FULL",
@@ -204,7 +204,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Anne-Laure",
       "status": "AVAILABLE",
@@ -215,7 +215,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Cardio Pump",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_46_cardiopump.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Romain B",
       "status": "AVAILABLE",
@@ -226,7 +226,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Yin Yoga",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_77_yinyoga.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_77_yinyoga.svg"
       },
       "teacher": "Floriane",
       "status": "FULL",
@@ -237,7 +237,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Modéré",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_50_modere.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_50_modere.svg"
       },
       "teacher": "Alain N",
       "status": "AVAILABLE",
@@ -248,7 +248,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Intensif",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_40_intensif.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_40_intensif.svg"
       },
       "teacher": "Guillaume C",
       "status": "AVAILABLE",
@@ -259,7 +259,7 @@
       "location": "Paris 13 Gymnase Rodin",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Mathieu La",
       "status": "AVAILABLE",
@@ -270,7 +270,7 @@
       "location": "Paris  6 Ecole Alsacienne",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Clarisse C",
       "status": "AVAILABLE",
@@ -281,7 +281,7 @@
       "location": "Paris  3 Turgot",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Fermeture exceptionnelle 24.01.26",
       "status": "CANCELLED",
@@ -292,10 +292,10 @@
       "location": "Paris  6 Sainte-Geneviève",
       "activity": {
         "name": "Core",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_95_core.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Aurélie Rose",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/740560"
     },
     {
@@ -303,7 +303,7 @@
       "location": "Paris  8 Racine",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Cristina FE",
       "status": "AVAILABLE",
@@ -314,7 +314,7 @@
       "location": "Paris 11 Charles Péguy",
       "activity": {
         "name": "Intensif",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_40_intensif.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_40_intensif.svg"
       },
       "teacher": "Magali H",
       "status": "AVAILABLE",
@@ -325,7 +325,7 @@
       "location": "Paris 12 Arago",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Chiara",
       "status": "FULL",
@@ -336,7 +336,7 @@
       "location": "Paris 14 Sainte Catherine Labouré",
       "activity": {
         "name": "Soft",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_20_soft.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_20_soft.svg"
       },
       "teacher": "Alexis D",
       "status": "FULL",
@@ -347,7 +347,7 @@
       "location": "Paris 17 Champerret",
       "activity": {
         "name": "Intensif",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_40_intensif.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_40_intensif.svg"
       },
       "teacher": "Mathilde P",
       "status": "AVAILABLE",
@@ -358,7 +358,7 @@
       "location": "Paris 19 L'Initiative",
       "activity": {
         "name": "Soft",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_20_soft.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_20_soft.svg"
       },
       "teacher": "Sandrine L",
       "status": "FULL",
@@ -369,7 +369,7 @@
       "location": "Paris 12 Saint Michel de Picpus",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Vanessa A",
       "status": "FULL",
@@ -380,7 +380,7 @@
       "location": "Paris  5 Saint Victor",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Anne Geo",
       "status": "AVAILABLE",
@@ -391,7 +391,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Cardio Pump",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_46_cardiopump.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "François-Xavier WM",
       "status": "FULL",
@@ -402,7 +402,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Core",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_95_core.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Nicolas MW",
       "status": "FULL",
@@ -413,7 +413,7 @@
       "location": "Paris 10 Gustave Ferrié",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Alexandra B",
       "status": "AVAILABLE",
@@ -424,7 +424,7 @@
       "location": "Paris 13 Gymnase Rodin",
       "activity": {
         "name": "Core",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_95_core.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Mathieu La",
       "status": "AVAILABLE",
@@ -435,7 +435,7 @@
       "location": "Paris 13 Notre Dame de la Gare",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Leo C",
       "status": "AVAILABLE",
@@ -446,7 +446,7 @@
       "location": "Paris 15 Beaugrenelle-C3B",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Leila",
       "status": "FULL",
@@ -457,7 +457,7 @@
       "location": "Paris 15 UFR STAPS",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "François GB",
       "status": "AVAILABLE",
@@ -468,7 +468,7 @@
       "location": "Paris 18 Championnet",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Carla PL",
       "status": "AVAILABLE",
@@ -479,7 +479,7 @@
       "location": "Paris 20 La Providence Don Bosco",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Emma F",
       "status": "FULL",
@@ -490,7 +490,7 @@
       "location": "Paris  6 Ecole Alsacienne",
       "activity": {
         "name": "Cardio Max",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_48_cardiomax.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_48_cardiomax.svg"
       },
       "teacher": "Betty",
       "status": "AVAILABLE",
@@ -501,7 +501,7 @@
       "location": "Paris  3 Turgot",
       "activity": {
         "name": "Intensif",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_40_intensif.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_40_intensif.svg"
       },
       "teacher": "Fermeture exceptionnelle 24.01.26",
       "status": "CANCELLED",
@@ -512,7 +512,7 @@
       "location": "Paris  8 Racine",
       "activity": {
         "name": "Cardio Max",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_48_cardiomax.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_48_cardiomax.svg"
       },
       "teacher": "Mathilde DB",
       "status": "AVAILABLE",
@@ -523,7 +523,7 @@
       "location": "Paris 11 Charles Péguy",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Léa S",
       "status": "FULL",
@@ -534,7 +534,7 @@
       "location": "Paris 12 Arago",
       "activity": {
         "name": "Cardio Max",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_48_cardiomax.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_48_cardiomax.svg"
       },
       "teacher": "Chiara",
       "status": "FULL",
@@ -545,7 +545,7 @@
       "location": "Paris 14 La Bruyère",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Lucie CO",
       "status": "AVAILABLE",
@@ -556,7 +556,7 @@
       "location": "Paris 14 Sainte Catherine Labouré",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Marie Maimone",
       "status": "FULL",
@@ -567,7 +567,7 @@
       "location": "Paris 17 Champerret",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Sabrina R",
       "status": "AVAILABLE",
@@ -578,7 +578,7 @@
       "location": "Paris 19 L'Initiative",
       "activity": {
         "name": "Cardio Max",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_48_cardiomax.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_48_cardiomax.svg"
       },
       "teacher": "Thomas V",
       "status": "FULL",
@@ -589,7 +589,7 @@
       "location": "Paris 12 Saint Michel de Picpus",
       "activity": {
         "name": "Core",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_95_core.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Vanessa A",
       "status": "FULL",
@@ -600,7 +600,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Jérôme B",
       "status": "FULL",
@@ -611,7 +611,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Yoga",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_75_yoga.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Arnaud D",
       "status": "FULL",
@@ -622,7 +622,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Sophrologie",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_91_sophro.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_91_sophro.svg"
       },
       "teacher": "Vania F",
       "status": "FULL",
@@ -633,7 +633,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Afrovibe®",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_101_afrovibes.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_101_afrovibes.svg"
       },
       "teacher": "Emma F",
       "status": "FULL",
@@ -644,7 +644,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Pilates Fusion®",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_82_pilatesfusion.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_82_pilatesfusion.svg"
       },
       "teacher": "Emmanuel R",
       "status": "FULL",
@@ -655,7 +655,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Emmanuel R",
       "status": "FULL",
@@ -666,7 +666,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Soft",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_20_soft.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_20_soft.svg"
       },
       "teacher": "Elsa O",
       "status": "FULL",
@@ -677,7 +677,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Ana A",
       "status": "AVAILABLE",
@@ -688,7 +688,7 @@
       "location": "Paris  6 Sainte-Geneviève",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Cécile BO",
       "status": "FULL",
@@ -699,7 +699,7 @@
       "location": "Paris  8 Fénelon Sainte Marie",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Emmanuel R",
       "status": "AVAILABLE",
@@ -710,7 +710,7 @@
       "location": "Paris 11 Charles Péguy",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Salima K",
       "status": "FULL",
@@ -721,7 +721,7 @@
       "location": "Paris 14 Sainte Catherine Labouré",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Hélène MAI",
       "status": "AVAILABLE",
@@ -732,7 +732,7 @@
       "location": "Paris 20 Prairies",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Marie P",
       "status": "FULL",
@@ -743,7 +743,7 @@
       "location": "Paris 12 Saint Michel de Picpus",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Alexis D",
       "status": "FULL",
@@ -754,7 +754,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Yoga",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_75_yoga.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Erwan",
       "status": "FULL",
@@ -765,7 +765,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Cardio Pump",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_46_cardiopump.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Marine N",
       "status": "FULL",
@@ -776,7 +776,7 @@
       "location": "Paris 12 Arago",
       "activity": {
         "name": "Intensif",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_40_intensif.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_40_intensif.svg"
       },
       "teacher": "Barbara L",
       "status": "FULL",
@@ -787,7 +787,7 @@
       "location": "Paris 13 Gymnase Rodin",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Aurélie Rose",
       "status": "AVAILABLE",
@@ -798,7 +798,7 @@
       "location": "Paris 17 Champerret",
       "activity": {
         "name": "Cardio Max",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_48_cardiomax.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_48_cardiomax.svg"
       },
       "teacher": "Amélie QU",
       "status": "AVAILABLE",
@@ -809,7 +809,7 @@
       "location": "Paris 18 Saint-Louis",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Thomas A",
       "status": "AVAILABLE",
@@ -820,7 +820,7 @@
       "location": "Paris 19 L'Initiative",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Vincent H",
       "status": "FULL",
@@ -831,7 +831,7 @@
       "location": "Paris  8 Fénelon Sainte Marie",
       "activity": {
         "name": "Circuit",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_47_circuit.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_47_circuit.svg"
       },
       "teacher": "Emmanuel R",
       "status": "AVAILABLE",
@@ -842,10 +842,10 @@
       "location": "Paris 11 Charles Péguy",
       "activity": {
         "name": "Dance",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_67_dance.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_67_dance.svg"
       },
       "teacher": "Salima K",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/736401"
     },
     {
@@ -853,7 +853,7 @@
       "location": "Paris 14 Cité Universitaire - Arts et Métiers",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Camille PH",
       "status": "AVAILABLE",
@@ -864,7 +864,7 @@
       "location": "Paris 14 Sainte Catherine Labouré",
       "activity": {
         "name": "Dance",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_67_dance.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_67_dance.svg"
       },
       "teacher": "Hélène MAI",
       "status": "AVAILABLE",
@@ -875,7 +875,7 @@
       "location": "Paris 20 Prairies",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Chiara",
       "status": "FULL",
@@ -886,7 +886,7 @@
       "location": "Paris 12 Saint Michel de Picpus",
       "activity": {
         "name": "Soft",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_20_soft.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_20_soft.svg"
       },
       "teacher": "Alexis D",
       "status": "FULL",
@@ -897,7 +897,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Cardio Pump",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_46_cardiopump.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Lucie BO",
       "status": "FULL",
@@ -908,7 +908,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Flex",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_96_flex.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_96_flex.svg"
       },
       "teacher": "Joaquine B",
       "status": "FULL",
@@ -919,7 +919,7 @@
       "location": "Paris 12 Arago",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Flora R",
       "status": "FULL",
@@ -930,7 +930,7 @@
       "location": "Paris 19 L'Initiative",
       "activity": {
         "name": "Yoga",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_75_yoga.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Sarah AB",
       "status": "FULL",
@@ -941,7 +941,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Flex",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_96_flex.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_96_flex.svg"
       },
       "teacher": "Floriane",
       "status": "AVAILABLE",
@@ -952,7 +952,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Pilates Fusion®",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_82_pilatesfusion.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_82_pilatesfusion.svg"
       },
       "teacher": "Joaquine B",
       "status": "FULL",
@@ -963,7 +963,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Leila",
       "status": "AVAILABLE",
@@ -974,7 +974,7 @@
       "location": "Paris  7 Sainte-Jeanne-Elisabeth",
       "activity": {
         "name": "Ballet Sculpt®",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_68_balletsculpt.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_68_balletsculpt.svg"
       },
       "teacher": "Vincent B",
       "status": "FULL",
@@ -985,7 +985,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Cardio Max",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_48_cardiomax.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_48_cardiomax.svg"
       },
       "teacher": "Juliette",
       "status": "FULL",
@@ -996,7 +996,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Jen",
       "status": "AVAILABLE",
@@ -1007,10 +1007,10 @@
       "location": "Paris 12 Arago",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Laurent",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/741243"
     },
     {
@@ -1018,7 +1018,7 @@
       "location": "Paris 18 Saint-Louis",
       "activity": {
         "name": "Core",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_95_core.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Lucie BO",
       "status": "AVAILABLE",
@@ -1029,7 +1029,7 @@
       "location": "Paris 13 Gymnase Rodin",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Marine Gi",
       "status": "AVAILABLE",
@@ -1040,7 +1040,7 @@
       "location": "Paris 17 Champerret",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Benjamin Z",
       "status": "AVAILABLE",
@@ -1051,7 +1051,7 @@
       "location": "Paris  7 Sainte-Jeanne-Elisabeth",
       "activity": {
         "name": "Yoga",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_75_yoga.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Vincent B",
       "status": "FULL",
@@ -1062,7 +1062,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Juliette",
       "status": "FULL",
@@ -1073,7 +1073,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Cardio Pump",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_46_cardiopump.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Thomas V",
       "status": "FULL",
@@ -1084,7 +1084,7 @@
       "location": "Paris 12 Arago",
       "activity": {
         "name": "Yoga",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_75_yoga.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Ambre D",
       "status": "FULL",
@@ -1095,7 +1095,7 @@
       "location": "Paris 18 Saint-Louis",
       "activity": {
         "name": "Yoga",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_75_yoga.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Emilie B",
       "status": "FULL",
@@ -1106,7 +1106,7 @@
       "location": "Paris 14 La Bruyère",
       "activity": {
         "name": "Core",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_95_core.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Mélanie A",
       "status": "AVAILABLE",
@@ -1117,7 +1117,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Yoga",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_75_yoga.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Scarlett F",
       "status": "AVAILABLE",
@@ -1128,7 +1128,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Modéré",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_50_modere.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_50_modere.svg"
       },
       "teacher": "Marie P",
       "status": "AVAILABLE",
@@ -1139,7 +1139,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Core",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_95_core.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Scarlett F",
       "status": "AVAILABLE",
@@ -1150,7 +1150,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Cardio HIIT",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_45_cardioflex.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_45_cardioflex.svg"
       },
       "teacher": "Alice R",
       "status": "AVAILABLE",
@@ -1161,7 +1161,7 @@
       "location": "Paris  5 Crous",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Katia",
       "status": "AVAILABLE",
@@ -1172,7 +1172,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Amélie QU",
       "status": "AVAILABLE",
@@ -1183,7 +1183,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Pilates Fusion®",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_82_pilatesfusion.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_82_pilatesfusion.svg"
       },
       "teacher": "Céline M",
       "status": "FULL",
@@ -1194,7 +1194,7 @@
       "location": "Paris  3 Carreau du Temple",
       "activity": {
         "name": "Intensif",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_40_intensif.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_40_intensif.svg"
       },
       "teacher": "Laura B",
       "status": "AVAILABLE",
@@ -1205,7 +1205,7 @@
       "location": "Paris  5 Crous",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Katia",
       "status": "AVAILABLE",
@@ -1216,7 +1216,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Cardio Max",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_48_cardiomax.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_48_cardiomax.svg"
       },
       "teacher": "Mathilde DB",
       "status": "AVAILABLE",
@@ -1227,7 +1227,7 @@
       "location": "Paris 15 Beaugrenelle-C3B",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Alice S",
       "status": "AVAILABLE",
@@ -1238,7 +1238,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Malika B",
       "status": "AVAILABLE",
@@ -1249,7 +1249,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Modéré",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_50_modere.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_50_modere.svg"
       },
       "teacher": "Malika B",
       "status": "AVAILABLE",
@@ -1260,7 +1260,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Audrey A",
       "status": "AVAILABLE",
@@ -1271,7 +1271,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Malika B",
       "status": "FULL",
@@ -1282,7 +1282,7 @@
       "location": "Paris 14 Cité Universitaire - Espace Sud",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Alain N",
       "status": "AVAILABLE",
@@ -1293,7 +1293,7 @@
       "location": "Paris 17 INSPE Batignolles",
       "activity": {
         "name": "Cardio HIIT",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_45_cardioflex.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_45_cardioflex.svg"
       },
       "teacher": "Céline M",
       "status": "AVAILABLE",
@@ -1304,10 +1304,10 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Soft",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_20_soft.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_20_soft.svg"
       },
       "teacher": "Rose",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/735855"
     },
     {
@@ -1315,7 +1315,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Yoga",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_75_yoga.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Arnaud D",
       "status": "FULL",
@@ -1326,7 +1326,7 @@
       "location": "Paris 13 Notre Dame de la Gare",
       "activity": {
         "name": "Afrovibe®",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_101_afrovibes.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_101_afrovibes.svg"
       },
       "teacher": "Maria A",
       "status": "AVAILABLE",
@@ -1337,7 +1337,7 @@
       "location": "Paris 15 Lourmel",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Alice Ga",
       "status": "FULL",
@@ -1348,7 +1348,7 @@
       "location": "Paris 16 Lübeck",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Omar",
       "status": "AVAILABLE",
@@ -1359,7 +1359,7 @@
       "location": "Paris  6 Sainte-Geneviève",
       "activity": {
         "name": "Cardio HIIT",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_45_cardioflex.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_45_cardioflex.svg"
       },
       "teacher": "Hendy",
       "status": "AVAILABLE",
@@ -1370,7 +1370,7 @@
       "location": "Paris  7 Sainte-Jeanne-Elisabeth",
       "activity": {
         "name": "Soft",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_20_soft.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_20_soft.svg"
       },
       "teacher": "Cédric",
       "status": "AVAILABLE",
@@ -1381,7 +1381,7 @@
       "location": "Paris 10 IRTS",
       "activity": {
         "name": "Yoga",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_75_yoga.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Sarah AB",
       "status": "FULL",
@@ -1392,7 +1392,7 @@
       "location": "Paris 11 Charles Péguy",
       "activity": {
         "name": "Soft",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_20_soft.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_20_soft.svg"
       },
       "teacher": "Guillaume C",
       "status": "FULL",
@@ -1403,7 +1403,7 @@
       "location": "Paris  5 Saint Victor",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Floriane",
       "status": "FULL",
@@ -1414,7 +1414,7 @@
       "location": "Paris  6 Stanislas",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "TiTOu",
       "status": "AVAILABLE",
@@ -1425,7 +1425,7 @@
       "location": "Paris  7 Saint-Jean",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Carla PL",
       "status": "AVAILABLE",
@@ -1436,7 +1436,7 @@
       "location": "Paris  8 Racine",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Ilaria",
       "status": "AVAILABLE",
@@ -1447,7 +1447,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Chloé R",
       "status": "FULL",
@@ -1458,7 +1458,7 @@
       "location": "Paris 10 Gustave Ferrié",
       "activity": {
         "name": "Intensif",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_40_intensif.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_40_intensif.svg"
       },
       "teacher": "Daniel",
       "status": "AVAILABLE",
@@ -1469,7 +1469,7 @@
       "location": "Paris 12 Saint Michel de Picpus",
       "activity": {
         "name": "Core",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_95_core.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Marie Bé",
       "status": "FULL",
@@ -1480,7 +1480,7 @@
       "location": "Paris 13 Collège St Vincent de Paul 49",
       "activity": {
         "name": "Soft",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_20_soft.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_20_soft.svg"
       },
       "teacher": "Marine Gi",
       "status": "FULL",
@@ -1491,7 +1491,7 @@
       "location": "Paris 13 Foyer Tolbiac",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Sophie T",
       "status": "AVAILABLE",
@@ -1502,7 +1502,7 @@
       "location": "Paris 14 Moulin Vert",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Kitty",
       "status": "FULL",
@@ -1513,7 +1513,7 @@
       "location": "Paris 14 Sainte Catherine Labouré",
       "activity": {
         "name": "Ballet Sculpt®",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_68_balletsculpt.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_68_balletsculpt.svg"
       },
       "teacher": "Lucie CO",
       "status": "AVAILABLE",
@@ -1524,7 +1524,7 @@
       "location": "Paris 15 Corbon",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Fermeture exceptionnelle 26.01.26",
       "status": "CANCELLED",
@@ -1535,7 +1535,7 @@
       "location": "Paris 17 Champerret",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Clémence LE",
       "status": "AVAILABLE",
@@ -1546,7 +1546,7 @@
       "location": "Paris 18 Championnet",
       "activity": {
         "name": "Soft",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_20_soft.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_20_soft.svg"
       },
       "teacher": "Sandrine L",
       "status": "AVAILABLE",
@@ -1557,7 +1557,7 @@
       "location": "Paris 19 L'Initiative",
       "activity": {
         "name": "Yoga",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_75_yoga.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Frederic W",
       "status": "FULL",
@@ -1568,7 +1568,7 @@
       "location": "Paris 20 La Providence Don Bosco",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Florent CE",
       "status": "FULL",
@@ -1579,7 +1579,7 @@
       "location": "Paris  8 Fénelon Sainte Marie",
       "activity": {
         "name": "Intensif",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_40_intensif.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_40_intensif.svg"
       },
       "teacher": "François-Xavier WM",
       "status": "FULL",
@@ -1590,7 +1590,7 @@
       "location": "Paris 12 Arago",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Clara P",
       "status": "FULL",
@@ -1601,7 +1601,7 @@
       "location": "Paris 17 INSPE Batignolles",
       "activity": {
         "name": "Yoga",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_75_yoga.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Céline M",
       "status": "AVAILABLE",
@@ -1612,7 +1612,7 @@
       "location": "Paris 18 Saint-Louis",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Juliette",
       "status": "AVAILABLE",
@@ -1623,7 +1623,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Cardio Pump",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_46_cardiopump.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Mohamed",
       "status": "FULL",
@@ -1634,7 +1634,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Sophrologie",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_91_sophro.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_91_sophro.svg"
       },
       "teacher": "Malika B",
       "status": "FULL",
@@ -1645,7 +1645,7 @@
       "location": "Paris 13 Notre Dame de la Gare",
       "activity": {
         "name": "Yoga",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_75_yoga.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Maria A",
       "status": "AVAILABLE",
@@ -1656,7 +1656,7 @@
       "location": "Paris 14 La Bruyère",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Gael",
       "status": "AVAILABLE",
@@ -1667,7 +1667,7 @@
       "location": "Paris 15 Lourmel",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Alice Ga",
       "status": "FULL",
@@ -1678,7 +1678,7 @@
       "location": "Paris 16 Lübeck",
       "activity": {
         "name": "Circuit",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_47_circuit.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_47_circuit.svg"
       },
       "teacher": "Omar",
       "status": "AVAILABLE",
@@ -1689,7 +1689,7 @@
       "location": "Paris  6 Sainte-Geneviève",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Hendy",
       "status": "AVAILABLE",
@@ -1700,7 +1700,7 @@
       "location": "Paris  7 Sainte-Jeanne-Elisabeth",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Anne Geo",
       "status": "AVAILABLE",
@@ -1711,7 +1711,7 @@
       "location": "Paris 11 Charles Péguy",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Guillaume C",
       "status": "FULL",
@@ -1722,7 +1722,7 @@
       "location": "Paris  6 Stanislas",
       "activity": {
         "name": "Circuit",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_47_circuit.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_47_circuit.svg"
       },
       "teacher": "TiTOu",
       "status": "AVAILABLE",
@@ -1733,7 +1733,7 @@
       "location": "Paris  8 Fénelon Sainte Marie",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Emma P",
       "status": "AVAILABLE",
@@ -1744,7 +1744,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Cardio Pump",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_46_cardiopump.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Patrick BO",
       "status": "FULL",
@@ -1755,7 +1755,7 @@
       "location": "Paris 12 Saint Michel de Picpus",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Marie Bé",
       "status": "AVAILABLE",
@@ -1766,7 +1766,7 @@
       "location": "Paris 13 Collège St Vincent de Paul 49",
       "activity": {
         "name": "Yoga",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_75_yoga.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Marine Gi",
       "status": "AVAILABLE",
@@ -1777,7 +1777,7 @@
       "location": "Paris 14 Sainte Catherine Labouré",
       "activity": {
         "name": "Core",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_95_core.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Lucie CO",
       "status": "AVAILABLE",
@@ -1788,7 +1788,7 @@
       "location": "Paris 19 L'Initiative",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "David S",
       "status": "AVAILABLE",
@@ -1799,7 +1799,7 @@
       "location": "Paris 12 Arago",
       "activity": {
         "name": "Intensif",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_40_intensif.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_40_intensif.svg"
       },
       "teacher": "Romain B",
       "status": "FULL",
@@ -1810,7 +1810,7 @@
       "location": "Paris 18 Saint-Louis",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Juliette",
       "status": "AVAILABLE",
@@ -1821,7 +1821,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Yoga",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_75_yoga.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Marine L",
       "status": "AVAILABLE",
@@ -1832,7 +1832,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Cécile BO",
       "status": "AVAILABLE",
@@ -1843,7 +1843,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Sophrologie",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_91_sophro.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_91_sophro.svg"
       },
       "teacher": "Malika B",
       "status": "AVAILABLE",
@@ -1854,7 +1854,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Emma F",
       "status": "FULL",
@@ -1865,7 +1865,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Malika B",
       "status": "FULL",
@@ -1876,7 +1876,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Modéré",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_50_modere.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_50_modere.svg"
       },
       "teacher": "Tilda",
       "status": "AVAILABLE",
@@ -1887,10 +1887,10 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Cardio Pump",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_46_cardiopump.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Malika B",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/725024"
     },
     {
@@ -1898,7 +1898,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Cardio HIIT",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_45_cardioflex.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_45_cardioflex.svg"
       },
       "teacher": "Tilda",
       "status": "AVAILABLE",
@@ -1909,7 +1909,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Core",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_95_core.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Rose",
       "status": "AVAILABLE",
@@ -1920,7 +1920,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Maeva V",
       "status": "AVAILABLE",
@@ -1931,7 +1931,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Audrey A",
       "status": "AVAILABLE",
@@ -1942,7 +1942,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Cardio Pump",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_46_cardiopump.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Jérémie",
       "status": "FULL",
@@ -1953,7 +1953,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Léa S",
       "status": "AVAILABLE",
@@ -1964,7 +1964,7 @@
       "location": "Paris 11 AEPP",
       "activity": {
         "name": "Soft",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_20_soft.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_20_soft.svg"
       },
       "teacher": "Alain N",
       "status": "AVAILABLE",
@@ -1975,7 +1975,7 @@
       "location": "Paris 17 INSPE Batignolles",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Charlotte H",
       "status": "AVAILABLE",
@@ -1986,7 +1986,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Core",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_95_core.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Jérémie",
       "status": "FULL",
@@ -1997,7 +1997,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Sophrologie",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_91_sophro.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_91_sophro.svg"
       },
       "teacher": "Fermeture exceptionnelle 27.01.26",
       "status": "CANCELLED",
@@ -2008,7 +2008,7 @@
       "location": "Paris 15 Lourmel",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Ana A",
       "status": "AVAILABLE",
@@ -2019,7 +2019,7 @@
       "location": "Paris 16 Lübeck",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Emmanuel R",
       "status": "AVAILABLE",
@@ -2030,7 +2030,7 @@
       "location": "Paris  7 Sainte-Jeanne-Elisabeth",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Mélanie A",
       "status": "AVAILABLE",
@@ -2041,7 +2041,7 @@
       "location": "Paris 11 Charles Péguy",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Fermeture exceptionnelle 27.01.26",
       "status": "CANCELLED",
@@ -2052,7 +2052,7 @@
       "location": "Paris  5 Saint Victor",
       "activity": {
         "name": "Soft",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_20_soft.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_20_soft.svg"
       },
       "teacher": "Erika H",
       "status": "AVAILABLE",
@@ -2063,7 +2063,7 @@
       "location": "Paris  6 Sainte-Geneviève",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Pauline N",
       "status": "AVAILABLE",
@@ -2074,7 +2074,7 @@
       "location": "Paris  6 Stanislas",
       "activity": {
         "name": "Ballet Sculpt®",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_68_balletsculpt.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_68_balletsculpt.svg"
       },
       "teacher": "Mathieu La",
       "status": "AVAILABLE",
@@ -2085,7 +2085,7 @@
       "location": "Paris  8 Racine",
       "activity": {
         "name": "Core",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_95_core.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Betty",
       "status": "AVAILABLE",
@@ -2096,7 +2096,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Cardio HIIT",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_45_cardioflex.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_45_cardioflex.svg"
       },
       "teacher": "Magali H",
       "status": "AVAILABLE",
@@ -2107,7 +2107,7 @@
       "location": "Paris 10 Gustave Ferrié",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Laura B",
       "status": "AVAILABLE",
@@ -2118,7 +2118,7 @@
       "location": "Paris 13 Notre Dame de la Gare",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Alexis D",
       "status": "FULL",
@@ -2129,7 +2129,7 @@
       "location": "Paris 14 Moulin Vert",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Gael",
       "status": "AVAILABLE",
@@ -2140,7 +2140,7 @@
       "location": "Paris 15 Corbon",
       "activity": {
         "name": "Yoga",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_75_yoga.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Amicie H",
       "status": "AVAILABLE",
@@ -2151,7 +2151,7 @@
       "location": "Paris 17 Champerret",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Laure A",
       "status": "AVAILABLE",
@@ -2162,7 +2162,7 @@
       "location": "Paris 18 Saint-Louis",
       "activity": {
         "name": "Soft",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_20_soft.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_20_soft.svg"
       },
       "teacher": "Sandrine L",
       "status": "AVAILABLE",
@@ -2173,7 +2173,7 @@
       "location": "Paris 19 L'Initiative",
       "activity": {
         "name": "Core",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_95_core.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Salima K",
       "status": "AVAILABLE",
@@ -2184,7 +2184,7 @@
       "location": "Paris  8 Fénelon Sainte Marie",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Thibault V",
       "status": "AVAILABLE",
@@ -2195,10 +2195,10 @@
       "location": "Paris 12 Arago",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Claudie C",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/706454"
     },
     {
@@ -2206,7 +2206,7 @@
       "location": "Paris 13 Ecole St Vincent de Paul 109",
       "activity": {
         "name": "Core",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_95_core.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Leila",
       "status": "AVAILABLE",
@@ -2217,7 +2217,7 @@
       "location": "Paris 17 INSPE Batignolles",
       "activity": {
         "name": "Cardio Max",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_48_cardiomax.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_48_cardiomax.svg"
       },
       "teacher": "Juliette",
       "status": "AVAILABLE",
@@ -2228,7 +2228,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Elsa O",
       "status": "AVAILABLE",
@@ -2239,7 +2239,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Core",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_95_core.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Alexandra B",
       "status": "AVAILABLE",
@@ -2250,7 +2250,7 @@
       "location": "Paris 12 Saint Michel de Picpus",
       "activity": {
         "name": "Afrovibe®",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_101_afrovibes.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_101_afrovibes.svg"
       },
       "teacher": "Morgane MAR",
       "status": "AVAILABLE",
@@ -2261,7 +2261,7 @@
       "location": "Paris 14 La Bruyère",
       "activity": {
         "name": "Cardio Max",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_48_cardiomax.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_48_cardiomax.svg"
       },
       "teacher": "Camille A",
       "status": "AVAILABLE",
@@ -2272,7 +2272,7 @@
       "location": "Paris 15 Lourmel",
       "activity": {
         "name": "Yoga",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_75_yoga.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Clarisse BO",
       "status": "AVAILABLE",
@@ -2283,7 +2283,7 @@
       "location": "Paris 16 Lübeck",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Emmanuel R",
       "status": "AVAILABLE",
@@ -2294,7 +2294,7 @@
       "location": "Paris  7 Sainte-Jeanne-Elisabeth",
       "activity": {
         "name": "Core",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_95_core.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Mélanie A",
       "status": "AVAILABLE",
@@ -2305,7 +2305,7 @@
       "location": "Paris 11 Charles Péguy",
       "activity": {
         "name": "Yoga",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_75_yoga.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Fermeture exceptionnelle 27.01.26",
       "status": "CANCELLED",
@@ -2316,7 +2316,7 @@
       "location": "Paris 15 Beaugrenelle-C3B",
       "activity": {
         "name": "Intensif",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_40_intensif.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_40_intensif.svg"
       },
       "teacher": "Marine N",
       "status": "AVAILABLE",
@@ -2327,7 +2327,7 @@
       "location": "Paris  6 Stanislas",
       "activity": {
         "name": "Intensif",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_40_intensif.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_40_intensif.svg"
       },
       "teacher": "Capucine",
       "status": "AVAILABLE",
@@ -2338,7 +2338,7 @@
       "location": "Paris  8 Fénelon Sainte Marie",
       "activity": {
         "name": "Yoga",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_75_yoga.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Sarah AB",
       "status": "AVAILABLE",
@@ -2349,7 +2349,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Florent CE",
       "status": "AVAILABLE",
@@ -2360,7 +2360,7 @@
       "location": "Paris 18 Saint-Louis",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Vincent H",
       "status": "AVAILABLE",
@@ -2371,7 +2371,7 @@
       "location": "Paris 19 L'Initiative",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Salima K",
       "status": "AVAILABLE",
@@ -2382,7 +2382,7 @@
       "location": "Paris 20 Prairies",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Eric M",
       "status": "AVAILABLE",
@@ -2393,7 +2393,7 @@
       "location": "Paris 12 Arago",
       "activity": {
         "name": "Yoga",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_75_yoga.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Arnaud D",
       "status": "AVAILABLE",
@@ -2404,7 +2404,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Elsa O",
       "status": "AVAILABLE",
@@ -2415,7 +2415,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Yoga",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_75_yoga.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Alice R",
       "status": "AVAILABLE",
@@ -2426,7 +2426,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Modéré",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_50_modere.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_50_modere.svg"
       },
       "teacher": "Stéphanie NA",
       "status": "FULL",
@@ -2437,7 +2437,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Yoga",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_75_yoga.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Marine L",
       "status": "AVAILABLE",
@@ -2448,7 +2448,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Flex",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_96_flex.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_96_flex.svg"
       },
       "teacher": "Stéphanie NA",
       "status": "FULL",
@@ -2459,7 +2459,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Floriane",
       "status": "AVAILABLE",
@@ -2470,7 +2470,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Ballet Sculpt®",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_68_balletsculpt.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_68_balletsculpt.svg"
       },
       "teacher": "Stéphanie NA",
       "status": "FULL",
@@ -2481,7 +2481,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Pilates Fusion®",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_82_pilatesfusion.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_82_pilatesfusion.svg"
       },
       "teacher": "Emmanuel R",
       "status": "AVAILABLE",
@@ -2492,7 +2492,7 @@
       "location": "Paris  3 Carreau du Temple",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Camille A",
       "status": "AVAILABLE",
@@ -2503,7 +2503,7 @@
       "location": "Paris 17 Champerret",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Roxy",
       "status": "AVAILABLE",
@@ -2514,7 +2514,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Stéphanie NA",
       "status": "AVAILABLE",
@@ -2525,7 +2525,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Intensif",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_40_intensif.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_40_intensif.svg"
       },
       "teacher": "Nejma",
       "status": "AVAILABLE",
@@ -2536,7 +2536,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Core",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_95_core.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Amélie QU",
       "status": "AVAILABLE",
@@ -2547,7 +2547,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Cardio Pump",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_46_cardiopump.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Barbara L",
       "status": "FULL",
@@ -2558,7 +2558,7 @@
       "location": "Paris 14 Cité Universitaire - Espace Sud",
       "activity": {
         "name": "Pilates Fusion®",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_82_pilatesfusion.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_82_pilatesfusion.svg"
       },
       "teacher": "Marie Maimone",
       "status": "AVAILABLE",
@@ -2569,7 +2569,7 @@
       "location": "Paris 11 AEPP",
       "activity": {
         "name": "Core",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_95_core.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Leo C",
       "status": "AVAILABLE",
@@ -2580,7 +2580,7 @@
       "location": "Paris 17 INSPE Batignolles",
       "activity": {
         "name": "Yoga",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_75_yoga.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Arnaud D",
       "status": "AVAILABLE",
@@ -2591,7 +2591,7 @@
       "location": "Paris  8 Fénelon Sainte Marie",
       "activity": {
         "name": "Cardio Max",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_48_cardiomax.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_48_cardiomax.svg"
       },
       "teacher": "Nicolas MW",
       "status": "AVAILABLE",
@@ -2602,7 +2602,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Thomas V",
       "status": "AVAILABLE",
@@ -2613,7 +2613,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Miriam",
       "status": "AVAILABLE",
@@ -2624,7 +2624,7 @@
       "location": "Paris 12 Saint Michel de Picpus",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Claudie C",
       "status": "AVAILABLE",
@@ -2635,7 +2635,7 @@
       "location": "Paris 13 Notre Dame de la Gare",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Anne-Laure",
       "status": "AVAILABLE",
@@ -2646,7 +2646,7 @@
       "location": "Paris 15 Lourmel",
       "activity": {
         "name": "Modéré",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_50_modere.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_50_modere.svg"
       },
       "teacher": "François GB",
       "status": "AVAILABLE",
@@ -2657,7 +2657,7 @@
       "location": "Paris 16 Lübeck",
       "activity": {
         "name": "Core",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_95_core.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Aurélie Rose",
       "status": "AVAILABLE",
@@ -2668,7 +2668,7 @@
       "location": "Paris  7 Sainte-Jeanne-Elisabeth",
       "activity": {
         "name": "Modéré",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_50_modere.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_50_modere.svg"
       },
       "teacher": "Audrey A",
       "status": "AVAILABLE",
@@ -2679,7 +2679,7 @@
       "location": "Paris 10 IRTS",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Mathilde DB",
       "status": "AVAILABLE",
@@ -2690,7 +2690,7 @@
       "location": "Paris 11 Charles Péguy",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Héloïse",
       "status": "AVAILABLE",
@@ -2701,7 +2701,7 @@
       "location": "Paris  5 Saint Victor",
       "activity": {
         "name": "Yoga",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_75_yoga.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Gersende D",
       "status": "AVAILABLE",
@@ -2712,7 +2712,7 @@
       "location": "Paris  6 Sainte-Geneviève",
       "activity": {
         "name": "Core",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_95_core.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Lucie CO",
       "status": "AVAILABLE",
@@ -2723,7 +2723,7 @@
       "location": "Paris  6 Stanislas",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Clara P",
       "status": "AVAILABLE",
@@ -2734,7 +2734,7 @@
       "location": "Paris  7 Saint-Jean",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Capucine",
       "status": "AVAILABLE",
@@ -2745,7 +2745,7 @@
       "location": "Paris  8 Racine",
       "activity": {
         "name": "Soft",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_20_soft.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_20_soft.svg"
       },
       "teacher": "Catarina K",
       "status": "AVAILABLE",
@@ -2756,7 +2756,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Fiona DLC",
       "status": "FULL",
@@ -2767,7 +2767,7 @@
       "location": "Paris 10 Gustave Ferrié",
       "activity": {
         "name": "Core",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_95_core.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Joaquine B",
       "status": "AVAILABLE",
@@ -2778,7 +2778,7 @@
       "location": "Paris 13 Collège St Vincent de Paul 49",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Katia",
       "status": "FULL",
@@ -2789,7 +2789,7 @@
       "location": "Paris 14 La Bruyère",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Betty",
       "status": "AVAILABLE",
@@ -2800,7 +2800,7 @@
       "location": "Paris 14 Sainte Catherine Labouré",
       "activity": {
         "name": "Soft",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_20_soft.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_20_soft.svg"
       },
       "teacher": "Mélanie A",
       "status": "AVAILABLE",
@@ -2811,7 +2811,7 @@
       "location": "Paris 15 Beaugrenelle-C3B",
       "activity": {
         "name": "Dance",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_67_dance.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_67_dance.svg"
       },
       "teacher": "Leila",
       "status": "AVAILABLE",
@@ -2822,7 +2822,7 @@
       "location": "Paris 15 Corbon",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Emilie J",
       "status": "AVAILABLE",
@@ -2833,7 +2833,7 @@
       "location": "Paris 17 Champerret",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Omar",
       "status": "AVAILABLE",
@@ -2844,7 +2844,7 @@
       "location": "Paris 18 Saint-Louis",
       "activity": {
         "name": "Cardio HIIT",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_45_cardioflex.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_45_cardioflex.svg"
       },
       "teacher": "Patrick BO",
       "status": "AVAILABLE",
@@ -2855,7 +2855,7 @@
       "location": "Paris 19 L'Initiative",
       "activity": {
         "name": "Intensif",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_40_intensif.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_40_intensif.svg"
       },
       "teacher": "Chiara",
       "status": "AVAILABLE",
@@ -2866,7 +2866,7 @@
       "location": "Paris 20 La Providence Don Bosco",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Emmanuel R",
       "status": "AVAILABLE",
@@ -2877,7 +2877,7 @@
       "location": "Paris 12 Arago",
       "activity": {
         "name": "Cardio Max",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_48_cardiomax.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_48_cardiomax.svg"
       },
       "teacher": "Camille A",
       "status": "AVAILABLE",
@@ -2888,7 +2888,7 @@
       "location": "Paris 13 Ecole St Vincent de Paul 109",
       "activity": {
         "name": "Soft",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_20_soft.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_20_soft.svg"
       },
       "teacher": "Cédric",
       "status": "AVAILABLE",
@@ -2899,7 +2899,7 @@
       "location": "Paris 17 INSPE Batignolles",
       "activity": {
         "name": "Core",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_95_core.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Jen",
       "status": "AVAILABLE",
@@ -2910,7 +2910,7 @@
       "location": "Paris  8 Fénelon Sainte Marie",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Floriane",
       "status": "AVAILABLE",
@@ -2921,7 +2921,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Alexandre C",
       "status": "FULL",
@@ -2932,7 +2932,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Flex",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_96_flex.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_96_flex.svg"
       },
       "teacher": "Miriam",
       "status": "AVAILABLE",
@@ -2943,7 +2943,7 @@
       "location": "Paris 12 Saint Michel de Picpus",
       "activity": {
         "name": "Soft",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_20_soft.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_20_soft.svg"
       },
       "teacher": "Léa S",
       "status": "AVAILABLE",
@@ -2954,7 +2954,7 @@
       "location": "Paris 13 Notre Dame de la Gare",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Emmanuelle RD",
       "status": "AVAILABLE",
@@ -2965,7 +2965,7 @@
       "location": "Paris 15 Lourmel",
       "activity": {
         "name": "Cardio Max",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_48_cardiomax.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_48_cardiomax.svg"
       },
       "teacher": "François GB",
       "status": "AVAILABLE",
@@ -2976,7 +2976,7 @@
       "location": "Paris 16 Lübeck",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Marine N",
       "status": "AVAILABLE",
@@ -2987,7 +2987,7 @@
       "location": "Paris  7 Sainte-Jeanne-Elisabeth",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Audrey A",
       "status": "AVAILABLE",
@@ -2998,7 +2998,7 @@
       "location": "Paris 11 Charles Péguy",
       "activity": {
         "name": "Cardio HIIT",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_45_cardioflex.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_45_cardioflex.svg"
       },
       "teacher": "Romain B",
       "status": "AVAILABLE",
@@ -3009,7 +3009,7 @@
       "location": "Paris  6 Sainte-Geneviève",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Nao",
       "status": "AVAILABLE",
@@ -3020,7 +3020,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Yoga",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_75_yoga.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Fiona DLC",
       "status": "FULL",
@@ -3031,7 +3031,7 @@
       "location": "Paris 13 Collège St Vincent de Paul 49",
       "activity": {
         "name": "Yoga",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_75_yoga.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Katia",
       "status": "AVAILABLE",
@@ -3042,7 +3042,7 @@
       "location": "Paris 14 Sainte Catherine Labouré",
       "activity": {
         "name": "Flex",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_96_flex.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_96_flex.svg"
       },
       "teacher": "Mélanie A",
       "status": "AVAILABLE",
@@ -3053,7 +3053,7 @@
       "location": "Paris 15 Beaugrenelle-C3B",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Leila",
       "status": "AVAILABLE",
@@ -3064,7 +3064,7 @@
       "location": "Paris 18 Saint-Louis",
       "activity": {
         "name": "Yoga",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_75_yoga.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Patrick BO",
       "status": "AVAILABLE",
@@ -3075,7 +3075,7 @@
       "location": "Paris 19 L'Initiative",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Hugo R",
       "status": "AVAILABLE",
@@ -3086,7 +3086,7 @@
       "location": "Paris 12 Arago",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Mathilde DB",
       "status": "AVAILABLE",
@@ -3097,7 +3097,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Cardio Pump",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_46_cardiopump.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Alexandre C",
       "status": "FULL",
@@ -3108,7 +3108,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Florent CE",
       "status": "AVAILABLE",
@@ -3119,7 +3119,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Yoga",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_75_yoga.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Hélène Hé",
       "status": "AVAILABLE",
@@ -3130,7 +3130,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Modéré",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_50_modere.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_50_modere.svg"
       },
       "teacher": "Katia",
       "status": "AVAILABLE",
@@ -3141,7 +3141,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Core",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_95_core.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Anaïs Döu",
       "status": "AVAILABLE",
@@ -3152,7 +3152,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Cardio Pump",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_46_cardiopump.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Katia",
       "status": "AVAILABLE",
@@ -3163,7 +3163,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Marine Galland",
       "status": "AVAILABLE",
@@ -3174,7 +3174,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Yoga",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_75_yoga.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Katia",
       "status": "AVAILABLE",
@@ -3185,7 +3185,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Cardio Max",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_48_cardiomax.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_48_cardiomax.svg"
       },
       "teacher": "Tilda",
       "status": "AVAILABLE",
@@ -3196,7 +3196,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Afrovibe®",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_101_afrovibes.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_101_afrovibes.svg"
       },
       "teacher": "Emma F",
       "status": "AVAILABLE",
@@ -3207,7 +3207,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Yoga",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_75_yoga.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Léonore C",
       "status": "AVAILABLE",
@@ -3218,7 +3218,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Lucie BO",
       "status": "AVAILABLE",
@@ -3229,7 +3229,7 @@
       "location": "Paris 17 INSPE Batignolles",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Cristina FE",
       "status": "AVAILABLE",
@@ -3240,7 +3240,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Cardio Pump",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_46_cardiopump.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Céline M",
       "status": "AVAILABLE",
@@ -3251,7 +3251,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Core",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_95_core.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Alice Dub",
       "status": "AVAILABLE",
@@ -3262,7 +3262,7 @@
       "location": "Paris 11 AEPP",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Hendy",
       "status": "AVAILABLE",
@@ -3273,7 +3273,7 @@
       "location": "Paris 15 UFR STAPS",
       "activity": {
         "name": "Soft",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_20_soft.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_20_soft.svg"
       },
       "teacher": "Clarisse C",
       "status": "AVAILABLE",
@@ -3284,7 +3284,7 @@
       "location": "Paris 11 Charles Péguy",
       "activity": {
         "name": "Cardio Max",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_48_cardiomax.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_48_cardiomax.svg"
       },
       "teacher": "Emmanuel R",
       "status": "AVAILABLE",
@@ -3295,7 +3295,7 @@
       "location": "Paris 15 Lourmel",
       "activity": {
         "name": "Intensif",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_40_intensif.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_40_intensif.svg"
       },
       "teacher": "Gael",
       "status": "AVAILABLE",
@@ -3306,7 +3306,7 @@
       "location": "Paris  6 Stanislas",
       "activity": {
         "name": "Cardio Max",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_48_cardiomax.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_48_cardiomax.svg"
       },
       "teacher": "Daniel",
       "status": "AVAILABLE",
@@ -3317,7 +3317,7 @@
       "location": "Paris  7 Sainte-Jeanne-Elisabeth",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Jeanne D",
       "status": "AVAILABLE",
@@ -3328,7 +3328,7 @@
       "location": "Paris  8 Racine",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Kwama",
       "status": "AVAILABLE",
@@ -3339,7 +3339,7 @@
       "location": "Paris 10 Chaudron",
       "activity": {
         "name": "Pilates Fusion®",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_82_pilatesfusion.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_82_pilatesfusion.svg"
       },
       "teacher": "Léa C",
       "status": "AVAILABLE",
@@ -3350,7 +3350,7 @@
       "location": "Paris 13 Notre Dame de la Gare",
       "activity": {
         "name": "Intensif",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_40_intensif.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_40_intensif.svg"
       },
       "teacher": "Margot PE",
       "status": "AVAILABLE",
@@ -3361,7 +3361,7 @@
       "location": "Paris 14 Moulin Vert",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Natacha A",
       "status": "AVAILABLE",
@@ -3372,7 +3372,7 @@
       "location": "Paris 15 Beaugrenelle-C3B",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Audrey M",
       "status": "AVAILABLE",
@@ -3383,7 +3383,7 @@
       "location": "Paris 19 L'Initiative",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Léa S",
       "status": "AVAILABLE",
@@ -3394,7 +3394,7 @@
       "location": "Paris  6 Sainte-Geneviève",
       "activity": {
         "name": "Dance",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_67_dance.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_67_dance.svg"
       },
       "teacher": "Katia",
       "status": "AVAILABLE",
@@ -3405,7 +3405,7 @@
       "location": "Paris 12 Arago",
       "activity": {
         "name": "Cardio HIIT",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_45_cardioflex.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_45_cardioflex.svg"
       },
       "teacher": "Fabrice",
       "status": "AVAILABLE",
@@ -3416,7 +3416,7 @@
       "location": "Paris 13 Ecole St Vincent de Paul 109",
       "activity": {
         "name": "Core",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_95_core.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Camille Ro",
       "status": "AVAILABLE",
@@ -3427,7 +3427,7 @@
       "location": "Paris 14 La Bruyère",
       "activity": {
         "name": "Cardio HIIT",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_45_cardioflex.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_45_cardioflex.svg"
       },
       "teacher": "Fermeture exceptionnelle 29.01.26",
       "status": "CANCELLED",
@@ -3438,7 +3438,7 @@
       "location": "Paris 17 INSPE Batignolles",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Alain N",
       "status": "AVAILABLE",
@@ -3449,7 +3449,7 @@
       "location": "Paris  9 Bergère",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Patrick BO",
       "status": "AVAILABLE",
@@ -3460,7 +3460,7 @@
       "location": "Paris 12 Saint Michel de Picpus",
       "activity": {
         "name": "Standard",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_30_standard.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Alizée F",
       "status": "AVAILABLE",
@@ -3471,7 +3471,7 @@
       "location": "Paris 11 Charles Péguy",
       "activity": {
         "name": "Pilates Fusion®",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_82_pilatesfusion.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_82_pilatesfusion.svg"
       },
       "teacher": "Emmanuel R",
       "status": "AVAILABLE",
@@ -3482,7 +3482,7 @@
       "location": "Paris 15 Lourmel",
       "activity": {
         "name": "Core",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_95_core.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Betty",
       "status": "AVAILABLE",
@@ -3493,7 +3493,7 @@
       "location": "Paris 12 Arago",
       "activity": {
         "name": "Pilates",
-        "icon": "https://design.swedishfit.com/feaf26f4e58d9d499b62bb7b57afa205e85713ba/user/classlevel/icon_80_pilates.svg"
+        "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Fabrice",
       "status": "AVAILABLE",
