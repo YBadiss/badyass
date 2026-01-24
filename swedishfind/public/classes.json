@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-24T08:45:04.705Z",
+  "timestamp": "2026-01-24T08:59:33.800Z",
   "classes": [
     {
       "timestamp": "2026-01-24T09:00:00.000Z",
@@ -350,7 +350,7 @@
         "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_48_cardiomax.svg"
       },
       "teacher": "Thomas V",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/716024"
     },
     {
@@ -900,7 +900,7 @@
         "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_50_modere.svg"
       },
       "teacher": "Marie P",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/738083"
     },
     {
@@ -2770,7 +2770,7 @@
         "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_45_cardioflex.svg"
       },
       "teacher": "Romain B",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/736141"
     },
     {
