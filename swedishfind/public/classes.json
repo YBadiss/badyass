@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-27T15:47:10.915Z",
+  "timestamp": "2026-01-27T16:01:12.760Z",
   "classes": [
     {
       "timestamp": "2026-01-27T06:45:00.000Z",
@@ -195,7 +195,7 @@
         "name": "Standard",
         "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
-      "teacher": "Emmanuel R",
+      "teacher": "Leila",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/740724"
     },
@@ -382,8 +382,8 @@
         "name": "Core",
         "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_95_core.svg"
       },
-      "teacher": "Leila",
-      "status": "AVAILABLE",
+      "teacher": "Fermeture exceptionnelle 27.01.26",
+      "status": "CANCELLED",
       "link": "https://www.swedishfit.fr/cours/detail/741269"
     },
     {
@@ -459,7 +459,7 @@
         "name": "Pilates",
         "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_80_pilates.svg"
       },
-      "teacher": "Emmanuel R",
+      "teacher": "Leila",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/740751"
     },
@@ -867,7 +867,7 @@
         "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Héloïse",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/736621"
     },
     {
@@ -1428,7 +1428,7 @@
         "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Alice Dub",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/727679"
     },
     {
@@ -1516,7 +1516,7 @@
         "icon": "https://design.swedishfit.com/3e838fa53969fc2689e46195add86e13656d7063/user/classlevel/icon_82_pilatesfusion.svg"
       },
       "teacher": "Joaquine B",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/723752"
     },
     {
