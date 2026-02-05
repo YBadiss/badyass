@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-05T15:07:20.048Z",
+  "timestamp": "2026-02-05T16:00:43.390Z",
   "classes": [
     {
       "timestamp": "2026-02-05T06:45:00.000Z",
@@ -427,7 +427,7 @@
         "icon": "https://design.swedishfit.com/9fdc6d4c405101f70f777e81d57a932798380094/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "David S",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/726157"
     },
     {
@@ -482,7 +482,7 @@
         "icon": "https://design.swedishfit.com/9fdc6d4c405101f70f777e81d57a932798380094/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Cécile BO",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/732997"
     },
     {
@@ -526,7 +526,7 @@
         "icon": "https://design.swedishfit.com/9fdc6d4c405101f70f777e81d57a932798380094/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Vincent B",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/732314"
     },
     {
@@ -537,7 +537,7 @@
         "icon": "https://design.swedishfit.com/9fdc6d4c405101f70f777e81d57a932798380094/user/classlevel/icon_40_intensif.svg"
       },
       "teacher": "Carla PL",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/736720"
     },
     {
@@ -548,7 +548,7 @@
         "icon": "https://design.swedishfit.com/9fdc6d4c405101f70f777e81d57a932798380094/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Romain B",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/736837"
     },
     {
@@ -614,7 +614,7 @@
         "icon": "https://design.swedishfit.com/9fdc6d4c405101f70f777e81d57a932798380094/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Romain B",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/736798"
     },
     {
@@ -680,7 +680,7 @@
         "icon": "https://design.swedishfit.com/9fdc6d4c405101f70f777e81d57a932798380094/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Juliette",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/740225"
     },
     {
@@ -801,7 +801,7 @@
         "icon": "https://design.swedishfit.com/9fdc6d4c405101f70f777e81d57a932798380094/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Nicolas MW",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/724113"
     },
     {
@@ -1340,7 +1340,7 @@
         "icon": "https://design.swedishfit.com/9fdc6d4c405101f70f777e81d57a932798380094/user/classlevel/icon_96_flex.svg"
       },
       "teacher": "François-Xavier WM",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/738893"
     },
     {
@@ -1384,7 +1384,7 @@
         "icon": "https://design.swedishfit.com/9fdc6d4c405101f70f777e81d57a932798380094/user/classlevel/icon_48_cardiomax.svg"
       },
       "teacher": "Juliette",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/733796"
     },
     {
@@ -1868,7 +1868,7 @@
         "icon": "https://design.swedishfit.com/9fdc6d4c405101f70f777e81d57a932798380094/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Marie Bé",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/737398"
     },
     {
@@ -3121,9 +3121,9 @@
         "name": "Standard",
         "icon": "https://design.swedishfit.com/9fdc6d4c405101f70f777e81d57a932798380094/user/classlevel/icon_30_standard.svg"
       },
-      "teacher": "Clara P",
+      "teacher": "Charline B",
       "status": "AVAILABLE",
-      "link": "https://www.swedishfit.fr/cours/detail/741218"
+      "link": "https://www.swedishfit.fr/cours/detail/742729"
     },
     {
       "timestamp": "2026-02-11T18:00:00.000Z",
