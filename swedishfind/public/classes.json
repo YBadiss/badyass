@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-07T03:06:36.718Z",
+  "timestamp": "2026-02-07T04:49:52.425Z",
   "classes": [
     {
       "timestamp": "2026-02-07T09:00:00.000Z",
@@ -174,7 +174,7 @@
         "icon": "https://design.swedishfit.com/9fdc6d4c405101f70f777e81d57a932798380094/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Nicolas MW",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/724113"
     },
     {
@@ -407,6 +407,17 @@
       "teacher": "Emma F",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/724203"
+    },
+    {
+      "timestamp": "2026-02-07T14:00:00.000Z",
+      "location": "Paris  9 Bergère",
+      "activity": {
+        "name": "New",
+        "icon": "https://design.swedishfit.com/9fdc6d4c405101f70f777e81d57a932798380094/user/classlevel/icon_97_other.svg"
+      },
+      "teacher": "Joaquine BFlorence GCéline MEmmanuel R",
+      "status": "AVAILABLE",
+      "link": "https://www.swedishfit.fr/cours/detail/742842"
     },
     {
       "timestamp": "2026-02-07T16:00:00.000Z",
