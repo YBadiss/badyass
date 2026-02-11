@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-11T23:19:17.276Z",
+  "timestamp": "2026-02-11T23:49:10.066Z",
   "classes": [
     {
       "timestamp": "2026-02-12T06:45:00.000Z",
@@ -339,7 +339,7 @@
         "icon": "https://design.swedishfit.com/9fdc6d4c405101f70f777e81d57a932798380094/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Alain N",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/707555"
     },
     {
@@ -2352,7 +2352,7 @@
         "icon": "https://design.swedishfit.com/9fdc6d4c405101f70f777e81d57a932798380094/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Jérémie",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/733481"
     },
     {
