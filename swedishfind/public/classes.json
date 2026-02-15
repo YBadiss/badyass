@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-15T07:09:47.602Z",
+  "timestamp": "2026-02-15T07:52:11.657Z",
   "classes": [
     {
       "timestamp": "2026-02-15T09:00:00.000Z",
@@ -240,7 +240,7 @@
         "icon": "https://design.swedishfit.com/7cb83c8f55d798b1782966f8bc1f7660352c4159/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Elvire D",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/726653"
     },
     {
@@ -317,7 +317,7 @@
         "icon": "https://design.swedishfit.com/7cb83c8f55d798b1782966f8bc1f7660352c4159/user/classlevel/icon_68_balletsculpt.svg"
       },
       "teacher": "Mathieu La",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/742678"
     },
     {
@@ -3067,7 +3067,7 @@
         "icon": "https://design.swedishfit.com/7cb83c8f55d798b1782966f8bc1f7660352c4159/user/classlevel/icon_77_yinyoga.svg"
       },
       "teacher": "Floriane",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/727772"
     },
     {
