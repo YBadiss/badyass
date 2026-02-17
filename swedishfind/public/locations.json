@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-17T16:40:32.267Z",
+  "timestamp": "2026-02-17T17:44:19.294Z",
   "locations": [
     {
       "name": "Paris  9 Bergère",
@@ -682,11 +682,11 @@
       }
     },
     {
-      "name": "Lyon 7 La Commune",
-      "address": "3 Rue Pré-Gaudry, 69007 Lyon",
+      "name": "",
+      "address": "",
       "gpsCoordinates": {
-        "lat": 45.7423226,
-        "lon": 4.833995
+        "lat": 0,
+        "lon": 0
       }
     }
   ]
