@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-19T23:18:38.567Z",
+  "timestamp": "2026-02-19T23:49:00.174Z",
   "classes": [
     {
       "timestamp": "2026-02-20T09:00:00.000Z",
@@ -31,7 +31,7 @@
         "icon": "https://design.swedishfit.com/7cb83c8f55d798b1782966f8bc1f7660352c4159/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "David S",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/726159"
     },
     {
@@ -53,7 +53,7 @@
         "icon": "https://design.swedishfit.com/7cb83c8f55d798b1782966f8bc1f7660352c4159/user/classlevel/icon_101_afrovibes.svg"
       },
       "teacher": "Laïla M",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/726204"
     },
     {
@@ -86,7 +86,7 @@
         "icon": "https://design.swedishfit.com/7cb83c8f55d798b1782966f8bc1f7660352c4159/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Cécile BO",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/732999"
     },
     {
@@ -97,7 +97,7 @@
         "icon": "https://design.swedishfit.com/7cb83c8f55d798b1782966f8bc1f7660352c4159/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Delphine DES",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/726249"
     },
     {
@@ -218,7 +218,7 @@
         "icon": "https://design.swedishfit.com/7cb83c8f55d798b1782966f8bc1f7660352c4159/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Romain B",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/736800"
     },
     {
@@ -1351,7 +1351,7 @@
         "icon": "https://design.swedishfit.com/7cb83c8f55d798b1782966f8bc1f7660352c4159/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Alice Ga",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/733216"
     },
     {
