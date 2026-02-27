@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-27T09:02:17.759Z",
+  "timestamp": "2026-02-27T10:01:45.321Z",
   "classes": [
     {
       "timestamp": "2026-02-27T09:00:00.000Z",
@@ -9,7 +9,7 @@
         "icon": "https://design.swedishfit.com/5cc74923d65673cb70ec431c5551e289aefe7b93/user/classlevel/icon_50_modere.svg"
       },
       "teacher": "Steph B.",
-      "status": "AVAILABLE",
+      "status": "PASSED",
       "link": "https://www.swedishfit.fr/cours/detail/726115"
     },
     {
@@ -20,7 +20,7 @@
         "icon": "https://design.swedishfit.com/5cc74923d65673cb70ec431c5551e289aefe7b93/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Nadine P",
-      "status": "AVAILABLE",
+      "status": "PASSED",
       "link": "https://www.swedishfit.fr/cours/detail/736327"
     },
     {
@@ -118,7 +118,7 @@
         "name": "Pilates",
         "icon": "https://design.swedishfit.com/5cc74923d65673cb70ec431c5551e289aefe7b93/user/classlevel/icon_80_pilates.svg"
       },
-      "teacher": "Vincent B",
+      "teacher": "Emmanuel R",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/732272"
     },
@@ -141,7 +141,7 @@
         "icon": "https://design.swedishfit.com/5cc74923d65673cb70ec431c5551e289aefe7b93/user/classlevel/icon_40_intensif.svg"
       },
       "teacher": "Carla PL",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/736723"
     },
     {
@@ -152,7 +152,7 @@
         "icon": "https://design.swedishfit.com/5cc74923d65673cb70ec431c5551e289aefe7b93/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Romain B",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/736840"
     },
     {
@@ -757,7 +757,7 @@
         "icon": "https://design.swedishfit.com/5cc74923d65673cb70ec431c5551e289aefe7b93/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Hélène Hé",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/732362"
     },
     {
@@ -878,7 +878,7 @@
         "icon": "https://design.swedishfit.com/5cc74923d65673cb70ec431c5551e289aefe7b93/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Chloé R",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/739410"
     },
     {
@@ -977,7 +977,7 @@
         "icon": "https://design.swedishfit.com/5cc74923d65673cb70ec431c5551e289aefe7b93/user/classlevel/icon_68_balletsculpt.svg"
       },
       "teacher": "Mathieu La",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/742680"
     },
     {
@@ -1879,7 +1879,7 @@
         "icon": "https://design.swedishfit.com/5cc74923d65673cb70ec431c5551e289aefe7b93/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Emma F",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/743574"
     },
     {
@@ -2011,7 +2011,7 @@
         "icon": "https://design.swedishfit.com/5cc74923d65673cb70ec431c5551e289aefe7b93/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Miriam",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/725213"
     },
     {
@@ -3178,7 +3178,7 @@
       },
       "teacher": "Katia",
       "status": "AVAILABLE",
-      "link": "https://www.swedishfit.fr/cours/detail/723532"
+      "link": "https://www.swedishfit.fr/cours/detail/743813"
     },
     {
       "timestamp": "2026-03-05T10:00:00.000Z",
@@ -3256,17 +3256,6 @@
       "teacher": "Alain N",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/742754"
-    },
-    {
-      "timestamp": "2026-03-05T17:00:00.000Z",
-      "location": "Paris 10 Chaudron",
-      "activity": {
-        "name": "Standard",
-        "icon": "https://design.swedishfit.com/5cc74923d65673cb70ec431c5551e289aefe7b93/user/classlevel/icon_30_standard.svg"
-      },
-      "teacher": "Fermeture exceptionnelle 5.03.26",
-      "status": "CANCELLED",
-      "link": "https://www.swedishfit.fr/cours/detail/723712"
     },
     {
       "timestamp": "2026-03-05T17:00:00.000Z",
