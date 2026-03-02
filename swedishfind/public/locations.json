@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-02T07:17:38.999Z",
+  "timestamp": "2026-03-02T07:58:14.178Z",
   "locations": [
     {
       "name": "Paris  9 Bergère",
@@ -67,10 +67,10 @@
     },
     {
       "name": "Strasbourg Lucie Berger",
-      "address": "10 rue Saint Marc, 67000 Strasbourg",
+      "address": "1 Rue des Greniers, 67000 Strasbourg",
       "gpsCoordinates": {
-        "lat": 48.5783606,
-        "lon": 7.742617500000051
+        "lat": 48.57800719999999,
+        "lon": 7.7424084
       }
     },
     {
@@ -626,19 +626,19 @@
       }
     },
     {
-      "name": "Nice Parc de la Colline du Château",
-      "address": "Parc de la Colline du Château , \nMontée Monfort, 06300 NICE",
+      "name": "",
+      "address": "",
       "gpsCoordinates": {
-        "lat": 43.6959352,
-        "lon": 7.279660100000001
+        "lat": 0,
+        "lon": 0
       }
     },
     {
-      "name": "Nice Port Lympia",
-      "address": "1 Quai des Deux Emmanuels, 06300 NICE",
+      "name": "",
+      "address": "",
       "gpsCoordinates": {
-        "lat": 43.6981958,
-        "lon": 7.286602800000001
+        "lat": 0,
+        "lon": 0
       }
     },
     {
