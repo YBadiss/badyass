@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-08T11:37:26.899Z",
+  "timestamp": "2026-03-08T11:57:53.162Z",
   "classes": [
     {
       "timestamp": "2026-03-08T09:00:00.000Z",
@@ -261,7 +261,7 @@
         "name": "Standard",
         "icon": "https://design.swedishfit.com/b7748988239de46f299a48a38df7b68cfb84d726/user/classlevel/icon_30_standard.svg"
       },
-      "teacher": "Clarisse CEric M",
+      "teacher": "Eric M",
       "status": "PASSED",
       "link": "https://www.swedishfit.fr/cours/detail/721244"
     },
@@ -405,7 +405,7 @@
         "icon": "https://design.swedishfit.com/b7748988239de46f299a48a38df7b68cfb84d726/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Juliette",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/733844"
     },
     {
@@ -416,7 +416,7 @@
         "icon": "https://design.swedishfit.com/b7748988239de46f299a48a38df7b68cfb84d726/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Thomas V",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/724432"
     },
     {
@@ -536,7 +536,7 @@
         "name": "Intensif",
         "icon": "https://design.swedishfit.com/b7748988239de46f299a48a38df7b68cfb84d726/user/classlevel/icon_40_intensif.svg"
       },
-      "teacher": "Paul C",
+      "teacher": "Magali H",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/710305"
     },
@@ -1164,7 +1164,7 @@
         "icon": "https://design.swedishfit.com/b7748988239de46f299a48a38df7b68cfb84d726/user/classlevel/icon_40_intensif.svg"
       },
       "teacher": "Romain B",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/706415"
     },
     {
@@ -1988,7 +1988,7 @@
         "name": "Intensif",
         "icon": "https://design.swedishfit.com/b7748988239de46f299a48a38df7b68cfb84d726/user/classlevel/icon_40_intensif.svg"
       },
-      "teacher": "Magali H",
+      "teacher": "Laura B",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/710900"
     },
@@ -2088,7 +2088,7 @@
         "icon": "https://design.swedishfit.com/b7748988239de46f299a48a38df7b68cfb84d726/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Clara D",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/744069"
     },
     {
