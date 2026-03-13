@@ -1,0 +1,17 @@
+{
+  "key": {
+    "remoteJid": "12345-67890@g.us",
+    "fromMe": false,
+    "id": "MSG009",
+    "participant": "+1555000002@s.whatsapp.net"
+  },
+  "pushName": "Bob",
+  "message": {
+    "documentMessage": {
+      "url": "https://mmg.whatsapp.net/doc/enc/...",
+      "mimetype": "application/pdf",
+      "fileName": "report.pdf",
+      "fileLength": 50000
+    }
+  }
+}

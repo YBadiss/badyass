@@ -1,0 +1,19 @@
+{
+  "key": {
+    "remoteJid": "12345-67890@g.us",
+    "fromMe": false,
+    "id": "MSG014",
+    "participant": "+1555000001@s.whatsapp.net"
+  },
+  "pushName": "Alice",
+  "message": {
+    "pollUpdateMessage": {
+      "pollCreationMessageKey": {
+        "id": "MSG004"
+      },
+      "vote": {
+        "selectedOptions": ["abc123"]
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "key": {
+    "remoteJid": "12345-67890@g.us",
+    "fromMe": false,
+    "id": "MSG011",
+    "participant": "+1555000002@s.whatsapp.net"
+  },
+  "pushName": "Bob",
+  "message": {
+    "liveLocationMessage": {
+      "degreesLatitude": 48.8584,
+      "degreesLongitude": 2.2945,
+      "accuracyInMeters": 10,
+      "speedInMps": 1.5
+    }
+  }
+}

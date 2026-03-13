@@ -1,0 +1,16 @@
+{
+  "key": {
+    "remoteJid": "12345-67890@g.us",
+    "fromMe": false,
+    "id": "MSG008",
+    "participant": "+1555000002@s.whatsapp.net"
+  },
+  "pushName": "Bob",
+  "message": {
+    "stickerMessage": {
+      "url": "https://mmg.whatsapp.net/sticker/enc/...",
+      "mimetype": "image/webp",
+      "isAnimated": false
+    }
+  }
+}

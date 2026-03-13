@@ -1,0 +1,19 @@
+{
+  "key": {
+    "remoteJid": "12345-67890@g.us",
+    "fromMe": false,
+    "id": "MSG013",
+    "participant": "+1555000002@s.whatsapp.net"
+  },
+  "pushName": "Bob",
+  "message": {
+    "reactionMessage": {
+      "key": {
+        "remoteJid": "12345-67890@g.us",
+        "fromMe": false,
+        "id": "MSG001"
+      },
+      "text": "👍"
+    }
+  }
+}

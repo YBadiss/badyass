@@ -1,0 +1,12 @@
+{
+  "key": {
+    "remoteJid": "12345-67890@g.us",
+    "fromMe": false,
+    "id": "MSG001",
+    "participant": "+1555000001@s.whatsapp.net"
+  },
+  "pushName": "Alice",
+  "message": {
+    "conversation": "hey, are we meeting tomorrow?"
+  }
+}

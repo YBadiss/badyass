@@ -1,0 +1,17 @@
+{
+  "key": {
+    "remoteJid": "12345-67890@g.us",
+    "fromMe": false,
+    "id": "MSG002",
+    "participant": "+1555000002@s.whatsapp.net"
+  },
+  "pushName": "Bob",
+  "message": {
+    "extendedTextMessage": {
+      "text": "check this out https://example.com",
+      "matchedText": "https://example.com",
+      "title": "Example Domain",
+      "description": "This domain is for use in illustrative examples."
+    }
+  }
+}

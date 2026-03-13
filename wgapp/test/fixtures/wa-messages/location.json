@@ -1,0 +1,16 @@
+{
+  "key": {
+    "remoteJid": "12345-67890@g.us",
+    "fromMe": false,
+    "id": "MSG010",
+    "participant": "+1555000001@s.whatsapp.net"
+  },
+  "pushName": "Alice",
+  "message": {
+    "locationMessage": {
+      "degreesLatitude": 48.8566,
+      "degreesLongitude": 2.3522,
+      "name": "Paris, France"
+    }
+  }
+}

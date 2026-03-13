@@ -1,0 +1,17 @@
+{
+  "key": {
+    "remoteJid": "12345-67890@g.us",
+    "fromMe": false,
+    "id": "MSG006",
+    "participant": "+1555000002@s.whatsapp.net"
+  },
+  "pushName": "Bob",
+  "message": {
+    "videoMessage": {
+      "url": "https://mmg.whatsapp.net/video/enc/...",
+      "mimetype": "video/mp4",
+      "caption": "check this out",
+      "fileLength": 99999
+    }
+  }
+}

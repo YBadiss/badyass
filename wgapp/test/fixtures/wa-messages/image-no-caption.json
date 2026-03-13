@@ -1,0 +1,17 @@
+{
+  "key": {
+    "remoteJid": "12345-67890@g.us",
+    "fromMe": false,
+    "id": "MSG005B",
+    "participant": "+1555000001@s.whatsapp.net"
+  },
+  "pushName": "Alice",
+  "message": {
+    "imageMessage": {
+      "url": "https://mmg.whatsapp.net/image/enc/...",
+      "mimetype": "image/jpeg",
+      "fileSha256": "abc123",
+      "fileLength": 12345
+    }
+  }
+}

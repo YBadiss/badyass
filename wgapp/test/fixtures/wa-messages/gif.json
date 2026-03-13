@@ -1,0 +1,17 @@
+{
+  "key": {
+    "remoteJid": "12345-67890@g.us",
+    "fromMe": false,
+    "id": "MSG006B",
+    "participant": "+1555000001@s.whatsapp.net"
+  },
+  "pushName": "Alice",
+  "message": {
+    "videoMessage": {
+      "url": "https://mmg.whatsapp.net/video/enc/...",
+      "mimetype": "video/mp4",
+      "gifPlayback": true,
+      "fileLength": 5000
+    }
+  }
+}

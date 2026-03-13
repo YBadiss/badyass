@@ -1,0 +1,15 @@
+{
+  "key": {
+    "remoteJid": "12345-67890@g.us",
+    "fromMe": false,
+    "id": "MSG012",
+    "participant": "+1555000001@s.whatsapp.net"
+  },
+  "pushName": "Alice",
+  "message": {
+    "contactMessage": {
+      "displayName": "Jane Doe",
+      "vcard": "BEGIN:VCARD\nVERSION:3.0\nFN:Jane Doe\nTEL;type=CELL;type=VOICE:+33612345678\nEND:VCARD"
+    }
+  }
+}
