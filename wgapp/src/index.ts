@@ -17,7 +17,6 @@ const db = new DB(dbPath);
 
 const wa = new BaileysWAAdapter(
   path.join(config.STORE_PATH, 'wa-auth'),
-  config.WA_GROUP_JID,
 );
 
 const gmail = new GmailAPIAdapter(

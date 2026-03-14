@@ -147,9 +147,18 @@ describe('Bridge — WA → Email', () => {
     expect(gmail.sentEmails).toHaveLength(0);
   });
 
-  it('filters fromMe messages', async () => {
+  it('allows fromMe messages that are not bridge echoes', async () => {
     const msg = loadWAFixture('text');
     msg.key.fromMe = true;
+    wa.replay([msg]);
+    await vi.advanceTimersByTimeAsync(30000);
+    expect(gmail.sentEmails).toHaveLength(1);
+  });
+
+  it('filters fromMe bridge echo messages', async () => {
+    const msg = loadWAFixture('text');
+    msg.key.fromMe = true;
+    msg.message!.conversation = '[John via email]: some reply';
     wa.replay([msg]);
     await vi.advanceTimersByTimeAsync(30000);
     expect(gmail.sentEmails).toHaveLength(0);

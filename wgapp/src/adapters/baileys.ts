@@ -1,27 +1,34 @@
 import makeWASocket, {
   useMultiFileAuthState,
   DisconnectReason,
+  fetchLatestBaileysVersion,
+  makeCacheableSignalKeyStore,
 } from '@whiskeysockets/baileys';
 import type { WASocket } from '@whiskeysockets/baileys';
+import P from 'pino';
 import type { WAPort, WAIncomingMessage } from '../ports.js';
 
 export class BaileysWAAdapter implements WAPort {
   private sock: WASocket | null = null;
   private handler: ((msg: WAIncomingMessage) => void) | null = null;
   private authStorePath: string;
-  private groupJid: string;
+  private logger = P({ level: 'silent' });
 
-  constructor(authStorePath: string, groupJid: string) {
+  constructor(authStorePath: string) {
     this.authStorePath = authStorePath;
-    this.groupJid = groupJid;
   }
 
   async connect(): Promise<void> {
     const { state, saveCreds } = await useMultiFileAuthState(this.authStorePath);
+    const { version } = await fetchLatestBaileysVersion();
 
     this.sock = makeWASocket({
-      auth: state,
-      printQRInTerminal: true,
+      version,
+      logger: this.logger,
+      auth: {
+        creds: state.creds,
+        keys: makeCacheableSignalKeyStore(state.keys, this.logger),
+      },
     });
 
     this.sock.ev.on('creds.update', saveCreds);
@@ -31,7 +38,7 @@ export class BaileysWAAdapter implements WAPort {
       if (connection === 'close') {
         const statusCode = (lastDisconnect?.error as any)?.output?.statusCode;
         if (statusCode === DisconnectReason.loggedOut) {
-          console.error('Logged out — re-scan QR required. Exiting.');
+          console.error('Logged out — re-pair required. Exiting.');
           process.exit(1);
         }
         console.warn(`Connection closed (status ${statusCode}). Reconnecting...`);
@@ -44,13 +51,6 @@ export class BaileysWAAdapter implements WAPort {
     this.sock.ev.on('messages.upsert', ({ messages, type }) => {
       if (type !== 'notify') return;
       for (const msg of messages) {
-        if (msg.key.fromMe) continue;
-        if (this.groupJid && msg.key.remoteJid !== this.groupJid) {
-          if (!this.groupJid) {
-            console.log(`[discovery] JID: ${msg.key.remoteJid} from ${msg.pushName}`);
-          }
-          continue;
-        }
         if (this.handler) {
           this.handler(msg as unknown as WAIncomingMessage);
         }

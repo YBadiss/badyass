@@ -44,9 +44,20 @@ export class GmailAPIAdapter implements GmailPort {
       },
     });
 
+    // Fetch the sent message to get the RFC 2822 Message-ID header for threading
+    const sent = await this.gmail.users.messages.get({
+      userId: 'me',
+      id: res.data.id!,
+      format: 'metadata',
+      metadataHeaders: ['Message-ID'],
+    });
+    const rfc2822Id = sent.data.payload?.headers?.find(
+      (h) => h.name?.toLowerCase() === 'message-id',
+    )?.value ?? res.data.id!;
+
     return {
       threadId: res.data.threadId!,
-      messageId: res.data.id!,
+      messageId: rfc2822Id,
     };
   }
 
