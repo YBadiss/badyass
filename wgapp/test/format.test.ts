@@ -1,21 +1,23 @@
 import { describe, it, expect } from 'vitest';
 import { formatLine, stripQuotedReply } from '../src/format.js';
 
+const fixedDate = new Date('2024-06-15T14:30:00Z'); // 16:30 in Europe/Paris (summer)
+
 describe('formatLine', () => {
-  it('basic formatting', () => {
-    expect(formatLine('Alice', 'hello')).toBe('[Alice]: hello');
+  it('basic formatting with timestamp', () => {
+    expect(formatLine('Alice', 'hello', fixedDate)).toBe('[16:30] [Alice]: hello');
   });
 
   it('trims whitespace', () => {
-    expect(formatLine('Bob', '  hello  ')).toBe('[Bob]: hello');
+    expect(formatLine('Bob', '  hello  ', fixedDate)).toBe('[16:30] [Bob]: hello');
   });
 
   it('collapses excessive newlines', () => {
-    expect(formatLine('Alice', 'line1\n\n\n\nline2')).toBe('[Alice]: line1\n\nline2');
+    expect(formatLine('Alice', 'line1\n\n\n\nline2', fixedDate)).toBe('[16:30] [Alice]: line1\n\nline2');
   });
 
   it('preserves single newlines', () => {
-    expect(formatLine('Bob', 'line1\nline2')).toBe('[Bob]: line1\nline2');
+    expect(formatLine('Bob', 'line1\nline2', fixedDate)).toBe('[16:30] [Bob]: line1\nline2');
   });
 });
 

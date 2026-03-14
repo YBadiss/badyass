@@ -29,6 +29,12 @@ export class DB {
         gmail_msg_id  TEXT PRIMARY KEY,
         processed_at  INTEGER NOT NULL
       );
+
+      CREATE TABLE IF NOT EXISTS outbox (
+        id         INTEGER PRIMARY KEY AUTOINCREMENT,
+        line       TEXT NOT NULL,
+        created_at INTEGER NOT NULL
+      );
     `);
   }
 
@@ -66,6 +72,33 @@ export class DB {
     this.db
       .prepare('INSERT OR IGNORE INTO processed_emails (gmail_msg_id, processed_at) VALUES (?, ?)')
       .run(gmailMsgId, Date.now());
+  }
+
+  pushOutbox(line: string): void {
+    this.db
+      .prepare('INSERT INTO outbox (line, created_at) VALUES (?, ?)')
+      .run(line, Date.now());
+  }
+
+  outboxCount(): number {
+    const row = this.db.prepare('SELECT COUNT(*) as cnt FROM outbox').get() as { cnt: number };
+    return row.cnt;
+  }
+
+  readOutbox(): { id: number; line: string }[] {
+    return this.db
+      .prepare('SELECT id, line FROM outbox ORDER BY id')
+      .all() as { id: number; line: string }[];
+  }
+
+  deleteOutbox(ids: number[]): void {
+    if (ids.length === 0) return;
+    const placeholders = ids.map(() => '?').join(',');
+    this.db.prepare(`DELETE FROM outbox WHERE id IN (${placeholders})`).run(...ids);
+  }
+
+  transaction<T>(fn: () => T): T {
+    return this.db.transaction(fn)();
   }
 
   close(): void {

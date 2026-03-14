@@ -18,8 +18,8 @@ describe('parseConfig', () => {
     expect(config.FRIEND_NAME).toBe('Alice');
     expect(config.WA_GROUP_JID).toBe('');
     expect(config.POLL_INTERVAL_MS).toBe(60000);
-    expect(config.DEBOUNCE_MS).toBe(30000);
-    expect(config.DEBOUNCE_MAX_BATCH).toBe(20);
+    expect(config.WA_OUTBOX_DELAY_MS).toBe(30000);
+    expect(config.WA_OUTBOX_MAX_MESSAGES).toBe(20);
     expect(config.STORE_PATH).toBe('./store');
   });
 
@@ -28,14 +28,14 @@ describe('parseConfig', () => {
       ...validEnv,
       WA_GROUP_JID: '123-456@g.us',
       POLL_INTERVAL_MS: '30000',
-      DEBOUNCE_MS: '10000',
-      DEBOUNCE_MAX_BATCH: '50',
+      WA_OUTBOX_DELAY_MS: '10000',
+      WA_OUTBOX_MAX_MESSAGES: '50',
       STORE_PATH: '/var/www/store',
     });
     expect(config.WA_GROUP_JID).toBe('123-456@g.us');
     expect(config.POLL_INTERVAL_MS).toBe(30000);
-    expect(config.DEBOUNCE_MS).toBe(10000);
-    expect(config.DEBOUNCE_MAX_BATCH).toBe(50);
+    expect(config.WA_OUTBOX_DELAY_MS).toBe(10000);
+    expect(config.WA_OUTBOX_MAX_MESSAGES).toBe(50);
     expect(config.STORE_PATH).toBe('/var/www/store');
   });
 

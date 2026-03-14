@@ -1,6 +1,11 @@
-export function formatLine(sender: string, content: string): string {
+export function formatLine(sender: string, content: string, date?: Date): string {
   const cleaned = content.trim().replace(/\n{3,}/g, '\n\n');
-  return `[${sender}]: ${cleaned}`;
+  const time = (date ?? new Date()).toLocaleTimeString('en-GB', {
+    hour: '2-digit',
+    minute: '2-digit',
+    timeZone: 'Europe/Paris',
+  });
+  return `[${time}] [${sender}]: ${cleaned}`;
 }
 
 export function stripQuotedReply(body: string): string {

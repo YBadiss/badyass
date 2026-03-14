@@ -80,7 +80,7 @@ Instead of firing one email per WA message, buffer messages for **30 seconds** o
 3. When the timer fires (30 s of silence), flush the buffer: join all lines into one email body and send.
 4. Safety cap: if the buffer reaches **20 messages** before the timer fires, flush immediately. This prevents a very active conversation from being silently held for minutes.
 
-The `DEBOUNCE_MS` and `DEBOUNCE_MAX_BATCH` values go in `.env` so you can tune without code changes.
+The `WA_OUTBOX_DELAY_MS` and `WA_OUTBOX_MAX_MESSAGES` values go in `.env` so you can tune without code changes.
 
 ### Message Type Handling
 
@@ -191,8 +191,8 @@ FRIEND_EMAIL=friend@example.com
 FRIEND_NAME=John
 EMAIL_SUBJECT="WhatsApp Group Thread"
 POLL_INTERVAL_MS=60000
-DEBOUNCE_MS=30000
-DEBOUNCE_MAX_BATCH=20
+WA_OUTBOX_DELAY_MS=30000
+WA_OUTBOX_MAX_MESSAGES=20
 STORE_PATH=./store            # production: /var/www/badyass.xyz/wgapp-store
 ```
 
@@ -453,7 +453,7 @@ Six phases. Each ends with something you can run or test — no phase is just pl
 
 - `npm init`, install all production and dev dependencies in one go.
 - `tsconfig.json` — strict mode, `"module": "nodenext"`, `"outDir": "dist"`. No build step needed for dev (tsx handles it), but the config should be valid for an eventual `tsc` build.
-- `src/config.ts` — a zod schema that reads `process.env` via dotenv (respects `DOTENV_CONFIG_PATH` for production) and returns a typed config object. Required fields: `GMAIL_ADDRESS`, `GMAIL_CLIENT_ID`, `GMAIL_CLIENT_SECRET`, `GMAIL_REFRESH_TOKEN`, `FRIEND_EMAIL`, `FRIEND_NAME`, `EMAIL_SUBJECT`. Optional with defaults: `WA_GROUP_JID` (empty string = discovery mode), `POLL_INTERVAL_MS` (60000), `DEBOUNCE_MS` (30000), `DEBOUNCE_MAX_BATCH` (20), `STORE_PATH` (`./store` — in production, set to `/var/www/badyass.xyz/wgapp-store` so state survives deploys). `parseConfig()` either returns the typed object or throws with a human-readable list of what's wrong.
+- `src/config.ts` — a zod schema that reads `process.env` via dotenv (respects `DOTENV_CONFIG_PATH` for production) and returns a typed config object. Required fields: `GMAIL_ADDRESS`, `GMAIL_CLIENT_ID`, `GMAIL_CLIENT_SECRET`, `GMAIL_REFRESH_TOKEN`, `FRIEND_EMAIL`, `FRIEND_NAME`, `EMAIL_SUBJECT`. Optional with defaults: `WA_GROUP_JID` (empty string = discovery mode), `POLL_INTERVAL_MS` (60000), `WA_OUTBOX_DELAY_MS` (30000), `WA_OUTBOX_MAX_MESSAGES` (20), `STORE_PATH` (`./store` — in production, set to `/var/www/badyass.xyz/wgapp-store` so state survives deploys). `parseConfig()` either returns the typed object or throws with a human-readable list of what's wrong.
 - `src/ports.ts` — export `WAPort`, `GmailPort`, `WAIncomingMessage`, and `GmailMessage` types. This pins the contract before any implementation — the bridge core, adapters, and replay helpers all depend on these interfaces.
 - `.env.example` with every key documented.
 - `vitest.config.ts` — minimal, just `include: ['test/**/*.test.ts']`.

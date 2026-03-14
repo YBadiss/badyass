@@ -11,8 +11,8 @@ const configSchema = z.object({
   FRIEND_NAME: z.string().min(1),
   EMAIL_SUBJECT: z.string().min(1),
   POLL_INTERVAL_MS: z.coerce.number().int().positive().default(60000),
-  DEBOUNCE_MS: z.coerce.number().int().positive().default(30000),
-  DEBOUNCE_MAX_BATCH: z.coerce.number().int().positive().default(20),
+  WA_OUTBOX_DELAY_MS: z.coerce.number().int().positive().default(30000),
+  WA_OUTBOX_MAX_MESSAGES: z.coerce.number().int().positive().default(20),
   STORE_PATH: z.string().default('./store'),
 });
 

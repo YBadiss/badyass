@@ -3,10 +3,9 @@ import type { DB } from './db.js';
 import type { Config } from './config.js';
 import { extractContent } from './extract.js';
 import { formatLine, stripQuotedReply } from './format.js';
-import { DebounceBuffer } from './debounce.js';
 
 export class Bridge {
-  private debounceBuffer: DebounceBuffer;
+  private outboxInterval: ReturnType<typeof setInterval> | null = null;
   private pollInterval: ReturnType<typeof setInterval> | null = null;
 
   constructor(
@@ -14,17 +13,22 @@ export class Bridge {
     private gmail: GmailPort,
     private db: DB,
     private config: Config,
-  ) {
-    this.debounceBuffer = new DebounceBuffer(
-      config.DEBOUNCE_MS,
-      config.DEBOUNCE_MAX_BATCH,
-      (lines) => this.flushToEmail(lines),
-    );
-  }
+  ) {}
 
   start(): void {
     console.log('[bridge] started, listening for WA messages');
     this.wa.onMessage((msg) => this.handleWAMessage(msg));
+
+    // Flush any messages left in outbox from a previous crash
+    const pending = this.db.outboxCount();
+    if (pending > 0) {
+      console.log(`[bridge] found ${pending} pending outbox messages, flushing`);
+      this.flushToEmail();
+    }
+
+    // Send outbox every WA_OUTBOX_DELAY_MS (if there are pending messages)
+    console.log(`[bridge] outbox flush every ${this.config.WA_OUTBOX_DELAY_MS}ms`);
+    this.outboxInterval = setInterval(() => this.flushToEmail(), this.config.WA_OUTBOX_DELAY_MS);
   }
 
   startPolling(): void {
@@ -33,11 +37,15 @@ export class Bridge {
   }
 
   async stop(): Promise<void> {
+    if (this.outboxInterval) {
+      clearInterval(this.outboxInterval);
+      this.outboxInterval = null;
+    }
     if (this.pollInterval) {
       clearInterval(this.pollInterval);
       this.pollInterval = null;
     }
-    await this.debounceBuffer.forceFlush();
+    await this.flushToEmail();
   }
 
   private handleWAMessage(msg: WAIncomingMessage): void {
@@ -53,8 +61,9 @@ export class Bridge {
     }
 
     // Skip messages sent by the bridge itself (email replies forwarded back to WA)
-    const bridgePrefix = `[${this.config.FRIEND_NAME} via email]:`;
-    if (msg.key.fromMe && content.startsWith(bridgePrefix)) {
+    // Format is: [HH:MM] [Name via email]: text
+    const bridgeTag = `[${this.config.FRIEND_NAME} via email]:`;
+    if (msg.key.fromMe && content.includes(bridgeTag)) {
       console.log(`[wa] skipped: bridge echo`);
       return;
     }
@@ -62,10 +71,20 @@ export class Bridge {
     const sender = msg.pushName ?? 'Unknown';
     const line = formatLine(sender, content);
     console.log(`[wa] buffered: ${line}`);
-    this.debounceBuffer.push(line);
+    this.db.pushOutbox(line);
+
+    // Force flush if outbox is full
+    if (this.db.outboxCount() >= this.config.WA_OUTBOX_MAX_MESSAGES) {
+      this.flushToEmail();
+    }
   }
 
-  private async flushToEmail(lines: string[]): Promise<void> {
+  private async flushToEmail(): Promise<void> {
+    const rows = this.db.readOutbox();
+    if (rows.length === 0) return;
+
+    const lines = rows.map((r) => r.line);
+    const ids = rows.map((r) => r.id);
     const body = lines.join('\n');
     const state = this.db.getState();
 
@@ -77,9 +96,13 @@ export class Bridge {
           subject: this.config.EMAIL_SUBJECT,
           body,
         });
-        this.db.updateState({
-          threadId: result.threadId,
-          firstMessageId: result.messageId,
+        // Email sent successfully — delete outbox + update state in one transaction
+        this.db.transaction(() => {
+          this.db.deleteOutbox(ids);
+          this.db.updateState({
+            threadId: result.threadId,
+            firstMessageId: result.messageId,
+          });
         });
         console.log(`[email] thread created: ${result.threadId}`);
       } else {
@@ -91,11 +114,12 @@ export class Bridge {
           threadId: state.threadId,
           inReplyTo: state.firstMessageId!,
         });
+        // Email sent successfully — delete outbox
+        this.db.deleteOutbox(ids);
         console.log(`[email] reply sent`);
       }
     } catch (err) {
-      console.error(`[email] send failed:`, err);
-      console.error(`[email] lost lines:`, lines);
+      console.error(`[email] send failed, ${lines.length} messages kept in outbox:`, err);
     }
   }
 

@@ -25,8 +25,8 @@ const baseConfig: Config = {
   FRIEND_NAME: 'John',
   EMAIL_SUBJECT: 'WA Thread',
   POLL_INTERVAL_MS: 60000,
-  DEBOUNCE_MS: 30000,
-  DEBOUNCE_MAX_BATCH: 20,
+  WA_OUTBOX_DELAY_MS: 30000,
+  WA_OUTBOX_MAX_MESSAGES: 20,
   STORE_PATH: './store',
 };
 
@@ -57,17 +57,17 @@ describe('Bridge — WA → Email', () => {
     vi.useRealTimers();
   });
 
-  it('sends a text message as email after debounce', async () => {
+  it('sends a text message as email on interval tick', async () => {
     wa.replay([loadWAFixture('text')]);
     await vi.advanceTimersByTimeAsync(30000);
 
     expect(gmail.sentEmails).toHaveLength(1);
-    expect(gmail.sentEmails[0].body).toBe('[Alice]: hey, are we meeting tomorrow?');
+    expect(gmail.sentEmails[0].body).toMatch(/^\[\d{2}:\d{2}\] \[Alice\]: hey, are we meeting tomorrow\?$/);
     expect(gmail.sentEmails[0].to).toBe('friend@example.com');
     expect(gmail.sentEmails[0].subject).toBe('WA Thread');
   });
 
-  it('batches 3 messages within debounce into one email', async () => {
+  it('batches messages received before interval tick into one email', async () => {
     wa.replay([loadWAFixture('text')]);
     await vi.advanceTimersByTimeAsync(10000);
     wa.replay([loadWAFixture('link-preview')]);
@@ -78,13 +78,13 @@ describe('Bridge — WA → Email', () => {
     expect(gmail.sentEmails).toHaveLength(1);
     const lines = gmail.sentEmails[0].body.split('\n');
     expect(lines).toHaveLength(3);
-    expect(lines[0]).toBe('[Alice]: hey, are we meeting tomorrow?');
-    expect(lines[1]).toBe('[Bob]: check this out https://example.com');
+    expect(lines[0]).toMatch(/^\[\d{2}:\d{2}\] \[Alice\]: hey, are we meeting tomorrow\?$/);
+    expect(lines[1]).toMatch(/^\[\d{2}:\d{2}\] \[Bob\]: check this out https:\/\/example\.com$/);
     expect(lines[2]).toContain('📍');
   });
 
   it('flushes at max batch cap', async () => {
-    const config = { ...baseConfig, DEBOUNCE_MAX_BATCH: 3 };
+    const config = { ...baseConfig, WA_OUTBOX_MAX_MESSAGES: 3 };
     const bridge2 = new Bridge(wa, gmail, db, config);
     bridge2.start();
 
@@ -158,7 +158,7 @@ describe('Bridge — WA → Email', () => {
   it('filters fromMe bridge echo messages', async () => {
     const msg = loadWAFixture('text');
     msg.key.fromMe = true;
-    msg.message!.conversation = '[John via email]: some reply';
+    msg.message!.conversation = '[16:30] [John via email]: some reply';
     wa.replay([msg]);
     await vi.advanceTimersByTimeAsync(30000);
     expect(gmail.sentEmails).toHaveLength(0);
@@ -203,7 +203,7 @@ describe('Bridge — Email → WA', () => {
 
     expect(wa.sentMessages).toHaveLength(1);
     expect(wa.sentMessages[0].jid).toBe('12345-67890@g.us');
-    expect(wa.sentMessages[0].text).toBe('[John via email]: Sounds great, see you at 6pm!');
+    expect(wa.sentMessages[0].text).toMatch(/^\[\d{2}:\d{2}\] \[John via email\]: Sounds great, see you at 6pm!$/);
   });
 
   it('strips quoted history from reply', async () => {
@@ -211,7 +211,7 @@ describe('Bridge — Email → WA', () => {
     await vi.advanceTimersByTimeAsync(60000);
 
     expect(wa.sentMessages).toHaveLength(1);
-    expect(wa.sentMessages[0].text).toBe("[John via email]: Yes I'll be there");
+    expect(wa.sentMessages[0].text).toMatch(/^\[\d{2}:\d{2}\] \[John via email\]: Yes I'll be there$/);
     expect(wa.sentMessages[0].text).not.toContain('wrote:');
   });
 
@@ -324,6 +324,35 @@ describe('Bridge — State & Recovery', () => {
 
     expect(wa2.sentMessages).toHaveLength(0);
     await bridge2.stop();
+    db.close();
+    vi.useRealTimers();
+  });
+
+  it('flushes outbox messages left from a crash on startup', async () => {
+    vi.useFakeTimers();
+    const db = new DB(':memory:');
+    db.updateState({ threadId: 'thread-1', firstMessageId: 'msg-1' });
+
+    // Simulate crash: messages written to outbox but never sent
+    db.pushOutbox('[14:00] [Alice]: message before crash');
+    db.pushOutbox('[14:01] [Bob]: another message');
+
+    const wa = new ReplayWAPort();
+    const gmail = new ReplayGmailPort({
+      send: [{ threadId: 'thread-1', messageId: 'msg-2' }],
+    });
+    const bridge = new Bridge(wa, gmail, db, baseConfig);
+    bridge.start();
+
+    // Give the flush a tick to complete
+    await vi.advanceTimersByTimeAsync(0);
+
+    expect(gmail.sentEmails).toHaveLength(1);
+    expect(gmail.sentEmails[0].body).toContain('message before crash');
+    expect(gmail.sentEmails[0].body).toContain('another message');
+    expect(db.outboxCount()).toBe(0);
+
+    await bridge.stop();
     db.close();
     vi.useRealTimers();
   });
