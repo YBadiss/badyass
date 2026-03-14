@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-14T21:04:28.241Z",
+  "timestamp": "2026-03-14T21:44:44.461Z",
   "classes": [
     {
       "timestamp": "2026-03-14T09:00:00.000Z",
@@ -493,7 +493,7 @@
         "icon": "https://design.swedishfit.com/b7748988239de46f299a48a38df7b68cfb84d726/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Hélène MAI",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/709853"
     },
     {
@@ -504,7 +504,7 @@
         "icon": "https://design.swedishfit.com/b7748988239de46f299a48a38df7b68cfb84d726/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Chloé R",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/727212"
     },
     {
@@ -537,7 +537,7 @@
         "icon": "https://design.swedishfit.com/b7748988239de46f299a48a38df7b68cfb84d726/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Lucie BO",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/742447"
     },
     {
@@ -547,7 +547,7 @@
         "name": "Intensif",
         "icon": "https://design.swedishfit.com/b7748988239de46f299a48a38df7b68cfb84d726/user/classlevel/icon_40_intensif.svg"
       },
-      "teacher": "Nejma",
+      "teacher": "Paul C",
       "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/706813"
     },
