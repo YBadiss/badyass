@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-27T01:03:05.713Z",
+  "timestamp": "2026-03-27T04:07:08.894Z",
   "classes": [
     {
       "timestamp": "2026-03-27T09:00:00.000Z",
@@ -97,7 +97,7 @@
         "icon": "https://design.swedishfit.com/a51f6cebbfb8fa65032da38ec5f91fe86dc01bc8/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Delphine DES",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/726254"
     },
     {
@@ -174,7 +174,7 @@
         "icon": "https://design.swedishfit.com/a51f6cebbfb8fa65032da38ec5f91fe86dc01bc8/user/classlevel/icon_40_intensif.svg"
       },
       "teacher": "Céline M",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/707608"
     },
     {
@@ -911,7 +911,7 @@
         "icon": "https://design.swedishfit.com/a51f6cebbfb8fa65032da38ec5f91fe86dc01bc8/user/classlevel/icon_96_flex.svg"
       },
       "teacher": "Joaquine B",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/724300"
     },
     {
