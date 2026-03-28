@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-28T16:16:53.864Z",
+  "timestamp": "2026-03-28T16:54:10.382Z",
   "classes": [
     {
       "timestamp": "2026-03-28T09:00:00.000Z",
@@ -460,7 +460,7 @@
         "icon": "https://design.swedishfit.com/a51f6cebbfb8fa65032da38ec5f91fe86dc01bc8/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Cécile BO",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/728817"
     },
     {
@@ -603,7 +603,7 @@
         "icon": "https://design.swedishfit.com/a51f6cebbfb8fa65032da38ec5f91fe86dc01bc8/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "François H",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/716080"
     },
     {
@@ -900,7 +900,7 @@
         "icon": "https://design.swedishfit.com/a51f6cebbfb8fa65032da38ec5f91fe86dc01bc8/user/classlevel/icon_50_modere.svg"
       },
       "teacher": "Marie P",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/738092"
     },
     {
@@ -1901,7 +1901,7 @@
         "icon": "https://design.swedishfit.com/a51f6cebbfb8fa65032da38ec5f91fe86dc01bc8/user/classlevel/icon_45_cardioflex.svg"
       },
       "teacher": "Magali H",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/742570"
     },
     {
@@ -2011,7 +2011,7 @@
         "icon": "https://design.swedishfit.com/a51f6cebbfb8fa65032da38ec5f91fe86dc01bc8/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Juliette P",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/706463"
     },
     {
@@ -2560,7 +2560,7 @@
         "name": "Standard",
         "icon": "https://design.swedishfit.com/a51f6cebbfb8fa65032da38ec5f91fe86dc01bc8/user/classlevel/icon_30_standard.svg"
       },
-      "teacher": "Animateur Swedish Fit",
+      "teacher": "Pauline N",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/743696"
     },
