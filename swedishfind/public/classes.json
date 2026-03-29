@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-29T20:52:27.795Z",
+  "timestamp": "2026-03-29T21:18:10.204Z",
   "classes": [
     {
       "timestamp": "2026-03-29T08:00:00.000Z",
@@ -526,7 +526,7 @@
         "icon": "https://design.swedishfit.com/a51f6cebbfb8fa65032da38ec5f91fe86dc01bc8/user/classlevel/icon_82_pilatesfusion.svg"
       },
       "teacher": "Céline M",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/742497"
     },
     {
@@ -536,7 +536,7 @@
         "name": "Intensif",
         "icon": "https://design.swedishfit.com/a51f6cebbfb8fa65032da38ec5f91fe86dc01bc8/user/classlevel/icon_40_intensif.svg"
       },
-      "teacher": "Animateur Swedish Fit",
+      "teacher": "Magali H",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/710308"
     },
@@ -724,7 +724,7 @@
         "icon": "https://design.swedishfit.com/a51f6cebbfb8fa65032da38ec5f91fe86dc01bc8/user/classlevel/icon_20_soft.svg"
       },
       "teacher": "Cédric",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/717725"
     },
     {
@@ -834,7 +834,7 @@
         "icon": "https://design.swedishfit.com/a51f6cebbfb8fa65032da38ec5f91fe86dc01bc8/user/classlevel/icon_20_soft.svg"
       },
       "teacher": "Marine Gi",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/705726"
     },
     {
@@ -1472,7 +1472,7 @@
         "icon": "https://design.swedishfit.com/a51f6cebbfb8fa65032da38ec5f91fe86dc01bc8/user/classlevel/icon_45_cardioflex.svg"
       },
       "teacher": "Magali H",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/742570"
     },
     {
