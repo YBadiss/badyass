@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-11T15:50:00.488Z",
+  "timestamp": "2026-04-11T16:17:58.530Z",
   "classes": [
     {
       "timestamp": "2026-04-11T08:00:00.000Z",
@@ -427,7 +427,7 @@
         "icon": "https://design.swedishfit.com/a51f6cebbfb8fa65032da38ec5f91fe86dc01bc8/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Emmanuel R",
-      "status": "FULL",
+      "status": "PASSED",
       "link": "https://www.swedishfit.fr/cours/detail/732233"
     },
     {
@@ -548,7 +548,7 @@
         "icon": "https://design.swedishfit.com/a51f6cebbfb8fa65032da38ec5f91fe86dc01bc8/user/classlevel/icon_40_intensif.svg"
       },
       "teacher": "Barbara L",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/706817"
     },
     {
@@ -614,7 +614,7 @@
         "icon": "https://design.swedishfit.com/a51f6cebbfb8fa65032da38ec5f91fe86dc01bc8/user/classlevel/icon_67_dance.svg"
       },
       "teacher": "Salima K",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/736412"
     },
     {
@@ -1339,7 +1339,7 @@
         "name": "Yoga",
         "icon": "https://design.swedishfit.com/a51f6cebbfb8fa65032da38ec5f91fe86dc01bc8/user/classlevel/icon_75_yoga.svg"
       },
-      "teacher": "Frederic W",
+      "teacher": "Hélène Hé",
       "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/732051"
     },
