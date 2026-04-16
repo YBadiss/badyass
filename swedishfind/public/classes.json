@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-16T22:26:19.112Z",
+  "timestamp": "2026-04-16T23:28:02.702Z",
   "classes": [
     {
       "timestamp": "2026-04-17T08:00:00.000Z",
@@ -603,7 +603,7 @@
         "icon": "https://design.swedishfit.com/a51f6cebbfb8fa65032da38ec5f91fe86dc01bc8/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Jérôme B",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/726572"
     },
     {
@@ -1615,7 +1615,7 @@
         "icon": "https://design.swedishfit.com/a51f6cebbfb8fa65032da38ec5f91fe86dc01bc8/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Laura B",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/706376"
     },
     {
@@ -1835,7 +1835,7 @@
         "icon": "https://design.swedishfit.com/a51f6cebbfb8fa65032da38ec5f91fe86dc01bc8/user/classlevel/icon_40_intensif.svg"
       },
       "teacher": "Romain B",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/706421"
     },
     {
