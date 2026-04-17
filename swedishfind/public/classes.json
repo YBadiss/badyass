@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-17T14:10:50.321Z",
+  "timestamp": "2026-04-17T15:31:47.245Z",
   "classes": [
     {
       "timestamp": "2026-04-17T08:00:00.000Z",
@@ -130,7 +130,7 @@
         "icon": "https://design.swedishfit.com/a51f6cebbfb8fa65032da38ec5f91fe86dc01bc8/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Amélie QU",
-      "status": "AVAILABLE",
+      "status": "PASSED",
       "link": "https://www.swedishfit.fr/cours/detail/732324"
     },
     {
@@ -284,7 +284,7 @@
         "icon": "https://design.swedishfit.com/a51f6cebbfb8fa65032da38ec5f91fe86dc01bc8/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Juliette",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/740235"
     },
     {
@@ -526,7 +526,7 @@
         "icon": "https://design.swedishfit.com/a51f6cebbfb8fa65032da38ec5f91fe86dc01bc8/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Léa S",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/737178"
     },
     {
@@ -638,6 +638,17 @@
       "teacher": "Emma F",
       "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/724213"
+    },
+    {
+      "timestamp": "2026-04-18T13:00:00.000Z",
+      "location": "Paris 10 Chaudron",
+      "activity": {
+        "name": "Xtra",
+        "icon": "https://design.swedishfit.com/a51f6cebbfb8fa65032da38ec5f91fe86dc01bc8/user/classlevel/icon_200_extra.svg"
+      },
+      "teacher": "Emma F",
+      "status": "AVAILABLE",
+      "link": "https://www.swedishfit.fr/cours/detail/744830"
     },
     {
       "timestamp": "2026-04-18T15:00:00.000Z",
@@ -1615,7 +1626,7 @@
         "icon": "https://design.swedishfit.com/a51f6cebbfb8fa65032da38ec5f91fe86dc01bc8/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Laura B",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/706376"
     },
     {
@@ -2594,7 +2605,7 @@
         "icon": "https://design.swedishfit.com/a51f6cebbfb8fa65032da38ec5f91fe86dc01bc8/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Barbara L",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/723404"
     },
     {
