@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T11:21:06.196Z",
+  "timestamp": "2026-04-29T12:57:40.927Z",
   "classes": [
     {
       "timestamp": "2026-04-29T05:45:00.000Z",
@@ -361,7 +361,7 @@
         "icon": "https://design.swedishfit.com/a51f6cebbfb8fa65032da38ec5f91fe86dc01bc8/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Fiona DLC",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/737876"
     },
     {
@@ -647,7 +647,7 @@
         "icon": "https://design.swedishfit.com/a51f6cebbfb8fa65032da38ec5f91fe86dc01bc8/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Fiona DLC",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/737991"
     },
     {
@@ -789,7 +789,7 @@
         "name": "Standard",
         "icon": "https://design.swedishfit.com/a51f6cebbfb8fa65032da38ec5f91fe86dc01bc8/user/classlevel/icon_30_standard.svg"
       },
-      "teacher": "Marine Galland",
+      "teacher": "Alain N",
       "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/725899"
     },
@@ -811,7 +811,7 @@
         "name": "Cardio Max",
         "icon": "https://design.swedishfit.com/a51f6cebbfb8fa65032da38ec5f91fe86dc01bc8/user/classlevel/icon_48_cardiomax.svg"
       },
-      "teacher": "Tilda",
+      "teacher": "Juliette",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/725944"
     },
@@ -889,7 +889,7 @@
         "icon": "https://design.swedishfit.com/a51f6cebbfb8fa65032da38ec5f91fe86dc01bc8/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Clara D",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/734614"
     },
     {
@@ -1032,7 +1032,7 @@
         "icon": "https://design.swedishfit.com/a51f6cebbfb8fa65032da38ec5f91fe86dc01bc8/user/classlevel/icon_45_cardioflex.svg"
       },
       "teacher": "Fabrice",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/706645"
     },
     {
@@ -1516,7 +1516,7 @@
         "icon": "https://design.swedishfit.com/a51f6cebbfb8fa65032da38ec5f91fe86dc01bc8/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "François-Xavier WM",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/726529"
     },
     {
