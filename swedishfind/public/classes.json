@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-05-02T14:01:39.327Z",
+  "timestamp": "2026-05-02T15:08:17.731Z",
   "classes": [
     {
       "timestamp": "2026-05-02T08:00:00.000Z",
@@ -526,7 +526,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_77_yinyoga.svg"
       },
       "teacher": "Isabelle",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/732371"
     },
     {
@@ -680,7 +680,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_96_flex.svg"
       },
       "teacher": "Joaquine B",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/724305"
     },
     {
@@ -735,7 +735,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Leila",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/733764"
     },
     {
@@ -943,7 +943,7 @@
         "name": "Standard",
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_30_standard.svg"
       },
-      "teacher": "Animateur Swedish Fit",
+      "teacher": "Alice BA",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/743540"
     },
@@ -2329,7 +2329,7 @@
         "name": "Intensif",
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_40_intensif.svg"
       },
-      "teacher": "Nejma",
+      "teacher": "Carla PL",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/733315"
     },
