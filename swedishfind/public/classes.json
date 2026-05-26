@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-05-26T22:13:06.131Z",
+  "timestamp": "2026-05-26T23:35:20.109Z",
   "classes": [
     {
       "timestamp": "2026-05-27T05:45:00.000Z",
@@ -548,7 +548,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Alexandre C",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/725678"
     },
     {
@@ -977,7 +977,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Natacha A",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/709596"
     },
     {
@@ -1605,7 +1605,7 @@
       },
       "teacher": "Fermeture exceptionnelle 30.05.26",
       "status": "CANCELLED",
-      "link": "https://www.swedishfit.fr/cours/detail/730960"
+      "link": "https://www.swedishfit.fr/cours/detail/745472"
     },
     {
       "timestamp": "2026-05-30T09:00:00.000Z",
@@ -3596,7 +3596,7 @@
       },
       "teacher": "Eric M",
       "status": "AVAILABLE",
-      "link": "https://www.swedishfit.fr/cours/detail/736082"
+      "link": "https://www.swedishfit.fr/cours/detail/745479"
     },
     {
       "timestamp": "2026-06-02T18:15:00.000Z",
