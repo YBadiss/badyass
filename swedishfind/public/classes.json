@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-05-31T00:17:18.734Z",
+  "timestamp": "2026-05-31T04:55:31.923Z",
   "classes": [
     {
       "timestamp": "2026-05-31T08:00:00.000Z",
@@ -317,7 +317,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_68_balletsculpt.svg"
       },
       "teacher": "Mathieu La",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/742693"
     },
     {
@@ -416,7 +416,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Thomas V",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/724444"
     },
     {
@@ -1549,7 +1549,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Salima K",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/744386"
     },
     {
@@ -3396,7 +3396,7 @@
         "name": "Standard",
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_30_standard.svg"
       },
-      "teacher": "Thibault V",
+      "teacher": "Animateur Swedish Fit",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/720138"
     },
