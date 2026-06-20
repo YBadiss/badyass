@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-20T13:15:11.328Z",
+  "timestamp": "2026-06-20T15:17:29.201Z",
   "classes": [
     {
       "timestamp": "2026-06-20T08:00:00.000Z",
@@ -394,7 +394,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_82_pilatesfusion.svg"
       },
       "teacher": "Emmanuel R",
-      "status": "AVAILABLE",
+      "status": "PASSED",
       "link": "https://www.swedishfit.fr/cours/detail/732197"
     },
     {
@@ -473,6 +473,17 @@
       "teacher": "Hélène MAI",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/709867"
+    },
+    {
+      "timestamp": "2026-06-21T08:30:00.000Z",
+      "location": "Paris 15 Square St Lambert",
+      "activity": {
+        "name": "Standard",
+        "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_30_standard.svg"
+      },
+      "teacher": "À partir du 28.06.26",
+      "status": "AVAILABLE",
+      "link": "https://www.swedishfit.fr/cours/detail/746491"
     },
     {
       "timestamp": "2026-06-21T08:30:00.000Z",
@@ -592,7 +603,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_67_dance.svg"
       },
       "teacher": "Salima K",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/736422"
     },
     {
@@ -800,8 +811,8 @@
         "name": "Pilates",
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_80_pilates.svg"
       },
-      "teacher": "Alice S",
-      "status": "FULL",
+      "teacher": "Fermeture exceptionnelle 21.06.26",
+      "status": "CANCELLED",
       "link": "https://www.swedishfit.fr/cours/detail/742901"
     },
     {
@@ -1065,7 +1076,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Anaïs J",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/727472"
     },
     {
@@ -1802,7 +1813,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Erwan",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/744216"
     },
     {
@@ -2494,7 +2505,7 @@
         "name": "Core",
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_95_core.svg"
       },
-      "teacher": "Johanna L",
+      "teacher": "Chiara",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/746440"
     },
