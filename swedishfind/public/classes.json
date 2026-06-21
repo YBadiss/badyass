@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-21T18:55:18.896Z",
+  "timestamp": "2026-06-21T20:19:22.890Z",
   "classes": [
     {
       "timestamp": "2026-06-21T08:00:00.000Z",
@@ -592,7 +592,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Malika B",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/742533"
     },
     {
@@ -669,7 +669,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Anaïs J",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/727472"
     },
     {
@@ -1504,7 +1504,7 @@
         "name": "Yoga",
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_75_yoga.svg"
       },
-      "teacher": "Amicie H",
+      "teacher": "Animateur Swedish Fit",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/746026"
     },
@@ -1813,7 +1813,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Marine L",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/742201"
     },
     {
@@ -2352,7 +2352,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Alexandre C",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/725682"
     },
     {
@@ -2859,7 +2859,7 @@
       },
       "teacher": "À partir du 2.07.26",
       "status": "AVAILABLE",
-      "link": "https://www.swedishfit.fr/cours/detail/746746"
+      "link": "https://www.swedishfit.fr/cours/detail/746871"
     },
     {
       "timestamp": "2026-06-25T17:15:00.000Z",
