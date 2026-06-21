@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-21T12:32:11.345Z",
+  "timestamp": "2026-06-21T15:04:43.047Z",
   "classes": [
     {
       "timestamp": "2026-06-21T08:00:00.000Z",
@@ -317,7 +317,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Aurélie Rose",
-      "status": "AVAILABLE",
+      "status": "PASSED",
       "link": "https://www.swedishfit.fr/cours/detail/733771"
     },
     {
@@ -492,7 +492,7 @@
         "name": "Core",
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_95_core.svg"
       },
-      "teacher": "Amélie QU",
+      "teacher": "Clara D",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/743527"
     },
@@ -592,7 +592,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Malika B",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/742533"
     },
     {
@@ -679,8 +679,8 @@
         "name": "Afrovibe®",
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_101_afrovibes.svg"
       },
-      "teacher": "Maria A",
-      "status": "AVAILABLE",
+      "teacher": "Fermeture exceptionnelle 22.06.26",
+      "status": "CANCELLED",
       "link": "https://www.swedishfit.fr/cours/detail/746062"
     },
     {
@@ -889,7 +889,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Alice Ga",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/733949"
     },
     {
@@ -922,7 +922,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Frederic W",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/732061"
     },
     {
@@ -1028,10 +1028,10 @@
       "timestamp": "2026-06-22T17:30:00.000Z",
       "location": "Paris 13 Notre Dame de la Gare",
       "activity": {
-        "name": "Yoga",
-        "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_75_yoga.svg"
+        "name": "Yin Yoga",
+        "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_77_yinyoga.svg"
       },
-      "teacher": "Maria A",
+      "teacher": "Isabelle",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/746071"
     },
@@ -1592,8 +1592,8 @@
         "name": "Intensif",
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_40_intensif.svg"
       },
-      "teacher": "Hendy",
-      "status": "AVAILABLE",
+      "teacher": "Fermeture exceptionnelle 23.06.26",
+      "status": "CANCELLED",
       "link": "https://www.swedishfit.fr/cours/detail/745588"
     },
     {
@@ -1988,8 +1988,8 @@
         "name": "Cardio Max",
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_48_cardiomax.svg"
       },
-      "teacher": "Emmanuel R",
-      "status": "AVAILABLE",
+      "teacher": "Fermeture exceptionnelle 24.06.26",
+      "status": "CANCELLED",
       "link": "https://www.swedishfit.fr/cours/detail/710915"
     },
     {
@@ -2340,8 +2340,8 @@
         "name": "Standard",
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_30_standard.svg"
       },
-      "teacher": "Ingrid S",
-      "status": "AVAILABLE",
+      "teacher": "Fermeture exceptionnelle 24.06.26",
+      "status": "CANCELLED",
       "link": "https://www.swedishfit.fr/cours/detail/744313"
     },
     {
@@ -2407,7 +2407,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Audrey A",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/718288"
     },
     {
@@ -2836,7 +2836,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_65_clubbing.svg"
       },
       "teacher": "Guillaume CClara DMiriamChloé R",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/745358"
     },
     {
@@ -2968,7 +2968,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "David S",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/726177"
     },
     {
@@ -3034,7 +3034,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Delphine DES",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/726267"
     },
     {
@@ -3551,7 +3551,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Arnaud D",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/724178"
     },
     {
