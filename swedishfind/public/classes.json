@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-23T11:47:42.387Z",
+  "timestamp": "2026-06-23T14:09:38.058Z",
   "classes": [
     {
       "timestamp": "2026-06-23T05:45:00.000Z",
@@ -481,8 +481,8 @@
         "name": "Flex",
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_96_flex.svg"
       },
-      "teacher": "Mélanie A",
-      "status": "AVAILABLE",
+      "teacher": "Fermeture exceptionnelle 23.06.26",
+      "status": "CANCELLED",
       "link": "https://www.swedishfit.fr/cours/detail/745227"
     },
     {
@@ -625,7 +625,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Marine L",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/742201"
     },
     {
@@ -745,8 +745,8 @@
         "name": "Pilates Fusion®",
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_82_pilatesfusion.svg"
       },
-      "teacher": "Marie Maimone",
-      "status": "AVAILABLE",
+      "teacher": "Fermeture exceptionnelle 24.06.26",
+      "status": "CANCELLED",
       "link": "https://www.swedishfit.fr/cours/detail/736124"
     },
     {
@@ -1164,7 +1164,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Alexandre C",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/725682"
     },
     {
@@ -1362,7 +1362,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Marine L",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/745336"
     },
     {
@@ -1461,7 +1461,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Lucie BO",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/743810"
     },
     {
@@ -1494,7 +1494,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Alice Dub",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/727700"
     },
     {
@@ -1582,7 +1582,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_82_pilatesfusion.svg"
       },
       "teacher": "Léa C",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/723773"
     },
     {
@@ -1824,7 +1824,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_101_afrovibes.svg"
       },
       "teacher": "Laïla M",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/726222"
     },
     {
@@ -1868,7 +1868,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Delphine DES",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/726267"
     },
     {
@@ -1923,7 +1923,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Romain B",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/736857"
     },
     {
@@ -2385,7 +2385,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Arnaud D",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/724178"
     },
     {
@@ -2500,17 +2500,6 @@
     },
     {
       "timestamp": "2026-06-28T08:30:00.000Z",
-      "location": "Paris 15 Square St Lambert",
-      "activity": {
-        "name": "Clubbing",
-        "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_65_clubbing.svg"
-      },
-      "teacher": "Mélanie ALouison BLucie COTiphaine H",
-      "status": "AVAILABLE",
-      "link": "https://www.swedishfit.fr/cours/detail/746492"
-    },
-    {
-      "timestamp": "2026-06-28T08:30:00.000Z",
       "location": "Paris 20 Prairies",
       "activity": {
         "name": "Standard",
@@ -2596,6 +2585,17 @@
       "teacher": "Aurélie Rose",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/710153"
+    },
+    {
+      "timestamp": "2026-06-28T09:00:00.000Z",
+      "location": "Paris 15 Square St Lambert",
+      "activity": {
+        "name": "Clubbing",
+        "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_65_clubbing.svg"
+      },
+      "teacher": "Mélanie ALouison BLucie COTiphaine H",
+      "status": "AVAILABLE",
+      "link": "https://www.swedishfit.fr/cours/detail/746492"
     },
     {
       "timestamp": "2026-06-28T09:00:00.000Z",
