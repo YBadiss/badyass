@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-24T05:52:56.353Z",
+  "timestamp": "2026-06-24T08:46:33.483Z",
   "classes": [
     {
       "timestamp": "2026-06-24T05:45:00.000Z",
@@ -20,7 +20,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_50_modere.svg"
       },
       "teacher": "Stéphanie NA",
-      "status": "AVAILABLE",
+      "status": "PASSED",
       "link": "https://www.swedishfit.fr/cours/detail/725412"
     },
     {
@@ -31,7 +31,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Marine L",
-      "status": "AVAILABLE",
+      "status": "PASSED",
       "link": "https://www.swedishfit.fr/cours/detail/742201"
     },
     {
@@ -350,7 +350,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Fiona DLC",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/737884"
     },
     {
@@ -385,17 +385,6 @@
       "teacher": "Katia",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/739367"
-    },
-    {
-      "timestamp": "2026-06-24T17:00:00.000Z",
-      "location": "Paris 14 La Bruyère",
-      "activity": {
-        "name": "Standard",
-        "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_30_standard.svg"
-      },
-      "teacher": "Fermeture exceptionnelle 24.06.26",
-      "status": "CANCELLED",
-      "link": "https://www.swedishfit.fr/cours/detail/709463"
     },
     {
       "timestamp": "2026-06-24T17:00:00.000Z",
@@ -746,7 +735,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Alexandre C",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/725727"
     },
     {
@@ -845,7 +834,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_101_afrovibes.svg"
       },
       "teacher": "Emma F",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/742836"
     },
     {
@@ -899,8 +888,8 @@
         "name": "Core",
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_95_core.svg"
       },
-      "teacher": "Alice Dub",
-      "status": "AVAILABLE",
+      "teacher": "Clara D",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/727700"
     },
     {
@@ -988,7 +977,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_82_pilatesfusion.svg"
       },
       "teacher": "Léa C",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/723773"
     },
     {
@@ -1175,7 +1164,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Emmanuel R",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/706696"
     },
     {
@@ -1230,7 +1219,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_101_afrovibes.svg"
       },
       "teacher": "Laïla M",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/726222"
     },
     {
@@ -1274,7 +1263,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Delphine DES",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/726267"
     },
     {
@@ -1395,7 +1384,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Romain B",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/736818"
     },
     {
@@ -1406,8 +1395,19 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_77_yinyoga.svg"
       },
       "teacher": "Isabelle",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/727790"
+    },
+    {
+      "timestamp": "2026-06-26T17:15:00.000Z",
+      "location": "Paris 11 Charles Péguy",
+      "activity": {
+        "name": "Clubbing",
+        "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_65_clubbing.svg"
+      },
+      "teacher": "À partir du 3.07.26",
+      "status": "AVAILABLE",
+      "link": "https://www.swedishfit.fr/cours/detail/747063"
     },
     {
       "timestamp": "2026-06-27T08:00:00.000Z",
@@ -1999,9 +1999,9 @@
         "name": "Clubbing",
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_65_clubbing.svg"
       },
-      "teacher": "Mélanie ALouison BLucie COTiphaine H",
+      "teacher": "Lucie COSophie DoMathieu LaBetty",
       "status": "AVAILABLE",
-      "link": "https://www.swedishfit.fr/cours/detail/746492"
+      "link": "https://www.swedishfit.fr/cours/detail/747052"
     },
     {
       "timestamp": "2026-06-28T09:00:00.000Z",
@@ -2297,7 +2297,7 @@
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "François-Xavier WM",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/724448"
     },
     {
@@ -2321,17 +2321,6 @@
       "teacher": "Violette F",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/744854"
-    },
-    {
-      "timestamp": "2026-06-28T16:30:00.000Z",
-      "location": "Paris 14 La Bruyère",
-      "activity": {
-        "name": "Core",
-        "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_95_core.svg"
-      },
-      "teacher": "Fermeture exceptionnelle 28.06.26",
-      "status": "CANCELLED",
-      "link": "https://www.swedishfit.fr/cours/detail/710000"
     },
     {
       "timestamp": "2026-06-29T07:30:00.000Z",
@@ -3638,7 +3627,7 @@
         "name": "Pilates",
         "icon": "https://design.swedishfit.com/96e5d6312d0699227d5309a61742157334fabecf/user/classlevel/icon_80_pilates.svg"
       },
-      "teacher": "Florent CE",
+      "teacher": "Cédric",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/744615"
     },
