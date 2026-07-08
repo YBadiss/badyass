@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-08T11:32:12.118Z",
+  "timestamp": "2026-07-08T13:17:22.403Z",
   "classes": [
     {
       "timestamp": "2026-07-08T05:45:00.000Z",
@@ -470,8 +470,8 @@
         "name": "Cardio Max",
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_48_cardiomax.svg"
       },
-      "teacher": "Camille A",
-      "status": "AVAILABLE",
+      "teacher": "Fermeture exceptionnelle 8.07.26",
+      "status": "CANCELLED",
       "link": "https://www.swedishfit.fr/cours/detail/745573"
     },
     {
@@ -537,7 +537,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Alexandre C",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/725729"
     },
     {
@@ -668,7 +668,7 @@
         "name": "Standard",
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
       },
-      "teacher": "Cristina FE",
+      "teacher": "Animateur Swedish Fit",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/729676"
     },
@@ -856,7 +856,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Patrick BO",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/743184"
     },
     {
