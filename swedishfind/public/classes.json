@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-10T08:44:29.185Z",
+  "timestamp": "2026-07-10T11:36:40.050Z",
   "classes": [
     {
       "timestamp": "2026-07-10T08:00:00.000Z",
@@ -31,7 +31,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Thomas V",
-      "status": "AVAILABLE",
+      "status": "PASSED",
       "link": "https://www.swedishfit.fr/cours/detail/726179"
     },
     {
@@ -42,7 +42,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Floriane",
-      "status": "AVAILABLE",
+      "status": "PASSED",
       "link": "https://www.swedishfit.fr/cours/detail/745620"
     },
     {
@@ -53,7 +53,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_101_afrovibes.svg"
       },
       "teacher": "Laïla M",
-      "status": "AVAILABLE",
+      "status": "PASSED",
       "link": "https://www.swedishfit.fr/cours/detail/726224"
     },
     {
@@ -64,7 +64,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_47_circuit.svg"
       },
       "teacher": "TiTOu",
-      "status": "AVAILABLE",
+      "status": "PASSED",
       "link": "https://www.swedishfit.fr/cours/detail/723910"
     },
     {
@@ -75,7 +75,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Steph R",
-      "status": "AVAILABLE",
+      "status": "PASSED",
       "link": "https://www.swedishfit.fr/cours/detail/745737"
     },
     {
@@ -86,7 +86,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Delphine DES",
-      "status": "AVAILABLE",
+      "status": "PASSED",
       "link": "https://www.swedishfit.fr/cours/detail/726269"
     },
     {
@@ -97,7 +97,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Anaïs Döu",
-      "status": "AVAILABLE",
+      "status": "PASSED",
       "link": "https://www.swedishfit.fr/cours/detail/726956"
     },
     {
@@ -438,7 +438,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_48_cardiomax.svg"
       },
       "teacher": "Juliette",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/746365"
     },
     {
@@ -482,7 +482,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Erwan",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/724180"
     },
     {
@@ -580,7 +580,7 @@
         "name": "Cardio Pump",
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_46_cardiopump.svg"
       },
-      "teacher": "Flora R",
+      "teacher": "François-Xavier WM",
       "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/742464"
     },
@@ -1114,17 +1114,6 @@
     },
     {
       "timestamp": "2026-07-13T17:00:00.000Z",
-      "location": "Paris 10 Gustave Ferrié",
-      "activity": {
-        "name": "Intensif",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_40_intensif.svg"
-      },
-      "teacher": "Fermeture exceptionnelle 13.07.26",
-      "status": "CANCELLED",
-      "link": "https://www.swedishfit.fr/cours/detail/710466"
-    },
-    {
-      "timestamp": "2026-07-13T17:00:00.000Z",
       "location": "Paris 14 Montsouris",
       "activity": {
         "name": "Standard",
@@ -1164,7 +1153,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Chiara",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/747413"
     },
     {
@@ -1499,17 +1488,6 @@
     },
     {
       "timestamp": "2026-07-14T17:00:00.000Z",
-      "location": "Paris 10 Gustave Ferrié",
-      "activity": {
-        "name": "Standard",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
-      },
-      "teacher": "Fermeture exceptionnelle 14.07.26",
-      "status": "CANCELLED",
-      "link": "https://www.swedishfit.fr/cours/detail/744631"
-    },
-    {
-      "timestamp": "2026-07-14T17:00:00.000Z",
       "location": "Paris 13 Notre Dame de la Gare",
       "activity": {
         "name": "Standard",
@@ -1791,7 +1769,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Barbara L",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/747938"
     },
     {
@@ -1890,19 +1868,8 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Fiona DLC",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/747944"
-    },
-    {
-      "timestamp": "2026-07-15T17:00:00.000Z",
-      "location": "Paris 10 Gustave Ferrié",
-      "activity": {
-        "name": "Pilates Fusion®",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_82_pilatesfusion.svg"
-      },
-      "teacher": "Fermeture exceptionnelle 15.07.26",
-      "status": "CANCELLED",
-      "link": "https://www.swedishfit.fr/cours/detail/744991"
     },
     {
       "timestamp": "2026-07-15T17:00:00.000Z",
