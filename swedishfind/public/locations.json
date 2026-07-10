@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-10T05:10:46.183Z",
+  "timestamp": "2026-07-10T08:43:57.112Z",
   "locations": [
     {
       "name": "Paris  9 Bergère",
@@ -138,11 +138,11 @@
       }
     },
     {
-      "name": "Toulouse Espace Allegria",
-      "address": "110 rue Achille Viadieu, 31400 Toulouse",
+      "name": "",
+      "address": "",
       "gpsCoordinates": {
-        "lat": 43.589673,
-        "lon": 1.444855
+        "lat": 0,
+        "lon": 0
       }
     },
     {
