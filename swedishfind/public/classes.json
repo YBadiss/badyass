@@ -1,314 +1,6 @@
 {
-  "timestamp": "2026-07-11T21:34:44.647Z",
+  "timestamp": "2026-07-11T22:32:55.791Z",
   "classes": [
-    {
-      "timestamp": "2026-07-11T08:00:00.000Z",
-      "location": "Paris  9 Bergère",
-      "activity": {
-        "name": "Modéré",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_50_modere.svg"
-      },
-      "teacher": "Alain N",
-      "status": "PASSED",
-      "link": "https://www.swedishfit.fr/cours/detail/726494"
-    },
-    {
-      "timestamp": "2026-07-11T08:00:00.000Z",
-      "location": "Paris 10 Chaudron",
-      "activity": {
-        "name": "Intensif",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_40_intensif.svg"
-      },
-      "teacher": "Fermeture exceptionnelle 11.07.26",
-      "status": "CANCELLED",
-      "link": "https://www.swedishfit.fr/cours/detail/724090"
-    },
-    {
-      "timestamp": "2026-07-11T08:00:00.000Z",
-      "location": "Paris 13 Gymnase Rodin",
-      "activity": {
-        "name": "Standard",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
-      },
-      "teacher": "Leila",
-      "status": "PASSED",
-      "link": "https://www.swedishfit.fr/cours/detail/745984"
-    },
-    {
-      "timestamp": "2026-07-11T08:30:00.000Z",
-      "location": "Paris  6 Sainte-Geneviève",
-      "activity": {
-        "name": "Core",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_95_core.svg"
-      },
-      "teacher": "Amélie QU",
-      "status": "PASSED",
-      "link": "https://www.swedishfit.fr/cours/detail/748140"
-    },
-    {
-      "timestamp": "2026-07-11T08:30:00.000Z",
-      "location": "Paris  8 Racine",
-      "activity": {
-        "name": "Standard",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
-      },
-      "teacher": "Cristina FE",
-      "status": "PASSED",
-      "link": "https://www.swedishfit.fr/cours/detail/737063"
-    },
-    {
-      "timestamp": "2026-07-11T08:30:00.000Z",
-      "location": "Paris 11 Charles Péguy",
-      "activity": {
-        "name": "Intensif",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_40_intensif.svg"
-      },
-      "teacher": "Fermeture exceptionnelle 11.07.26",
-      "status": "CANCELLED",
-      "link": "https://www.swedishfit.fr/cours/detail/737145"
-    },
-    {
-      "timestamp": "2026-07-11T08:30:00.000Z",
-      "location": "Paris 12 Arago",
-      "activity": {
-        "name": "Pilates",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_80_pilates.svg"
-      },
-      "teacher": "Erika H",
-      "status": "PASSED",
-      "link": "https://www.swedishfit.fr/cours/detail/746355"
-    },
-    {
-      "timestamp": "2026-07-11T08:30:00.000Z",
-      "location": "Paris 17 Champerret",
-      "activity": {
-        "name": "Intensif",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_40_intensif.svg"
-      },
-      "teacher": "Carla PL",
-      "status": "PASSED",
-      "link": "https://www.swedishfit.fr/cours/detail/745711"
-    },
-    {
-      "timestamp": "2026-07-11T08:30:00.000Z",
-      "location": "Paris 19 L'Initiative",
-      "activity": {
-        "name": "Standard",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
-      },
-      "teacher": "Hugo R",
-      "status": "PASSED",
-      "link": "https://www.swedishfit.fr/cours/detail/715954"
-    },
-    {
-      "timestamp": "2026-07-11T09:00:00.000Z",
-      "location": "Paris  9 Bergère",
-      "activity": {
-        "name": "Cardio Pump",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_46_cardiopump.svg"
-      },
-      "teacher": "François-Xavier WM",
-      "status": "PASSED",
-      "link": "https://www.swedishfit.fr/cours/detail/726539"
-    },
-    {
-      "timestamp": "2026-07-11T09:00:00.000Z",
-      "location": "Paris 10 Chaudron",
-      "activity": {
-        "name": "Core",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_95_core.svg"
-      },
-      "teacher": "Eric M",
-      "status": "PASSED",
-      "link": "https://www.swedishfit.fr/cours/detail/724135"
-    },
-    {
-      "timestamp": "2026-07-11T09:00:00.000Z",
-      "location": "Paris 10 Gustave Ferrié",
-      "activity": {
-        "name": "Standard",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
-      },
-      "teacher": "Alexandra B",
-      "status": "PASSED",
-      "link": "https://www.swedishfit.fr/cours/detail/733720"
-    },
-    {
-      "timestamp": "2026-07-11T09:00:00.000Z",
-      "location": "Paris 13 Gymnase Rodin",
-      "activity": {
-        "name": "Core",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_95_core.svg"
-      },
-      "teacher": "Leila",
-      "status": "PASSED",
-      "link": "https://www.swedishfit.fr/cours/detail/745994"
-    },
-    {
-      "timestamp": "2026-07-11T09:00:00.000Z",
-      "location": "Paris 14 Montsouris",
-      "activity": {
-        "name": "Standard",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
-      },
-      "teacher": "Hélène MAI",
-      "status": "PASSED",
-      "link": "https://www.swedishfit.fr/cours/detail/746542"
-    },
-    {
-      "timestamp": "2026-07-11T09:00:00.000Z",
-      "location": "Paris 15 UFR STAPS",
-      "activity": {
-        "name": "Standard",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
-      },
-      "teacher": "François GB",
-      "status": "PASSED",
-      "link": "https://www.swedishfit.fr/cours/detail/718603"
-    },
-    {
-      "timestamp": "2026-07-11T09:00:00.000Z",
-      "location": "Paris 18 Championnet",
-      "activity": {
-        "name": "Standard",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
-      },
-      "teacher": "Fermeture exceptionnelle 11.07.26",
-      "status": "CANCELLED",
-      "link": "https://www.swedishfit.fr/cours/detail/720143"
-    },
-    {
-      "timestamp": "2026-07-11T09:00:00.000Z",
-      "location": "Paris 20 La Providence Don Bosco",
-      "activity": {
-        "name": "Pilates",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_80_pilates.svg"
-      },
-      "teacher": "Emma F",
-      "status": "PASSED",
-      "link": "https://www.swedishfit.fr/cours/detail/745478"
-    },
-    {
-      "timestamp": "2026-07-11T09:00:00.000Z",
-      "location": "Paris 20 Le Paysan Urbain",
-      "activity": {
-        "name": "Pilates",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_80_pilates.svg"
-      },
-      "teacher": "Fermeture exceptionnelle 11.07.26",
-      "status": "CANCELLED",
-      "link": "https://www.swedishfit.fr/cours/detail/745464"
-    },
-    {
-      "timestamp": "2026-07-11T09:30:00.000Z",
-      "location": "Paris  8 Racine",
-      "activity": {
-        "name": "Cardio Max",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_48_cardiomax.svg"
-      },
-      "teacher": "Mathilde DB",
-      "status": "PASSED",
-      "link": "https://www.swedishfit.fr/cours/detail/735709"
-    },
-    {
-      "timestamp": "2026-07-11T09:30:00.000Z",
-      "location": "Paris 11 Charles Péguy",
-      "activity": {
-        "name": "Standard",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
-      },
-      "teacher": "Carole M",
-      "status": "PASSED",
-      "link": "https://www.swedishfit.fr/cours/detail/737190"
-    },
-    {
-      "timestamp": "2026-07-11T09:30:00.000Z",
-      "location": "Paris 12 Arago",
-      "activity": {
-        "name": "Cardio Max",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_48_cardiomax.svg"
-      },
-      "teacher": "Juliette",
-      "status": "PASSED",
-      "link": "https://www.swedishfit.fr/cours/detail/746365"
-    },
-    {
-      "timestamp": "2026-07-11T09:30:00.000Z",
-      "location": "Paris 17 Champerret",
-      "activity": {
-        "name": "Standard",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
-      },
-      "teacher": "Sabrina R",
-      "status": "PASSED",
-      "link": "https://www.swedishfit.fr/cours/detail/745747"
-    },
-    {
-      "timestamp": "2026-07-11T09:30:00.000Z",
-      "location": "Paris 19 L'Initiative",
-      "activity": {
-        "name": "Cardio Max",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_48_cardiomax.svg"
-      },
-      "teacher": "Thomas V",
-      "status": "PASSED",
-      "link": "https://www.swedishfit.fr/cours/detail/716048"
-    },
-    {
-      "timestamp": "2026-07-11T10:00:00.000Z",
-      "location": "Paris  9 Bergère",
-      "activity": {
-        "name": "Standard",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
-      },
-      "teacher": "Jérôme B",
-      "status": "PASSED",
-      "link": "https://www.swedishfit.fr/cours/detail/726584"
-    },
-    {
-      "timestamp": "2026-07-11T10:00:00.000Z",
-      "location": "Paris 10 Chaudron",
-      "activity": {
-        "name": "Yoga",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_75_yoga.svg"
-      },
-      "teacher": "Erwan",
-      "status": "PASSED",
-      "link": "https://www.swedishfit.fr/cours/detail/724180"
-    },
-    {
-      "timestamp": "2026-07-11T11:00:00.000Z",
-      "location": "Paris 10 Chaudron",
-      "activity": {
-        "name": "Afrovibe®",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_101_afrovibes.svg"
-      },
-      "teacher": "Emma F",
-      "status": "PASSED",
-      "link": "https://www.swedishfit.fr/cours/detail/724225"
-    },
-    {
-      "timestamp": "2026-07-11T15:00:00.000Z",
-      "location": "Paris  9 Bergère",
-      "activity": {
-        "name": "Pilates Fusion®",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_82_pilatesfusion.svg"
-      },
-      "teacher": "À partir du 18.07.26",
-      "status": "AVAILABLE",
-      "link": "https://www.swedishfit.fr/cours/detail/748180"
-    },
-    {
-      "timestamp": "2026-07-11T16:00:00.000Z",
-      "location": "Paris  9 Bergère",
-      "activity": {
-        "name": "Standard",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
-      },
-      "teacher": "À partir du 18.07.26",
-      "status": "AVAILABLE",
-      "link": "https://www.swedishfit.fr/cours/detail/747805"
-    },
     {
       "timestamp": "2026-07-12T08:00:00.000Z",
       "location": "Paris  9 Bergère",
@@ -966,7 +658,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Juliette",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/746317"
     },
     {
@@ -2167,6 +1859,237 @@
       "teacher": "Romain B",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/748046"
+    },
+    {
+      "timestamp": "2026-07-18T08:00:00.000Z",
+      "location": "Paris  9 Bergère",
+      "activity": {
+        "name": "Modéré",
+        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_50_modere.svg"
+      },
+      "teacher": "Alain N",
+      "status": "AVAILABLE",
+      "link": "https://www.swedishfit.fr/cours/detail/747787"
+    },
+    {
+      "timestamp": "2026-07-18T08:00:00.000Z",
+      "location": "Paris 13 Gymnase Rodin",
+      "activity": {
+        "name": "Standard",
+        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
+      },
+      "teacher": "Mathieu La",
+      "status": "AVAILABLE",
+      "link": "https://www.swedishfit.fr/cours/detail/745985"
+    },
+    {
+      "timestamp": "2026-07-18T08:30:00.000Z",
+      "location": "Paris  8 Racine",
+      "activity": {
+        "name": "Standard",
+        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
+      },
+      "teacher": "Cristina FE",
+      "status": "AVAILABLE",
+      "link": "https://www.swedishfit.fr/cours/detail/737064"
+    },
+    {
+      "timestamp": "2026-07-18T08:30:00.000Z",
+      "location": "Paris 11 Charles Péguy",
+      "activity": {
+        "name": "Intensif",
+        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_40_intensif.svg"
+      },
+      "teacher": "Magali H",
+      "status": "AVAILABLE",
+      "link": "https://www.swedishfit.fr/cours/detail/737146"
+    },
+    {
+      "timestamp": "2026-07-18T08:30:00.000Z",
+      "location": "Paris 12 Arago",
+      "activity": {
+        "name": "Pilates",
+        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_80_pilates.svg"
+      },
+      "teacher": "Chiara",
+      "status": "AVAILABLE",
+      "link": "https://www.swedishfit.fr/cours/detail/746356"
+    },
+    {
+      "timestamp": "2026-07-18T08:30:00.000Z",
+      "location": "Paris 17 Champerret",
+      "activity": {
+        "name": "Intensif",
+        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_40_intensif.svg"
+      },
+      "teacher": "Mathilde P",
+      "status": "AVAILABLE",
+      "link": "https://www.swedishfit.fr/cours/detail/745712"
+    },
+    {
+      "timestamp": "2026-07-18T09:00:00.000Z",
+      "location": "Paris  9 Bergère",
+      "activity": {
+        "name": "Cardio Pump",
+        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_46_cardiopump.svg"
+      },
+      "teacher": "François-Xavier WM",
+      "status": "AVAILABLE",
+      "link": "https://www.swedishfit.fr/cours/detail/747793"
+    },
+    {
+      "timestamp": "2026-07-18T09:00:00.000Z",
+      "location": "Paris 10 Chaudron",
+      "activity": {
+        "name": "Core",
+        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_95_core.svg"
+      },
+      "teacher": "Clara D",
+      "status": "AVAILABLE",
+      "link": "https://www.swedishfit.fr/cours/detail/748115"
+    },
+    {
+      "timestamp": "2026-07-18T09:00:00.000Z",
+      "location": "Paris 10 Gustave Ferrié",
+      "activity": {
+        "name": "Standard",
+        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
+      },
+      "teacher": "Fermeture exceptionnelle 18.07.26",
+      "status": "CANCELLED",
+      "link": "https://www.swedishfit.fr/cours/detail/733721"
+    },
+    {
+      "timestamp": "2026-07-18T09:00:00.000Z",
+      "location": "Paris 13 Gymnase Rodin",
+      "activity": {
+        "name": "Core",
+        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_95_core.svg"
+      },
+      "teacher": "Mathieu La",
+      "status": "AVAILABLE",
+      "link": "https://www.swedishfit.fr/cours/detail/745995"
+    },
+    {
+      "timestamp": "2026-07-18T09:00:00.000Z",
+      "location": "Paris 14 Montsouris",
+      "activity": {
+        "name": "Standard",
+        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
+      },
+      "teacher": "Louison B",
+      "status": "AVAILABLE",
+      "link": "https://www.swedishfit.fr/cours/detail/746543"
+    },
+    {
+      "timestamp": "2026-07-18T09:00:00.000Z",
+      "location": "Paris 15 UFR STAPS",
+      "activity": {
+        "name": "Standard",
+        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
+      },
+      "teacher": "François GB",
+      "status": "AVAILABLE",
+      "link": "https://www.swedishfit.fr/cours/detail/718604"
+    },
+    {
+      "timestamp": "2026-07-18T09:00:00.000Z",
+      "location": "Paris 20 Le Paysan Urbain",
+      "activity": {
+        "name": "Pilates",
+        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_80_pilates.svg"
+      },
+      "teacher": "Animateur Swedish Fit",
+      "status": "AVAILABLE",
+      "link": "https://www.swedishfit.fr/cours/detail/745465"
+    },
+    {
+      "timestamp": "2026-07-18T09:30:00.000Z",
+      "location": "Paris  8 Racine",
+      "activity": {
+        "name": "Cardio Max",
+        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_48_cardiomax.svg"
+      },
+      "teacher": "Mathilde DB",
+      "status": "AVAILABLE",
+      "link": "https://www.swedishfit.fr/cours/detail/735710"
+    },
+    {
+      "timestamp": "2026-07-18T09:30:00.000Z",
+      "location": "Paris 11 Charles Péguy",
+      "activity": {
+        "name": "Standard",
+        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
+      },
+      "teacher": "Cécile BO",
+      "status": "AVAILABLE",
+      "link": "https://www.swedishfit.fr/cours/detail/737191"
+    },
+    {
+      "timestamp": "2026-07-18T09:30:00.000Z",
+      "location": "Paris 12 Arago",
+      "activity": {
+        "name": "Cardio Max",
+        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_48_cardiomax.svg"
+      },
+      "teacher": "Chiara",
+      "status": "AVAILABLE",
+      "link": "https://www.swedishfit.fr/cours/detail/746366"
+    },
+    {
+      "timestamp": "2026-07-18T09:30:00.000Z",
+      "location": "Paris 17 Champerret",
+      "activity": {
+        "name": "Standard",
+        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
+      },
+      "teacher": "Sabrina R",
+      "status": "AVAILABLE",
+      "link": "https://www.swedishfit.fr/cours/detail/745748"
+    },
+    {
+      "timestamp": "2026-07-18T10:00:00.000Z",
+      "location": "Paris  9 Bergère",
+      "activity": {
+        "name": "Standard",
+        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
+      },
+      "teacher": "Jérôme B",
+      "status": "AVAILABLE",
+      "link": "https://www.swedishfit.fr/cours/detail/747799"
+    },
+    {
+      "timestamp": "2026-07-18T10:00:00.000Z",
+      "location": "Paris 10 Chaudron",
+      "activity": {
+        "name": "Yoga",
+        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_75_yoga.svg"
+      },
+      "teacher": "Arnaud D",
+      "status": "AVAILABLE",
+      "link": "https://www.swedishfit.fr/cours/detail/748078"
+    },
+    {
+      "timestamp": "2026-07-18T15:00:00.000Z",
+      "location": "Paris  9 Bergère",
+      "activity": {
+        "name": "Pilates Fusion®",
+        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_82_pilatesfusion.svg"
+      },
+      "teacher": "Emmanuel R",
+      "status": "AVAILABLE",
+      "link": "https://www.swedishfit.fr/cours/detail/748181"
+    },
+    {
+      "timestamp": "2026-07-18T16:00:00.000Z",
+      "location": "Paris  9 Bergère",
+      "activity": {
+        "name": "Standard",
+        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
+      },
+      "teacher": "Emmanuel R",
+      "status": "AVAILABLE",
+      "link": "https://www.swedishfit.fr/cours/detail/747806"
     }
   ]
 }
