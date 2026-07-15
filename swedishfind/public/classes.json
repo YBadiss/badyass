@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-15T12:07:04.088Z",
+  "timestamp": "2026-07-15T14:14:10.854Z",
   "classes": [
     {
       "timestamp": "2026-07-15T05:45:00.000Z",
@@ -383,7 +383,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Katia",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/747950"
     },
     {
@@ -581,7 +581,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Floriane",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/748000"
     },
     {
@@ -858,6 +858,17 @@
       "teacher": "François GB",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/718604"
+    },
+    {
+      "timestamp": "2026-07-18T09:00:00.000Z",
+      "location": "Paris 20 La Providence Don Bosco",
+      "activity": {
+        "name": "Pilates",
+        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_80_pilates.svg"
+      },
+      "teacher": "Emma F",
+      "status": "AVAILABLE",
+      "link": "https://www.swedishfit.fr/cours/detail/749720"
     },
     {
       "timestamp": "2026-07-18T09:00:00.000Z",
@@ -1595,6 +1606,17 @@
       "teacher": "Jeanne C",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/747602"
+    },
+    {
+      "timestamp": "2026-07-21T08:00:00.000Z",
+      "location": "Paris 10 Chaudron",
+      "activity": {
+        "name": "Pilates",
+        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_80_pilates.svg"
+      },
+      "teacher": "À partir du 28.07.26",
+      "status": "AVAILABLE",
+      "link": "https://www.swedishfit.fr/cours/detail/749722"
     },
     {
       "timestamp": "2026-07-21T09:00:00.000Z",
