@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-18T12:39:54.948Z",
+  "timestamp": "2026-07-18T14:11:03.174Z",
   "classes": [
     {
       "timestamp": "2026-07-18T08:00:00.000Z",
@@ -262,7 +262,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_20_soft.svg"
       },
       "teacher": "Elsa O",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/747808"
     },
     {
@@ -317,7 +317,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_40_intensif.svg"
       },
       "teacher": "Barbara L",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/746376"
     },
     {
@@ -383,7 +383,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Nadine P",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/745377"
     },
     {
@@ -405,7 +405,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_96_flex.svg"
       },
       "teacher": "Joaquine B",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/747840"
     },
     {
@@ -734,7 +734,7 @@
         "name": "Standard",
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
       },
-      "teacher": "Alexia G",
+      "teacher": "Laura B",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/747879"
     },
@@ -823,7 +823,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Mohamed",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/747597"
     },
     {
@@ -1428,7 +1428,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Charlotte M",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/746329"
     },
     {
