@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-26T00:16:33.144Z",
+  "timestamp": "2026-07-26T04:00:42.415Z",
   "classes": [
     {
       "timestamp": "2026-07-26T08:00:00.000Z",
@@ -53,7 +53,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "François-Xavier WM",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/748127"
     },
     {
@@ -141,7 +141,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Mohamed",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/748215"
     },
     {
@@ -625,7 +625,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_40_intensif.svg"
       },
       "teacher": "Romain B",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/746397"
     },
     {
@@ -1483,7 +1483,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Mohamed",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/747759"
     },
     {
