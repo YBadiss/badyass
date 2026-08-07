@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-07T06:35:27.898Z",
+  "timestamp": "2026-08-07T08:01:21.178Z",
   "classes": [
     {
       "timestamp": "2026-08-07T08:00:00.000Z",
@@ -60,10 +60,10 @@
       "timestamp": "2026-08-07T10:00:00.000Z",
       "location": "Paris 10 Chaudron",
       "activity": {
-        "name": "Cardio HIIT",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_45_cardioflex.svg"
+        "name": "Intensif",
+        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_40_intensif.svg"
       },
-      "teacher": "Nejma",
+      "teacher": "François-Xavier WM",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/748015"
     },
@@ -86,7 +86,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Vincent B",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/748197"
     },
     {
@@ -141,7 +141,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Romain B",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/748049"
     },
     {
