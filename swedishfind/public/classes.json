@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-08T12:16:15.651Z",
+  "timestamp": "2026-08-08T13:15:35.903Z",
   "classes": [
     {
       "timestamp": "2026-08-08T08:00:00.000Z",
@@ -486,17 +486,6 @@
       "link": "https://www.swedishfit.fr/cours/detail/746275"
     },
     {
-      "timestamp": "2026-08-10T16:45:00.000Z",
-      "location": "Paris 11 Charles Péguy",
-      "activity": {
-        "name": "Soft",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_20_soft.svg"
-      },
-      "teacher": "Fermeture exceptionnelle 10.08.26",
-      "status": "CANCELLED",
-      "link": "https://www.swedishfit.fr/cours/detail/736514"
-    },
-    {
       "timestamp": "2026-08-10T17:00:00.000Z",
       "location": "Paris  4 Sully Morland",
       "activity": {
@@ -629,17 +618,6 @@
       "link": "https://www.swedishfit.fr/cours/detail/749783"
     },
     {
-      "timestamp": "2026-08-10T17:45:00.000Z",
-      "location": "Paris 11 Charles Péguy",
-      "activity": {
-        "name": "Standard",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
-      },
-      "teacher": "Fermeture exceptionnelle 10.08.26",
-      "status": "CANCELLED",
-      "link": "https://www.swedishfit.fr/cours/detail/736561"
-    },
-    {
       "timestamp": "2026-08-10T18:00:00.000Z",
       "location": "Paris 14 Montsouris",
       "activity": {
@@ -680,7 +658,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Emma F",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/749725"
     },
     {
@@ -770,17 +748,6 @@
       "teacher": "Clarisse C",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/746279"
-    },
-    {
-      "timestamp": "2026-08-11T16:45:00.000Z",
-      "location": "Paris 11 Charles Péguy",
-      "activity": {
-        "name": "Pilates",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_80_pilates.svg"
-      },
-      "teacher": "Fermeture exceptionnelle 11.08.26",
-      "status": "CANCELLED",
-      "link": "https://www.swedishfit.fr/cours/detail/744223"
     },
     {
       "timestamp": "2026-08-11T17:00:00.000Z",
@@ -880,17 +847,6 @@
       "teacher": "Hugo R",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/748223"
-    },
-    {
-      "timestamp": "2026-08-11T17:45:00.000Z",
-      "location": "Paris 11 Charles Péguy",
-      "activity": {
-        "name": "Yoga",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_75_yoga.svg"
-      },
-      "teacher": "Fermeture exceptionnelle 11.08.26",
-      "status": "CANCELLED",
-      "link": "https://www.swedishfit.fr/cours/detail/744247"
     },
     {
       "timestamp": "2026-08-11T18:00:00.000Z",
@@ -1045,17 +1001,6 @@
       "teacher": "Cédric",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/746288"
-    },
-    {
-      "timestamp": "2026-08-12T16:45:00.000Z",
-      "location": "Paris 11 Charles Péguy",
-      "activity": {
-        "name": "Standard",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
-      },
-      "teacher": "Fermeture exceptionnelle 12.08.26",
-      "status": "CANCELLED",
-      "link": "https://www.swedishfit.fr/cours/detail/736649"
     },
     {
       "timestamp": "2026-08-12T17:00:00.000Z",
@@ -1287,17 +1232,6 @@
       "teacher": "Barbara L",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/748094"
-    },
-    {
-      "timestamp": "2026-08-13T16:45:00.000Z",
-      "location": "Paris 11 Charles Péguy",
-      "activity": {
-        "name": "Cardio Max",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_48_cardiomax.svg"
-      },
-      "teacher": "Fermeture exceptionnelle 13.08.26",
-      "status": "CANCELLED",
-      "link": "https://www.swedishfit.fr/cours/detail/736216"
     },
     {
       "timestamp": "2026-08-13T17:00:00.000Z",
