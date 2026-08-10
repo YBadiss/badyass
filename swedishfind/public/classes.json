@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-10T11:35:43.976Z",
+  "timestamp": "2026-08-10T12:34:53.110Z",
   "classes": [
     {
       "timestamp": "2026-08-10T08:30:00.000Z",
@@ -108,7 +108,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_101_afrovibes.svg"
       },
       "teacher": "Laïla M",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/746069"
     },
     {
@@ -383,7 +383,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Jérémie",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/747628"
     },
     {
@@ -723,7 +723,7 @@
         "name": "Pilates",
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_80_pilates.svg"
       },
-      "teacher": "Vincent B",
+      "teacher": "Animateur Swedish Fit",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/745455"
     },
@@ -866,7 +866,7 @@
         "name": "Cardio Pump",
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_46_cardiopump.svg"
       },
-      "teacher": "Françoise B",
+      "teacher": "Jérémie",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/748113"
     },
@@ -1050,10 +1050,10 @@
       "timestamp": "2026-08-14T14:00:00.000Z",
       "location": "Paris  9 Bergère",
       "activity": {
-        "name": "Pilates",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_80_pilates.svg"
+        "name": "Yoga",
+        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_75_yoga.svg"
       },
-      "teacher": "Vincent B",
+      "teacher": "Léa",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/748198"
     },
@@ -1064,7 +1064,7 @@
         "name": "Core",
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_95_core.svg"
       },
-      "teacher": "Vincent B",
+      "teacher": "Animateur Swedish Fit",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/748205"
     },
