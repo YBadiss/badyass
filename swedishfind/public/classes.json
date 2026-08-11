@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-11T09:16:40.361Z",
+  "timestamp": "2026-08-11T10:14:32.789Z",
   "classes": [
     {
       "timestamp": "2026-08-11T05:45:00.000Z",
@@ -53,7 +53,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Malika B",
-      "status": "AVAILABLE",
+      "status": "PASSED",
       "link": "https://www.swedishfit.fr/cours/detail/747610"
     },
     {
@@ -64,7 +64,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_45_cardioflex.svg"
       },
       "teacher": "Tilda",
-      "status": "AVAILABLE",
+      "status": "PASSED",
       "link": "https://www.swedishfit.fr/cours/detail/747896"
     },
     {
@@ -525,8 +525,8 @@
         "name": "New",
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_97_other.svg"
       },
-      "teacher": "Emma F",
-      "status": "AVAILABLE",
+      "teacher": "Fermeture exceptionnelle 13.08.26",
+      "status": "CANCELLED",
       "link": "https://www.swedishfit.fr/cours/detail/747954"
     },
     {
@@ -592,7 +592,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Barbara L",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/748094"
     },
     {
@@ -636,7 +636,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_82_pilatesfusion.svg"
       },
       "teacher": "Salima K",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/747998"
     },
     {
