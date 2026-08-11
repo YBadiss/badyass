@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-11T10:14:32.789Z",
+  "timestamp": "2026-08-11T11:08:08.311Z",
   "classes": [
     {
       "timestamp": "2026-08-11T05:45:00.000Z",
@@ -328,7 +328,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Barbara L",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/747942"
     },
     {
@@ -1130,7 +1130,7 @@
         "name": "Cardio Max",
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_48_cardiomax.svg"
       },
-      "teacher": "Juliette",
+      "teacher": "Chiara",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/748145"
     },
@@ -1141,7 +1141,7 @@
         "name": "Pilates",
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_80_pilates.svg"
       },
-      "teacher": "Juliette",
+      "teacher": "Chiara",
       "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/747826"
     },
