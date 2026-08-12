@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-12T11:34:16.171Z",
+  "timestamp": "2026-08-12T12:34:24.085Z",
   "classes": [
     {
       "timestamp": "2026-08-12T05:45:00.000Z",
@@ -118,8 +118,8 @@
         "name": "Standard",
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
       },
-      "teacher": "Thierry G",
-      "status": "AVAILABLE",
+      "teacher": "Fermeture exceptionnelle 12.08.26",
+      "status": "CANCELLED",
       "link": "https://www.swedishfit.fr/cours/detail/745914"
     },
     {
@@ -140,8 +140,8 @@
         "name": "Standard",
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
       },
-      "teacher": "Camille PH",
-      "status": "AVAILABLE",
+      "teacher": "Fermeture exceptionnelle 12.08.26",
+      "status": "CANCELLED",
       "link": "https://www.swedishfit.fr/cours/detail/747548"
     },
     {
@@ -361,7 +361,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Barbara L",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/748094"
     },
     {
@@ -658,7 +658,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Thomas V",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/747797"
     },
     {
