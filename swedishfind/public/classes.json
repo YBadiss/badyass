@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-12T12:34:24.085Z",
+  "timestamp": "2026-08-12T14:08:21.524Z",
   "classes": [
     {
       "timestamp": "2026-08-12T05:45:00.000Z",
@@ -195,8 +195,8 @@
         "name": "Circuit",
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_47_circuit.svg"
       },
-      "teacher": "Omar",
-      "status": "AVAILABLE",
+      "teacher": "Fermeture exceptionnelle 12.08.26",
+      "status": "CANCELLED",
       "link": "https://www.swedishfit.fr/cours/detail/745732"
     },
     {
@@ -273,7 +273,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Alain N",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/747709"
     },
     {
@@ -504,7 +504,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_101_afrovibes.svg"
       },
       "teacher": "Laïla M",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/747767"
     },
     {
@@ -570,7 +570,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Romain B",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/748025"
     },
     {
@@ -999,7 +999,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Florent CE",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/748252"
     },
     {
@@ -1263,7 +1263,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Françoise B",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/747601"
     },
     {
@@ -1372,7 +1372,7 @@
         "name": "Pilates",
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_80_pilates.svg"
       },
-      "teacher": "Animateur Swedish Fit",
+      "teacher": "Alain N",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/748165"
     },
