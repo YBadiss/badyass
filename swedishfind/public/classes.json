@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-17T12:02:33.684Z",
+  "timestamp": "2026-08-17T13:10:28.493Z",
   "classes": [
     {
       "timestamp": "2026-08-17T08:30:00.000Z",
@@ -55,6 +55,17 @@
       "teacher": "Floriane",
       "status": "PASSED",
       "link": "https://www.swedishfit.fr/cours/detail/747871"
+    },
+    {
+      "timestamp": "2026-08-17T10:30:00.000Z",
+      "location": "Paris 10 Chaudron",
+      "activity": {
+        "name": "Cardio Pump",
+        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_46_cardiopump.svg"
+      },
+      "teacher": "À partir du 24.08.26",
+      "status": "AVAILABLE",
+      "link": "https://www.swedishfit.fr/cours/detail/758574"
     },
     {
       "timestamp": "2026-08-17T11:00:00.000Z",
@@ -317,7 +328,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Juliette",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/746322"
     },
     {
@@ -1549,7 +1560,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Romain B",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/748051"
     },
     {
@@ -1659,7 +1670,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Tilda",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/747798"
     },
     {
