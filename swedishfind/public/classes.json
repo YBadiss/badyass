@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-19T14:00:41.260Z",
+  "timestamp": "2026-08-19T14:56:14.393Z",
   "classes": [
     {
       "timestamp": "2026-08-19T05:45:00.000Z",
@@ -228,8 +228,8 @@
         "name": "Standard",
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
       },
-      "teacher": "Olivia E",
-      "status": "AVAILABLE",
+      "teacher": "Fermeture exceptionnelle 19.08.26",
+      "status": "CANCELLED",
       "link": "https://www.swedishfit.fr/cours/detail/746421"
     },
     {
@@ -911,7 +911,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Chiara",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/746361"
     },
     {
@@ -1054,7 +1054,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Romain B",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/747804"
     },
     {
@@ -1164,7 +1164,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_40_intensif.svg"
       },
       "teacher": "Laura B",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/746381"
     },
     {
