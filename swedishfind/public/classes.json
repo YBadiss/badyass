@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-19T18:56:52.581Z",
+  "timestamp": "2026-08-19T19:43:39.553Z",
   "classes": [
     {
       "timestamp": "2026-08-19T05:45:00.000Z",
@@ -156,6 +156,17 @@
       "link": "https://www.swedishfit.fr/cours/detail/754494"
     },
     {
+      "timestamp": "2026-08-19T16:45:00.000Z",
+      "location": "Paris 13 Collège St Vincent de Paul 49",
+      "activity": {
+        "name": "Soft",
+        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_20_soft.svg"
+      },
+      "teacher": "À partir du 26.08.26",
+      "status": "AVAILABLE",
+      "link": "https://www.swedishfit.fr/cours/detail/748460"
+    },
+    {
       "timestamp": "2026-08-19T17:00:00.000Z",
       "location": "Paris  4 Sully Morland",
       "activity": {
@@ -231,17 +242,6 @@
       "teacher": "Fermeture exceptionnelle 19.08.26",
       "status": "CANCELLED",
       "link": "https://www.swedishfit.fr/cours/detail/746421"
-    },
-    {
-      "timestamp": "2026-08-19T17:00:00.000Z",
-      "location": "Paris 13 Collège St Vincent de Paul 49",
-      "activity": {
-        "name": "Soft",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_20_soft.svg"
-      },
-      "teacher": "À partir du 26.08.26",
-      "status": "AVAILABLE",
-      "link": "https://www.swedishfit.fr/cours/detail/748460"
     },
     {
       "timestamp": "2026-08-19T17:00:00.000Z",
@@ -354,7 +354,7 @@
       "link": "https://www.swedishfit.fr/cours/detail/754514"
     },
     {
-      "timestamp": "2026-08-19T18:00:00.000Z",
+      "timestamp": "2026-08-19T17:45:00.000Z",
       "location": "Paris 13 Collège St Vincent de Paul 49",
       "activity": {
         "name": "Yoga",
@@ -569,7 +569,7 @@
         "name": "Standard",
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_30_standard.svg"
       },
-      "teacher": "Kwama",
+      "teacher": "Suzie R",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/711165"
     },
@@ -581,7 +581,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_82_pilatesfusion.svg"
       },
       "teacher": "Léa C",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/747999"
     },
     {
@@ -1554,6 +1554,17 @@
     },
     {
       "timestamp": "2026-08-24T16:45:00.000Z",
+      "location": "Paris 13 Collège St Vincent de Paul 49",
+      "activity": {
+        "name": "Soft",
+        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_20_soft.svg"
+      },
+      "teacher": "Erika H",
+      "status": "AVAILABLE",
+      "link": "https://www.swedishfit.fr/cours/detail/748425"
+    },
+    {
+      "timestamp": "2026-08-24T16:45:00.000Z",
       "location": "Paris 19 L'Initiative",
       "activity": {
         "name": "Standard",
@@ -1650,17 +1661,6 @@
       "teacher": "Tilda",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/750425"
-    },
-    {
-      "timestamp": "2026-08-24T17:00:00.000Z",
-      "location": "Paris 13 Collège St Vincent de Paul 49",
-      "activity": {
-        "name": "Soft",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_20_soft.svg"
-      },
-      "teacher": "Erika H",
-      "status": "AVAILABLE",
-      "link": "https://www.swedishfit.fr/cours/detail/748425"
     },
     {
       "timestamp": "2026-08-24T17:00:00.000Z",
@@ -1862,6 +1862,17 @@
     },
     {
       "timestamp": "2026-08-24T17:45:00.000Z",
+      "location": "Paris 13 Collège St Vincent de Paul 49",
+      "activity": {
+        "name": "Pilates",
+        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_80_pilates.svg"
+      },
+      "teacher": "Erika H",
+      "status": "AVAILABLE",
+      "link": "https://www.swedishfit.fr/cours/detail/748443"
+    },
+    {
+      "timestamp": "2026-08-24T17:45:00.000Z",
       "location": "Paris 19 L'Initiative",
       "activity": {
         "name": "Yoga",
@@ -1903,17 +1914,6 @@
       "teacher": "Audrey M",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/753351"
-    },
-    {
-      "timestamp": "2026-08-24T18:00:00.000Z",
-      "location": "Paris 13 Collège St Vincent de Paul 49",
-      "activity": {
-        "name": "Pilates",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_80_pilates.svg"
-      },
-      "teacher": "Erika H",
-      "status": "AVAILABLE",
-      "link": "https://www.swedishfit.fr/cours/detail/748443"
     },
     {
       "timestamp": "2026-08-24T18:00:00.000Z",
