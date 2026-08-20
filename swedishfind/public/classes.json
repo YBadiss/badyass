@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-20T11:47:06.778Z",
+  "timestamp": "2026-08-20T12:15:51.193Z",
   "classes": [
     {
       "timestamp": "2026-08-20T05:45:00.000Z",
@@ -548,7 +548,7 @@
         "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Clara D",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/748120"
     },
     {
@@ -2640,17 +2640,6 @@
       "teacher": "Marine Gi",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/758709"
-    },
-    {
-      "timestamp": "2026-08-26T18:00:00.000Z",
-      "location": "Paris 10 Chaudron",
-      "activity": {
-        "name": "Pilates",
-        "icon": "https://design.swedishfit.com/d34b607deb2fa51792aff99a09ba0d0d73b9603f/user/classlevel/icon_80_pilates.svg"
-      },
-      "teacher": "Animateur Swedish Fit",
-      "status": "AVAILABLE",
-      "link": "https://www.swedishfit.fr/cours/detail/753636"
     },
     {
       "timestamp": "2026-08-26T18:00:00.000Z",
