@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-24T12:16:11.222Z",
+  "timestamp": "2026-08-24T13:17:34.336Z",
   "classes": [
     {
       "timestamp": "2026-08-24T08:30:00.000Z",
@@ -251,7 +251,7 @@
         "icon": "https://design.swedishfit.com/2d761505091eb865b7a839b7e41b29970d81b8eb/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Floriane",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/745833"
     },
     {
@@ -635,9 +635,9 @@
         "name": "Standard",
         "icon": "https://design.swedishfit.com/2d761505091eb865b7a839b7e41b29970d81b8eb/user/classlevel/icon_30_standard.svg"
       },
-      "teacher": "Alain N",
+      "teacher": "À partir du 1.09.26",
       "status": "AVAILABLE",
-      "link": "https://www.swedishfit.fr/cours/detail/754321"
+      "link": "https://www.swedishfit.fr/cours/detail/759013"
     },
     {
       "timestamp": "2026-08-25T07:45:00.000Z",
@@ -701,7 +701,7 @@
         "name": "Standard",
         "icon": "https://design.swedishfit.com/2d761505091eb865b7a839b7e41b29970d81b8eb/user/classlevel/icon_30_standard.svg"
       },
-      "teacher": "Animateur Swedish Fit",
+      "teacher": "Charline B",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/753408"
     },
