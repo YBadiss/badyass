@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-25T23:11:00.045Z",
+  "timestamp": "2026-08-25T23:42:30.347Z",
   "classes": [
     {
       "timestamp": "2026-08-26T05:45:00.000Z",
@@ -437,7 +437,7 @@
         "name": "Yoga",
         "icon": "https://design.swedishfit.com/2d761505091eb865b7a839b7e41b29970d81b8eb/user/classlevel/icon_75_yoga.svg"
       },
-      "teacher": "Animateur Swedish Fit",
+      "teacher": "Léa",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/757637"
     },
@@ -1743,10 +1743,10 @@
       "timestamp": "2026-08-30T08:30:00.000Z",
       "location": "Paris 11 Charles Péguy",
       "activity": {
-        "name": "Pilates",
-        "icon": "https://design.swedishfit.com/2d761505091eb865b7a839b7e41b29970d81b8eb/user/classlevel/icon_80_pilates.svg"
+        "name": "Yoga",
+        "icon": "https://design.swedishfit.com/2d761505091eb865b7a839b7e41b29970d81b8eb/user/classlevel/icon_75_yoga.svg"
       },
-      "teacher": "Salima K",
+      "teacher": "Léa",
       "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/754633"
     },
@@ -1889,7 +1889,7 @@
         "name": "Dance",
         "icon": "https://design.swedishfit.com/2d761505091eb865b7a839b7e41b29970d81b8eb/user/classlevel/icon_67_dance.svg"
       },
-      "teacher": "Salima K",
+      "teacher": "Léa",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/754652"
     },
