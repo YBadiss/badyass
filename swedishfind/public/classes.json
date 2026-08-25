@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-25T09:03:25.039Z",
+  "timestamp": "2026-08-25T09:55:02.485Z",
   "classes": [
     {
       "timestamp": "2026-08-25T05:45:00.000Z",
@@ -42,7 +42,7 @@
         "icon": "https://design.swedishfit.com/2d761505091eb865b7a839b7e41b29970d81b8eb/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Alain N",
-      "status": "AVAILABLE",
+      "status": "PASSED",
       "link": "https://www.swedishfit.fr/cours/detail/754689"
     },
     {
@@ -53,7 +53,7 @@
         "icon": "https://design.swedishfit.com/2d761505091eb865b7a839b7e41b29970d81b8eb/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Tilda",
-      "status": "AVAILABLE",
+      "status": "PASSED",
       "link": "https://www.swedishfit.fr/cours/detail/753389"
     },
     {
@@ -130,7 +130,7 @@
         "icon": "https://design.swedishfit.com/2d761505091eb865b7a839b7e41b29970d81b8eb/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Fabrice",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/756516"
     },
     {
@@ -152,7 +152,7 @@
         "icon": "https://design.swedishfit.com/2d761505091eb865b7a839b7e41b29970d81b8eb/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Thomas V",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/754765"
     },
     {
@@ -449,7 +449,7 @@
         "icon": "https://design.swedishfit.com/2d761505091eb865b7a839b7e41b29970d81b8eb/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Vincent H",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/753503"
     },
     {
@@ -1197,7 +1197,7 @@
         "icon": "https://design.swedishfit.com/2d761505091eb865b7a839b7e41b29970d81b8eb/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Emma F",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/753711"
     },
     {
@@ -1296,7 +1296,7 @@
         "icon": "https://design.swedishfit.com/2d761505091eb865b7a839b7e41b29970d81b8eb/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Helen E",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/756592"
     },
     {
@@ -1560,7 +1560,7 @@
         "icon": "https://design.swedishfit.com/2d761505091eb865b7a839b7e41b29970d81b8eb/user/classlevel/icon_101_afrovibes.svg"
       },
       "teacher": "Laïla M",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/755200"
     },
     {
@@ -1604,7 +1604,7 @@
         "icon": "https://design.swedishfit.com/2d761505091eb865b7a839b7e41b29970d81b8eb/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Delphine DES",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/755218"
     },
     {
@@ -1725,7 +1725,7 @@
         "icon": "https://design.swedishfit.com/2d761505091eb865b7a839b7e41b29970d81b8eb/user/classlevel/icon_45_cardioflex.svg"
       },
       "teacher": "Romain B",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/753915"
     },
     {
@@ -1857,7 +1857,7 @@
         "icon": "https://design.swedishfit.com/2d761505091eb865b7a839b7e41b29970d81b8eb/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Miriam",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/754575"
     },
     {
@@ -2062,23 +2062,23 @@
       "timestamp": "2026-08-29T09:30:00.000Z",
       "location": "Paris  8 Racine",
       "activity": {
-        "name": "Core",
-        "icon": "https://design.swedishfit.com/2d761505091eb865b7a839b7e41b29970d81b8eb/user/classlevel/icon_95_core.svg"
-      },
-      "teacher": "À partir du 5.09.26",
-      "status": "AVAILABLE",
-      "link": "https://www.swedishfit.fr/cours/detail/757618"
-    },
-    {
-      "timestamp": "2026-08-29T09:30:00.000Z",
-      "location": "Paris  8 Racine",
-      "activity": {
         "name": "Cardio Max",
         "icon": "https://design.swedishfit.com/2d761505091eb865b7a839b7e41b29970d81b8eb/user/classlevel/icon_48_cardiomax.svg"
       },
       "teacher": "Mathilde DB",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/735716"
+    },
+    {
+      "timestamp": "2026-08-29T09:30:00.000Z",
+      "location": "Paris  8 Racine",
+      "activity": {
+        "name": "Core",
+        "icon": "https://design.swedishfit.com/2d761505091eb865b7a839b7e41b29970d81b8eb/user/classlevel/icon_95_core.svg"
+      },
+      "teacher": "À partir du 5.09.26",
+      "status": "AVAILABLE",
+      "link": "https://www.swedishfit.fr/cours/detail/757618"
     },
     {
       "timestamp": "2026-08-29T09:30:00.000Z",
@@ -2099,7 +2099,7 @@
         "icon": "https://design.swedishfit.com/2d761505091eb865b7a839b7e41b29970d81b8eb/user/classlevel/icon_48_cardiomax.svg"
       },
       "teacher": "Chiara",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/746372"
     },
     {
@@ -2187,7 +2187,7 @@
         "icon": "https://design.swedishfit.com/2d761505091eb865b7a839b7e41b29970d81b8eb/user/classlevel/icon_101_afrovibes.svg"
       },
       "teacher": "Morgane MAR",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/754005"
     },
     {
@@ -2200,6 +2200,17 @@
       "teacher": "Elsa O",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/755416"
+    },
+    {
+      "timestamp": "2026-08-30T08:00:00.000Z",
+      "location": "Paris 10 Chaudron",
+      "activity": {
+        "name": "Standard",
+        "icon": "https://design.swedishfit.com/2d761505091eb865b7a839b7e41b29970d81b8eb/user/classlevel/icon_30_standard.svg"
+      },
+      "teacher": "Maud R",
+      "status": "AVAILABLE",
+      "link": "https://www.swedishfit.fr/cours/detail/759151"
     },
     {
       "timestamp": "2026-08-30T08:30:00.000Z",
@@ -3154,7 +3165,7 @@
         "name": "Standard",
         "icon": "https://design.swedishfit.com/2d761505091eb865b7a839b7e41b29970d81b8eb/user/classlevel/icon_30_standard.svg"
       },
-      "teacher": "Animateur Swedish Fit",
+      "teacher": "Léa",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/756140"
     },
