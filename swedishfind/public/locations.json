@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-28T01:10:45.934Z",
+  "timestamp": "2026-08-28T12:57:32.713Z",
   "locations": [
     {
       "name": "Paris  9 Bergère",
@@ -10,11 +10,11 @@
       }
     },
     {
-      "name": "Paris  5 Crous",
-      "address": "31, avenue Georges Bernanos, 75005 Paris",
+      "name": "",
+      "address": "",
       "gpsCoordinates": {
-        "lat": 48.8404804,
-        "lon": 2.3377227
+        "lat": 0,
+        "lon": 0
       }
     },
     {
@@ -90,8 +90,8 @@
       }
     },
     {
-      "name": "Nantes Ecole Sainte-Madeleine",
-      "address": "26 Bd Babin Chevaye, 44200 NANTES",
+      "name": "",
+      "address": "",
       "gpsCoordinates": {
         "lat": 0,
         "lon": 0
@@ -290,11 +290,11 @@
       }
     },
     {
-      "name": "Strasbourg Saint-Urbain",
-      "address": "59, Avenue Jean Jaures, 67100 Strasbourg",
+      "name": "",
+      "address": "",
       "gpsCoordinates": {
-        "lat": 48.56806,
-        "lon": 7.7690258
+        "lat": 0,
+        "lon": 0
       }
     },
     {
@@ -418,11 +418,11 @@
       }
     },
     {
-      "name": "Paris 15 Corbon",
-      "address": "5 rue Corbon, 75015 Paris",
+      "name": "",
+      "address": "",
       "gpsCoordinates": {
-        "lat": 48.8363636,
-        "lon": 2.3032156
+        "lat": 0,
+        "lon": 0
       }
     },
     {
@@ -618,11 +618,11 @@
       }
     },
     {
-      "name": "Montreuil Doriant",
-      "address": "10, Rue du Colonel Raynal, 93100 MONTREUIL",
+      "name": "",
+      "address": "",
       "gpsCoordinates": {
-        "lat": 48.856283,
-        "lon": 2.434723
+        "lat": 0,
+        "lon": 0
       }
     },
     {
@@ -666,11 +666,11 @@
       }
     },
     {
-      "name": "Nice Sasserno",
-      "address": "Ruelle des Prés, 06000 NICE",
+      "name": "",
+      "address": "",
       "gpsCoordinates": {
-        "lat": 43.702049,
-        "lon": 7.270579
+        "lat": 0,
+        "lon": 0
       }
     },
     {
