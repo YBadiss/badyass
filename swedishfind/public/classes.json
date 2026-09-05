@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-04T23:25:01.689Z",
+  "timestamp": "2026-09-05T01:07:16.017Z",
   "classes": [
     {
       "timestamp": "2026-09-05T07:00:00.000Z",
@@ -152,7 +152,7 @@
         "icon": "https://design.swedishfit.com/v2aa9414780ec552b/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Thomas V",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/751697"
     },
     {
@@ -383,7 +383,7 @@
         "icon": "https://design.swedishfit.com/v2aa9414780ec552b/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "François-Xavier WM",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/755345"
     },
     {
@@ -394,7 +394,7 @@
         "icon": "https://design.swedishfit.com/v2aa9414780ec552b/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Emma F",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/753988"
     },
     {
@@ -405,7 +405,7 @@
         "icon": "https://design.swedishfit.com/v2aa9414780ec552b/user/classlevel/icon_91_sophro.svg"
       },
       "teacher": "Vania F",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/755363"
     },
     {
@@ -823,7 +823,7 @@
         "icon": "https://design.swedishfit.com/v2aa9414780ec552b/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Léa",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/756275"
     },
     {
@@ -1527,7 +1527,7 @@
         "icon": "https://design.swedishfit.com/v2aa9414780ec552b/user/classlevel/icon_45_cardioflex.svg"
       },
       "teacher": "Romain B",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/749102"
     },
     {
