@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-14T07:10:43.643Z",
+  "timestamp": "2026-09-14T14:12:11.850Z",
   "locations": [
     {
       "name": "Paris  9 Bergère",
@@ -650,11 +650,11 @@
       }
     },
     {
-      "name": "Marseille 8 Ecole Jeanne D'Arc",
-      "address": "12 Boulevard Lord Duveen, 13008 MARSEILLE",
+      "name": "",
+      "address": "",
       "gpsCoordinates": {
-        "lat": 43.276092,
-        "lon": 5.38764
+        "lat": 0,
+        "lon": 0
       }
     },
     {
