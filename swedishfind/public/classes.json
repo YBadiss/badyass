@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-22T06:20:40.761Z",
+  "timestamp": "2026-09-22T11:48:46.418Z",
   "classes": [
     {
       "timestamp": "2026-09-22T05:45:00.000Z",
@@ -20,7 +20,7 @@
         "icon": "https://design.swedishfit.com/v1ac8886ffd2910c0/user/classlevel/icon_91_sophro.svg"
       },
       "teacher": "Malika B",
-      "status": "AVAILABLE",
+      "status": "PASSED",
       "link": "https://www.swedishfit.fr/cours/detail/754674"
     },
     {
@@ -31,7 +31,7 @@
         "icon": "https://design.swedishfit.com/v1ac8886ffd2910c0/user/classlevel/icon_50_modere.svg"
       },
       "teacher": "Tilda",
-      "status": "AVAILABLE",
+      "status": "PASSED",
       "link": "https://www.swedishfit.fr/cours/detail/753374"
     },
     {
@@ -42,7 +42,7 @@
         "icon": "https://design.swedishfit.com/v1ac8886ffd2910c0/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Malika B",
-      "status": "FULL",
+      "status": "PASSED",
       "link": "https://www.swedishfit.fr/cours/detail/754693"
     },
     {
@@ -53,7 +53,7 @@
         "icon": "https://design.swedishfit.com/v1ac8886ffd2910c0/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Tilda",
-      "status": "AVAILABLE",
+      "status": "PASSED",
       "link": "https://www.swedishfit.fr/cours/detail/753393"
     },
     {
@@ -64,7 +64,7 @@
         "icon": "https://design.swedishfit.com/v1ac8886ffd2910c0/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Malika B",
-      "status": "AVAILABLE",
+      "status": "PASSED",
       "link": "https://www.swedishfit.fr/cours/detail/754712"
     },
     {
@@ -75,7 +75,7 @@
         "icon": "https://design.swedishfit.com/v1ac8886ffd2910c0/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Maeva V",
-      "status": "AVAILABLE",
+      "status": "PASSED",
       "link": "https://www.swedishfit.fr/cours/detail/753412"
     },
     {
@@ -86,7 +86,7 @@
         "icon": "https://design.swedishfit.com/v1ac8886ffd2910c0/user/classlevel/icon_48_cardiomax.svg"
       },
       "teacher": "Thomas V",
-      "status": "AVAILABLE",
+      "status": "PASSED",
       "link": "https://www.swedishfit.fr/cours/detail/754731"
     },
     {
@@ -151,7 +151,7 @@
         "name": "Core",
         "icon": "https://design.swedishfit.com/v1ac8886ffd2910c0/user/classlevel/icon_95_core.svg"
       },
-      "teacher": "Jérémie",
+      "teacher": "Hélène Hé",
       "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/754769"
     },
@@ -185,7 +185,7 @@
         "icon": "https://design.swedishfit.com/v1ac8886ffd2910c0/user/classlevel/icon_67_dance.svg"
       },
       "teacher": "Katia",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/751187"
     },
     {
@@ -262,7 +262,7 @@
         "icon": "https://design.swedishfit.com/v1ac8886ffd2910c0/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Alexis D",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/748741"
     },
     {
@@ -438,7 +438,7 @@
         "icon": "https://design.swedishfit.com/v1ac8886ffd2910c0/user/classlevel/icon_75_yoga.svg"
       },
       "teacher": "Katia",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/751238"
     },
     {
@@ -526,7 +526,7 @@
         "icon": "https://design.swedishfit.com/v1ac8886ffd2910c0/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Elsa O",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/754807"
     },
     {
@@ -614,7 +614,7 @@
         "icon": "https://design.swedishfit.com/v1ac8886ffd2910c0/user/classlevel/icon_47_circuit.svg"
       },
       "teacher": "TiTOu",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/753677"
     },
     {
@@ -647,7 +647,7 @@
         "icon": "https://design.swedishfit.com/v1ac8886ffd2910c0/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Thomas V",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/754921"
     },
     {
@@ -712,8 +712,8 @@
         "name": "Yoga",
         "icon": "https://design.swedishfit.com/v1ac8886ffd2910c0/user/classlevel/icon_75_yoga.svg"
       },
-      "teacher": "Fiona DLC",
-      "status": "FULL",
+      "teacher": "Elvire D",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/748927"
     },
     {
@@ -724,7 +724,7 @@
         "icon": "https://design.swedishfit.com/v1ac8886ffd2910c0/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Barbara L",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/754940"
     },
     {
@@ -735,7 +735,7 @@
         "icon": "https://design.swedishfit.com/v1ac8886ffd2910c0/user/classlevel/icon_95_core.svg"
       },
       "teacher": "Chiara",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/749481"
     },
     {
@@ -757,7 +757,7 @@
         "icon": "https://design.swedishfit.com/v1ac8886ffd2910c0/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Marie Maimone",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/751257"
     },
     {
@@ -911,7 +911,7 @@
         "icon": "https://design.swedishfit.com/v1ac8886ffd2910c0/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Emmanuelle RD",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/748519"
     },
     {
@@ -1010,7 +1010,7 @@
         "icon": "https://design.swedishfit.com/v1ac8886ffd2910c0/user/classlevel/icon_77_yinyoga.svg"
       },
       "teacher": "Isabelle",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/756577"
     },
     {
@@ -1021,7 +1021,7 @@
         "icon": "https://design.swedishfit.com/v1ac8886ffd2910c0/user/classlevel/icon_30_standard.svg"
       },
       "teacher": "Loren P",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/749141"
     },
     {
@@ -1131,7 +1131,7 @@
         "icon": "https://design.swedishfit.com/v1ac8886ffd2910c0/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Florent CE",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/758731"
     },
     {
@@ -1208,7 +1208,7 @@
         "icon": "https://design.swedishfit.com/v1ac8886ffd2910c0/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Florent CE",
-      "status": "FULL",
+      "status": "AVAILABLE",
       "link": "https://www.swedishfit.fr/cours/detail/759536"
     },
     {
@@ -1263,7 +1263,7 @@
         "icon": "https://design.swedishfit.com/v1ac8886ffd2910c0/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Katia",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/755073"
     },
     {
@@ -2341,7 +2341,7 @@
         "icon": "https://design.swedishfit.com/v1ac8886ffd2910c0/user/classlevel/icon_80_pilates.svg"
       },
       "teacher": "Betty",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/752699"
     },
     {
@@ -2385,7 +2385,7 @@
         "icon": "https://design.swedishfit.com/v1ac8886ffd2910c0/user/classlevel/icon_40_intensif.svg"
       },
       "teacher": "Laura B",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/749230"
     },
     {
@@ -2506,7 +2506,7 @@
         "icon": "https://design.swedishfit.com/v1ac8886ffd2910c0/user/classlevel/icon_96_flex.svg"
       },
       "teacher": "Joaquine B",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/754063"
     },
     {
@@ -2550,7 +2550,7 @@
         "icon": "https://design.swedishfit.com/v1ac8886ffd2910c0/user/classlevel/icon_46_cardiopump.svg"
       },
       "teacher": "Tilda",
-      "status": "AVAILABLE",
+      "status": "FULL",
       "link": "https://www.swedishfit.fr/cours/detail/757864"
     },
     {
