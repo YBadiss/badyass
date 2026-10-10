@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-
 type DayOfWeek = 0 | 1 | 2 | 3 | 4 | 5 | 6
 
 interface DayTimeRange {
@@ -27,8 +25,6 @@ interface Emits {
 const props = defineProps<Props>()
 const emit = defineEmits<Emits>()
 
-// Open by default: in the sidebar there's room to show filters alongside the results
-const isExpanded = ref(true)
 const dayNames = ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi']
 
 const updateDayEnabled = (day: DayOfWeek, enabled: boolean) => {
@@ -97,12 +93,8 @@ const updateActivities = (event: Event) => {
 
 <template>
   <div class="filter-container">
-    <button class="filter-toggle" @click="isExpanded = !isExpanded">
-      <span>Filtres</span>
-      <span class="toggle-icon">{{ isExpanded ? '▼' : '▶' }}</span>
-    </button>
-
-    <div v-if="isExpanded" class="filters">
+    <div class="filters">
+      <h2 class="panel-title">Préférences</h2>
       <div class="filter-group days-filter">
         <label>Jours & Horaires:</label>
         <div class="day-filters">
@@ -218,26 +210,6 @@ const updateActivities = (event: Event) => {
   margin-bottom: var(--spacing-md);
 }
 
-.filter-toggle {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: var(--spacing-sm) var(--spacing-md);
-  background-color: var(--color-bg-light);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  cursor: pointer;
-  font-size: var(--font-sm);
-  font-weight: 600;
-  color: var(--color-text-primary);
-  transition: background-color var(--transition-fast);
-}
-
-.filter-toggle:hover {
-  background-color: #f0f0f0;
-}
-
 .filter-actions {
   display: flex;
   gap: var(--spacing-sm);
@@ -262,11 +234,6 @@ const updateActivities = (event: Event) => {
   background-color: var(--color-primary-hover);
 }
 
-.toggle-icon {
-  font-size: var(--font-sm);
-  color: var(--color-text-muted);
-}
-
 .filters {
   display: flex;
   flex-direction: column;
@@ -274,8 +241,13 @@ const updateActivities = (event: Event) => {
   padding: var(--spacing-md);
   background-color: var(--color-bg-light);
   border: 1px solid var(--color-border);
-  border-top: none;
-  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  border-radius: var(--radius-md);
+}
+
+.panel-title {
+  margin: 0;
+  font-size: var(--font-base);
+  color: var(--color-text-primary);
 }
 
 .filter-group {

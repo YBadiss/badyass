@@ -31,7 +31,7 @@ In CI, `npm run deploy` is the only deploy path. Avoid running it locally unless
 ## Projects
 
 ### home
-- `public/content.json` holds the personal info, social links and `publicationSections`. The **Projects** section is edited by hand there; add an entry when a new project ships. (`public/projects/<slug>/meta.json` files exist alongside it.)
+- `public/content.json` holds the personal info, social links and `publicationSections`. The **Projects** section is edited by hand, not generated. It's the list shown at badyass.xyz/projects, and **every project must have an entry there** (see "Adding a new project"). Keep it newest first. A matching `public/projects/<slug>/meta.json` holds the same fields.
 - The **Write Ups** and **Poems** sections are regenerated automatically by a Vite plugin in `vite.config.js`. The plugin reads `src/content/{write-ups,poems}/<slug>/meta.json` and copies their non-md/json assets to `public/content/`. To add one, create a folder with `meta.json` + `article.md` (+ `images/`). Don't edit those sections in `content.json` by hand.
 - `src/router.js` generates `/write-ups/<slug>` and `/poems/<slug>` routes from the same `meta.json` globs. `ArticleView.vue` renders the markdown.
 - Built with `vite-ssg`, so the output is static, pre-rendered HTML.
@@ -101,7 +101,17 @@ In CI, `npm run deploy` is the only deploy path. Avoid running it locally unless
 2. Add `deploy.sh` and `cleanup_deploys.sh`, replacing the project name inside them.
 3. Add `.github/workflows/deploy-<name>.yml`, plus a crawl workflow if the project needs scheduled data.
 4. Add a `location ^~ /projects/<name>` block to `config/nginx-config`, and set Vite `base` to match.
-5. Add a project entry in `home/public/content.json`, and optionally `home/public/projects/<name>/meta.json`.
+5. **List it on badyass.xyz:** add an entry at the top of the "Projects" `publications` array in `home/public/content.json`. Also add the same object, minus `slug`, as `home/public/projects/<name>/meta.json`:
+   ```json
+   {
+     "slug": "/projects/<name>",
+     "title": "<Name>",
+     "description": "<One sentence, in English>",
+     "date": "YYYY-MM-DD",
+     "tags": ["<Tag>", "<Tag>", "<Tag>"]
+   }
+   ```
+   Projects hosted elsewhere also get `"url": "https://…"` (e.g. Footble, Metro Boulot Photos). The file is fetched at runtime, so check that the project appears and its link opens on the live https://badyass.xyz/projects after the home deploy.
 6. Update the table at the top of this file and the root `README.md`.
 
 ## Conventions
