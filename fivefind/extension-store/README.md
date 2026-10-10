@@ -57,9 +57,15 @@ FiveFind est un projet personnel et indépendant. Il n'est pas affilié à LE FI
 - **Visibility:** Unlisted. FiveFind links to it; it won't appear in store search.
 - **Regions:** all regions (LE FIVE is in France, but nothing breaks elsewhere).
 
-## After approval
+## Item
 
-1. Note the item ID and the store URL (`https://chromewebstore.google.com/detail/<id>`).
-2. Point `ExtensionBanner.vue` at the store URL instead of the GitHub Release zip.
-3. Remove any unpacked copy of the extension, otherwise both run on lefive.fr.
-4. For each update: bump `version` in `extension/manifest.json`, push (the release workflow builds the zip), and upload that zip in the dashboard.
+- **ID:** `ndpgipbibnjbjelbipceehlafmidinae`
+- **Store URL:** https://chromewebstore.google.com/detail/ndpgipbibnjbjelbipceehlafmidinae (FiveFind's install banner links here)
+
+## Updates
+
+1. Bump `version` in `extension/manifest.json` and push. The release workflow builds the zip as `fivefind-extension-v<version>`.
+2. Upload that zip in the dashboard (Package → Upload new package) and submit for review.
+3. Installed copies update themselves once the new version is approved.
+
+Remove any unpacked copy of the extension from `chrome://extensions`, otherwise both run on lefive.fr.
