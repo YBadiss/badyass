@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue'
 import { formatDuration } from '../lefive'
 
 export interface Filters {
@@ -16,14 +15,12 @@ interface Props {
 
 interface Emits {
   (e: 'update:filters', value: Filters): void
-  (e: 'save'): void
-  (e: 'restore'): void
+  (e: 'reset'): void
 }
 
 const props = defineProps<Props>()
 const emit = defineEmits<Emits>()
 
-const isExpanded = ref(false)
 const allDurations = [60, 90, 120]
 
 const update = (patch: Partial<Filters>) => emit('update:filters', { ...props.filters, ...patch })
@@ -39,12 +36,8 @@ const updateMaxPrice = (event: Event) => {
 
 <template>
   <div class="filter-container">
-    <button class="filter-toggle" @click="isExpanded = !isExpanded">
-      <span>Filtres</span>
-      <span class="toggle-icon">{{ isExpanded ? '▼' : '▶' }}</span>
-    </button>
-
-    <div v-if="isExpanded" class="filters">
+    <div class="filters">
+      <h2 class="panel-title">Préférences</h2>
       <div class="filter-group">
         <label>Durée:</label>
         <div class="checkboxes">
@@ -109,8 +102,10 @@ const updateMaxPrice = (event: Event) => {
       </div>
 
       <div class="filter-actions">
-        <button class="action-button" @click="emit('save')">Sauvegarder</button>
-        <button class="action-button" @click="emit('restore')">Restaurer</button>
+        <!-- Search and filters are saved automatically; this goes back to the defaults -->
+        <button type="button" class="reset-button" @click="emit('reset')">
+          Réinitialiser la recherche et les préférences
+        </button>
       </div>
     </div>
   </div>
@@ -118,52 +113,29 @@ const updateMaxPrice = (event: Event) => {
 
 <style scoped>
 .filter-container {
-  margin-bottom: var(--spacing-lg);
-}
-
-.filter-toggle {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: var(--spacing-md);
-  background-color: var(--color-bg-light);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  cursor: pointer;
-  font-size: var(--font-base);
-  font-weight: 600;
-  color: var(--color-text-primary);
-  transition: background-color var(--transition-fast);
-}
-
-.filter-toggle:hover {
-  background-color: #f0f0f0;
-}
-
-.toggle-icon {
-  font-size: var(--font-sm);
-  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-md);
 }
 
 .filters {
   display: flex;
-  gap: var(--spacing-lg);
-  padding: var(--spacing-lg);
+  flex-direction: column;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
   background-color: var(--color-bg-light);
   border: 1px solid var(--color-border);
-  border-top: none;
-  border-radius: 0 0 var(--radius-md) var(--radius-md);
-  flex-wrap: wrap;
-  align-items: flex-start;
+  border-radius: var(--radius-md);
+}
+
+.panel-title {
+  margin: 0;
+  font-size: var(--font-base);
+  color: var(--color-text-primary);
 }
 
 .filter-group {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-sm);
-  flex: 1;
-  min-width: 180px;
+  gap: var(--spacing-xs);
 }
 
 .filter-group > label {
@@ -219,28 +191,24 @@ const updateMaxPrice = (event: Event) => {
   border-color: var(--color-primary);
 }
 
+.reset-button {
+  padding: 0;
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  font-size: var(--font-xs);
+  cursor: pointer;
+}
+
+.reset-button:hover {
+  text-decoration: underline;
+}
+
 .filter-actions {
   display: flex;
   gap: var(--spacing-sm);
   justify-content: flex-end;
-  width: 100%;
-  padding-top: var(--spacing-lg);
+  padding-top: var(--spacing-md);
   border-top: 1px solid var(--color-border);
-}
-
-.action-button {
-  padding: var(--spacing-sm) var(--spacing-md);
-  background-color: var(--color-primary);
-  color: white;
-  border: none;
-  border-radius: var(--radius-md);
-  cursor: pointer;
-  font-size: var(--font-sm);
-  font-weight: 600;
-  transition: background-color var(--transition-fast);
-}
-
-.action-button:hover {
-  background-color: var(--color-primary-hover);
 }
 </style>

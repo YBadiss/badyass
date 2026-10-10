@@ -66,15 +66,17 @@ const popupHtml = (center: Center, availability?: CenterAvailability): string =>
       const chips = startTimes
         .map(startTime => {
           const durations = startTime.options.map(o => formatDuration(o.duration)).join(', ')
-          return `<span title="${durations}" style="
+          return `<a href="${bookingUrl(center.id, startTime.date, startTime.startUtc)}"
+            target="_blank" rel="noopener noreferrer" title="${durations}" style="
             display: inline-block;
+            text-decoration: none;
             padding: 2px 6px;
             margin: 0 4px 4px 0;
             border-radius: 4px;
             background-color: #d4edda;
             color: #155724;
             font-size: 0.85em;
-          ">${formatTime(startTime.time)}</span>`
+          ">${formatTime(startTime.time)}</a>`
         })
         .join('')
       return `
@@ -89,10 +91,9 @@ const popupHtml = (center: Center, availability?: CenterAvailability): string =>
     <div style="min-width: 260px; max-width: 360px;">
       ${header}
       <div style="max-height: 200px; overflow-y: auto; scrollbar-width: thin;">${days}</div>
-      <a href="${bookingUrl(center.id)}" target="_blank" rel="noopener noreferrer"
-         style="display: inline-block; margin-top: 6px; font-weight: 600;">
-        Réserver sur lefive.fr →
-      </a>
+      <p style="margin: 6px 0 0; color: #666; font-size: 0.8em;">
+        Cliquez sur un horaire pour l'ouvrir sur lefive.fr.
+      </p>
     </div>`
 }
 
@@ -187,7 +188,9 @@ watch(() => props.availability.map(a => a.center.id).join(','), fitToCenters)
 
 .map-container {
   width: 100%;
-  height: 600px;
+  /* Fill the screen next to the sidebar */
+  height: calc(100vh - 260px);
+  min-height: 450px;
   border-radius: var(--radius-md);
   overflow: hidden;
   border: 1px solid var(--color-border);

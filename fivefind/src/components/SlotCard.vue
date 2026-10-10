@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { bookingUrl, formatDuration, formatPrice, formatTime } from '../lefive'
 import type { StartTime } from '../slots'
+import { installedVersion } from '../extension'
 
 interface Props {
   startTime: StartTime
@@ -17,8 +18,18 @@ const priceRange = (min: number, max: number) =>
   <div class="slot-card">
     <div class="slot-header">
       <h3>{{ formatTime(startTime.time) }}</h3>
-      <a :href="bookingUrl(centerId)" target="_blank" rel="noopener noreferrer" class="book-link">
-        Réserver
+      <a
+        :href="bookingUrl(centerId, startTime.date, startTime.startUtc)"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="book-link"
+        :title="
+          installedVersion
+            ? 'Ouvre ce créneau sur lefive.fr (extension FiveFind)'
+            : 'Ouvre la page du centre sur lefive.fr ; installez l’extension FiveFind pour arriver directement sur ce créneau'
+        "
+      >
+        {{ installedVersion ? 'Ouvrir le créneau' : 'Réserver' }}
       </a>
     </div>
 

@@ -17,6 +17,7 @@ export default tseslint.config(
         window: 'readonly',
         document: 'readonly',
         setTimeout: 'readonly',
+        clearTimeout: 'readonly',
         navigator: 'readonly',
         HTMLElement: 'readonly',
         HTMLInputElement: 'readonly',

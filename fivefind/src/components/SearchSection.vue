@@ -14,7 +14,6 @@ interface Props {
 
 interface Emits {
   (e: 'update:search', value: SearchParams): void
-  (e: 'submit'): void
 }
 
 type Suggestion =
@@ -105,6 +104,8 @@ const onPlaceKeydown = (event: KeyboardEvent) => {
       select(suggestions.value[Math.min(highlighted.value, count - 1)])
     }
   } else if (event.key === 'Escape') {
+    // A search input clears itself on Escape and fires `input`, which would reopen the list
+    event.preventDefault()
     suggestionsOpen.value = false
   } else if (event.key === 'Backspace' && placeQuery.value === '') {
     // Backspace on an empty box removes the last chip
@@ -136,19 +137,11 @@ const removeDate = (date: string) => update({ dates: props.search.dates.filter(d
 const activeDates = computed(() => props.search.dates.filter(d => d >= today))
 
 const requestCount = computed(() => centerCount.value * activeDates.value.length)
-
-const canSubmit = computed(
-  () =>
-    !props.searching &&
-    requestCount.value > 0 &&
-    requestCount.value <= props.maxRequests &&
-    !!props.search.fromTime &&
-    !!props.search.toTime
-)
 </script>
 
 <template>
-  <form class="search-container" @submit.prevent="canSubmit && emit('submit')">
+  <!-- No submit button: the parent re-runs the search whenever these values change -->
+  <form class="search-container" @submit.prevent>
     <div class="search-group">
       <div class="group-header">
         <label for="place-query">Centres</label>
@@ -302,7 +295,7 @@ const canSubmit = computed(
       </div>
     </div>
 
-    <div class="search-actions">
+    <div v-if="requestCount > maxRequests || searching" class="search-actions">
       <span v-if="requestCount > maxRequests" class="warning">
         {{ requestCount }} recherches (centres × jours) : maximum {{ maxRequests }}. Réduisez la
         sélection.
@@ -310,7 +303,6 @@ const canSubmit = computed(
       <span v-else-if="searching" class="group-hint">
         Recherche… {{ progress.done }}/{{ progress.total }}
       </span>
-      <button type="submit" class="action-button" :disabled="!canSubmit">Rechercher</button>
     </div>
   </form>
 </template>
@@ -321,9 +313,9 @@ const canSubmit = computed(
   color-scheme: light;
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-lg);
-  padding: var(--spacing-lg);
-  margin-bottom: var(--spacing-lg);
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
   background-color: var(--color-bg-light);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
@@ -460,9 +452,9 @@ const canSubmit = computed(
 
 .dates-row {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: var(--spacing-md);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
 }
 
 .chip.removable {
@@ -515,36 +507,13 @@ const canSubmit = computed(
 
 .search-actions {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: var(--spacing-md);
-  padding-top: var(--spacing-lg);
-  border-top: 1px solid var(--color-border);
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--spacing-sm);
 }
 
 .warning {
   font-size: var(--font-sm);
   color: var(--color-error-text);
-}
-
-.action-button {
-  padding: var(--spacing-sm) var(--spacing-lg);
-  background-color: var(--color-primary);
-  color: white;
-  border: none;
-  border-radius: var(--radius-md);
-  cursor: pointer;
-  font-size: var(--font-sm);
-  font-weight: 600;
-  transition: background-color var(--transition-fast);
-}
-
-.action-button:hover:not(:disabled) {
-  background-color: var(--color-primary-hover);
-}
-
-.action-button:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
 }
 </style>

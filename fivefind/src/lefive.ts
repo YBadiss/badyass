@@ -72,8 +72,19 @@ type RawSlot = {
   fields: RawField[]
 }
 
-export const bookingUrl = (centerId: number) =>
-  `https://www.lefive.fr/reservations/slots?center=${centerId}`
+// lefive.fr's slots page opens on the given centre. `date` (DD-MM-YYYY) is passed too, but lefive.fr
+// doesn't reliably honour it.
+// The `#fivefind` part is read by the FiveFind extension to narrow the list to the exact start time;
+// without the extension it's ignored.
+export function bookingUrl(centerId: number, date?: string, startUtc?: string): string {
+  let url = `https://www.lefive.fr/reservations/slots?center=${centerId}`
+  if (date) {
+    const [y, m, d] = date.split('-')
+    url += `&date=${d}-${m}-${y}`
+  }
+  if (startUtc) url += `#fivefind?center=${centerId}&start=${encodeURIComponent(startUtc)}`
+  return url
+}
 
 export const googleMapsUrl = (center: Center) =>
   `https://maps.google.com/maps?t=m&ll=${center.lat},${center.lng}&q=${center.lat},${center.lng}`

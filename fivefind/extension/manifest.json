@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "FiveFind",
+  "version": "1.1.0",
+  "description": "Ouvre directement sur lefive.fr le créneau choisi dans FiveFind (badyass.xyz/projects/fivefind).",
+  "action": {
+    "default_title": "FiveFind",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.lefive.fr/*"
+      ],
+      "js": [
+        "lefive.js"
+      ],
+      "run_at": "document_idle",
+      "world": "MAIN"
+    },
+    {
+      "matches": [
+        "https://badyass.xyz/projects/fivefind/*",
+        "http://localhost/projects/fivefind/*"
+      ],
+      "js": [
+        "fivefind.js"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}

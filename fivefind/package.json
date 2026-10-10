@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "predev": "npm run bundle:extension",
     "dev": "vite",
+    "prebuild": "npm run bundle:extension",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
+    "bundle:extension": "mkdir -p public && rm -f public/fivefind-extension.zip && cd extension && zip -qr -X ../public/fivefind-extension.zip . -x '.*'",
     "lint": "eslint src/ --ext .vue,.js,.ts",
     "lint:fix": "eslint src/ --ext .vue,.js,.ts --fix",
     "format": "prettier --write \"src/**/*.{vue,js,ts,css}\"",
