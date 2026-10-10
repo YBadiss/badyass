@@ -6,6 +6,8 @@ Home for my online content.
 
 - **home/** — Personal intro page (Vue 3 + Vite), served at root
 - **facet/** — 3D interactive image tiler (Three.js), served at /facet
+- **swedishfind/** — Swedish Fit class finder (Vue 3 + Leaflet, scheduled crawler), served at /projects/swedishfind
+- **fivefind/** — Live LE FIVE pitch availability (Vue 3 + Leaflet, nginx API proxy), served at /projects/fivefind
 - **wgapp/** — WhatsApp ↔ Email bridge (Baileys + Gmail API + SQLite)
 
 ## Server
@@ -32,7 +34,9 @@ All projects use blue-green deploys: timestamped directories on the server, syml
 ```
 /var/www/badyass.xyz/
 ├── home -> home-<ts>/          # static files (served at /)
-├── facet -> facet-<ts>/        # static files (served at /facet)
+├── facet -> facet-<ts>/        # static files (served at /projects/facet)
+├── swedishfind -> swedishfind-<ts>/  # static files (served at /projects/swedishfind)
+├── fivefind -> fivefind-<ts>/  # static files (served at /projects/fivefind)
 ├── wgapp -> wgapp-<ts>/        # Node.js app (managed by PM2)
 └── wgapp-store/                # persistent state (SQLite, WA auth, .env)
 ```

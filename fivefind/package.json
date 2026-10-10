@@ -1,0 +1,33 @@
+{
+  "name": "fivefind",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint src/ --ext .vue,.js,.ts",
+    "lint:fix": "eslint src/ --ext .vue,.js,.ts --fix",
+    "format": "prettier --write \"src/**/*.{vue,js,ts,css}\"",
+    "format:check": "prettier --check \"src/**/*.{vue,js,ts,css}\"",
+    "deploy": "bash deploy.sh && bash cleanup_deploys.sh"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/leaflet": "^1.9.21",
+    "@types/node": "^22.10.5",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-vue": "^10.5.1",
+    "prettier": "^3.6.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.46.3",
+    "vite": "^7.0.5",
+    "vue-tsc": "^2.1.0"
+  }
+}

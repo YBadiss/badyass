@@ -1,3 +1,6 @@
+# Rate limit for the LE FIVE API proxy used by /projects/fivefind (per client IP)
+limit_req_zone $binary_remote_addr zone=fivefind_api:1m rate=5r/s;
+
 server {
     server_name badyass.xyz www.badyass.xyz;
 
@@ -20,6 +23,48 @@ server {
     location ^~ /projects/swedishfind {
         alias /var/www/badyass.xyz/swedishfind;
         try_files $uri $uri/ /projects/swedishfind/index.html;
+    }
+
+    # Location block for /projects/fivefind - serve fivefind app
+    location ^~ /projects/fivefind {
+        alias /var/www/badyass.xyz/fivefind;
+        try_files $uri $uri/ /projects/fivefind/index.html;
+    }
+
+    # fivefind proxies LE FIVE's public API: it only allows CORS from www.lefive.fr,
+    # so the browser calls us and we forward with their Origin. Only these two read-only
+    # endpoints are exposed, and cookies/auth headers are never forwarded.
+    location = /projects/fivefind/api/centers {
+        limit_except GET { deny all; }
+        limit_req zone=fivefind_api burst=10 nodelay;
+        resolver 1.1.1.1 8.8.8.8 valid=300s ipv6=off;
+        set $lefive_web "www.lefive.fr";
+        proxy_pass https://$lefive_web/content/centers.json;
+        proxy_ssl_server_name on;
+        proxy_ssl_name $lefive_web;
+        proxy_set_header Host $lefive_web;
+        proxy_set_header Origin https://www.lefive.fr;
+        proxy_set_header Cookie "";
+        proxy_set_header Authorization "";
+        proxy_hide_header Set-Cookie;
+        proxy_hide_header Access-Control-Allow-Origin;
+    }
+
+    location = /projects/fivefind/api/slots {
+        limit_except POST { deny all; }
+        limit_req zone=fivefind_api burst=60 nodelay;
+        client_max_body_size 4k;
+        resolver 1.1.1.1 8.8.8.8 valid=300s ipv6=off;
+        set $lefive_api "api2-front.lefive.fr";
+        proxy_pass https://$lefive_api/bookingrules/allFields?appId=1&isChannelWeb=true;
+        proxy_ssl_server_name on;
+        proxy_ssl_name $lefive_api;
+        proxy_set_header Host $lefive_api;
+        proxy_set_header Origin https://www.lefive.fr;
+        proxy_set_header Cookie "";
+        proxy_set_header Authorization "";
+        proxy_hide_header Set-Cookie;
+        proxy_hide_header Access-Control-Allow-Origin;
     }
 
     # Location block for root (home page) - override root

@@ -1,0 +1,92 @@
+{
+  "startingDate": "2026-10-09T18:00:00.000+00:00",
+  "endingDate": "2026-10-09T19:00:00.000+00:00",
+  "startingDateZuluTime": "2026-10-09T16:00:00.000+00:00",
+  "endingDateZuluTime": "2026-10-09T17:00:00.000+00:00",
+  "fields": [
+    {
+      "id": 481,
+      "name": "Terrain ZFC",
+      "center": {
+        "id": 69,
+        "openingHours": [],
+        "center_sportTypes": [],
+        "timeZone": "Europe/Paris",
+        "germanCenter": false
+      },
+      "canBookOnline": true,
+      "capacities": [
+        {
+          "id": 8,
+          "name": "10 personnes",
+          "capacity": 10,
+          "field": {
+            "id": 481
+          },
+          "price": 0.0,
+          "centerPrice": 0.0,
+          "webPrice": 0.0
+        }
+      ],
+      "fieldType": {
+        "id": 1,
+        "name": "Intérieur"
+      },
+      "isFilmed": true,
+      "priority": 7,
+      "startingDate": "2026-10-09T18:00:00.000+00:00",
+      "endingDate": "2026-10-09T19:00:00.000+00:00",
+      "startingDateZuluTime": "2026-10-09T16:00:00.000+00:00",
+      "endingDateZuluTime": "2026-10-09T17:00:00.000+00:00",
+      "price": 150.0,
+      "centerPrice": 150.0,
+      "webPrice": 150.0,
+      "participationCenterPrice": 15.0,
+      "participationWebPrice": 15.0,
+      "discountedPrices": [
+        {
+          "participationWebPrice": 15.0,
+          "webPrice": 150.0,
+          "participationCenterPrice": 15.0,
+          "centerPrice": 150.0,
+          "priority": 999
+        },
+        {
+          "participationWebPrice": 15.0,
+          "webPrice": 150.0,
+          "participationCenterPrice": 15.0,
+          "centerPrice": 150.0,
+          "categoryAge": {
+            "id": 5,
+            "name": "Offre Jeunes (-26 ans)",
+            "minAge": 6,
+            "maxAge": 26
+          },
+          "nbMaxPart": 1,
+          "priority": 2
+        },
+        {
+          "participationWebPrice": 15.0,
+          "webPrice": 150.0,
+          "participationCenterPrice": 15.0,
+          "centerPrice": 150.0,
+          "licenceType": {
+            "id": 2,
+            "name": "FFF"
+          },
+          "nbMaxPart": 1,
+          "priority": 3
+        }
+      ],
+      "usedBookingPrice": {
+        "participationWebPrice": 15.0,
+        "webPrice": 150.0,
+        "participationCenterPrice": 15.0,
+        "centerPrice": 150.0,
+        "priority": 999
+      },
+      "duration": 60
+    }
+  ],
+  "duration": 60
+}

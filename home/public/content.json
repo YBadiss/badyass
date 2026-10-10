@@ -14,6 +14,17 @@
       "title": "Projects",
       "publications": [
         {
+          "slug": "/projects/fivefind",
+          "title": "FiveFind",
+          "description": "Find free 5-a-side pitches across LE FIVE centres, live, on a map.",
+          "date": "2026-10-10",
+          "tags": [
+            "Football",
+            "Map",
+            "Data"
+          ]
+        },
+        {
           "slug": "/projects/swedishfind",
           "title": "SwedishFind",
           "description": "Find Swedish Fit classes easily on a map with advanced filters.",
