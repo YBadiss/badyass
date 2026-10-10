@@ -16,12 +16,16 @@ server {
     # Location block for /projects/facet - serve facet app
     location ^~ /projects/facet {
         alias /var/www/badyass.xyz/facet;
+        # Browsers must revalidate (cheap 304s): content.json and crawled data change in place
+        add_header Cache-Control "no-cache" always;
         try_files $uri $uri/ /projects/facet/index.html;
     }
 
     # Location block for /projects/swedishfind - serve swedishfind app
     location ^~ /projects/swedishfind {
         alias /var/www/badyass.xyz/swedishfind;
+        # Browsers must revalidate (cheap 304s): content.json and crawled data change in place
+        add_header Cache-Control "no-cache" always;
         try_files $uri $uri/ /projects/swedishfind/index.html;
     }
 
@@ -33,6 +37,8 @@ server {
     # Location block for /projects/fivefind - serve fivefind app
     location ^~ /projects/fivefind {
         alias /var/www/badyass.xyz/fivefind;
+        # Browsers must revalidate (cheap 304s): content.json and crawled data change in place
+        add_header Cache-Control "no-cache" always;
         try_files $uri $uri/ /projects/fivefind/index.html;
     }
 
@@ -75,6 +81,8 @@ server {
     # Location block for root (home page) - override root
     location / {
         root /var/www/badyass.xyz/home;
+        # Browsers must revalidate (cheap 304s): content.json and crawled data change in place
+        add_header Cache-Control "no-cache" always;
         try_files $uri /index.html;
     }
 

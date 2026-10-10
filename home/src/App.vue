@@ -38,7 +38,7 @@ const navigateToTab = title => {
 
 onMounted(async () => {
   try {
-    const response = await fetch('/content.json')
+    const response = await fetch('/content.json', { cache: 'no-cache' })
     content.value = await response.json()
   } catch (error) {
     console.error('Failed to load content:', error)
