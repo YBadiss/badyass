@@ -264,7 +264,8 @@ const monthNames = [
 export function formatDate(date: string, short = false): string {
   const [y, m, d] = date.split('-').map(Number)
   const weekday = dayNames[new Date(Date.UTC(y, m - 1, d)).getUTCDay()]
-  return short ? `${weekday.slice(0, 3)} ${d}` : `${weekday} ${d} ${monthNames[m - 1]}`
+  const day = d === 1 ? '1er' : String(d)
+  return short ? `${weekday.slice(0, 3)} ${day}` : `${weekday} ${day} ${monthNames[m - 1]}`
 }
 
 // "19:30" -> "19h30"

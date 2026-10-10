@@ -22,6 +22,10 @@ export default tseslint.config(
         HTMLInputElement: 'readonly',
         HTMLDivElement: 'readonly',
         Event: 'readonly',
+        KeyboardEvent: 'readonly',
+        MouseEvent: 'readonly',
+        Node: 'readonly',
+        HTMLSelectElement: 'readonly',
         URLSearchParams: 'readonly',
         process: 'readonly',
         localStorage: 'readonly'

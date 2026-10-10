@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import { ref, onMounted, computed } from 'vue'
-import SearchSection, { type SearchParams } from './components/SearchSection.vue'
+import SearchSection from './components/SearchSection.vue'
 import FilterSection, { type Filters } from './components/FilterSection.vue'
 import SlotList from './components/SlotList.vue'
 import MapView from './components/MapView.vue'
 import { fetchCenters, fetchSlots, formatInZone, runPool, type Center, type Slot } from './lefive'
 import { groupSlots } from './slots'
+import { selectedCenterIds, type SearchParams } from './search'
 
 // Each (centre, day) pair is one API call; keep searches polite
 const MAX_REQUESTS = 60
@@ -22,6 +23,7 @@ const loading = ref(true)
 const error = ref<string | null>(null)
 
 const search = ref<SearchParams>({
+  regions: [],
   centerIds: DEFAULT_CENTER_IDS,
   dates: [today()],
   fromTime: '18:00',
@@ -62,7 +64,8 @@ const restoreFilters = () => {
     if (parsed.search) {
       // Saved dates may be in the past by now
       const dates = (parsed.search.dates as string[]).filter(d => d >= today())
-      search.value = { ...parsed.search, dates: dates.length ? dates : [today()] }
+      // Merge onto the current search so fields added since the save get defaults
+      search.value = { ...search.value, ...parsed.search, dates: dates.length ? dates : [today()] }
     }
     if (parsed.filters) {
       filters.value = parsed.filters
@@ -73,7 +76,8 @@ const restoreFilters = () => {
 }
 
 const runSearch = async () => {
-  const selected = centers.value.filter(c => search.value.centerIds.includes(c.id))
+  const ids = selectedCenterIds(search.value, centers.value)
+  const selected = centers.value.filter(c => ids.includes(c.id))
   const dates = search.value.dates.filter(d => d >= today())
   const { fromTime, toTime } = search.value
 
@@ -94,6 +98,8 @@ const runSearch = async () => {
   searchedAt.value = new Date()
   searching.value = false
 }
+
+const selectedIds = computed(() => selectedCenterIds(search.value, centers.value))
 
 const availableFieldTypes = computed(() =>
   [...new Set(slots.value.map(s => s.fieldType).filter(Boolean))].sort()
@@ -199,7 +205,7 @@ onMounted(async () => {
         <MapView
           v-else-if="viewMode === 'map'"
           :centers="centers"
-          :selected-ids="search.centerIds"
+          :selected-ids="selectedIds"
           :availability="availability"
           :slot-count="slotCount"
         />
