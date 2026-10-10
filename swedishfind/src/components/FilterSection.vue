@@ -235,6 +235,8 @@ const updateActivities = (event: Event) => {
 }
 
 .filters {
+  /* Keep native checkboxes and inputs light, matching the panel (dark mode turns them dark) */
+  color-scheme: light;
   display: flex;
   flex-direction: column;
   gap: var(--spacing-md);
