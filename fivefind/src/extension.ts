@@ -6,7 +6,8 @@ export const installedVersion: string | null =
 
 export const bundledVersion: string = manifest.version
 
-export const extensionDownloadUrl = `${import.meta.env.BASE_URL}fivefind-extension.zip`
+// Published by .github/workflows/release-fivefind-extension.yml for each manifest version
+export const extensionDownloadUrl = `https://github.com/YBadiss/badyass/releases/download/fivefind-extension-v${bundledVersion}/fivefind-extension-${bundledVersion}.zip`
 
 const parseVersion = (version: string) => version.split('.').map(Number)
 

@@ -1,0 +1,59 @@
+name: Release FiveFind Extension
+
+# Publishes the Chrome Web Store zip of fivefind/extension as a GitHub Release asset,
+# once per manifest version (tag fivefind-extension-v<version>). FiveFind's install banner
+# links to that asset, and the same zip is what gets uploaded to the Chrome Web Store.
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/release-fivefind-extension.yml
+      - fivefind/extension/**
+      - fivefind/scripts/bundle-extension.mjs
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Release FiveFind Extension
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Read extension version
+        id: version
+        run: echo "version=$(node -p "require('./fivefind/extension/manifest.json').version")" >> "$GITHUB_OUTPUT"
+
+      - name: Check if this version is already released
+        id: existing
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view "fivefind-extension-v${{ steps.version.outputs.version }}" >/dev/null 2>&1; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+            echo "Version ${{ steps.version.outputs.version }} already released, bump the manifest version to release again."
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build and publish the zip
+        if: steps.existing.outputs.exists == 'false'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cd fivefind
+          zip_path=$(node scripts/bundle-extension.mjs)
+          gh release create "fivefind-extension-v${{ steps.version.outputs.version }}" "$zip_path" \
+            --title "FiveFind extension v${{ steps.version.outputs.version }}" \
+            --notes "Chrome extension for FiveFind (https://badyass.xyz/projects/fivefind). Unzip and load it unpacked from chrome://extensions, or upload this zip to the Chrome Web Store." \
+            --latest=false

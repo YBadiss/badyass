@@ -165,7 +165,11 @@ watch(() => props.availability.map(a => a.center.id).join(','), fitToCenters)
 <template>
   <div>
     <p class="results-count">
-      <template v-if="availability.length">{{ slotCount }} créneaux libres</template>
+      <template v-if="availability.length"
+        >{{ slotCount }} créneau{{ slotCount > 1 ? 'x' : '' }} libre{{
+          slotCount > 1 ? 's' : ''
+        }}</template
+      >
       <template v-else>{{ centers.length }} centres LE FIVE</template>
     </p>
     <div ref="mapContainer" class="map-container"></div>

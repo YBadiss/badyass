@@ -56,7 +56,10 @@ In CI, `npm run deploy` is the only deploy path. Avoid running it locally unless
 - `extension/` is a Manifest V3 Chrome extension, with no build step and loaded unpacked:
   - `fivefind.js` marks FiveFind pages with `data-fivefind-extension="<version>"` on `<html>`; the app reads this in `src/extension.ts`.
   - `lefive.js` runs in lefive.fr's main world. It saves the hash target in sessionStorage so it survives login, then on the slots page narrows the list to that start time via `$nuxt.$store.dispatch('sessionStorage/setTimeRange')` and the page's own `getSlotsMobile()`. It depends on lefive.fr internals, so expect breakage when they redeploy.
-  - `npm run bundle:extension` (run automatically before `dev` and `build`) zips it to `public/fivefind-extension.zip`, which is gitignored. `ExtensionBanner.vue` offers the download when the extension is missing or older than `extension/manifest.json`. **Bump the manifest `version` whenever the extension changes.**
+  - The extension is **not** served by the website. `npm run bundle:extension` builds the store zip, `extension-dist/fivefind-extension-<version>.zip` (gitignored), leaving out the `http://localhost` match; load `extension/` unpacked to use it against the dev server.
+  - `.github/workflows/release-fivefind-extension.yml` publishes that zip as a GitHub Release (tag `fivefind-extension-v<version>`) whenever the manifest version is new. It's the same zip you upload to the Chrome Web Store.
+  - `ExtensionBanner.vue` links to the release asset and shows when the extension is missing or older than `extension/manifest.json`. **Bump the manifest `version` whenever the extension changes**, otherwise no release is made and nobody is prompted to update.
+  - Store listing material (texts, justifications, screenshots, promo tile) lives in `extension-store/`.
 - The API is documented in `docs/lefive-api.md`, with a reference Python CLI (`docs/lefive_slots.py`) and an example response (`docs/examples/`). Remember: `startingDate` is local time mislabelled `+00:00`, so always use `startingDateZuluTime`.
 
 ### footble

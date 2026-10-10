@@ -25,6 +25,11 @@ server {
         try_files $uri $uri/ /projects/swedishfind/index.html;
     }
 
+    # Short links: /fivefind/... -> /projects/fivefind/... (e.g. /fivefind/privacy for the Chrome Web Store)
+    location ^~ /fivefind {
+        rewrite ^/fivefind(.*)$ /projects/fivefind$1 permanent;
+    }
+
     # Location block for /projects/fivefind - serve fivefind app
     location ^~ /projects/fivefind {
         alias /var/www/badyass.xyz/fivefind;

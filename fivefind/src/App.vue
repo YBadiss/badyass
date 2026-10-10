@@ -19,6 +19,8 @@ const SEARCH_DEBOUNCE_MS = 600
 // Paris 13, Paris 17, Paris 18, Villette
 const DEFAULT_CENTER_IDS = [51, 63, 69, 39]
 
+const baseUrl = import.meta.env.BASE_URL
+
 const today = () => formatInZone(new Date(), 'Europe/Paris').date
 
 const centers = ref<Center[]>([])
@@ -252,6 +254,11 @@ onMounted(async () => {
         </section>
       </div>
     </main>
+
+    <footer class="footer">
+      FiveFind n'est pas affilié à LE FIVE ·
+      <a :href="`${baseUrl}privacy/`">Confidentialité</a>
+    </footer>
   </div>
 </template>
 
@@ -341,6 +348,13 @@ h1 {
   color: var(--color-text-muted);
   font-size: var(--font-base);
   margin-bottom: var(--spacing-md);
+}
+
+.footer {
+  margin-top: var(--spacing-xl);
+  font-size: var(--font-xs);
+  color: var(--color-text-muted);
+  text-align: center;
 }
 
 .view-tabs {

@@ -24,7 +24,9 @@ const toggleCenter = (centerId: number) => {
 
 <template>
   <div>
-    <p class="results-count">{{ slotCount }} créneaux libres</p>
+    <p class="results-count">
+      {{ slotCount }} créneau{{ slotCount > 1 ? 'x' : '' }} libre{{ slotCount > 1 ? 's' : '' }}
+    </p>
 
     <div class="center-groups">
       <div v-for="{ center, startTimes } in availability" :key="center.id" class="center-group">
@@ -32,7 +34,7 @@ const toggleCenter = (centerId: number) => {
           <span class="toggle-icon">{{ collapsedCenters.has(center.id) ? '▶' : '▼' }}</span>
           <span>{{ center.name }}</span>
           <span v-if="startTimes.length" class="center-count">
-            ({{ startTimes.length }} créneaux)
+            ({{ startTimes.length }} créneau{{ startTimes.length > 1 ? 'x' : '' }})
           </span>
           <span v-else class="center-count full">(complet)</span>
           <a
