@@ -214,35 +214,40 @@ onMounted(async () => {
           Aucun cours trouvé. Exécutez <code>npm run crawl</code> pour récupérer les données.
         </div>
 
-        <div v-else>
-          <FilterSection
-            v-model:days="filterDays"
-            v-model:status="filterStatus"
-            v-model:activities="filterActivities"
-            :available-activities="availableActivities"
-            @save="saveFilters"
-            @restore="restoreFilters"
-          />
+        <div v-else class="layout">
+          <!-- Filters on the left, results on the right, so everything fits on one screen -->
+          <aside class="sidebar">
+            <FilterSection
+              v-model:days="filterDays"
+              v-model:status="filterStatus"
+              v-model:activities="filterActivities"
+              :available-activities="availableActivities"
+              @save="saveFilters"
+              @restore="restoreFilters"
+            />
+          </aside>
 
-          <div class="view-tabs">
-            <button :class="['tab', { active: viewMode === 'map' }]" @click="viewMode = 'map'">
-              Carte
-            </button>
-            <button :class="['tab', { active: viewMode === 'list' }]" @click="viewMode = 'list'">
-              Liste
-            </button>
-          </div>
+          <section class="results">
+            <div class="view-tabs">
+              <button :class="['tab', { active: viewMode === 'map' }]" @click="viewMode = 'map'">
+                Carte
+              </button>
+              <button :class="['tab', { active: viewMode === 'list' }]" @click="viewMode = 'list'">
+                Liste
+              </button>
+            </div>
 
-          <ClassList
-            v-if="viewMode === 'list'"
-            :classes="filteredClasses"
-            :location-map="locationMap"
-          />
-          <MapView
-            v-else-if="viewMode === 'map'"
-            :classes="filteredClasses"
-            :location-map="locationMap"
-          />
+            <ClassList
+              v-if="viewMode === 'list'"
+              :classes="filteredClasses"
+              :location-map="locationMap"
+            />
+            <MapView
+              v-else-if="viewMode === 'map'"
+              :classes="filteredClasses"
+              :location-map="locationMap"
+            />
+          </section>
         </div>
       </div>
     </main>
@@ -251,18 +256,49 @@ onMounted(async () => {
 
 <style scoped>
 .container {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
-  padding: var(--spacing-xl);
+  padding: var(--spacing-lg);
 }
 
 header {
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: var(--spacing-lg);
 }
 
 h1 {
-  font-size: var(--font-xl);
+  font-size: 2rem;
   margin: 0;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 360px minmax(0, 1fr);
+  gap: var(--spacing-lg);
+  align-items: start;
+}
+
+/* The sidebar stays in view while the results scroll */
+.sidebar {
+  position: sticky;
+  top: var(--spacing-md);
+  max-height: calc(100vh - 2 * var(--spacing-md));
+  overflow-y: auto;
+}
+
+.results {
+  min-width: 0;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
+    max-height: none;
+    overflow: visible;
+  }
 }
 
 .loading,

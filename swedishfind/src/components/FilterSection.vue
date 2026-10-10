@@ -27,7 +27,8 @@ interface Emits {
 const props = defineProps<Props>()
 const emit = defineEmits<Emits>()
 
-const isExpanded = ref(false)
+// Open by default: in the sidebar there's room to show filters alongside the results
+const isExpanded = ref(true)
 const dayNames = ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi']
 
 const updateDayEnabled = (day: DayOfWeek, enabled: boolean) => {
@@ -214,7 +215,7 @@ const updateActivities = (event: Event) => {
 
 <style scoped>
 .filter-container {
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
 }
 
 .filter-toggle {
@@ -222,12 +223,12 @@ const updateActivities = (event: Event) => {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--spacing-md);
+  padding: var(--spacing-sm) var(--spacing-md);
   background-color: var(--color-bg-light);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   cursor: pointer;
-  font-size: var(--font-base);
+  font-size: var(--font-sm);
   font-weight: 600;
   color: var(--color-text-primary);
   transition: background-color var(--transition-fast);
@@ -241,8 +242,7 @@ const updateActivities = (event: Event) => {
   display: flex;
   gap: var(--spacing-sm);
   justify-content: flex-end;
-  padding-top: var(--spacing-lg);
-  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-md);
   border-top: 1px solid var(--color-border);
 }
 
@@ -269,20 +269,19 @@ const updateActivities = (event: Event) => {
 
 .filters {
   display: flex;
-  gap: var(--spacing-lg);
-  padding: var(--spacing-lg);
+  flex-direction: column;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
   background-color: var(--color-bg-light);
   border: 1px solid var(--color-border);
   border-top: none;
   border-radius: 0 0 var(--radius-md) var(--radius-md);
-  flex-wrap: wrap;
-  align-items: flex-start;
 }
 
 .filter-group {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-sm);
+  gap: var(--spacing-xs);
 }
 
 .filter-group > label {
@@ -292,20 +291,20 @@ const updateActivities = (event: Event) => {
 }
 
 .days-filter {
-  flex: 1;
-  min-width: 300px;
+  min-width: 0;
 }
 
 .day-filters {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-sm);
+  gap: var(--spacing-xs);
 }
 
 .day-row {
   display: flex;
   align-items: center;
-  gap: var(--spacing-md);
+  justify-content: space-between;
+  gap: var(--spacing-sm);
 }
 
 .day-checkbox-label {
@@ -313,7 +312,6 @@ const updateActivities = (event: Event) => {
   align-items: center;
   gap: var(--spacing-sm);
   cursor: pointer;
-  min-width: 100px;
 }
 
 .day-name {
@@ -354,24 +352,22 @@ const updateActivities = (event: Event) => {
 }
 
 .status-filter {
-  flex: 1;
-  min-width: 250px;
+  min-width: 0;
 }
 
 .status-checkboxes {
   display: flex;
-  gap: var(--spacing-md);
+  gap: var(--spacing-xs) var(--spacing-md);
   flex-wrap: wrap;
 }
 
 .activities-filter {
-  flex: 1;
-  min-width: 250px;
+  min-width: 0;
 }
 
 .activities-checkboxes {
   display: flex;
-  gap: var(--spacing-md);
+  gap: var(--spacing-xs) var(--spacing-md);
   flex-wrap: wrap;
 }
 
