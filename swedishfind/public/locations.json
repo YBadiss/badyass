@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-17T13:58:30.556Z",
+  "timestamp": "2026-10-17T17:16:54.236Z",
   "locations": [
     {
       "name": "Paris  9 Bergère",
@@ -114,11 +114,11 @@
       }
     },
     {
-      "name": "Strasbourg Les Bains Municipaux",
-      "address": "10 Bd de la Victoire, 67000 Strasbourg",
+      "name": "",
+      "address": "",
       "gpsCoordinates": {
-        "lat": 48.5833726,
-        "lon": 7.7596492
+        "lat": 0,
+        "lon": 0
       }
     },
     {
