@@ -8,7 +8,7 @@ Home for my online content.
 - **facet/** — 3D interactive image tiler (Three.js), served at /facet
 - **swedishfind/** — Swedish Fit class finder (Vue 3 + Leaflet, scheduled crawler), served at /projects/swedishfind
 - **fivefind/** — Live LE FIVE pitch availability (Vue 3 + Leaflet, nginx API proxy), served at /projects/fivefind
-- **wgapp/** — WhatsApp ↔ Email bridge (Baileys + Gmail API + SQLite)
+- **footble/** — Football player guessing game (Vue 3 + Python data pipeline), served at footble.net
 
 ## Server
 
@@ -16,7 +16,7 @@ DigitalOcean droplet (1GB RAM) at `167.71.143.97`.
 
 ### Swap
 
-The server has 1GB swap configured to handle native addon compilation (e.g. `better-sqlite3` via `node-gyp`). Without it, `npm ci` gets OOM-killed.
+The server has 1GB swap configured so `npm ci` / builds on the box don't get OOM-killed.
 
 ```bash
 # How it was set up (one-time)
@@ -37,7 +37,6 @@ All projects use blue-green deploys: timestamped directories on the server, syml
 ├── facet -> facet-<ts>/        # static files (served at /projects/facet)
 ├── swedishfind -> swedishfind-<ts>/  # static files (served at /projects/swedishfind)
 ├── fivefind -> fivefind-<ts>/  # static files (served at /projects/fivefind)
-├── wgapp -> wgapp-<ts>/        # Node.js app (managed by PM2)
-└── wgapp-store/                # persistent state (SQLite, WA auth, .env)
+└── footble -> footble-<ts>/    # static files (served at footble.net)
 ```
 
