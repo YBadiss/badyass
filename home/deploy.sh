@@ -1,17 +1,15 @@
 #!/bin/bash
+# Uploads the already-built dist/ to the droplet and swaps the live symlink.
+# CI builds in an earlier step, before the SSH key is loaded; run `npm run build` first if deploying by hand.
+set -euo pipefail
 
-SSH_OPTIONS="$@"
-
-# Build the project
-npm run build
-
+SERVER="${DEPLOY_USER:-root}@${DEPLOY_HOST:-167.71.143.97}"
+BASE=/var/www/badyass.xyz
+NAME=home
 timestamp=$(date +%s)
 
-# Create target directory with proper permissions
-ssh $SSH_OPTIONS root@167.71.143.97 "mkdir -p /var/www/badyass.xyz/home-${timestamp} && chmod 755 /var/www/badyass.xyz/home-${timestamp}"
+[ -d dist ] || { echo "dist/ not found: run npm run build first" >&2; exit 1; }
 
-# Deploy to root of badyass.xyz (home directory)
-scp $SSH_OPTIONS -r dist/* root@167.71.143.97:/var/www/badyass.xyz/home-${timestamp}/
-
-# Create symlink to home directory (served at root)
-ssh $SSH_OPTIONS root@167.71.143.97 "(rm /var/www/badyass.xyz/home || true) && ln -s /var/www/badyass.xyz/home-${timestamp} /var/www/badyass.xyz/home"
+ssh "$SERVER" "mkdir -p $BASE/$NAME-$timestamp && chmod 755 $BASE/$NAME-$timestamp"
+scp -r dist/* "$SERVER:$BASE/$NAME-$timestamp/"
+ssh "$SERVER" "ln -sfn $BASE/$NAME-$timestamp $BASE/$NAME"

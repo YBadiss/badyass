@@ -17,7 +17,7 @@ Monorepo for badyass.xyz and related side projects. Each top-level folder is an 
 
 ## Commands
 
-Run commands from inside the project folder. All Node projects use Node 20 and `npm ci`.
+Run commands from inside the project folder. All Node projects use Node 24 and `npm ci`.
 
 - **home**, **swedishfind**, **fivefind**, **footble**: `npm run dev`, `npm run build`, `npm run lint`, `npm run format`, `npm run deploy`
 - **swedishfind** crawlers: `npm run crawlLocations`, `npm run crawlClasses` (they write to `public/*.json`)
@@ -72,8 +72,9 @@ In CI, `npm run deploy` is the only deploy path. Avoid running it locally unless
 
 - **Server:** a DigitalOcean droplet (1GB RAM + 1GB swap) at `167.71.143.97`. CI deploys as `root`; for manual checks use `ssh badyass` (a `claude` user with sudo, every command approval-gated). Memory is tight, so keep long-running processes small.
 - **Shared with other repos:** the same droplet also serves recipit.me (`../recip.it`, PM2 `recipi-backend` on :3000) and metro-boulot.photos (`../metro-photos`, PM2 `metro-api` on :3001), each with its own vhost in `/etc/nginx/sites-available/`. ufw only allows 22/80/443, so backends must stay behind nginx.
-- **CI:** each project has `.github/workflows/deploy-<project>.yml`, triggered on push to `main` with paths filtered to `<project>/**`. It loads the `SSH_DEPLOY_KEY` secret through `webfactory/ssh-agent`, then runs `npm ci && npm run build && npm run deploy`.
-- **Blue-green deploy:** `deploy.sh` copies the build to `/var/www/badyass.xyz/<project>-<timestamp>/` and swaps the `<project>` symlink to point at it. `cleanup_deploys.sh` then keeps only the last 2 timestamped directories. Static projects use scp.
+- **CI:** each project has `.github/workflows/deploy-<project>.yml`, triggered on push to `main` (paths `<project>/**` and the workflow itself) or by hand (`workflow_dispatch`). It runs `npm ci && npm run build` first, and only then loads `SSH_DEPLOY_KEY` (so dependency code never sees the key), trusts only the host key in the `SSH_KNOWN_HOSTS` secret, and runs `npm run deploy`. Actions are pinned to commit SHAs, workflows get `contents: read`, Node 24.
+- **Deploy target:** scripts connect to `${DEPLOY_USER:-root}@${DEPLOY_HOST:-167.71.143.97}`, set from the `DEPLOY_USER`/`DEPLOY_HOST` repo variables. If the server is rebuilt, update `SSH_KNOWN_HOSTS` (its host key changes).
+- **Blue-green deploy:** `deploy.sh` uploads the already-built `dist/` to `/var/www/badyass.xyz/<project>-<timestamp>/` and swaps the `<project>` symlink (`ln -sfn`). `cleanup_deploys.sh` then keeps only the last 2 timestamped directories. Nothing is installed or run on the server for static projects. Config deploys use `sudo -n nginx -t` and `sudo -n systemctl reload nginx`.
 - **nginx:** `config/nginx-config` is the badyass.xyz vhost. Each static sub-app gets a block like this:
   ```nginx
   location ^~ /projects/<name> {

@@ -1,21 +1,15 @@
 #!/bin/bash
+# Uploads the already-built dist/ to the droplet and swaps the live symlink.
+# CI builds in an earlier step, before the SSH key is loaded; run `npm run build` first if deploying by hand.
+set -euo pipefail
 
-SSH_OPTIONS="$@"
-
-# Build the project
-npm run build
-
+SERVER="${DEPLOY_USER:-root}@${DEPLOY_HOST:-167.71.143.97}"
+BASE=/var/www/badyass.xyz
+NAME=swedishfind
 timestamp=$(date +%s)
 
-# Create target directory with proper permissions
-ssh $SSH_OPTIONS root@167.71.143.97 "mkdir -p /var/www/badyass.xyz/swedishfind-${timestamp} && chmod 755 /var/www/badyass.xyz/swedishfind-${timestamp}"
+[ -d dist ] || { echo "dist/ not found: run npm run build first" >&2; exit 1; }
 
-# Deploy the project
-scp $SSH_OPTIONS -r dist/* root@167.71.143.97:/var/www/badyass.xyz/swedishfind-${timestamp}/
-scp $SSH_OPTIONS package*.json root@167.71.143.97:/var/www/badyass.xyz/swedishfind-${timestamp}/
-
-# Install dependencies
-ssh $SSH_OPTIONS root@167.71.143.97 "cd /var/www/badyass.xyz/swedishfind-${timestamp} && npm i --omit=dev"
-
-# Create a new symlink
-ssh $SSH_OPTIONS root@167.71.143.97 "(rm /var/www/badyass.xyz/swedishfind || true) && ln -s /var/www/badyass.xyz/swedishfind-${timestamp} /var/www/badyass.xyz/swedishfind"
+ssh "$SERVER" "mkdir -p $BASE/$NAME-$timestamp && chmod 755 $BASE/$NAME-$timestamp"
+scp -r dist/* "$SERVER:$BASE/$NAME-$timestamp/"
+ssh "$SERVER" "ln -sfn $BASE/$NAME-$timestamp $BASE/$NAME"

@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
     "start": "webpack serve --mode development --open",
-    "deploy": "bash deploy.sh"
+    "deploy": "bash deploy.sh && bash cleanup_deploys.sh"
   },
   "keywords": [],
   "author": "",
