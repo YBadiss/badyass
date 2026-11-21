@@ -70,10 +70,13 @@ In CI, `npm run deploy` is the only deploy path. Avoid running it locally unless
 
 ## Deployment
 
-- **Server:** a DigitalOcean droplet (1GB RAM + 1GB swap) at `167.71.143.97`. CI deploys as `root`; for manual checks use `ssh badyass` (a `claude` user with sudo, every command approval-gated). Memory is tight, so keep long-running processes small.
-- **Shared with other repos:** the same droplet also serves recipit.me (`../recip.it`, PM2 `recipi-backend` on :3000) and metro-boulot.photos (`../metro-photos`, PM2 `metro-api` on :3001), each with its own vhost in `/etc/nginx/sites-available/`. ufw only allows 22/80/443, so backends must stay behind nginx.
+- **Server:** a DigitalOcean droplet (1GB RAM + 1GB swap) at `167.71.143.97`, Ubuntu 26.04 LTS (rebuilt 2026-11-21). Memory is tight, so keep long-running processes small.
+  - Users: `deploy` (CI only: owns `/var/www` and the vhost files in `/etc/nginx/sites-available/`, runs PM2 via `pm2-deploy.service`, sudo only for `nginx -t` and `systemctl reload nginx`), `admin` (owner), `claude` (use `ssh badyass` for manual checks; every command is approval-gated). Root SSH login is disabled.
+  - Stack: Ubuntu's nginx (HTTP/2 on), Node 24 from NodeSource, Bun, PM2, certbot (apt, `certbot.timer`), ufw (22/80/443 only), fail2ban, unattended-upgrades with automatic reboot at 04:30 UTC.
+  - Rebuilding: `config/server/setup-server.sh` sets the box up from a fresh 26.04 image, and `config/server/restore-state.sh` restores host keys, certificates, vhosts and recip.it's data from a backup tarball.
+- **Shared with other repos:** the same droplet also serves recipit.me (`../recip.it`, PM2 `recipi-backend` on :3000, env in `/home/deploy/secrets/`, data in `/var/www/recip.it/data`) and metro-boulot.photos (`../metro-photos`, PM2 `metro-api` on :3001), each with its own vhost in `/etc/nginx/sites-available/`. Backends must stay behind nginx.
 - **CI:** each project has `.github/workflows/deploy-<project>.yml`, triggered on push to `main` (paths `<project>/**` and the workflow itself) or by hand (`workflow_dispatch`). It runs `npm ci && npm run build` first, and only then loads `SSH_DEPLOY_KEY` (so dependency code never sees the key), trusts only the host key in the `SSH_KNOWN_HOSTS` secret, and runs `npm run deploy`. Actions are pinned to commit SHAs, workflows get `contents: read`, Node 24.
-- **Deploy target:** scripts connect to `${DEPLOY_USER:-root}@${DEPLOY_HOST:-167.71.143.97}`, set from the `DEPLOY_USER`/`DEPLOY_HOST` repo variables. If the server is rebuilt, update `SSH_KNOWN_HOSTS` (its host key changes).
+- **Deploy target:** scripts connect to `${DEPLOY_USER:-root}@${DEPLOY_HOST:-167.71.143.97}`. The `DEPLOY_USER` repo variable is `deploy` (`DEPLOY_HOST` unset). `SSH_KNOWN_HOSTS` holds the server's ED25519 host key; a rebuild must restore the old host keys or update that secret in all three repos.
 - **Blue-green deploy:** `deploy.sh` uploads the already-built `dist/` to `/var/www/badyass.xyz/<project>-<timestamp>/` and swaps the `<project>` symlink (`ln -sfn`). `cleanup_deploys.sh` then keeps only the last 2 timestamped directories. Nothing is installed or run on the server for static projects. Config deploys use `sudo -n nginx -t` and `sudo -n systemctl reload nginx`.
 - **nginx:** `config/nginx-config` is the badyass.xyz vhost. Each static sub-app gets a block like this:
   ```nginx
@@ -82,7 +85,7 @@ In CI, `npm run deploy` is the only deploy path. Avoid running it locally unless
       try_files $uri $uri/ /projects/<name>/index.html;
   }
   ```
-  and its Vite `base` must be `/projects/<name>/`. Pushing to `config/**` runs `config/deploy.sh`, which uploads the file, runs `nginx -t` (rolling back if it fails) and reloads nginx.
+  and its Vite `base` must be `/projects/<name>/`. Keep every `add_header` at server level (security headers and `Cache-Control`): nginx drops server-level headers in any location that sets its own. Pushing to `config/**` runs `config/deploy.sh`, which uploads the file, runs `nginx -t` (rolling back if it fails) and reloads nginx.
 
 ```
 /var/www/badyass.xyz/
