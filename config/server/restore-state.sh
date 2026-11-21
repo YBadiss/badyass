@@ -19,7 +19,7 @@ for s in badyass footble recipit metro-boulot.photos; do
 done
 grep -q "limit_req_zone" /etc/nginx/sites-available/badyass && echo "  (badyass vhost carries its own limit_req_zone)"
 
-echo "== recip.it data + backend env"
+echo "== recip.it data + app env"
 cp -a "$T"/var/www/recip.it/data/. /var/www/recip.it/data/
 chown -R deploy:deploy /var/www/recip.it/data
 install -m 600 -o deploy -g deploy "$T"/root/recip.it/backend/.env /home/deploy/secrets/recipit-backend.env
