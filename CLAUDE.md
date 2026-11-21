@@ -13,7 +13,6 @@ Monorepo for badyass.xyz and related side projects. Each top-level folder is an 
 | `swedishfind/` | Swedish Fit class finder (map + filters), fed by a scheduled crawler | Vue 3 + TS + Leaflet, cheerio crawler | `badyass.xyz/projects/swedishfind` |
 | `fivefind/` | Live search for free LE FIVE 5-a-side pitches (map + list), fetched on demand | Vue 3 + TS + Leaflet, nginx API proxy | `badyass.xyz/projects/fivefind` |
 | `footble/` | Football player guessing game | Vue 3 + TS + PrimeVue, Python data pipeline | `footble.net` (`badyass.xyz/footble` redirects) |
-| `wgapp/` | WhatsApp ↔ Email bridge (long-running service) | Node + TS, Baileys, Gmail API, SQLite, PM2 | no HTTP endpoint |
 | `config/` | nginx vhost for badyass.xyz + its deploy script | nginx | — |
 
 ## Commands
@@ -23,7 +22,6 @@ Run commands from inside the project folder. All Node projects use Node 20 and `
 - **home**, **swedishfind**, **fivefind**, **footble**: `npm run dev`, `npm run build`, `npm run lint`, `npm run format`, `npm run deploy`
 - **swedishfind** crawlers: `npm run crawlLocations`, `npm run crawlClasses` (they write to `public/*.json`)
 - **facet**: `npm start` (dev server on :8080), `npm run build`, `npm run deploy`
-- **wgapp**: `npm run dev` (tsx watch), `npm run build` (type-check only), `npm test` (vitest), `npm run deploy`
 - **footble/scripting**: Python pipeline managed with `uv`; scripts `00_…` → `06_…` run in order and produce `footble/public/*.json`. See `footble/scripting/README.md`.
 
 In CI, `npm run deploy` is the only deploy path. Avoid running it locally unless asked, because it pushes straight to production.
@@ -70,18 +68,12 @@ In CI, `npm run deploy` is the only deploy path. Avoid running it locally unless
 - The game reads static JSON (`public/clubs.json`, `players.json`, `top_players.json`) produced by the Python pipeline in `scripting/`.
 - It has its own nginx vhost in `footble/config/nginx-config`, deployed by `deploy-footble-config.yml`.
 
-### wgapp (reference pattern for long-running services)
-- Uses a ports/adapters layout: `src/ports.ts` holds the interfaces, `src/adapters/` holds `baileys.ts` and `gmail-api.ts`, and `src/bridge.ts` holds the logic. Config is validated with zod (`src/config.ts`), and the SQLite DB code is in `src/db.ts`.
-- Tests in `test/` replay recorded fixtures (`test/fixtures/`, `test/helpers/replay-*.ts`).
-- Runs under PM2 via `ecosystem.config.cjs`. Persistent state (SQLite, WA auth, `.env`) lives in `/var/www/badyass.xyz/wgapp-store/` and is kept outside the deploy directory.
-- `patches/` holds a patch-package patch for Baileys, applied on `postinstall`.
-- See `wgapp/README.md` and `wgapp/PLAN.md`.
-
 ## Deployment
 
-- **Server:** a DigitalOcean droplet (1GB RAM + 1GB swap) at `167.71.143.97`, accessed as `root`. Memory is tight, so keep long-running processes small.
+- **Server:** a DigitalOcean droplet (1GB RAM + 1GB swap) at `167.71.143.97`. CI deploys as `root`; for manual checks use `ssh badyass` (a `claude` user with sudo, every command approval-gated). Memory is tight, so keep long-running processes small.
+- **Shared with other repos:** the same droplet also serves recipit.me (`../recip.it`, PM2 `recipi-backend` on :3000) and metro-boulot.photos (`../metro-photos`, PM2 `metro-api` on :3001), each with its own vhost in `/etc/nginx/sites-available/`. ufw only allows 22/80/443, so backends must stay behind nginx.
 - **CI:** each project has `.github/workflows/deploy-<project>.yml`, triggered on push to `main` with paths filtered to `<project>/**`. It loads the `SSH_DEPLOY_KEY` secret through `webfactory/ssh-agent`, then runs `npm ci && npm run build && npm run deploy`.
-- **Blue-green deploy:** `deploy.sh` copies the build to `/var/www/badyass.xyz/<project>-<timestamp>/` and swaps the `<project>` symlink to point at it. `cleanup_deploys.sh` then keeps only the last 2 timestamped directories. Static projects use scp. wgapp uses rsync, then `npm ci --omit=dev` on the server and `pm2 startOrRestart`.
+- **Blue-green deploy:** `deploy.sh` copies the build to `/var/www/badyass.xyz/<project>-<timestamp>/` and swaps the `<project>` symlink to point at it. `cleanup_deploys.sh` then keeps only the last 2 timestamped directories. Static projects use scp.
 - **nginx:** `config/nginx-config` is the badyass.xyz vhost. Each static sub-app gets a block like this:
   ```nginx
   location ^~ /projects/<name> {
@@ -97,14 +89,12 @@ In CI, `npm run deploy` is the only deploy path. Avoid running it locally unless
 ├── facet -> facet-<ts>/               # /projects/facet
 ├── swedishfind -> swedishfind-<ts>/   # /projects/swedishfind
 ├── fivefind -> fivefind-<ts>/         # /projects/fivefind
-├── footble -> footble-<ts>/           # footble.net
-├── wgapp -> wgapp-<ts>/               # PM2 process
-└── wgapp-store/                       # wgapp persistent state
+└── footble -> footble-<ts>/           # footble.net
 ```
 
 ## Adding a new project
 
-1. Create `<name>/` by copying the closest existing project. Copy `swedishfind/` for a static site with crawled data, `fivefind/` for a static site that queries a third-party API live, or `wgapp/` for a long-running service.
+1. Create `<name>/` by copying the closest existing project. Copy `swedishfind/` for a static site with crawled data, or `fivefind/` for a static site that queries a third-party API live.
 2. Add `deploy.sh` and `cleanup_deploys.sh`, replacing the project name inside them.
 3. Add `.github/workflows/deploy-<name>.yml`, plus a crawl workflow if the project needs scheduled data.
 4. Add a `location ^~ /projects/<name>` block to `config/nginx-config`, and set Vite `base` to match.
@@ -123,5 +113,5 @@ In CI, `npm run deploy` is the only deploy path. Avoid running it locally unless
 
 ## Conventions
 
-- Commit messages use Conventional Commits (`feat:`, `fix:`, `chore:`), optionally scoped, e.g. `feat(wgapp): …`.
+- Commit messages use Conventional Commits (`feat:`, `fix:`, `chore:`), optionally scoped, e.g. `feat(fivefind): …`.
 - Newer projects use TypeScript, ESLint 9 flat config, and Prettier (`.prettierrc` per project).
