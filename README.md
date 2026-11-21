@@ -12,24 +12,15 @@ Home for my online content.
 
 ## Server
 
-DigitalOcean droplet (1GB RAM) at `167.71.143.97`.
+DigitalOcean droplet (1GB RAM + 1GB swap) at `167.71.143.97`, Ubuntu 26.04 LTS. It also hosts recipit.me and metro-boulot.photos from their own repos.
 
-### Swap
-
-The server has 1GB swap configured so `npm ci` / builds on the box don't get OOM-killed.
-
-```bash
-# How it was set up (one-time)
-fallocate -l 1G /swapfile
-chmod 600 /swapfile
-mkswap /swapfile
-swapon /swapfile
-echo '/swapfile none swap sw 0 0' >> /etc/fstab
-```
+- Set up from a fresh image with [`config/server/setup-server.sh`](config/server/setup-server.sh); state (host keys, certificates, vhosts, recip.it data) comes back with [`config/server/restore-state.sh`](config/server/restore-state.sh).
+- CI deploys as the unprivileged `deploy` user; root SSH login is disabled. Only ports 22, 80 and 443 are open.
+- Security updates install automatically, with a reboot at 04:30 UTC when needed. PM2 restores the backends at boot.
 
 ### Deployment
 
-All projects use blue-green deploys: timestamped directories on the server, symlink swap. Pushes to `main` trigger GitHub Actions workflows per project.
+All projects use blue-green deploys: timestamped directories on the server, symlink swap. Pushes to `main` trigger GitHub Actions workflows per project (they can also be run by hand).
 
 ```
 /var/www/badyass.xyz/
@@ -39,4 +30,3 @@ All projects use blue-green deploys: timestamped directories on the server, syml
 ├── fivefind -> fivefind-<ts>/  # static files (served at /projects/fivefind)
 └── footble -> footble-<ts>/    # static files (served at footble.net)
 ```
-
